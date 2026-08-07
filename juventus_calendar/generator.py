@@ -474,7 +474,9 @@ def fetch_remote_events(session: requests.Session, today: date) -> FetchResult:
     start_year = season_start(today)
 
     official_ok = False
-    for year in (start_year - 1, start_year):
+    # Il feed sottoscrivibile rappresenta la stagione attiva. Caricare anche
+    # quella precedente raddoppiava quasi il calendario con gare già concluse.
+    for year in (start_year,):
         url = OFFICIAL_API.format(tag=season_tag(year))
         try:
             response = session.get(url, timeout=30)
@@ -505,7 +507,7 @@ def fetch_remote_events(session: requests.Session, today: date) -> FetchResult:
         )
         response.raise_for_status()
         opta_events = parse_official_opta_json(response.json(), OFFICIAL_PAGE)
-        active_seasons = {start_year - 1, start_year}
+        active_seasons = {start_year}
         events.extend(item for item in opta_events if _season_for(item) in active_seasons)
         if opta_events and "Juventus" not in successful:
             successful.append("Juventus")
