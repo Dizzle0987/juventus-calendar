@@ -576,6 +576,49 @@ def _uid_for(event: dict[str, Any]) -> str:
     return f"{hashlib.sha256(_semantic_base(event).encode()).hexdigest()[:24]}@juventus-calendar"
 
 
+def _merge_broadcaster_overlay(event: dict[str, Any], overlay: dict[str, Any]) -> None:
+    rights = BROADCASTERS_BY_COMPETITION.get(
+        _competition_family(str(event.get("competition") or ""))
+    )
+    if rights and not event.get("broadcast_it"):
+        event["broadcast_it"], event["broadcast_source_url"] = rights
+
+    candidate = str(overlay.get("broadcast_it") or "").strip()
+    existing = str(event.get("broadcast_it") or "").strip()
+    if candidate:
+        if not existing:
+            event["broadcast_it"] = candidate
+        elif candidate.lower() not in existing.lower() and existing.lower() not in candidate.lower():
+            event["broadcast_it"] = f"{existing}; {candidate}"
+
+    source_urls = [
+        str(value)
+        for value in (event.get("broadcast_source_url"), overlay.get("broadcast_source_url"))
+        if value
+    ]
+    if source_urls:
+        event["broadcast_source_urls"] = list(dict.fromkeys(source_urls))
+        event["broadcast_source_url"] = event["broadcast_source_urls"][-1]
+
+
+def _same_source_id(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    return bool(
+        left.get("source")
+        and left.get("source") == right.get("source")
+        and left.get("source_id")
+        and str(left.get("source_id")) == str(right.get("source_id"))
+    )
+
+
+def _is_postponed(event: dict[str, Any]) -> bool:
+    if event.get("postponed") is True:
+        return True
+    status = _normalize(str(event.get("status") or ""))
+    return status in {"pst", "ppd"} or any(
+        marker in status for marker in ("postponed", "rinviat", "suspended")
+    )
+
+
 def _same_fixture(left: dict[str, Any], right: dict[str, Any], *, unordered: bool = False) -> bool:
     left_teams = (_team_key(str(left.get("home_team") or "")), _team_key(str(left.get("away_team") or "")))
     right_teams = (_team_key(str(right.get("home_team") or "")), _team_key(str(right.get("away_team") or "")))
@@ -585,13 +628,28 @@ def _same_fixture(left: dict[str, Any], right: dict[str, Any], *, unordered: boo
         teams_match = left_teams == right_teams
     if not teams_match:
         return False
-    delta = abs((_event_datetime(left) - _event_datetime(right)).total_seconds())
-    if unordered:
-        return delta <= 72 * 3600
-    return delta <= 72 * 3600 and (
-        _competition_family(str(left.get("competition") or "")) == _competition_family(str(right.get("competition") or ""))
-        or "partita" in {_competition_family(str(left.get("competition") or "")), _competition_family(str(right.get("competition") or ""))}
-    )
+    left_family = _competition_family(str(left.get("competition") or ""))
+    right_family = _competition_family(str(right.get("competition") or ""))
+    generic = {"partita", "altra-competizione"}
+    if left_family != right_family and not ({left_family, right_family} & generic):
+        return False
+    return abs((_event_datetime(left) - _event_datetime(right)).total_seconds()) <= 72 * 3600
+
+
+def _same_long_range_fixture(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    left_teams = tuple(_team_key(str(left.get(key) or "")) for key in ("home_team", "away_team"))
+    right_teams = tuple(_team_key(str(right.get(key) or "")) for key in ("home_team", "away_team"))
+    if left_teams != right_teams:
+        return False
+    left_family = _competition_family(str(left.get("competition") or ""))
+    right_family = _competition_family(str(right.get("competition") or ""))
+    if left_family != right_family or left_family in {"partita", "altra-competizione"}:
+        return False
+    left_round = _normalize(str(left.get("round") or ""))
+    right_round = _normalize(str(right.get("round") or ""))
+    if left_round and right_round and left_round != right_round:
+        return False
+    return abs((_event_datetime(left) - _event_datetime(right)).total_seconds()) <= 240 * 24 * 3600
 
 
 def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -601,7 +659,13 @@ def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]
     priority = {"Juventus": 0, "ESPN": 1, "TheSportsDB": 2}
     merged: list[dict[str, Any]] = []
     for candidate in sorted(base, key=lambda x: priority.get(str(x.get("source")), 9)):
-        existing = next((x for x in merged if _same_fixture(x, candidate)), None)
+        existing = next(
+            (x for x in merged if _same_source_id(x, candidate) or _same_fixture(x, candidate)),
+            None,
+        )
+        if existing is None:
+            long_range_matches = [x for x in merged if _same_long_range_fixture(x, candidate)]
+            existing = long_range_matches[0] if len(long_range_matches) == 1 else None
         if existing is None:
             merged.append(deepcopy(candidate))
         else:
@@ -612,13 +676,30 @@ def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]
         existing = next((x for x in merged if _same_fixture(x, overlay, unordered=True)), None)
         if existing is None:
             continue
-        existing["start"] = overlay["start"]
+        previous_start = str(existing.get("start") or "")
+        candidate_start = str(overlay.get("start") or "")
+        same_instant = (
+            previous_start
+            and candidate_start
+            and not existing.get("all_day")
+            and _event_datetime(existing).astimezone(timezone.utc)
+            == _event_datetime(overlay).astimezone(timezone.utc)
+        )
+        if previous_start and not existing.get("all_day") and not same_instant:
+            conflict = {
+                "source": str(existing.get("time_source") or existing.get("source") or ""),
+                "source_url": str(existing.get("time_source_url") or existing.get("source_url") or ""),
+                "start": previous_start,
+            }
+            conflicts = existing.setdefault("time_conflicts", [])
+            if conflict not in conflicts:
+                conflicts.append(conflict)
+        existing["start"] = candidate_start
         existing["all_day"] = False
         existing["time_source"] = overlay["source"]
         existing["time_source_url"] = overlay["source_url"]
         if overlay.get("broadcast_it"):
-            existing["broadcast_it"] = overlay["broadcast_it"]
-            existing["broadcast_source_url"] = overlay.get("broadcast_source_url", "")
+            _merge_broadcaster_overlay(existing, overlay)
     return sorted(merged, key=_event_datetime)
 
 
@@ -661,9 +742,19 @@ def merge_manual_events(remote: list[dict[str, Any]], manual: list[dict[str, Any
     for candidate in manual:
         uid = _uid_for(candidate)
         index = next(
-            (i for i, event in enumerate(merged) if _uid_for(event) == uid or _same_fixture(event, candidate, unordered=True)),
+            (
+                i for i, event in enumerate(merged)
+                if _uid_for(event) == uid
+                or _same_source_id(event, candidate)
+                or _same_fixture(event, candidate, unordered=True)
+            ),
             None,
         )
+        if index is None:
+            long_range_matches = [
+                i for i, event in enumerate(merged) if _same_long_range_fixture(event, candidate)
+            ]
+            index = long_range_matches[0] if len(long_range_matches) == 1 else None
         if index is None:
             merged.append(deepcopy(candidate))
         else:
@@ -671,20 +762,44 @@ def merge_manual_events(remote: list[dict[str, Any]], manual: list[dict[str, Any
     return sorted(merged, key=_event_datetime)
 
 
-def _canonical_event(event: dict[str, Any], previous: list[dict[str, Any]], changed_at: str) -> dict[str, Any]:
+def _canonical_event(
+    event: dict[str, Any],
+    previous: list[dict[str, Any]],
+    changed_at: str,
+    used_uids: set[str] | None = None,
+) -> dict[str, Any]:
     result = deepcopy(event)
     result.pop("_time_overlay", None)
     result.pop("_time_priority", None)
     result["uid"] = _uid_for(result)
-    old = next((x for x in previous if x.get("uid") == result["uid"]), None)
+    generated_uid = result["uid"]
+    old = next((x for x in previous if _same_source_id(x, result)), None)
+    if old is None:
+        long_range_matches = [x for x in previous if _same_long_range_fixture(x, result)]
+        old = long_range_matches[0] if len(long_range_matches) == 1 else None
     if old is None:
         old = next((x for x in previous if _same_fixture(x, result, unordered=True)), None)
-        if old and old.get("uid"):
+    if old is None:
+        old = next((x for x in previous if x.get("uid") == generated_uid), None)
+    if old is not None:
+        if old.get("uid") and str(old["uid"]) not in (used_uids or set()):
             result["uid"] = str(old["uid"])
+        else:
+            result["uid"] = generated_uid
+    if used_uids is not None and result["uid"] in used_uids:
+        collision_base = "|".join(
+            (
+                _semantic_base(result),
+                str(result.get("source") or ""),
+                str(result.get("source_id") or ""),
+                str(result.get("start") or ""),
+            )
+        )
+        result["uid"] = f"{hashlib.sha256(collision_base.encode()).hexdigest()[:24]}@juventus-calendar"
     result["home_away"] = "Casa" if _is_juventus(str(result.get("home_team"))) else "Trasferta"
     if result.get("neutral"):
         result["home_away"] = "Campo neutro"
-    result["title"] = f"{result['home_team']} - {result['away_team']}"
+    base_title = f"{result['home_team']} - {result['away_team']}"
     family = _competition_family(str(result.get("competition") or ""))
     if not result.get("broadcast_it") and family in BROADCASTERS_BY_COMPETITION:
         result["broadcast_it"], result["broadcast_source_url"] = BROADCASTERS_BY_COMPETITION[family]
@@ -693,12 +808,49 @@ def _canonical_event(event: dict[str, Any], previous: list[dict[str, Any]], chan
     if not result.get("time_source") and not result.get("all_day"):
         result["time_source"] = str(result.get("source") or "")
         result["time_source_url"] = str(result.get("source_url") or "")
+
+    explicitly_cleared = result.get("postponed") is False
+    if not explicitly_cleared and _is_postponed(result):
+        result["postponed"] = True
+        result.setdefault(
+            "postponed_from",
+            str((old or {}).get("postponed_from") or (old or {}).get("start") or result["start"]),
+        )
+        result.setdefault("postponed_to", "")
+    elif not explicitly_cleared and old and old.get("postponed"):
+        if str(result.get("start")) != str(old.get("start")):
+            result["postponed"] = True
+            result["postponed_from"] = str(old.get("postponed_from") or old.get("start") or "")
+            result["postponed_to"] = str(result["start"])
+            if old.get("postponement_reason") and not result.get("postponement_reason"):
+                result["postponement_reason"] = old["postponement_reason"]
+        elif old.get("postponed_to"):
+            for key in ("postponed", "postponed_from", "postponed_to", "postponement_reason"):
+                if old.get(key) and not result.get(key):
+                    result[key] = old[key]
+
+    if result.get("postponed"):
+        postponed_to = str(result.get("postponed_to") or "")
+        if postponed_to:
+            new_date = date.fromisoformat(postponed_to[:10]).strftime("%d/%m/%Y")
+            result["title"] = f"RINVIATA AL {new_date} — {base_title}"
+        else:
+            result["title"] = f"RINVIATA — DATA DA DESTINARSI — {base_title}"
+            result["start"] = str(result.get("postponed_from") or result["start"])[:10]
+            result["all_day"] = True
+    else:
+        result.pop("postponed", None)
+        result["title"] = base_title
     ignored = {"last_modified", "sequence"}
     comparable = {k: v for k, v in result.items() if k not in ignored}
     old_comparable = {k: v for k, v in (old or {}).items() if k not in ignored}
     changed = old is None or comparable != old_comparable
     result["last_modified"] = changed_at if changed else str(old.get("last_modified"))
     result["sequence"] = 0 if old is None else int(old.get("sequence") or 0) + (1 if changed else 0)
+    if used_uids is not None:
+        if result["uid"] in used_uids:
+            raise ValueError(f"UID duplicato non risolvibile: {result['uid']}")
+        used_uids.add(result["uid"])
     return result
 
 
@@ -715,7 +867,7 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
     for data in events:
         component = Event()
         component.add("uid", data["uid"])
-        component.add("summary", f"⚽ {data['title']}")
+        component.add("summary", f"⏸ {data['title']}" if data.get("postponed") else f"⚽ {data['title']}")
         start = _event_datetime(data).astimezone(ROME)
         if data.get("all_day"):
             component.add("dtstart", start.date())
@@ -727,6 +879,8 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
         component.add("dtstamp", modified.astimezone(timezone.utc))
         component.add("last-modified", modified.astimezone(timezone.utc))
         component.add("sequence", int(data.get("sequence") or 0))
+        if data.get("postponed"):
+            component.add("status", "CONFIRMED" if data.get("postponed_to") else "TENTATIVE")
         place = ", ".join(x for x in (str(data.get("venue") or ""), str(data.get("location") or "")) if x)
         if place:
             component.add("location", place)
@@ -737,20 +891,34 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
             f"Juventus: {data['home_away']}",
             f"Stato: {data.get('status', 'scheduled')}",
         ]
+        if data.get("postponed"):
+            details.append(
+                "Rinvio: "
+                + (f"nuova data {str(data['postponed_to'])[:10]}" if data.get("postponed_to") else "data da destinarsi")
+            )
+            if data.get("postponed_from"):
+                details.append(f"Data originaria: {str(data['postponed_from'])[:10]}")
+            if data.get("postponement_reason"):
+                details.append(f"Motivo: {data['postponement_reason']}")
         labels = (
             ("round", "Turno"), ("venue", "Stadio"), ("location", "Località"),
-            ("broadcast_it", "Dove vederla in Italia"), ("broadcast_source_url", "Fonte TV"),
+            ("broadcast_it", "Dove vederla in Italia"),
             ("time_source", "Fonte orario"), ("time_source_url", "Link orario"), ("source_url", "Fonte principale"),
         )
         details.extend(f"{label}: {data[key]}" for key, label in labels if data.get(key))
+        broadcast_urls = data.get("broadcast_source_urls") or (
+            [data["broadcast_source_url"]] if data.get("broadcast_source_url") else []
+        )
+        details.extend(f"Fonte TV: {url}" for url in dict.fromkeys(str(x) for x in broadcast_urls if x))
         component.add("description", "\n".join(details))
         component.add("categories", [str(data["competition"]), "Juventus"])
         component.add("transp", "OPAQUE")
-        alarm = Alarm()
-        alarm.add("action", "DISPLAY")
-        alarm.add("description", f"Tra 2 ore e 30 minuti: {data['title']}")
-        alarm.add("trigger", timedelta(hours=-2, minutes=-30))
-        component.add_component(alarm)
+        if not data.get("postponed") or data.get("postponed_to"):
+            alarm = Alarm()
+            alarm.add("action", "DISPLAY")
+            alarm.add("description", f"Tra 2 ore e 30 minuti: {data['title']}")
+            alarm.add("trigger", timedelta(hours=-2, minutes=-30))
+            component.add_component(alarm)
         calendar.add_component(component)
     return calendar.to_ical()
 
@@ -799,7 +967,8 @@ def update_calendar(
         )
     remote = merge_remote_events(fetched.events)
     combined = merge_manual_events(remote, load_manual_events(manual_path))
-    canonical = [_canonical_event(item, previous, changed_at) for item in combined]
+    used_uids: set[str] = set()
+    canonical = [_canonical_event(item, previous, changed_at, used_uids) for item in combined]
     old_core = [{k: v for k, v in x.items() if k not in {"last_modified", "sequence"}} for x in previous]
     new_core = [{k: v for k, v in x.items() if k not in {"last_modified", "sequence"}} for x in canonical]
     last_changed = (
