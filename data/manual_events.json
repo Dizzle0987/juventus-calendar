@@ -1,0 +1,21 @@
+{
+  "events": [],
+  "example": {
+    "enabled": false,
+    "id": "friendly-opponent-season",
+    "home_team": "Juventus",
+    "away_team": "Avversaria",
+    "competition": "Amichevole",
+    "round": "Preparazione",
+    "start": "2026-08-14",
+    "venue": "",
+    "location": "",
+    "neutral": false,
+    "status": "scheduled",
+    "source_url": "",
+    "time_source": "",
+    "time_source_url": "",
+    "broadcast_it": "",
+    "broadcast_source_url": ""
+  }
+}
