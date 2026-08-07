@@ -236,6 +236,54 @@ def test_uid_is_stable_after_date_time_venue_round_and_tv_changes():
     assert _uid_for(before) == _uid_for(after)
 
 
+def test_uid_survives_multi_month_postponement_and_changed_source_id(tmp_path, monkeypatch):
+    write_manual(tmp_path)
+    original = base_event(
+        source_id="old-id",
+        competition="Coppa Italia",
+        round="Finale",
+        start="2026-05-10T18:45:00+00:00",
+    )
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([original], ["Juventus"], []),
+    )
+    first = update_calendar(tmp_path, session=object(), today=date(2026, 5, 1))[0]
+    moved = dict(original, source_id="new-id", start="2026-08-20T18:45:00+00:00")
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([moved], ["Juventus"], []),
+    )
+    second = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))[0]
+    assert second["uid"] == first["uid"]
+    assert second["sequence"] == 1
+
+
+def test_home_and_away_legs_have_unique_uids_and_legacy_collision_is_migrated(tmp_path, monkeypatch):
+    write_manual(tmp_path)
+    home_leg = base_event(source_id="home-leg")
+    away_leg = base_event(
+        source_id="away-leg",
+        home_team="Roma",
+        away_team="Juventus",
+        round="24",
+        start="2027-02-14T19:45:00+00:00",
+    )
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([home_leg, away_leg], ["Juventus"], []),
+    )
+    first = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))
+    assert len({event["uid"] for event in first}) == 2
+
+    events_path = tmp_path / "data" / "events.json"
+    payload = json.loads(events_path.read_text(encoding="utf-8"))
+    payload["events"][1]["uid"] = payload["events"][0]["uid"]
+    events_path.write_text(json.dumps(payload), encoding="utf-8")
+    migrated = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))
+    assert len({event["uid"] for event in migrated}) == 2
+
+
 def test_reversed_teams_in_tv_schedule_and_tv_does_not_create_fixture():
     club = base_event(home_team="Roma", away_team="Juventus", start="2026-09-12", all_day=True)
     matching = parse_schedule_html(
@@ -247,6 +295,30 @@ def test_reversed_teams_in_tv_schedule_and_tv_does_not_create_fixture():
     assert len(merged) == 1
     assert merged[0]["home_team"] == "Roma"
     assert merged[0]["start"] == "2026-09-12T20:45:00+02:00"
+
+
+def test_time_conflicts_are_recorded_and_highest_priority_wins():
+    club = base_event()
+    low = dict(
+        club,
+        source="Gazzetta dello Sport",
+        source_url="https://gazzetta.example",
+        start="2026-09-12T20:45:00+02:00",
+        _time_overlay=True,
+        _time_priority=40,
+    )
+    high = dict(
+        club,
+        source="DAZN",
+        source_url="https://dazn.example",
+        start="2026-09-12T21:00:00+02:00",
+        _time_overlay=True,
+        _time_priority=80,
+    )
+    merged = merge_remote_events([club, high, low])[0]
+    assert merged["start"] == "2026-09-12T21:00:00+02:00"
+    assert merged["time_source"] == "DAZN"
+    assert {item["source"] for item in merged["time_conflicts"]} == {"Gazzetta dello Sport"}
 
 
 def test_all_day_event_and_timed_transformation_keep_uid(tmp_path, monkeypatch):
@@ -266,6 +338,43 @@ def test_all_day_event_and_timed_transformation_keep_uid(tmp_path, monkeypatch):
     assert first["uid"] == second["uid"]
     assert first["all_day"] is True and second["all_day"] is False
     assert second["sequence"] == first["sequence"] + 1
+
+
+def test_postponed_match_is_annotated_then_rescheduled_with_same_uid(tmp_path, monkeypatch):
+    write_manual(tmp_path)
+    original = base_event(source_id="rain-delay")
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([original], ["Juventus"], []),
+    )
+    scheduled = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))[0]
+
+    pending = dict(original, status="STATUS_POSTPONED")
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([pending], ["Juventus"], []),
+    )
+    postponed = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))[0]
+    component = next(
+        item for item in Calendar.from_ical((tmp_path / "calendar.ics").read_bytes()).walk()
+        if item.name == "VEVENT"
+    )
+    assert postponed["uid"] == scheduled["uid"]
+    assert postponed["all_day"] is True
+    assert "RINVIATA — DATA DA DESTINARSI" in postponed["title"]
+    assert component.decoded("status") == b"TENTATIVE"
+    assert not any(item.name == "VALARM" for item in component.subcomponents)
+
+    new_start = "2027-01-20T19:45:00+01:00"
+    rescheduled_source = dict(original, start=new_start, status="Fixture")
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult([rescheduled_source], ["Juventus"], []),
+    )
+    rescheduled = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))[0]
+    assert rescheduled["uid"] == scheduled["uid"]
+    assert rescheduled["postponed_to"] == new_start
+    assert "RINVIATA AL 20/01/2027" in rescheduled["title"]
 
 
 def test_ical_timezone_alarm_tv_and_validity():
