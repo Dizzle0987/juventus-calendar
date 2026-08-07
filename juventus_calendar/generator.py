@@ -1,0 +1,823 @@
+from __future__ import annotations
+
+import hashlib
+import html as html_module
+import json
+import logging
+import os
+import re
+import tempfile
+import unicodedata
+from copy import deepcopy
+from dataclasses import dataclass
+from datetime import date, datetime, time, timedelta, timezone
+from pathlib import Path
+from typing import Any, Iterable
+from zoneinfo import ZoneInfo
+
+import requests
+from icalendar import Alarm, Calendar, Event
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+LOGGER = logging.getLogger(__name__)
+ROME = ZoneInfo("Europe/Rome")
+OFFICIAL_PAGE = "https://www.juventus.com/en/teams/first-team-men/fixtures-results/"
+OFFICIAL_API = "https://www.juventus.com/en/api/v1/matcheslist/team-first-team-men,season-{tag}"
+ESPN_API = (
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/"
+    "{competition}/teams/111/schedule?season={season}"
+)
+THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133676"
+OFFICIAL_OPTA_API = (
+    "https://api.performfeeds.com/soccerdata/match/1beaeep63zsv71a04kk2qk29pw"
+    "?ctst=bqbbqm98ud8obe45ds9ohgyrd&_lcl=en&_pgSz=200&_rt=c&_fmt=json&live=yes"
+)
+
+JUVENTUS_ALIASES = {
+    "juventus",
+    "juventus fc",
+    "juventus football club",
+    "juve",
+}
+EXCLUDED_SQUADS = (
+    "women",
+    "femminile",
+    "next gen",
+    "nextgen",
+    "primavera",
+    "under 23",
+    "u23",
+    "under 20",
+    "u20",
+    "under 19",
+    "u19",
+)
+TEAM_EQUIVALENTS = {
+    "internazionale": "inter",
+    "inter milan": "inter",
+    "fc internazionale": "inter",
+    "ogc nice": "nice",
+    "ogc nice cote dazur": "nice",
+}
+
+ESPN_COMPETITIONS = {
+    "ita.1": "Serie A",
+    "ita.coppa_italia": "Coppa Italia",
+    "ita.super_cup": "Supercoppa Italiana",
+    "uefa.champions": "UEFA Champions League",
+    "uefa.europa": "UEFA Europa League",
+    "uefa.europa.conf": "UEFA Conference League",
+    "fifa.cwc": "FIFA Club World Cup",
+    "club.friendly": "Amichevole",
+}
+
+# These pages are consulted only for explicit fixture/time statements. Their
+# entries enrich a fixture already found through Juventus/ESPN/TheSportsDB.
+TIME_SOURCES = (
+    ("Gazzetta dello Sport", "https://www.gazzetta.it/Calcio/Serie-A/Juventus/", 40, ""),
+    ("Juventus", OFFICIAL_PAGE, 50, ""),
+    ("DAZN", "https://www.dazn.com/it-IT/schedule", 80, "DAZN"),
+    ("Sky Sport/NOW", "https://sport.sky.it/calcio/serie-a", 80, "Sky Sport e NOW"),
+    ("NOW", "https://www.nowtv.it/sport/calcio/juventus", 80, "Sky Sport e NOW"),
+    (
+        "Mediaset Infinity",
+        "https://mediasetinfinity.mediaset.it/calcio-e-sport/",
+        80,
+        "Mediaset e Mediaset Infinity",
+    ),
+    ("Prime Video", "https://www.primevideo.com/storefront/sports", 80, "Prime Video"),
+)
+
+BROADCASTERS_BY_COMPETITION = {
+    "serie-a": ("DAZN; alcune partite anche su Sky Sport/NOW", "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6"),
+    "coppa-italia": ("Mediaset e Mediaset Infinity", "https://mediasetinfinity.mediaset.it/calcio-e-sport/"),
+    "supercoppa-italiana": ("Mediaset e Mediaset Infinity", "https://mediasetinfinity.mediaset.it/calcio-e-sport/"),
+    "champions-league": ("Sky Sport/NOW; possibile esclusiva Prime Video da verificare per la singola partita", "https://sport.sky.it/calcio/champions-league"),
+    "europa-league": ("Sky Sport e NOW", "https://sport.sky.it/calcio/europa-league"),
+    "conference-league": ("Sky Sport e NOW", "https://sport.sky.it/calcio/conference-league"),
+}
+
+
+class UpdateError(RuntimeError):
+    """Raised when no discovery source succeeds, preserving published files."""
+
+
+@dataclass
+class FetchResult:
+    events: list[dict[str, Any]]
+    successful_sources: list[str]
+    errors: list[str]
+
+
+def build_session() -> requests.Session:
+    session = requests.Session()
+    retry = Retry(
+        total=3,
+        backoff_factor=0.8,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+    )
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.headers.update(
+        {
+            "User-Agent": "juventus-calendar/1.0 (+https://github.com/Dizzle0987/juventus-calendar)",
+            "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
+        }
+    )
+    return session
+
+
+def season_start(today: date) -> int:
+    return today.year if today.month >= 7 else today.year - 1
+
+
+def season_tag(start_year: int) -> str:
+    return f"{start_year}-{str(start_year + 1)[-2:]}"
+
+
+def _normalize(value: str) -> str:
+    plain = unicodedata.normalize("NFKD", value or "")
+    ascii_value = "".join(char for char in plain if not unicodedata.combining(char))
+    return re.sub(r"[^a-z0-9]+", " ", ascii_value.lower()).strip()
+
+
+def _is_juventus(team: str) -> bool:
+    return _normalize(team) in JUVENTUS_ALIASES
+
+
+def _is_excluded_squad(team: str) -> bool:
+    normalized = _normalize(team)
+    return any(marker in normalized for marker in EXCLUDED_SQUADS)
+
+
+def _team_key(team: str) -> str:
+    normalized = TEAM_EQUIVALENTS.get(_normalize(team), _normalize(team))
+    ignored = {"afc", "cf", "fc", "football", "club", "calcio"}
+    return "-".join(token for token in normalized.split() if token not in ignored)
+
+
+def _competition_family(name: str) -> str:
+    value = _normalize(name)
+    mappings = (
+        (("serie a", "italian serie a"), "serie-a"),
+        (("coppa italia", "italian coppa italia"), "coppa-italia"),
+        (("supercoppa", "italian super cup"), "supercoppa-italiana"),
+        (("champions",), "champions-league"),
+        (("europa conference", "conference league"), "conference-league"),
+        (("europa",), "europa-league"),
+        (("club world cup", "coppa del mondo per club"), "fifa-club-world-cup"),
+        (("friendly", "amichevole", "friendlies"), "amichevole"),
+    )
+    for needles, family in mappings:
+        if any(needle in value for needle in needles):
+            return family
+    return value.replace(" ", "-") or "altra-competizione"
+
+
+def _valid_first_team_fixture(home: str, away: str) -> bool:
+    return bool(home and away and (_is_juventus(home) or _is_juventus(away))) and not (
+        _is_excluded_squad(home) or _is_excluded_squad(away)
+    )
+
+
+def parse_official_json(payload: Any, source_url: str = OFFICIAL_PAGE) -> list[dict[str, Any]]:
+    """Parse Juventus' structured first-team match endpoint."""
+    items = payload if isinstance(payload, list) else payload.get("matches", [])
+    events: list[dict[str, Any]] = []
+    for item in items or []:
+        if not isinstance(item, dict):
+            continue
+        home = str(item.get("TeamHome") or item.get("homeTeam") or "").strip()
+        away = str(item.get("TeamAway") or item.get("awayTeam") or "").strip()
+        if not _valid_first_team_fixture(home, away):
+            continue
+        raw_start = str(item.get("KickOffDateTime") or item.get("datetime") or "").strip()
+        if not raw_start:
+            continue
+        parsed = datetime.fromisoformat(raw_start.replace("Z", "+00:00"))
+        is_tbc = bool(item.get("IgnoreTime") or item.get("datetimeTBC"))
+        start = parsed.astimezone(ROME).date().isoformat() if is_tbc else parsed.isoformat()
+        provider_id = str(item.get("MatchProviderId") or item.get("providerId") or "")
+        events.append(
+            {
+                "source_id": provider_id,
+                "source": "Juventus",
+                "source_url": source_url,
+                "home_team": home,
+                "away_team": away,
+                "competition": str(item.get("CompetitionName") or item.get("competitionName") or "Partita"),
+                "round": str(item.get("Round") or item.get("MatchDay") or item.get("matchDay") or ""),
+                "venue": str(item.get("Venue") or item.get("stadiumName") or ""),
+                "location": str(item.get("Location") or ""),
+                "start": start,
+                "all_day": is_tbc,
+                "status": "finished" if item.get("IsFinished") else "scheduled",
+                "time_source": "Juventus" if not is_tbc else "",
+                "time_source_url": source_url if not is_tbc else "",
+            }
+        )
+    return events
+
+
+def parse_official_html(html: str, source_url: str = OFFICIAL_PAGE) -> list[dict[str, Any]]:
+    """Fallback parser for the server-rendered 'Next matches' cards."""
+    cards = re.findall(r'<div class="next-match swiper-slide">(.*?)</div>\s*</div>\s*</div>', html, re.S)
+    events: list[dict[str, Any]] = []
+    for card in cards:
+        teams = re.findall(r'jcom-nm__team__name">\s*([^<]+)', card)
+        stamp = re.search(r'data-matchtime="([^"]+)"', card)
+        competition = re.search(r'next-match-content__header">\s*<span>([^<]+)', card)
+        venue = re.search(r'data-venue="([^"]*)"', card)
+        if len(teams) < 2 or not stamp or not _valid_first_team_fixture(teams[0], teams[1]):
+            continue
+        parsed = datetime.strptime(stamp.group(1), "%d/%m/%Y %H:%M:%S").replace(tzinfo=timezone.utc)
+        events.append(
+            {
+                "source_id": "",
+                "source": "Juventus",
+                "source_url": source_url,
+                "home_team": html_module.unescape(teams[0]).strip(),
+                "away_team": html_module.unescape(teams[1]).strip(),
+                "competition": html_module.unescape(competition.group(1)).strip() if competition else "Partita",
+                "round": "",
+                "venue": html_module.unescape(venue.group(1)).strip() if venue else "",
+                "location": "",
+                "start": parsed.isoformat(),
+                "all_day": False,
+                "status": "scheduled",
+                "time_source": "Juventus",
+                "time_source_url": source_url,
+            }
+        )
+    return events
+
+
+def parse_espn_json(payload: dict[str, Any], default_competition: str) -> list[dict[str, Any]]:
+    events: list[dict[str, Any]] = []
+    for item in payload.get("events", []):
+        competition = (item.get("competitions") or [{}])[0]
+        competitors = competition.get("competitors") or []
+        home_entry = next((x for x in competitors if x.get("homeAway") == "home"), None)
+        away_entry = next((x for x in competitors if x.get("homeAway") == "away"), None)
+        if not home_entry or not away_entry:
+            continue
+        home = str((home_entry.get("team") or {}).get("displayName") or "").strip()
+        away = str((away_entry.get("team") or {}).get("displayName") or "").strip()
+        if not _valid_first_team_fixture(home, away):
+            continue
+        raw_start = str(item.get("date") or "")
+        if not raw_start:
+            continue
+        parsed = datetime.fromisoformat(raw_start.replace("Z", "+00:00"))
+        status = (item.get("status") or {}).get("type") or {}
+        detail = str(status.get("detail") or "").upper()
+        time_valid = not any(marker in detail for marker in ("TBD", "TBA", "TBC"))
+        event_url = next((x.get("href") for x in item.get("links", []) if x.get("href")), "")
+        events.append(
+            {
+                "source_id": str(item.get("id") or ""),
+                "source": "ESPN",
+                "source_url": event_url or "https://www.espn.com/soccer/team/fixtures/_/id/111/juventus",
+                "home_team": home,
+                "away_team": away,
+                "competition": str((item.get("league") or {}).get("name") or default_competition),
+                "round": str(competition.get("round") or ""),
+                "venue": str((competition.get("venue") or {}).get("fullName") or ""),
+                "location": str(((competition.get("venue") or {}).get("address") or {}).get("city") or ""),
+                "start": parsed.isoformat() if time_valid else parsed.astimezone(ROME).date().isoformat(),
+                "all_day": not time_valid,
+                "status": str(status.get("name") or "scheduled"),
+                "time_source": "ESPN" if time_valid else "",
+                "time_source_url": event_url if time_valid else "",
+            }
+        )
+    return events
+
+
+def parse_thesportsdb_json(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    events: list[dict[str, Any]] = []
+    for item in payload.get("events") or []:
+        home = str(item.get("strHomeTeam") or "").strip()
+        away = str(item.get("strAwayTeam") or "").strip()
+        if not _valid_first_team_fixture(home, away):
+            continue
+        timestamp = str(item.get("strTimestamp") or "").strip()
+        if timestamp:
+            parsed = datetime.fromisoformat(timestamp.replace("Z", "+00:00"))
+            parsed = parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+            start, all_day = parsed.isoformat(), False
+        else:
+            start = str(item.get("dateEvent") or "").strip()
+            if not start:
+                continue
+            all_day = True
+        event_id = str(item.get("idEvent") or "")
+        events.append(
+            {
+                "source_id": event_id,
+                "source": "TheSportsDB",
+                "source_url": f"https://www.thesportsdb.com/event/{event_id}" if event_id else "https://www.thesportsdb.com/",
+                "home_team": home,
+                "away_team": away,
+                "competition": str(item.get("strLeague") or "Partita"),
+                "round": str(item.get("intRound") or ""),
+                "venue": str(item.get("strVenue") or ""),
+                "location": str(item.get("strCity") or item.get("strCountry") or ""),
+                "start": start,
+                "all_day": all_day,
+                "status": str(item.get("strStatus") or "scheduled"),
+                "time_source": "TheSportsDB" if not all_day else "",
+                "time_source_url": f"https://www.thesportsdb.com/event/{event_id}" if not all_day and event_id else "",
+            }
+        )
+    return events
+
+
+def parse_official_opta_json(payload: dict[str, Any], source_url: str = OFFICIAL_PAGE) -> list[dict[str, Any]]:
+    """Parse the structured Opta feed loaded by Juventus' official calendar."""
+    events: list[dict[str, Any]] = []
+    for wrapper in payload.get("match") or []:
+        info = wrapper.get("matchInfo") or {}
+        contestants = info.get("contestant") or []
+        home_entry = next((x for x in contestants if x.get("position") == "home"), None)
+        away_entry = next((x for x in contestants if x.get("position") == "away"), None)
+        if not home_entry or not away_entry:
+            continue
+        home = str(home_entry.get("name") or home_entry.get("officialName") or "").strip()
+        away = str(away_entry.get("name") or away_entry.get("officialName") or "").strip()
+        if not _valid_first_team_fixture(home, away):
+            continue
+        raw_date = str(info.get("date") or "").removesuffix("Z")
+        raw_time = str(info.get("time") or "").removesuffix("Z")
+        if not raw_date:
+            continue
+        if raw_time:
+            parsed = datetime.fromisoformat(f"{raw_date}T{raw_time}+00:00")
+            start, all_day = parsed.isoformat(), False
+        else:
+            start, all_day = raw_date, True
+        competition = info.get("competition") or {}
+        venue = info.get("venue") or {}
+        stage = info.get("stage") or {}
+        round_parts = [str(stage.get("name") or "").strip()]
+        if info.get("week"):
+            round_parts.append(f"Giornata {info['week']}")
+        events.append(
+            {
+                "source_id": str(info.get("id") or ""),
+                "source": "Juventus",
+                "source_url": source_url,
+                "home_team": home,
+                "away_team": away,
+                "competition": str(competition.get("name") or competition.get("knownName") or "Partita"),
+                "round": " · ".join(x for x in round_parts if x),
+                "venue": str(venue.get("longName") or venue.get("shortName") or ""),
+                "location": str((competition.get("country") or {}).get("name") or ""),
+                "neutral": str(venue.get("neutral") or "").lower() == "yes",
+                "start": start,
+                "all_day": all_day,
+                "status": "finished" if (wrapper.get("liveData") or {}).get("matchDetails", {}).get("matchStatus") == "Played" else "scheduled",
+                "time_source": "Juventus" if not all_day else "",
+                "time_source_url": source_url if not all_day else "",
+            }
+        )
+    return events
+
+
+def _json_strings(value: Any) -> Iterable[str]:
+    if isinstance(value, str):
+        yield value
+    elif isinstance(value, dict):
+        for child in value.values():
+            yield from _json_strings(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from _json_strings(child)
+
+
+def parse_schedule_html(
+    html: str,
+    source: str,
+    source_url: str,
+    year: int,
+    priority: int = 0,
+    broadcaster: str = "",
+) -> list[dict[str, Any]]:
+    """Parse explicit Italian date/time statements from JSON-LD or page state."""
+    fragments: list[str] = []
+    for raw in re.findall(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.I | re.S
+    ):
+        try:
+            fragments.extend(_json_strings(json.loads(html_module.unescape(raw))))
+        except (json.JSONDecodeError, TypeError):
+            continue
+    fragments.append(html_module.unescape(re.sub(r"<[^>]+>", " ", html)))
+    text = " ".join(re.sub(r"\s+", " ", part) for part in fragments)
+    months = {
+        "gennaio": 1, "febbraio": 2, "marzo": 3, "aprile": 4, "maggio": 5, "giugno": 6,
+        "luglio": 7, "agosto": 8, "settembre": 9, "ottobre": 10, "novembre": 11, "dicembre": 12,
+    }
+    weekday = r"(?:lun(?:ed[iì])?|mar(?:ted[iì])?|mer(?:coled[iì])?|gio(?:ved[iì])?|ven(?:erd[iì])?|sab(?:ato)?|dom(?:enica)?)"
+    team = r"[A-Za-zÀ-ÿ0-9 .']+?"
+    patterns = (
+        re.compile(
+            rf"(?:{weekday}\s+)?(?P<day>\d{{1,2}})\s+(?P<month>{'|'.join(months)})"
+            rf"\s*[,]?\s*(?:ore\s*)?(?P<hour>\d{{1,2}})[:.](?P<minute>\d{{2}})\s*[-–:]\s*"
+            rf"(?P<home>{team})\s+(?:vs|[-–])\s+(?P<away>{team})(?=[.;]|\s{{2,}}|$)", re.I
+        ),
+        re.compile(
+            rf"(?P<home>{team})\s+(?:vs|[-–])\s+(?P<away>{team})\s*[:,\-]\s*"
+            rf"(?:{weekday}\s+)?(?P<day>\d{{1,2}})\s+(?P<month>{'|'.join(months)})"
+            rf"\s*[,]?\s*(?:ore\s*)?(?P<hour>\d{{1,2}})[:.](?P<minute>\d{{2}})", re.I
+        ),
+    )
+    found: list[dict[str, Any]] = []
+    seen: set[tuple[str, str, str]] = set()
+    for pattern in patterns:
+        for match in pattern.finditer(text):
+            home = match.group("home").strip(" .,-–")
+            away = match.group("away").strip(" .,-–")
+            if not _valid_first_team_fixture(home, away):
+                continue
+            start = datetime(
+                year, months[match.group("month").lower()], int(match.group("day")),
+                int(match.group("hour")), int(match.group("minute")), tzinfo=ROME,
+            )
+            key = tuple(sorted((_team_key(home), _team_key(away)))) + (start.isoformat(),)
+            if key in seen:
+                continue
+            seen.add(key)
+            found.append(
+                {
+                    "source": source,
+                    "source_url": source_url,
+                    "home_team": home,
+                    "away_team": away,
+                    "competition": "Partita",
+                    "start": start.isoformat(),
+                    "all_day": False,
+                    "_time_overlay": True,
+                    "_time_priority": priority,
+                    "broadcast_it": broadcaster,
+                    "broadcast_source_url": source_url if broadcaster else "",
+                }
+            )
+    return found
+
+
+def fetch_remote_events(session: requests.Session, today: date) -> FetchResult:
+    events: list[dict[str, Any]] = []
+    successful: list[str] = []
+    errors: list[str] = []
+    start_year = season_start(today)
+
+    official_ok = False
+    for year in (start_year - 1, start_year):
+        url = OFFICIAL_API.format(tag=season_tag(year))
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            parsed = parse_official_json(response.json(), OFFICIAL_PAGE)
+            events.extend(parsed)
+            official_ok = official_ok or bool(parsed)
+        except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+            errors.append(f"Juventus {year}: {exc}")
+    if official_ok:
+        successful.append("Juventus")
+    else:
+        try:
+            response = session.get(OFFICIAL_PAGE, timeout=30)
+            response.raise_for_status()
+            parsed = parse_official_html(response.text)
+            events.extend(parsed)
+            if parsed:
+                successful.append("Juventus")
+        except requests.RequestException as exc:
+            errors.append(f"Juventus pagina: {exc}")
+
+    try:
+        response = session.get(
+            OFFICIAL_OPTA_API,
+            timeout=30,
+            headers={"Origin": "https://www.juventus.com", "Referer": OFFICIAL_PAGE},
+        )
+        response.raise_for_status()
+        opta_events = parse_official_opta_json(response.json(), OFFICIAL_PAGE)
+        active_seasons = {start_year - 1, start_year}
+        events.extend(item for item in opta_events if _season_for(item) in active_seasons)
+        if opta_events and "Juventus" not in successful:
+            successful.append("Juventus")
+    except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+        errors.append(f"Juventus Opta: {exc}")
+
+    espn_ok = False
+    for competition, name in ESPN_COMPETITIONS.items():
+        for season in (start_year, start_year + 1):
+            url = ESPN_API.format(competition=competition, season=season)
+            try:
+                response = session.get(url, timeout=20)
+                response.raise_for_status()
+                parsed = parse_espn_json(response.json(), name)
+                events.extend(parsed)
+                espn_ok = espn_ok or bool(parsed)
+            except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+                errors.append(f"ESPN {competition}/{season}: {exc}")
+    if espn_ok:
+        successful.append("ESPN")
+
+    try:
+        response = session.get(THESPORTSDB_API, timeout=20)
+        response.raise_for_status()
+        parsed = parse_thesportsdb_json(response.json())
+        events.extend(parsed)
+        if parsed:
+            successful.append("TheSportsDB")
+    except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+        errors.append(f"TheSportsDB: {exc}")
+
+    for source, url, priority, broadcaster in TIME_SOURCES:
+        try:
+            response = session.get(url, timeout=20)
+            response.raise_for_status()
+            overlays = parse_schedule_html(response.text, source, url, start_year, priority, broadcaster)
+            events.extend(overlays)
+            if overlays:
+                successful.append(source)
+        except requests.RequestException as exc:
+            errors.append(f"{source}: {exc}")
+
+    return FetchResult(events, list(dict.fromkeys(successful)), errors)
+
+
+def _event_datetime(event: dict[str, Any]) -> datetime:
+    raw = str(event["start"])
+    if event.get("all_day") or len(raw) == 10:
+        return datetime.combine(date.fromisoformat(raw[:10]), time.min, tzinfo=ROME)
+    parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=ROME)
+
+
+def _season_for(event: dict[str, Any]) -> int:
+    value = _event_datetime(event).astimezone(ROME)
+    return value.year if value.month >= 7 else value.year - 1
+
+
+def _semantic_base(event: dict[str, Any]) -> str:
+    teams = (_team_key(str(event.get("home_team") or "")), _team_key(str(event.get("away_team") or "")))
+    return "|".join((str(_season_for(event)), *teams, _competition_family(str(event.get("competition") or ""))))
+
+
+def _uid_for(event: dict[str, Any]) -> str:
+    explicit = str(event.get("uid") or event.get("id") or "").strip()
+    if explicit:
+        return explicit if "@" in explicit else f"{explicit}@juventus-calendar"
+    return f"{hashlib.sha256(_semantic_base(event).encode()).hexdigest()[:24]}@juventus-calendar"
+
+
+def _same_fixture(left: dict[str, Any], right: dict[str, Any], *, unordered: bool = False) -> bool:
+    left_teams = (_team_key(str(left.get("home_team") or "")), _team_key(str(left.get("away_team") or "")))
+    right_teams = (_team_key(str(right.get("home_team") or "")), _team_key(str(right.get("away_team") or "")))
+    if unordered:
+        teams_match = sorted(left_teams) == sorted(right_teams)
+    else:
+        teams_match = left_teams == right_teams
+    if not teams_match:
+        return False
+    delta = abs((_event_datetime(left) - _event_datetime(right)).total_seconds())
+    if unordered:
+        return delta <= 72 * 3600
+    return delta <= 72 * 3600 and (
+        _competition_family(str(left.get("competition") or "")) == _competition_family(str(right.get("competition") or ""))
+        or "partita" in {_competition_family(str(left.get("competition") or "")), _competition_family(str(right.get("competition") or ""))}
+    )
+
+
+def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    candidates = list(events)
+    base = [x for x in candidates if not x.get("_time_overlay")]
+    overlays = [x for x in candidates if x.get("_time_overlay")]
+    priority = {"Juventus": 0, "ESPN": 1, "TheSportsDB": 2}
+    merged: list[dict[str, Any]] = []
+    for candidate in sorted(base, key=lambda x: priority.get(str(x.get("source")), 9)):
+        existing = next((x for x in merged if _same_fixture(x, candidate)), None)
+        if existing is None:
+            merged.append(deepcopy(candidate))
+        else:
+            for key, value in candidate.items():
+                if not existing.get(key) and value:
+                    existing[key] = value
+    for overlay in sorted(overlays, key=lambda x: int(x.get("_time_priority") or 0)):
+        existing = next((x for x in merged if _same_fixture(x, overlay, unordered=True)), None)
+        if existing is None:
+            continue
+        existing["start"] = overlay["start"]
+        existing["all_day"] = False
+        existing["time_source"] = overlay["source"]
+        existing["time_source_url"] = overlay["source_url"]
+        if overlay.get("broadcast_it"):
+            existing["broadcast_it"] = overlay["broadcast_it"]
+            existing["broadcast_source_url"] = overlay.get("broadcast_source_url", "")
+    return sorted(merged, key=_event_datetime)
+
+
+def load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return deepcopy(default)
+    with path.open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def load_manual_events(path: Path) -> list[dict[str, Any]]:
+    payload = load_json(path, {"events": []})
+    items = payload.get("events", []) if isinstance(payload, dict) else payload
+    if not isinstance(items, list):
+        raise ValueError("data/manual_events.json deve contenere una lista o un oggetto con 'events'")
+    result: list[dict[str, Any]] = []
+    for index, item in enumerate(items):
+        if not isinstance(item, dict):
+            raise ValueError(f"Evento manuale #{index + 1} non valido")
+        if item.get("enabled") is False:
+            continue
+        missing = sorted({"home_team", "away_team", "competition", "start"} - item.keys())
+        if missing:
+            raise ValueError(f"Evento manuale #{index + 1}: campi mancanti: {', '.join(missing)}")
+        event = deepcopy(item)
+        event.pop("enabled", None)
+        event.setdefault("source", "Manuale")
+        event.setdefault("source_url", "")
+        event.setdefault("round", "")
+        event.setdefault("venue", "")
+        event.setdefault("location", "")
+        event.setdefault("all_day", len(str(event["start"])) == 10)
+        event.setdefault("status", "scheduled")
+        result.append(event)
+    return result
+
+
+def merge_manual_events(remote: list[dict[str, Any]], manual: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged = deepcopy(remote)
+    for candidate in manual:
+        uid = _uid_for(candidate)
+        index = next(
+            (i for i, event in enumerate(merged) if _uid_for(event) == uid or _same_fixture(event, candidate, unordered=True)),
+            None,
+        )
+        if index is None:
+            merged.append(deepcopy(candidate))
+        else:
+            merged[index].update(deepcopy(candidate))
+    return sorted(merged, key=_event_datetime)
+
+
+def _canonical_event(event: dict[str, Any], previous: list[dict[str, Any]], changed_at: str) -> dict[str, Any]:
+    result = deepcopy(event)
+    result.pop("_time_overlay", None)
+    result.pop("_time_priority", None)
+    result["uid"] = _uid_for(result)
+    old = next((x for x in previous if x.get("uid") == result["uid"]), None)
+    if old is None:
+        old = next((x for x in previous if _same_fixture(x, result, unordered=True)), None)
+        if old and old.get("uid"):
+            result["uid"] = str(old["uid"])
+    result["home_away"] = "Casa" if _is_juventus(str(result.get("home_team"))) else "Trasferta"
+    if result.get("neutral"):
+        result["home_away"] = "Campo neutro"
+    result["title"] = f"{result['home_team']} - {result['away_team']}"
+    family = _competition_family(str(result.get("competition") or ""))
+    if not result.get("broadcast_it") and family in BROADCASTERS_BY_COMPETITION:
+        result["broadcast_it"], result["broadcast_source_url"] = BROADCASTERS_BY_COMPETITION[family]
+    result.setdefault("broadcast_it", "Da definire")
+    result.setdefault("broadcast_source_url", "")
+    if not result.get("time_source") and not result.get("all_day"):
+        result["time_source"] = str(result.get("source") or "")
+        result["time_source_url"] = str(result.get("source_url") or "")
+    ignored = {"last_modified", "sequence"}
+    comparable = {k: v for k, v in result.items() if k not in ignored}
+    old_comparable = {k: v for k, v in (old or {}).items() if k not in ignored}
+    changed = old is None or comparable != old_comparable
+    result["last_modified"] = changed_at if changed else str(old.get("last_modified"))
+    result["sequence"] = 0 if old is None else int(old.get("sequence") or 0) + (1 if changed else 0)
+    return result
+
+
+def build_ical(events: list[dict[str, Any]]) -> bytes:
+    calendar = Calendar()
+    calendar.add("prodid", "-//Juventus Calendar//Dizzle0987//IT")
+    calendar.add("version", "2.0")
+    calendar.add("calscale", "GREGORIAN")
+    calendar.add("method", "PUBLISH")
+    calendar.add("x-wr-calname", "Juventus Calendar")
+    calendar.add("x-wr-timezone", "Europe/Rome")
+    calendar.add("x-published-ttl", "PT6H")
+    calendar.add("refresh-interval", "PT6H", parameters={"VALUE": "DURATION"})
+    for data in events:
+        component = Event()
+        component.add("uid", data["uid"])
+        component.add("summary", f"⚽ {data['title']}")
+        start = _event_datetime(data).astimezone(ROME)
+        if data.get("all_day"):
+            component.add("dtstart", start.date())
+            component.add("dtend", start.date() + timedelta(days=1))
+        else:
+            component.add("dtstart", start)
+            component.add("dtend", start + timedelta(hours=2))
+        modified = datetime.fromisoformat(str(data["last_modified"]).replace("Z", "+00:00"))
+        component.add("dtstamp", modified.astimezone(timezone.utc))
+        component.add("last-modified", modified.astimezone(timezone.utc))
+        component.add("sequence", int(data.get("sequence") or 0))
+        place = ", ".join(x for x in (str(data.get("venue") or ""), str(data.get("location") or "")) if x)
+        if place:
+            component.add("location", place)
+        if data.get("source_url"):
+            component.add("url", str(data["source_url"]))
+        details = [
+            f"Competizione: {data['competition']}",
+            f"Juventus: {data['home_away']}",
+            f"Stato: {data.get('status', 'scheduled')}",
+        ]
+        labels = (
+            ("round", "Turno"), ("venue", "Stadio"), ("location", "Località"),
+            ("broadcast_it", "Dove vederla in Italia"), ("broadcast_source_url", "Fonte TV"),
+            ("time_source", "Fonte orario"), ("time_source_url", "Link orario"), ("source_url", "Fonte principale"),
+        )
+        details.extend(f"{label}: {data[key]}" for key, label in labels if data.get(key))
+        component.add("description", "\n".join(details))
+        component.add("categories", [str(data["competition"]), "Juventus"])
+        component.add("transp", "OPAQUE")
+        alarm = Alarm()
+        alarm.add("action", "DISPLAY")
+        alarm.add("description", f"Tra 2 ore e 30 minuti: {data['title']}")
+        alarm.add("trigger", timedelta(hours=-2, minutes=-30))
+        component.add_component(alarm)
+        calendar.add_component(component)
+    return calendar.to_ical()
+
+
+def _atomic_write_many(files: dict[Path, bytes]) -> None:
+    staged: list[tuple[Path, Path]] = []
+    try:
+        for path, content in files.items():
+            if path.exists() and path.read_bytes() == content:
+                continue
+            path.parent.mkdir(parents=True, exist_ok=True)
+            fd, temp_name = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
+            temp_path = Path(temp_name)
+            with os.fdopen(fd, "wb") as handle:
+                handle.write(content)
+                handle.flush()
+                os.fsync(handle.fileno())
+            staged.append((temp_path, path))
+        for temp_path, path in staged:
+            os.replace(temp_path, path)
+    finally:
+        for temp_path, _ in staged:
+            if temp_path.exists():
+                temp_path.unlink()
+
+
+def update_calendar(
+    root: Path,
+    session: requests.Session | None = None,
+    today: date | None = None,
+) -> list[dict[str, Any]]:
+    root = root.resolve()
+    events_path = root / "data" / "events.json"
+    manual_path = root / "data" / "manual_events.json"
+    previous_payload = load_json(events_path, {"events": []})
+    previous = previous_payload.get("events", []) if isinstance(previous_payload, dict) else []
+    changed_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    fetched = fetch_remote_events(session or build_session(), today or datetime.now(ROME).date())
+    discovery_sources = {"Juventus", "ESPN", "TheSportsDB"}
+    if not discovery_sources.intersection(fetched.successful_sources) or not any(
+        not item.get("_time_overlay") for item in fetched.events
+    ):
+        raise UpdateError(
+            "Nessuna fonte di scoperta disponibile; gli output precedenti sono rimasti invariati. "
+            + "; ".join(fetched.errors[:3])
+        )
+    remote = merge_remote_events(fetched.events)
+    combined = merge_manual_events(remote, load_manual_events(manual_path))
+    canonical = [_canonical_event(item, previous, changed_at) for item in combined]
+    old_core = [{k: v for k, v in x.items() if k not in {"last_modified", "sequence"}} for x in previous]
+    new_core = [{k: v for k, v in x.items() if k not in {"last_modified", "sequence"}} for x in canonical]
+    last_changed = (
+        str(previous_payload.get("last_changed"))
+        if isinstance(previous_payload, dict) and old_core == new_core and previous_payload.get("last_changed")
+        else changed_at
+    )
+    payload = {
+        "schema_version": 1,
+        "timezone": "Europe/Rome",
+        "last_changed": last_changed,
+        "sources_used": fetched.successful_sources,
+        "source_errors": fetched.errors,
+        "event_count": len(canonical),
+        "events": canonical,
+    }
+    json_bytes = (json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode()
+    ical_bytes = build_ical(canonical)
+    _atomic_write_many({events_path: json_bytes, root / "calendar.ics": ical_bytes})
+    LOGGER.info("Generati %d eventi da %s", len(canonical), ", ".join(fetched.successful_sources))
+    return canonical
