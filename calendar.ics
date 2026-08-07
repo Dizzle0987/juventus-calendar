@@ -1,0 +1,2378 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Juventus Calendar//Dizzle0987//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Juventus Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Rome
+BEGIN:VEVENT
+SUMMARY:⚽ Real Madrid - Juventus
+DTSTART;TZID=Europe/Rome:20250701T210000
+DTEND;TZID=Europe/Rome:20250701T230000
+DTSTAMP:20260807T071517Z
+UID:626de71b5c6fec7384f4c2a4@juventus-calendar
+SEQUENCE:0
+CATEGORIES:FIFA Club World Cup,Juventus
+DESCRIPTION:Competizione: FIFA Club World Cup\nJuventus: Campo neutro\nSta
+ to: finished\nTurno: 8th Finals\nStadio: Hard Rock Stadium\nLocalità: Wor
+ ld\nDove vederla in Italia: Da definire\nFonte orario: Juventus\nLink orar
+ io: https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFo
+ nte principale: https://www.juventus.com/en/teams/first-team-men/fixtures-
+ results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Hard Rock Stadium\, World
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Real Madrid - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Reggiana
+DTSTART;TZID=Europe/Rome:20250802T110000
+DTEND;TZID=Europe/Rome:20250802T130000
+DTSTAMP:20260807T071336Z
+UID:cbd398cf408ca2dc07a1bf66@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nStad
+ io: Juventus Training Center\nDove vederla in Italia: Da definire\nFonte o
+ rario: Juventus\nLink orario: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Juventus Training Center
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Reggiana
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Borussia Dortmund - Juventus
+DTSTART;TZID=Europe/Rome:20250810T173000
+DTEND;TZID=Europe/Rome:20250810T193000
+DTSTAMP:20260807T071336Z
+UID:8dac50db4c7d1d69e986b001@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nStato: scheduled\
+ nStadio: Signal Iduna Park\, Dortmund\nDove vederla in Italia: Da definire
+ \nFonte orario: Juventus\nLink orario: https://www.juventus.com/en/teams/f
+ irst-team-men/fixtures-results/\nFonte principale: https://www.juventus.co
+ m/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Signal Iduna Park\, Dortmund
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Borussia Dortmund - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Atalanta - Juventus
+DTSTART;TZID=Europe/Rome:20250816T204500
+DTEND;TZID=Europe/Rome:20250816T224500
+DTSTAMP:20260807T071336Z
+UID:4a860d409212d9b05ca4d7f3@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nStato: scheduled\
+ nStadio: Bergamo Stadium\nDove vederla in Italia: Da definire\nFonte orari
+ o: Juventus\nLink orario: https://www.juventus.com/en/teams/first-team-men
+ /fixtures-results/\nFonte principale: https://www.juventus.com/en/teams/fi
+ rst-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Bergamo Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Atalanta - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Parma
+DTSTART;TZID=Europe/Rome:20250824T204500
+DTEND;TZID=Europe/Rome:20250824T224500
+DTSTAMP:20260807T071517Z
+UID:d934bb1528ec0a78abf90717@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 1\nStadio: Allianz Stadium\nLocalità: Italy\n
+ Dove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFont
+ e TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rq
+ q2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en
+ /teams/first-team-men/fixtures-results/\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Parma
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Genoa - Juventus
+DTSTART;TZID=Europe/Rome:20250831T183000
+DTEND;TZID=Europe/Rome:20250831T203000
+DTSTAMP:20260807T071517Z
+UID:6ba48823280fc1c969514b9b@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 2\nStadio: Stadio Comunale Luigi Ferraris
+ \nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su
+  Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competiti
+ on:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https:/
+ /www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princip
+ ale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Comunale Luigi Ferraris\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Genoa - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Internazionale
+DTSTART;TZID=Europe/Rome:20250913T180000
+DTEND;TZID=Europe/Rome:20250913T200000
+DTSTAMP:20260807T071517Z
+UID:52928747d65c23421cd7bdb3@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 3\nStadio: Allianz Stadium\nLocalità: Italy\n
+ Dove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFont
+ e TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rq
+ q2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en
+ /teams/first-team-men/fixtures-results/\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Internazionale
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Borussia Dortmund
+DTSTART;TZID=Europe/Rome:20250916T210000
+DTEND;TZID=Europe/Rome:20250916T230000
+DTSTAMP:20260807T071336Z
+UID:21483ef65bacf0cea7ba608c@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Casa\nStato: sc
+ heduled\nStadio: Allianz Stadium\nDove vederla in Italia: Sky Sport/NOW\; 
+ possibile esclusiva Prime Video da verificare per la singola partita\nFont
+ e TV: https://sport.sky.it/calcio/champions-league\nFonte orario: Juventus
+ \nLink orario: https://www.juventus.com/en/teams/first-team-men/fixtures-r
+ esults/\nFonte principale: https://www.juventus.com/en/teams/first-team-me
+ n/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Borussia Dortmund
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Hellas Verona - Juventus
+DTSTART;TZID=Europe/Rome:20250920T180000
+DTEND;TZID=Europe/Rome:20250920T200000
+DTSTAMP:20260807T071517Z
+UID:bb7e682b053463eaade96c43@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 4\nStadio: Stadio Marcantonio Bentegodi\n
+ Località: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su S
+ ky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition
+ :1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://w
+ ww.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte principal
+ e: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Marcantonio Bentegodi\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Hellas Verona - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Atalanta
+DTSTART;TZID=Europe/Rome:20250927T180000
+DTEND;TZID=Europe/Rome:20250927T200000
+DTSTAMP:20260807T071517Z
+UID:5469d692d005a08a58811ec5@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 5\nStadio: Allianz Stadium\nLocalità: Italy\n
+ Dove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFont
+ e TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rq
+ q2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en
+ /teams/first-team-men/fixtures-results/\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Atalanta
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Villarreal - Juventus
+DTSTART;TZID=Europe/Rome:20251001T210000
+DTEND;TZID=Europe/Rome:20251001T230000
+DTSTAMP:20260807T071336Z
+UID:e266cbe793cae263579f2dd9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Trasferta\nStat
+ o: scheduled\nDove vederla in Italia: Sky Sport/NOW\; possibile esclusiva 
+ Prime Video da verificare per la singola partita\nFonte TV: https://sport.
+ sky.it/calcio/champions-league\nFonte orario: Juventus\nLink orario: https
+ ://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princ
+ ipale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Villarreal - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Milan
+DTSTART;TZID=Europe/Rome:20251005T204500
+DTEND;TZID=Europe/Rome:20251005T224500
+DTSTAMP:20260807T071517Z
+UID:c356bada08970762fc8ff530@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 6\nStadio: Allianz Stadium\nLocalità: Italy\n
+ Dove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFont
+ e TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rq
+ q2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en
+ /teams/first-team-men/fixtures-results/\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Milan
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Como - Juventus
+DTSTART;TZID=Europe/Rome:20251019T123000
+DTEND;TZID=Europe/Rome:20251019T143000
+DTSTAMP:20260807T071517Z
+UID:362783ab0e7fe5c544761479@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 7\nStadio: Stadio Giuseppe Sinigaglia\nLo
+ calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
+  Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1
+ pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www
+ .juventus.com/en/teams/first-team-men/fixtures-results/\nFonte principale:
+  https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Sinigaglia\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Como - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Real Madrid - Juventus
+DTSTART;TZID=Europe/Rome:20251022T210000
+DTEND;TZID=Europe/Rome:20251022T230000
+DTSTAMP:20260807T071336Z
+UID:dff11570e5fbe794172b6a26@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Trasferta\nStat
+ o: scheduled\nDove vederla in Italia: Sky Sport/NOW\; possibile esclusiva 
+ Prime Video da verificare per la singola partita\nFonte TV: https://sport.
+ sky.it/calcio/champions-league\nFonte orario: Juventus\nLink orario: https
+ ://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princ
+ ipale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Real Madrid - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Lazio - Juventus
+DTSTART;TZID=Europe/Rome:20251026T204500
+DTEND;TZID=Europe/Rome:20251026T224500
+DTSTAMP:20260807T071517Z
+UID:67a6f96ac4e0148b09443c83@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 8\nStadio: Stadio Olimpico\nLocalità: It
+ aly\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\
+ nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h
+ 5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.c
+ om/en/teams/first-team-men/fixtures-results/\nFonte principale: https://ww
+ w.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Lazio - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Udinese
+DTSTART;TZID=Europe/Rome:20251029T183000
+DTEND;TZID=Europe/Rome:20251029T203000
+DTSTAMP:20260807T071517Z
+UID:21004f21d47d567d2ed6b7af@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 9\nStadio: Allianz Stadium\nLocalità: Italy\n
+ Dove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFont
+ e TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rq
+ q2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en
+ /teams/first-team-men/fixtures-results/\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Udinese
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Cremonese - Juventus
+DTSTART;TZID=Europe/Rome:20251101T204500
+DTEND;TZID=Europe/Rome:20251101T224500
+DTSTAMP:20260807T071517Z
+UID:540079a7fd83c9d13d14fa31@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 10\nStadio: Stadio Giovanni Zini\nLocalit
+ à: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spor
+ t/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co
+ 4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juve
+ ntus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: http
+ s://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giovanni Zini\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Cremonese - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Sporting CP
+DTSTART;TZID=Europe/Rome:20251104T210000
+DTEND;TZID=Europe/Rome:20251104T230000
+DTSTAMP:20260807T071336Z
+UID:13ec2583a0b87df03fe78cc6@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Casa\nStato: sc
+ heduled\nStadio: Allianz Stadium\nDove vederla in Italia: Sky Sport/NOW\; 
+ possibile esclusiva Prime Video da verificare per la singola partita\nFont
+ e TV: https://sport.sky.it/calcio/champions-league\nFonte orario: Juventus
+ \nLink orario: https://www.juventus.com/en/teams/first-team-men/fixtures-r
+ esults/\nFonte principale: https://www.juventus.com/en/teams/first-team-me
+ n/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Sporting CP
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Torino
+DTSTART;TZID=Europe/Rome:20251108T180000
+DTEND;TZID=Europe/Rome:20251108T200000
+DTSTAMP:20260807T071517Z
+UID:8f52bc9b695be0a9100244cb@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 11\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Torino
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Fiorentina - Juventus
+DTSTART;TZID=Europe/Rome:20251122T180000
+DTEND;TZID=Europe/Rome:20251122T200000
+DTSTAMP:20260807T071517Z
+UID:5b6e51a0437e3b752181e0a8@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 12\nStadio: Stadio Artemio Franchi\nLocal
+ ità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sp
+ ort/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3
+ co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: ht
+ tps://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Artemio Franchi\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Fiorentina - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Bodø/Glimt - Juventus
+DTSTART;TZID=Europe/Rome:20251125T210000
+DTEND;TZID=Europe/Rome:20251125T230000
+DTSTAMP:20260807T071336Z
+UID:732c51533479544acf15bd5f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Trasferta\nStat
+ o: scheduled\nDove vederla in Italia: Sky Sport/NOW\; possibile esclusiva 
+ Prime Video da verificare per la singola partita\nFonte TV: https://sport.
+ sky.it/calcio/champions-league\nFonte orario: Juventus\nLink orario: https
+ ://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princ
+ ipale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Bodø/Glimt - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Cagliari
+DTSTART;TZID=Europe/Rome:20251129T180000
+DTEND;TZID=Europe/Rome:20251129T200000
+DTSTAMP:20260807T071517Z
+UID:7083b57d00038f3b673ba3f6@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 13\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Cagliari
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Udinese
+DTSTART;TZID=Europe/Rome:20251202T210000
+DTEND;TZID=Europe/Rome:20251202T230000
+DTSTAMP:20260807T071517Z
+UID:5889b1560fc57fa7f7326406@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Coppa Italia,Juventus
+DESCRIPTION:Competizione: Coppa Italia\nJuventus: Casa\nStato: finished\nT
+ urno: 8th Finals\nStadio: Allianz Stadium\nLocalità: Italy\nDove vederla 
+ in Italia: Mediaset e Mediaset Infinity\nFonte TV: https://mediasetinfinit
+ y.mediaset.it/calcio-e-sport/\nFonte orario: Juventus\nLink orario: https:
+ //www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princi
+ pale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Udinese
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Napoli - Juventus
+DTSTART;TZID=Europe/Rome:20251207T204500
+DTEND;TZID=Europe/Rome:20251207T224500
+DTSTAMP:20260807T071517Z
+UID:70b60789b39c13b6ee720bb0@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 14\nStadio: Stadio Diego Armando Maradona
+ \nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su
+  Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competiti
+ on:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https:/
+ /www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princip
+ ale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Diego Armando Maradona\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Napoli - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Pafos
+DTSTART;TZID=Europe/Rome:20251210T210000
+DTEND;TZID=Europe/Rome:20251210T230000
+DTSTAMP:20260807T071336Z
+UID:1dd3818b1d1bdda6ce6fa03b@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Casa\nStato: sc
+ heduled\nStadio: Allianz Stadium\nDove vederla in Italia: Sky Sport/NOW\; 
+ possibile esclusiva Prime Video da verificare per la singola partita\nFont
+ e TV: https://sport.sky.it/calcio/champions-league\nFonte orario: Juventus
+ \nLink orario: https://www.juventus.com/en/teams/first-team-men/fixtures-r
+ esults/\nFonte principale: https://www.juventus.com/en/teams/first-team-me
+ n/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Pafos
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Bologna - Juventus
+DTSTART;TZID=Europe/Rome:20251214T204500
+DTEND;TZID=Europe/Rome:20251214T224500
+DTSTAMP:20260807T071517Z
+UID:26597c33803de33fef1e5d14@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 15\nStadio: Stadio Renato Dall'Ara\nLocal
+ ità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sp
+ ort/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3
+ co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: ht
+ tps://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Renato Dall'Ara\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Bologna - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Roma
+DTSTART;TZID=Europe/Rome:20251220T204500
+DTEND;TZID=Europe/Rome:20251220T224500
+DTSTAMP:20260807T071517Z
+UID:95aa0d9a60abfb13cede28b4@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 16\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Roma
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Pisa - Juventus
+DTSTART;TZID=Europe/Rome:20251227T204500
+DTEND;TZID=Europe/Rome:20251227T224500
+DTSTAMP:20260807T071517Z
+UID:c406f42a58d1cdb48552b090@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 17\nStadio: Arena Garibaldi - Stadio Rome
+ o Anconetani\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune part
+ ite anche su Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competiti
+ on/Competition:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink ora
+ rio: https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nF
+ onte principale: https://www.juventus.com/en/teams/first-team-men/fixtures
+ -results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Arena Garibaldi - Stadio Romeo Anconetani\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Pisa - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Lecce
+DTSTART;TZID=Europe/Rome:20260103T180000
+DTEND;TZID=Europe/Rome:20260103T200000
+DTSTAMP:20260807T071517Z
+UID:6ce4ef8e32a00e5a78cdd8cc@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 18\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lecce
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Sassuolo - Juventus
+DTSTART;TZID=Europe/Rome:20260106T204500
+DTEND;TZID=Europe/Rome:20260106T224500
+DTSTAMP:20260807T071517Z
+UID:c0e032afcb7e1d92a0ceda87@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 19\nStadio: MAPEI Stadium - Città del Tr
+ icolore\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite a
+ nche su Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Co
+ mpetition:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: 
+ https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte 
+ principale: https://www.juventus.com/en/teams/first-team-men/fixtures-resu
+ lts/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Sassuolo - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Cremonese
+DTSTART;TZID=Europe/Rome:20260112T204500
+DTEND;TZID=Europe/Rome:20260112T224500
+DTSTAMP:20260807T071517Z
+UID:9228fc06437d00ee3afccc5a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 20\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Cremonese
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Cagliari - Juventus
+DTSTART;TZID=Europe/Rome:20260117T204500
+DTEND;TZID=Europe/Rome:20260117T224500
+DTSTAMP:20260807T071517Z
+UID:5d923637b4d48bb99ae534bb@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 21\nStadio: Unipol Domus\nLocalità: Ital
+ y\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nF
+ onte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p
+ 8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com
+ /en/teams/first-team-men/fixtures-results/\nFonte principale: https://www.
+ juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Unipol Domus\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Cagliari - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Benfica
+DTSTART;TZID=Europe/Rome:20260121T210000
+DTEND;TZID=Europe/Rome:20260121T230000
+DTSTAMP:20260807T071336Z
+UID:21d514b5cda43994d93df263@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Casa\nStato: sc
+ heduled\nStadio: Allianz Stadium\nDove vederla in Italia: Sky Sport/NOW\; 
+ possibile esclusiva Prime Video da verificare per la singola partita\nFont
+ e TV: https://sport.sky.it/calcio/champions-league\nFonte orario: Juventus
+ \nLink orario: https://www.juventus.com/en/teams/first-team-men/fixtures-r
+ esults/\nFonte principale: https://www.juventus.com/en/teams/first-team-me
+ n/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Benfica
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Napoli
+DTSTART;TZID=Europe/Rome:20260125T180000
+DTEND;TZID=Europe/Rome:20260125T200000
+DTSTAMP:20260807T071517Z
+UID:7520f5f4c1280cd3d90eace3@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 22\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Napoli
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Monaco - Juventus
+DTSTART;TZID=Europe/Rome:20260128T210000
+DTEND;TZID=Europe/Rome:20260128T230000
+DTSTAMP:20260807T071336Z
+UID:aed58c2b5baa7487e8fbf71a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Trasferta\nStat
+ o: scheduled\nDove vederla in Italia: Sky Sport/NOW\; possibile esclusiva 
+ Prime Video da verificare per la singola partita\nFonte TV: https://sport.
+ sky.it/calcio/champions-league\nFonte orario: Juventus\nLink orario: https
+ ://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princ
+ ipale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Monaco - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Parma - Juventus
+DTSTART;TZID=Europe/Rome:20260201T204500
+DTEND;TZID=Europe/Rome:20260201T224500
+DTSTAMP:20260807T071517Z
+UID:947e14bc4fc688026b1c5c02@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 23\nStadio: Stadio Ennio Tardini\nLocalit
+ à: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spor
+ t/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co
+ 4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juve
+ ntus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: http
+ s://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Ennio Tardini\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Parma - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Atalanta - Juventus
+DTSTART;TZID=Europe/Rome:20260205T210000
+DTEND;TZID=Europe/Rome:20260205T230000
+DTSTAMP:20260807T071517Z
+UID:2bf256490a1f213c59683c87@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Coppa Italia,Juventus
+DESCRIPTION:Competizione: Coppa Italia\nJuventus: Trasferta\nStato: finish
+ ed\nTurno: Quarter-finals\nStadio: New Balance Arena\nLocalità: Italy\nDo
+ ve vederla in Italia: Mediaset e Mediaset Infinity\nFonte TV: https://medi
+ asetinfinity.mediaset.it/calcio-e-sport/\nFonte orario: Juventus\nLink ora
+ rio: https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nF
+ onte principale: https://www.juventus.com/en/teams/first-team-men/fixtures
+ -results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:New Balance Arena\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Atalanta - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Lazio
+DTSTART;TZID=Europe/Rome:20260208T204500
+DTEND;TZID=Europe/Rome:20260208T224500
+DTSTAMP:20260807T071517Z
+UID:31595d1438c222d16a77cc6e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 24\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lazio
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Internazionale - Juventus
+DTSTART;TZID=Europe/Rome:20260214T204500
+DTEND;TZID=Europe/Rome:20260214T224500
+DTSTAMP:20260807T071517Z
+UID:39cc1554b2dcc7b1c09798f9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 25\nStadio: Stadio Giuseppe Meazza\nLocal
+ ità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sp
+ ort/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3
+ co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: ht
+ tps://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Meazza\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Internazionale - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Como
+DTSTART;TZID=Europe/Rome:20260221T150000
+DTEND;TZID=Europe/Rome:20260221T170000
+DTSTAMP:20260807T071517Z
+UID:2e325888040c1f85387e6e77@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 26\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Como
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Galatasaray
+DTSTART;TZID=Europe/Rome:20260225T210000
+DTEND;TZID=Europe/Rome:20260225T230000
+DTSTAMP:20260807T071336Z
+UID:f63cf0b9e5b70e81ef0f0152@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Champions League,Juventus
+DESCRIPTION:Competizione: UEFA Champions League\nJuventus: Casa\nStato: sc
+ heduled\nStadio: Allianz Stadium\nDove vederla in Italia: Sky Sport/NOW\; 
+ possibile esclusiva Prime Video da verificare per la singola partita\nFont
+ e TV: https://sport.sky.it/calcio/champions-league\nFonte orario: Juventus
+ \nLink orario: https://www.juventus.com/en/teams/first-team-men/fixtures-r
+ esults/\nFonte principale: https://www.juventus.com/en/teams/first-team-me
+ n/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Galatasaray
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Roma - Juventus
+DTSTART;TZID=Europe/Rome:20260301T204500
+DTEND;TZID=Europe/Rome:20260301T224500
+DTSTAMP:20260807T071517Z
+UID:fe546769abcc8eff457f5c46@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 27\nStadio: Stadio Olimpico\nLocalità: I
+ taly\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW
+ \nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7
+ h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.
+ com/en/teams/first-team-men/fixtures-results/\nFonte principale: https://w
+ ww.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Roma - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Pisa
+DTSTART;TZID=Europe/Rome:20260307T204500
+DTEND;TZID=Europe/Rome:20260307T224500
+DTSTAMP:20260807T071517Z
+UID:0cf1100d6f7eb934714967d1@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 28\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Pisa
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Udinese - Juventus
+DTSTART;TZID=Europe/Rome:20260314T204500
+DTEND;TZID=Europe/Rome:20260314T224500
+DTSTAMP:20260807T071517Z
+UID:4d33410e57a2a9a174c4da04@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 29\nStadio: Bluenergy Stadium\nLocalità:
+  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/N
+ OW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7
+ b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventu
+ s.com/en/teams/first-team-men/fixtures-results/\nFonte principale: https:/
+ /www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Bluenergy Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Udinese - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Sassuolo
+DTSTART;TZID=Europe/Rome:20260321T204500
+DTEND;TZID=Europe/Rome:20260321T224500
+DTSTAMP:20260807T071517Z
+UID:642707554cea7079d1756ad7@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 30\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Sassuolo
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Genoa
+DTSTART;TZID=Europe/Rome:20260406T180000
+DTEND;TZID=Europe/Rome:20260406T200000
+DTSTAMP:20260807T071517Z
+UID:3530f01309eacdbeeca81d41@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 31\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Genoa
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Atalanta - Juventus
+DTSTART;TZID=Europe/Rome:20260411T204500
+DTEND;TZID=Europe/Rome:20260411T224500
+DTSTAMP:20260807T071517Z
+UID:780db2a1acc6a31ce5741310@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 32\nStadio: New Balance Arena\nLocalità:
+  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/N
+ OW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7
+ b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventu
+ s.com/en/teams/first-team-men/fixtures-results/\nFonte principale: https:/
+ /www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:New Balance Arena\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Atalanta - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Bologna
+DTSTART;TZID=Europe/Rome:20260419T204500
+DTEND;TZID=Europe/Rome:20260419T224500
+DTSTAMP:20260807T071517Z
+UID:d30cb94cc7e09c26454f28a0@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 33\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Bologna
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Milan - Juventus
+DTSTART;TZID=Europe/Rome:20260426T204500
+DTEND;TZID=Europe/Rome:20260426T224500
+DTSTAMP:20260807T071517Z
+UID:1754fd14fb18f3ff6bb5e0c9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 34\nStadio: Stadio Giuseppe Meazza\nLocal
+ ità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sp
+ ort/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3
+ co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: ht
+ tps://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Meazza\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Milan - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Hellas Verona
+DTSTART;TZID=Europe/Rome:20260503T180000
+DTEND;TZID=Europe/Rome:20260503T200000
+DTSTAMP:20260807T071517Z
+UID:6893640887896abafd304a26@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 35\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Hellas Verona
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Lecce - Juventus
+DTSTART;TZID=Europe/Rome:20260509T204500
+DTEND;TZID=Europe/Rome:20260509T224500
+DTSTAMP:20260807T071517Z
+UID:eadac4bf646e19ef1a1657d9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 36\nStadio: Stadio Ettore Giardiniero - V
+ ia del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune parti
+ te anche su Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competitio
+ n/Competition:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orar
+ io: https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFo
+ nte principale: https://www.juventus.com/en/teams/first-team-men/fixtures-
+ results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Ettore Giardiniero - Via del Mare\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Lecce - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Fiorentina
+DTSTART;TZID=Europe/Rome:20260517T120000
+DTEND;TZID=Europe/Rome:20260517T140000
+DTSTAMP:20260807T071517Z
+UID:f724f18917a802bedf6c15ce@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: finished\nTurno:
+  Regular Season · Giornata 37\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Fiorentina
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Torino - Juventus
+DTSTART;TZID=Europe/Rome:20260524T214500
+DTEND;TZID=Europe/Rome:20260524T234500
+DTSTAMP:20260807T071517Z
+UID:d0b64f65fdfc8a9ec19344b8@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 38\nStadio: Stadio Olimpico Grande Torino
+ \nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su
+  Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competiti
+ on:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https:/
+ /www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte princip
+ ale: https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico Grande Torino\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Torino - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ FC Basel - Juventus
+DTSTART;TZID=Europe/Rome:20260718T153000
+DTEND;TZID=Europe/Rome:20260718T173000
+DTSTAMP:20260807T071336Z
+UID:8fdb687aedeaf974ecc5225f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nStato: scheduled\
+ nStadio: St. Jakob-Park\nLocalità: Basel\nDove vederla in Italia: Da defi
+ nire\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en/tea
+ ms/first-team-men/fixtures-results/\nFonte principale: https://www.juventu
+ s.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:St. Jakob-Park\, Basel
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: FC Basel - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Standard Liège - Juventus
+DTSTART;TZID=Europe/Rome:20260725T200000
+DTEND;TZID=Europe/Rome:20260725T220000
+DTSTAMP:20260807T071336Z
+UID:3a77fbf18d0cb9102df0a0dc@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nStato: scheduled\
+ nStadio: Stade Maurice Dufrasne\nLocalità: Liege\nDove vederla in Italia:
+  Da definire\nFonte orario: Juventus\nLink orario: https://www.juventus.co
+ m/en/teams/first-team-men/fixtures-results/\nFonte principale: https://www
+ .juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Stade Maurice Dufrasne\, Liege
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Standard Liège - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - OGC NIce
+DTSTART;TZID=Europe/Rome:20260731T180000
+DTEND;TZID=Europe/Rome:20260731T200000
+DTSTAMP:20260807T071517Z
+UID:201b66a7dbfb95fc623e81b7@juventus-calendar
+SEQUENCE:1
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nStad
+ io: Training Center Continassa\nDove vederla in Italia: Da definire\nFonte
+  orario: Juventus\nLink orario: https://www.juventus.com/en/teams/first-te
+ am-men/fixtures-results/\nFonte principale: https://www.juventus.com/en/te
+ ams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Training Center Continassa
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - OGC NIce
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Chelsea - Juventus
+DTSTART;TZID=Europe/Rome:20260805T133000
+DTEND;TZID=Europe/Rome:20260805T153000
+DTSTAMP:20260807T071336Z
+UID:34d15f44c644041d5e2dc656@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nStato: scheduled\
+ nStadio: Kai Tak Stadium\nLocalità: Mongkok\, Kowloon\nDove vederla in It
+ alia: Da definire\nFonte orario: Juventus\nLink orario: https://www.juvent
+ us.com/en/teams/first-team-men/fixtures-results/\nFonte principale: https:
+ //www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Kai Tak Stadium\, Mongkok\, Kowloon
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Chelsea - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Inter
+DTSTART;TZID=Europe/Rome:20260808T130000
+DTEND;TZID=Europe/Rome:20260808T150000
+DTSTAMP:20260807T071517Z
+UID:9d9e645e765f3e91d1ba6bcc@juventus-calendar
+SEQUENCE:1
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nTurn
+ o: 0\nStadio: Optus Stadium\nLocalità: Perth\, WA\nDove vederla in Italia
+ : Sky Sport e NOW\nFonte TV: https://www.nowtv.it/sport/calcio/juventus\nF
+ onte orario: NOW\nLink orario: https://www.nowtv.it/sport/calcio/juventus\
+ nFonte principale: https://www.juventus.com/en/teams/first-team-men/fixtur
+ es-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Optus Stadium\, Perth\, WA
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Inter
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Palermo
+DTSTART;TZID=Europe/Rome:20260811T110000
+DTEND;TZID=Europe/Rome:20260811T130000
+DTSTAMP:20260807T071336Z
+UID:0950209f36495bd8b8e98d58@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nStad
+ io: Optus Stadium\nDove vederla in Italia: Sky Sport e NOW\nFonte TV: http
+ s://www.nowtv.it/sport/calcio/juventus\nFonte orario: NOW\nLink orario: ht
+ tps://www.nowtv.it/sport/calcio/juventus\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071336Z
+LOCATION:Optus Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Palermo
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Frosinone - Juventus
+DTSTART;TZID=Europe/Rome:20260823T183000
+DTEND;TZID=Europe/Rome:20260823T203000
+DTSTAMP:20260807T071517Z
+UID:4956e99f48f43767220fb75f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 1\nStadio: Stadio Benito Stirpe\nLocalit
+ à: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spor
+ t/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co
+ 4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juve
+ ntus.com/en/teams/first-team-men/fixtures-results/\nFonte principale: http
+ s://www.juventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Benito Stirpe\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Frosinone - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Parma
+DTSTART;TZID=Europe/Rome:20260829T204500
+DTEND;TZID=Europe/Rome:20260829T224500
+DTSTAMP:20260807T071517Z
+UID:2665ec5e05f8af032918501b@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 2\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Parma
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Milan
+DTSTART;TZID=Europe/Rome:20260906T204500
+DTEND;TZID=Europe/Rome:20260906T224500
+DTSTAMP:20260807T071517Z
+UID:f6a0e961c790cc99304f973a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 3\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte orario: Juventus\nLink orario: https://www.juventus.com/e
+ n/teams/first-team-men/fixtures-results/\nFonte principale: https://www.ju
+ ventus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Milan
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Sassuolo - Juventus
+DTSTART;TZID=Europe/Rome:20260912T180000
+DTEND;TZID=Europe/Rome:20260912T200000
+DTSTAMP:20260807T071517Z
+UID:5a23aeb3327f080f81a89566@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 4\nStadio: MAPEI Stadium - Città del Tr
+ icolore\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite a
+ nche su Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Co
+ mpetition:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte orario: Juventus\nLink orario: 
+ https://www.juventus.com/en/teams/first-team-men/fixtures-results/\nFonte 
+ principale: https://www.juventus.com/en/teams/first-team-men/fixtures-resu
+ lts/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Sassuolo - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Atalanta
+DTSTART;TZID=Europe/Rome:20260918T180000
+DTEND;TZID=Europe/Rome:20260918T200000
+DTSTAMP:20260807T071517Z
+UID:64f6a6f8063a8abff2a34145@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 5\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: Sky Sport e NOW\nFonte TV: https://www.nowtv.it/s
+ port/calcio/juventus\nFonte orario: NOW\nLink orario: https://www.nowtv.it
+ /sport/calcio/juventus\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Atalanta
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Cagliari - Juventus
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+DTSTAMP:20260807T071517Z
+UID:92ac5f5f3b00147b26f48d67@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 6\nStadio: Unipol Domus\nLocalità: Ital
+ y\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nF
+ onte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p
+ 8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-tea
+ m-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Unipol Domus\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Cagliari - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Lazio
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+DTSTAMP:20260807T071517Z
+UID:58e4c8f210209748376eb04b@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 7\nStadio: Allianz Stadium\nLocalità: Italy\
+ nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFon
+ te TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8r
+ qq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team-
+ men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lazio
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Lecce - Juventus
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+DTSTAMP:20260807T071517Z
+UID:e5a843116296d3266280a5bb@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 8\nStadio: Stadio Ettore Giardiniero - V
+ ia del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune parti
+ te anche su Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competitio
+ n/Competition:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juv
+ entus.com/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Ettore Giardiniero - Via del Mare\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Lecce - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Genoa - Juventus
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+DTSTAMP:20260807T071517Z
+UID:2f08c9145cdd9a03fb73324f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 9\nStadio: Stadio Comunale Luigi Ferrari
+ s\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche s
+ u Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competit
+ ion:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/
+ en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Comunale Luigi Ferraris\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Genoa - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Napoli
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+DTSTAMP:20260807T071517Z
+UID:0b2427b7e6b1886ec6081963@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 10\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Napoli
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Fiorentina - Juventus
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+DTSTAMP:20260807T071517Z
+UID:ae960ed183fe1ac5522f474d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 11\nStadio: Stadio Artemio Franchi\nLoca
+ lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
+ port/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq
+ 3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Artemio Franchi\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Fiorentina - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Venezia
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+DTSTAMP:20260807T071517Z
+UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 12\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Venezia
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Como - Juventus
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20260807T071517Z
+UID:d05821f8f6e164e198b1ef80@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 13\nStadio: Stadio Giuseppe Sinigaglia\n
+ Località: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su S
+ ky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition
+ :1pq3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/
+ teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Sinigaglia\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Como - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Udinese
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+DTSTAMP:20260807T071517Z
+UID:1eb5eb718b1ba7bf18e0488e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 14\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Udinese
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Monza
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+DTSTAMP:20260807T071517Z
+UID:842b206d9c8338422e67e2d5@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 15\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Monza
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Roma - Juventus
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+DTSTAMP:20260807T071517Z
+UID:d1615e69f9aa02967f319649@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 16\nStadio: Stadio Olimpico\nLocalità: 
+ Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
+ W\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b
+ 7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first
+ -team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Roma - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Bologna - Juventus
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20260807T071517Z
+UID:2964446684cb24ad99ed7e59@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 17\nStadio: Stadio Renato Dall'Ara\nLoca
+ lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
+ port/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq
+ 3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Renato Dall'Ara\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Bologna - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Torino
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+DTSTAMP:20260807T071517Z
+UID:c883bf5c8b9f39282d284b4e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 18\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Torino
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Internazionale - Juventus
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+DTSTAMP:20260807T071517Z
+UID:95796e6e292f964716a8155f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 19\nStadio: Stadio Giuseppe Meazza\nLoca
+ lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
+ port/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq
+ 3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Meazza\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Internazionale - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Genoa
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+DTSTAMP:20260807T071517Z
+UID:ad0233d3b5e1ab73f6d06568@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 20\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Genoa
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Cagliari
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+DTSTAMP:20260807T071517Z
+UID:b9e0d2b57350f80db3e45c11@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 21\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Cagliari
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Milan - Juventus
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+DTSTAMP:20260807T071517Z
+UID:7901b36118e346044724f817@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 22\nStadio: Stadio Giuseppe Meazza\nLoca
+ lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
+ port/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq
+ 3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/team
+ s/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Giuseppe Meazza\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Milan - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Sassuolo
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+DTSTAMP:20260807T071517Z
+UID:f64b4766ad023caa5e94938d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 23\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Sassuolo
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Napoli - Juventus
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+DTSTAMP:20260807T071517Z
+UID:0a7f6133a76cc14914aa40c9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 24\nStadio: Stadio Diego Armando Maradon
+ a\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche s
+ u Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competit
+ ion:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/
+ en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Diego Armando Maradona\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Napoli - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Bologna
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+DTSTAMP:20260807T071517Z
+UID:6a64aa2cd32e092401522ab6@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 25\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Bologna
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Monza - Juventus
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+DTSTAMP:20260807T071517Z
+UID:6cd2bc5a30e07a738ff3a0c9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 26\nStadio: U-Power Stadium\nLocalità: 
+ Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
+ W\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b
+ 7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first
+ -team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:U-Power Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Monza - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Roma
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+DTSTAMP:20260807T071517Z
+UID:97d0a6bd4d52357216b45858@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 27\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Roma
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Lazio - Juventus
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+DTSTAMP:20260807T071517Z
+UID:f56d5dd200549d219f5388e8@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 28\nStadio: Stadio Olimpico\nLocalità: 
+ Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
+ W\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b
+ 7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first
+ -team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Lazio - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Como
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+DTSTAMP:20260807T071517Z
+UID:c518d8f1960d727762d9c694@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 29\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Como
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Torino - Juventus
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+DTSTAMP:20260807T071517Z
+UID:cadc8db17dd5a1f7aa87f18e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 30\nStadio: Stadio Olimpico Grande Torin
+ o\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche s
+ u Sky Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competit
+ ion:1pq3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/
+ en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Olimpico Grande Torino\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Torino - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Lecce
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+DTSTAMP:20260807T071517Z
+UID:0d1e2f8cb01153d2db4fb4d7@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 31\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lecce
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Venezia - Juventus
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20260807T071517Z
+UID:70b349f863b9762dc28badde@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 32\nStadio: Stadio Pier Luigi Penzo\nLoc
+ alità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky 
+ Sport/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1p
+ q3co4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/tea
+ ms/first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Pier Luigi Penzo\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Venezia - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Fiorentina
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+DTSTAMP:20260807T071517Z
+UID:dedc817a3f718f60e3c76f27@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 33\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Fiorentina
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Atalanta - Juventus
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+DTSTAMP:20260807T071517Z
+UID:31343195839f233d61fff517@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 34\nStadio: New Balance Arena\nLocalità
+ : Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/
+ NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h
+ 7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/fir
+ st-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:New Balance Arena\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Atalanta - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Udinese - Juventus
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+DTSTAMP:20260807T071517Z
+UID:30cfe8816ecc5aef6dd42602@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 35\nStadio: Bluenergy Stadium\nLocalità
+ : Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/
+ NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h
+ 7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/fir
+ st-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Bluenergy Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Udinese - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Internazionale
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+DTSTAMP:20260807T071517Z
+UID:49fca05b66c6856d4b68330e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 36\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Internazionale
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Parma - Juventus
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+DTSTAMP:20260807T071517Z
+UID:7a2d7db43e6c3e0c9d2d1b1d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
+ Turno: Regular Season · Giornata 37\nStadio: Stadio Ennio Tardini\nLocali
+ tà: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spo
+ rt/NOW\nFonte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3c
+ o4h7b7h5p8rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/
+ first-team-men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Stadio Ennio Tardini\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Parma - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Frosinone
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+DTSTAMP:20260807T071517Z
+UID:fe47dff49d88225ef0d96002@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nStato: scheduled\nTurno
+ : Regular Season · Giornata 38\nStadio: Allianz Stadium\nLocalità: Italy
+ \nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nFo
+ nte TV: https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8
+ rqq2s8e4r6\nFonte principale: https://www.juventus.com/en/teams/first-team
+ -men/fixtures-results/
+LAST-MODIFIED:20260807T071517Z
+LOCATION:Allianz Stadium\, Italy
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Frosinone
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Il calendario aggiornato con tutte le partite della Prima Squadra maschile della Juventus.">
+    <title>Juventus Calendar</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: #050505; color: #f8f8f8; }
+      body::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 80% 5%, #333 0, transparent 30%), linear-gradient(120deg, transparent 0 47%, #ffffff08 47% 53%, transparent 53%); }
+      main { position: relative; width: min(100% - 32px, 960px); margin: 0 auto; padding: clamp(44px, 8vw, 88px) 0 72px; }
+      .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #b9ff2c; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; font-size: .75rem; }
+      .eyebrow::before { content: ""; width: 28px; height: 3px; background: #b9ff2c; }
+      h1 { max-width: 780px; margin: 18px 0; font-size: clamp(3.4rem, 12vw, 8.5rem); line-height: .82; letter-spacing: -.075em; }
+      .lead { max-width: 700px; color: #c3c3c3; font-size: clamp(1.08rem, 2.5vw, 1.35rem); line-height: 1.55; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 14px; }
+      .button { min-height: 54px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #b9ff2c; border-radius: 5px; padding: 0 22px; background: #b9ff2c; color: #050505; font: inherit; font-weight: 900; text-decoration: none; cursor: pointer; transition: transform .15s, background .15s; }
+      .button:hover { transform: translateY(-2px); background: #cbff62; }
+      .button.secondary { background: transparent; color: #f8f8f8; border-color: #555; }
+      .button.secondary:hover { border-color: #f8f8f8; background: #151515; }
+      .direct { color: #aaa; overflow-wrap: anywhere; }
+      .direct a { color: #fff; }
+      .copied { min-height: 1.4em; color: #b9ff2c; font-weight: 700; }
+      .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 42px 0; border: 1px solid #2b2b2b; background: #2b2b2b; }
+      .stat { padding: 24px; background: #0d0d0d; }
+      .stat strong { display: block; font-size: clamp(1.5rem, 5vw, 2.4rem); letter-spacing: -.04em; }
+      .stat span { color: #929292; }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+      .card { padding: clamp(22px, 5vw, 32px); border: 1px solid #303030; border-radius: 8px; background: #0d0d0ddd; }
+      .card h2 { margin: 0 0 14px; font-size: 1.25rem; }
+      .card ol { margin: 0; padding-left: 20px; color: #c2c2c2; line-height: 1.65; }
+      .notice { margin-top: 18px; padding: 18px; border-left: 3px solid #b9ff2c; background: #12170b; color: #d7d7d7; line-height: 1.55; }
+      footer { margin-top: 38px; color: #888; line-height: 1.6; }
+      code { color: #ddd; overflow-wrap: anywhere; }
+      @media (max-width: 640px) { .grid, .stats { grid-template-columns: 1fr; } .actions, .button { width: 100%; } h1 { font-size: clamp(3.2rem, 22vw, 5.4rem); } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Prima Squadra maschile</div>
+      <h1>Juventus<br>Calendar</h1>
+      <p class="lead">Serie A, coppe, Europa, amichevoli e tournée in un unico calendario che segue automaticamente date e orari.</p>
+      <div class="actions">
+        <a class="button" id="subscribe-link" href="webcal://dizzle0987.github.io/juventus-calendar/calendar.ics" rel="external">Iscriviti al calendario</a>
+        <button class="button secondary" id="copy-link" type="button">Copia il link</button>
+      </div>
+      <p class="direct">Link HTTPS diretto: <a href="https://dizzle0987.github.io/juventus-calendar/calendar.ics">dizzle0987.github.io/juventus-calendar/calendar.ics</a></p>
+      <p class="copied" id="copy-status" role="status" aria-live="polite"></p>
+
+      <section class="stats" aria-label="Stato del calendario">
+        <div class="stat"><strong id="event-count">—</strong><span>eventi nel feed</span></div>
+        <div class="stat"><strong id="last-update">—</strong><span>ultimo aggiornamento</span></div>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <h2>iPhone e iPad</h2>
+          <ol>
+            <li>Apri questa pagina in Safari e tocca “Iscriviti al calendario”.</li>
+            <li>Se non funziona, copia il link.</li>
+            <li>Apri Calendario → Calendari → Aggiungi calendario → Aggiungi calendario con iscrizione.</li>
+            <li>Incolla il link HTTPS e conferma.</li>
+          </ol>
+        </section>
+        <section class="card">
+          <h2>Android e Google Calendar</h2>
+          <ol>
+            <li>Da computer apri Google Calendar.</li>
+            <li>Accanto ad “Altri calendari” scegli + → Da URL.</li>
+            <li>Incolla il link HTTPS e scegli “Aggiungi calendario”.</li>
+            <li>Il calendario apparirà anche sui dispositivi Android collegati.</li>
+          </ol>
+        </section>
+      </div>
+
+      <p class="notice"><strong>Iscrizione, non importazione.</strong> Un feed <code>.ics</code> sottoscritto si aggiorna automaticamente. La frequenza di sincronizzazione dipende dall’app; normalmente iPhone non mostra una notifica push specifica per ogni modifica di data o orario.</p>
+      <footer>Le fonti principali sono il calendario ufficiale Juventus, API sportive strutturate di fallback e palinsesti italiani affidabili. Il feed viene ricontrollato ogni 6 ore; gli orari non confermati restano eventi giornalieri.</footer>
+    </main>
+    <script>
+      const calendarUrl = "https://dizzle0987.github.io/juventus-calendar/calendar.ics";
+      const status = document.getElementById("copy-status");
+      document.getElementById("subscribe-link").addEventListener("click", () => {
+        status.textContent = "Se non compare la schermata d’iscrizione, copia il link e usa la procedura manuale.";
+      });
+      document.getElementById("copy-link").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(calendarUrl);
+          status.textContent = "Link copiato. Ora incollalo nella funzione di iscrizione della tua app calendario.";
+        } catch {
+          window.prompt("Copia questo link calendario:", calendarUrl);
+        }
+      });
+      fetch("data/events.json", { cache: "no-store" })
+        .then((response) => response.ok ? response.json() : Promise.reject())
+        .then((data) => {
+          document.getElementById("event-count").textContent = data.event_count ?? data.events?.length ?? "—";
+          const updated = data.last_changed ? new Date(data.last_changed) : null;
+          document.getElementById("last-update").textContent = updated && !Number.isNaN(updated.valueOf())
+            ? new Intl.DateTimeFormat("it-IT", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Rome" }).format(updated)
+            : "—";
+        })
+        .catch(() => {});
+    </script>
+  </body>
+</html>
