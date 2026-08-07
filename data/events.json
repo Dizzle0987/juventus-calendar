@@ -1358,13 +1358,16 @@
       "away_team": "Inter",
       "broadcast_it": "Sky Sport e NOW",
       "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Friendly",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-07T07:15:17Z",
+      "last_modified": "2026-08-07T11:22:27Z",
       "location": "Perth, WA",
       "round": "0",
-      "sequence": 1,
+      "sequence": 2,
       "source": "Juventus",
       "source_id": "2467938",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1381,18 +1384,28 @@
       "away_team": "Palermo",
       "broadcast_it": "Sky Sport e NOW",
       "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Friendly",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-07T07:13:36Z",
+      "last_modified": "2026-08-07T11:22:27Z",
       "location": "",
       "round": "",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-08-11T11:00:00+02:00",
       "status": "scheduled",
+      "time_conflicts": [
+        {
+          "source": "Juventus",
+          "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+          "start": "2026-08-11T10:00:00+00:00"
+        }
+      ],
       "time_source": "NOW",
       "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Palermo",
@@ -1498,21 +1511,32 @@
     {
       "all_day": false,
       "away_team": "Atalanta",
-      "broadcast_it": "Sky Sport e NOW",
+      "broadcast_it": "DAZN; alcune partite anche su Sky Sport/NOW; Sky Sport e NOW",
       "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-07T07:15:17Z",
+      "last_modified": "2026-08-07T11:22:27Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "77a9rnv901wm3mwfoq92d1rf8",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-09-18T18:00:00+02:00",
       "status": "scheduled",
+      "time_conflicts": [
+        {
+          "source": "Juventus",
+          "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+          "start": "2026-09-20T16:00:00+00:00"
+        }
+      ],
       "time_source": "NOW",
       "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Atalanta",
@@ -2312,11 +2336,10 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-07T07:15:17Z",
+  "last_changed": "2026-08-07T11:22:27Z",
   "schema_version": 1,
   "source_errors": [
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
-    "DAZN: 403 Client Error: Forbidden for url: https://www.dazn.com/it-IT/schedule",
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/"
   ],
   "sources_used": [
