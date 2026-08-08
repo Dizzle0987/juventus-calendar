@@ -103,18 +103,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Inter
 DTSTART;TZID=Europe/Rome:20260808T130000
 DTEND;TZID=Europe/Rome:20260808T150000
-DTSTAMP:20260807T112227Z
+DTSTAMP:20260808T194739Z
 UID:9d9e645e765f3e91d1ba6bcc@juventus-calendar
-SEQUENCE:2
+SEQUENCE:3
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nTurn
- o: 0\nStadio: Optus Stadium\nLocalità: Perth\, WA\nDove vederla in Italia
- : Sky Sport e NOW\nFonte orario: NOW\nLink orario: https://www.nowtv.it/sp
- ort/calcio/juventus\nFonte principale: https://www.juventus.com/en/teams/f
- irst-team-men/fixtures-results/\nFonte TV: https://www.nowtv.it/sport/calc
- io/juventus
-LAST-MODIFIED:20260807T112227Z
-LOCATION:Optus Stadium\, Perth\, WA
+ o: 0\nStadio: Optus Stadium\nLocalità: Perth\nDove vederla in Italia: Sky
+  Sport e NOW\nFonte orario: NOW\nLink orario: https://www.nowtv.it/sport/c
+ alcio/juventus\nFonte principale: https://www.juventus.com/en/teams/first-
+ team-men/fixtures-results/\nFonte TV: https://www.nowtv.it/sport/calcio/ju
+ ventus
+LAST-MODIFIED:20260808T194739Z
+LOCATION:Optus Stadium\, Perth
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM

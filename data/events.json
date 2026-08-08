@@ -104,12 +104,12 @@
       "competition": "Friendly",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-07T11:22:27Z",
-      "location": "Perth, WA",
+      "last_modified": "2026-08-08T19:47:39Z",
+      "location": "Perth",
       "round": "0",
-      "sequence": 2,
+      "sequence": 3,
       "source": "Juventus",
-      "source_id": "2467938",
+      "source_id": "401869429",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-08-08T13:00:00+02:00",
       "status": "scheduled",
@@ -1076,7 +1076,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-07T11:31:50Z",
+  "last_changed": "2026-08-08T19:47:39Z",
   "schema_version": 1,
   "source_errors": [
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
