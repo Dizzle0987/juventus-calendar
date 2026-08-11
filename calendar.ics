@@ -126,18 +126,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Palermo
 DTSTART;TZID=Europe/Rome:20260811T110000
 DTEND;TZID=Europe/Rome:20260811T130000
-DTSTAMP:20260809T044851Z
+DTSTAMP:20260811T153351Z
 UID:0950209f36495bd8b8e98d58@juventus-calendar
-SEQUENCE:2
+SEQUENCE:3
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nTurn
- o: 0\nStadio: Optus Stadium\nLocalità: Perth\, WA\nDove vederla in Italia
- : Sky Sport e NOW\nFonte orario: NOW\nLink orario: https://www.nowtv.it/sp
- ort/calcio/juventus\nFonte principale: https://www.juventus.com/en/teams/f
- irst-team-men/fixtures-results/\nFonte TV: https://www.nowtv.it/sport/calc
- io/juventus
-LAST-MODIFIED:20260809T044851Z
-LOCATION:Optus Stadium\, Perth\, WA
+ o: 0\nStadio: HBF Park - Perth\nLocalità: Perth\nDove vederla in Italia: 
+ Sky Sport e NOW\nFonte orario: NOW\nLink orario: https://www.nowtv.it/spor
+ t/calcio/juventus\nFonte principale: https://www.juventus.com/en/teams/fir
+ st-team-men/fixtures-results/\nFonte TV: https://www.nowtv.it/sport/calcio
+ /juventus
+LAST-MODIFIED:20260811T153351Z
+LOCATION:HBF Park - Perth\, Perth
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
