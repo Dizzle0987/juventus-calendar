@@ -124,19 +124,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Palermo
-DTSTART;TZID=Europe/Rome:20260811T110000
-DTEND;TZID=Europe/Rome:20260811T130000
-DTSTAMP:20260811T153351Z
+DTSTART;TZID=Europe/Rome:20260811T120000
+DTEND;TZID=Europe/Rome:20260811T140000
+DTSTAMP:20260812T055005Z
 UID:0950209f36495bd8b8e98d58@juventus-calendar
-SEQUENCE:3
+SEQUENCE:4
 CATEGORIES:Friendly,Juventus
-DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nTurn
- o: 0\nStadio: HBF Park - Perth\nLocalità: Perth\nDove vederla in Italia: 
- Sky Sport e NOW\nFonte orario: NOW\nLink orario: https://www.nowtv.it/spor
- t/calcio/juventus\nFonte principale: https://www.juventus.com/en/teams/fir
- st-team-men/fixtures-results/\nFonte TV: https://www.nowtv.it/sport/calcio
- /juventus
-LAST-MODIFIED:20260811T153351Z
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nStad
+ io: HBF Park - Perth\nLocalità: Perth\nDove vederla in Italia: Da definir
+ e\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en/teams/
+ first-team-men/fixtures-results/\nFonte principale: https://www.juventus.c
+ om/en/teams/first-team-men/fixtures-results/
+LAST-MODIFIED:20260812T055005Z
 LOCATION:HBF Park - Perth\, Perth
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
