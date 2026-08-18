@@ -110,15 +110,19 @@ def test_parse_official_opta_calendar_with_tbc_time():
     assert event["round"] == "Regular Season · Giornata 38"
 
 
-def test_official_source_filters_other_juventus_squads():
+def test_first_team_against_next_gen_is_included_but_other_squad_fixtures_are_not():
     payload = [
         official_match(TeamAway="Juventus Next Gen"),
-        official_match(TeamAway="Juventus Women"),
-        official_match(TeamAway="Juventus Primavera"),
+        official_match(TeamHome="Juventus Next Gen", TeamAway="Pisa"),
+        official_match(TeamHome="Juventus Women", TeamAway="Roma Women"),
+        official_match(TeamHome="Juventus Primavera", TeamAway="Torino Primavera"),
         official_match(TeamAway="Napoli"),
     ]
     events = parse_official_json(payload)
-    assert [(x["home_team"], x["away_team"]) for x in events] == [("Juventus", "Napoli")]
+    assert [(x["home_team"], x["away_team"]) for x in events] == [
+        ("Juventus", "Juventus Next Gen"),
+        ("Juventus", "Napoli"),
+    ]
 
 
 def test_parse_espn_fallback_api():
