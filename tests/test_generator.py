@@ -210,6 +210,29 @@ def test_editorial_fallback_is_used_but_broadcaster_has_final_priority():
     assert merged["time_source"] == "Sky Sport/NOW"
 
 
+def test_dazn_sky_now_use_the_same_priority_order_as_milan_calendar():
+    club = base_event(start="2026-09-12", all_day=True)
+    sky = parse_schedule_html(
+        '<script type="application/ld+json">{"text":"12 settembre ore 20:30 - Juventus vs Roma."}</script>',
+        "Sky Sport", "https://sky.example", 2026, 40, "Sky Sport e NOW",
+    )[0]
+    dazn = parse_schedule_html(
+        '<script type="application/ld+json">{"text":"12 settembre ore 21:00 - Juventus vs Roma."}</script>',
+        "DAZN", "https://dazn.example", 2026, 60, "DAZN",
+    )[0]
+    now = parse_schedule_html(
+        '<script type="application/ld+json">{"text":"12 settembre ore 20:45 - Juventus vs Roma."}</script>',
+        "NOW", "https://now.example", 2026, 50, "Sky Sport e NOW",
+    )[0]
+
+    merged = merge_remote_events([dazn, now, club, sky])[0]
+
+    assert merged["start"] == "2026-09-12T21:00:00+02:00"
+    assert merged["time_source"] == "DAZN"
+    assert merged["broadcast_it"] == "DAZN; alcune partite anche su Sky Sport/NOW; Sky Sport e NOW"
+    assert merged["broadcast_source_url"] == "https://dazn.example"
+
+
 def test_deduplication_and_juventus_equivalent_names():
     official = base_event()
     espn = base_event(
@@ -434,6 +457,7 @@ def test_manual_event_has_final_precedence(tmp_path, monkeypatch):
                 "venue": "Stadio corretto manualmente",
                 "broadcast_it": "Canale verificato",
                 "time_source": "Fonte manuale",
+                "locked": True,
             }
         ],
     )
@@ -445,6 +469,27 @@ def test_manual_event_has_final_precedence(tmp_path, monkeypatch):
     assert event["source"] == "Manuale"
     assert event["venue"] == "Stadio corretto manualmente"
     assert event["broadcast_it"] == "Canale verificato"
+
+
+def test_dazn_time_overrides_unlocked_manual_data():
+    club = base_event(start="2026-09-12", all_day=True, time_source="", time_source_url="")
+    dazn = parse_schedule_html(
+        '<script type="application/ld+json">{"text":"12 settembre ore 21:00 - Juventus vs Roma."}</script>',
+        "DAZN", "https://dazn.example", 2026, 60, "DAZN",
+    )[0]
+    remote = merge_remote_events([club, dazn])
+    manual = [base_event(
+        source="Manuale",
+        start="2026-09-12T20:00:00+02:00",
+        time_source="Fonte manuale precedente",
+        broadcast_it="Canale precedente",
+    )]
+
+    event = merge_manual_events(remote, manual)[0]
+
+    assert event["start"] == "2026-09-12T21:00:00+02:00"
+    assert event["time_source"] == "DAZN"
+    assert event["broadcast_it"] == "DAZN; alcune partite anche su Sky Sport/NOW"
 
 
 def test_manual_events_can_intentionally_include_other_squad(tmp_path):
