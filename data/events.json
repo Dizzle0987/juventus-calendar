@@ -1,5 +1,5 @@
 {
-  "event_count": 44,
+  "event_count": 45,
   "events": [
     {
       "all_day": false,
@@ -138,6 +138,29 @@
       "title": "Juventus - Palermo",
       "uid": "0950209f36495bd8b8e98d58@juventus-calendar",
       "venue": "HBF Park - Perth"
+    },
+    {
+      "all_day": false,
+      "away_team": "Next Gen",
+      "broadcast_it": "Da definire",
+      "broadcast_source_url": "",
+      "competition": "Friendly",
+      "home_away": "Casa",
+      "home_team": "Juventus",
+      "last_modified": "2026-08-18T06:37:53Z",
+      "location": "",
+      "round": "",
+      "sequence": 0,
+      "source": "Juventus",
+      "source_id": "",
+      "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "start": "2026-08-17T16:00:00+00:00",
+      "status": "scheduled",
+      "time_source": "Juventus",
+      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "title": "Juventus - Next Gen",
+      "uid": "5a0041f09535e887e260d59f@juventus-calendar",
+      "venue": "Allianz Stadium"
     },
     {
       "all_day": false,
@@ -1063,7 +1086,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-12T05:50:05Z",
+  "last_changed": "2026-08-18T06:37:53Z",
   "schema_version": 1,
   "source_errors": [
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",

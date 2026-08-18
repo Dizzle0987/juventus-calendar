@@ -146,6 +146,29 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Next Gen
+DTSTART;TZID=Europe/Rome:20260817T180000
+DTEND;TZID=Europe/Rome:20260817T200000
+DTSTAMP:20260818T063753Z
+UID:5a0041f09535e887e260d59f@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Friendly,Juventus
+DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nStato: scheduled\nStad
+ io: Allianz Stadium\nDove vederla in Italia: Da definire\nFonte orario: Ju
+ ventus\nLink orario: https://www.juventus.com/en/teams/first-team-men/fixt
+ ures-results/\nFonte principale: https://www.juventus.com/en/teams/first-t
+ eam-men/fixtures-results/
+LAST-MODIFIED:20260818T063753Z
+LOCATION:Allianz Stadium
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Next Gen
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Frosinone - Juventus
 DTSTART;TZID=Europe/Rome:20260823T183000
 DTEND;TZID=Europe/Rome:20260823T203000
