@@ -74,19 +74,29 @@ ESPN_COMPETITIONS = {
 
 # These pages are consulted only for explicit fixture/time statements. Their
 # entries enrich a fixture already found through Juventus/ESPN/TheSportsDB.
+# Keep these values aligned with Milan Calendar: the higher value wins.
+TIME_SOURCE_PRIORITY = {
+    "Juventus": 10,
+    "Gazzetta dello Sport": 20,
+    "Sky Sport": 40,
+    "Mediaset Infinity": 40,
+    "Prime Video": 40,
+    "NOW": 50,
+    "DAZN": 60,
+}
 TIME_SOURCES = (
-    ("Gazzetta dello Sport", "https://www.gazzetta.it/Calcio/Serie-A/Juventus/", 40, ""),
-    ("Juventus", OFFICIAL_PAGE, 50, ""),
-    ("DAZN", "https://www.dazn.com/it-IT/schedule", 80, "DAZN"),
-    ("Sky Sport/NOW", "https://sport.sky.it/calcio/serie-a", 80, "Sky Sport e NOW"),
-    ("NOW", "https://www.nowtv.it/sport/calcio/juventus", 80, "Sky Sport e NOW"),
+    ("Juventus", OFFICIAL_PAGE, TIME_SOURCE_PRIORITY["Juventus"], ""),
+    ("Gazzetta dello Sport", "https://www.gazzetta.it/Calcio/Serie-A/Juventus/", TIME_SOURCE_PRIORITY["Gazzetta dello Sport"], ""),
+    ("Sky Sport", "https://sport.sky.it/calcio/serie-a", TIME_SOURCE_PRIORITY["Sky Sport"], "Sky Sport e NOW"),
+    ("NOW", "https://www.nowtv.it/sport/calcio/juventus", TIME_SOURCE_PRIORITY["NOW"], "Sky Sport e NOW"),
+    ("DAZN", "https://www.dazn.com/it-IT/schedule", TIME_SOURCE_PRIORITY["DAZN"], "DAZN"),
     (
         "Mediaset Infinity",
         "https://mediasetinfinity.mediaset.it/calcio-e-sport/",
-        80,
+        TIME_SOURCE_PRIORITY["Mediaset Infinity"],
         "Mediaset e Mediaset Infinity",
     ),
-    ("Prime Video", "https://www.primevideo.com/storefront/sports", 80, "Prime Video"),
+    ("Prime Video", "https://www.primevideo.com/storefront/sports", TIME_SOURCE_PRIORITY["Prime Video"], "Prime Video"),
 )
 
 BROADCASTERS_BY_COMPETITION = {
@@ -758,10 +768,23 @@ def merge_manual_events(remote: list[dict[str, Any]], manual: list[dict[str, Any
                 i for i, event in enumerate(merged) if _same_long_range_fixture(event, candidate)
             ]
             index = long_range_matches[0] if len(long_range_matches) == 1 else None
+        manual_event = deepcopy(candidate)
+        locked = bool(manual_event.pop("locked", False))
         if index is None:
-            merged.append(deepcopy(candidate))
+            merged.append(manual_event)
         else:
-            merged[index].update(deepcopy(candidate))
+            protected: dict[str, Any] = {}
+            existing = merged[index]
+            if not locked and TIME_SOURCE_PRIORITY.get(str(existing.get("time_source") or ""), 0):
+                for key in (
+                    "start", "all_day", "time_source", "time_source_url",
+                    "broadcast_it", "broadcast_source_url", "broadcast_source_urls",
+                    "time_conflicts",
+                ):
+                    if key in existing:
+                        protected[key] = deepcopy(existing[key])
+            existing.update(manual_event)
+            existing.update(protected)
     return sorted(merged, key=_event_datetime)
 
 
