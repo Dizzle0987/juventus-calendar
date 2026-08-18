@@ -1,5 +1,5 @@
 {
-  "event_count": 45,
+  "event_count": 46,
   "events": [
     {
       "all_day": false,
@@ -160,6 +160,30 @@
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Juventus - Next Gen",
       "uid": "5a0041f09535e887e260d59f@juventus-calendar",
+      "venue": "Allianz Stadium"
+    },
+    {
+      "all_day": false,
+      "away_team": "Juventus Next Gen",
+      "broadcast_it": "Juventus.com e app Juventus (streaming gratuito)",
+      "broadcast_source_url": "https://www.juventus.com/it/amichevoli-estive",
+      "competition": "Amichevole",
+      "home_away": "Casa",
+      "home_team": "Juventus",
+      "id": "juventus-next-gen-2026-08-17",
+      "last_modified": "2026-08-18T12:35:07Z",
+      "location": "Torino",
+      "neutral": false,
+      "round": "Amichevole in famiglia",
+      "sequence": 0,
+      "source": "Manuale",
+      "source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
+      "start": "2026-08-17T18:00:00+02:00",
+      "status": "finished",
+      "time_source": "Juventus",
+      "time_source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
+      "title": "Juventus - Juventus Next Gen",
+      "uid": "juventus-next-gen-2026-08-17@juventus-calendar",
       "venue": "Allianz Stadium"
     },
     {
@@ -1086,7 +1110,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-18T06:37:53Z",
+  "last_changed": "2026-08-18T12:35:07Z",
   "schema_version": 1,
   "source_errors": [
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",

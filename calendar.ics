@@ -169,6 +169,32 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Juventus Next Gen
+DTSTART;TZID=Europe/Rome:20260817T180000
+DTEND;TZID=Europe/Rome:20260817T200000
+DTSTAMP:20260818T123507Z
+UID:juventus-next-gen-2026-08-17@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Amichevole,Juventus
+DESCRIPTION:Competizione: Amichevole\nJuventus: Casa\nStato: finished\nTur
+ no: Amichevole in famiglia\nStadio: Allianz Stadium\nLocalità: Torino\nDo
+ ve vederla in Italia: Juventus.com e app Juventus (streaming gratuito)\nFo
+ nte orario: Juventus\nLink orario: https://www.juventus.com/it/news/artico
+ li/juventus-vs-next-gen-biglietti-in-vendita\nFonte principale: https://ww
+ w.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita\
+ nFonte TV: https://www.juventus.com/it/amichevoli-estive
+LAST-MODIFIED:20260818T123507Z
+LOCATION:Allianz Stadium\, Torino
+TRANSP:OPAQUE
+URL:https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-bigliet
+ ti-in-vendita
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Juventus Next Gen
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Frosinone - Juventus
 DTSTART;TZID=Europe/Rome:20260823T183000
 DTEND;TZID=Europe/Rome:20260823T203000
