@@ -1,5 +1,23 @@
 {
-  "events": [],
+  "events": [
+    {
+      "id": "juventus-next-gen-2026-08-17",
+      "home_team": "Juventus",
+      "away_team": "Juventus Next Gen",
+      "competition": "Amichevole",
+      "round": "Amichevole in famiglia",
+      "start": "2026-08-17T18:00:00+02:00",
+      "venue": "Allianz Stadium",
+      "location": "Torino",
+      "neutral": false,
+      "status": "finished",
+      "source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
+      "time_source": "Juventus",
+      "time_source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
+      "broadcast_it": "Juventus.com e app Juventus (streaming gratuito)",
+      "broadcast_source_url": "https://www.juventus.com/it/amichevoli-estive"
+    }
+  ],
   "example": {
     "enabled": false,
     "id": "friendly-opponent-season",
