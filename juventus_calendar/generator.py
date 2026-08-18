@@ -176,9 +176,10 @@ def _competition_family(name: str) -> str:
 
 
 def _valid_first_team_fixture(home: str, away: str) -> bool:
-    return bool(home and away and (_is_juventus(home) or _is_juventus(away))) and not (
-        _is_excluded_squad(home) or _is_excluded_squad(away)
-    )
+    # Follow the men's first team, regardless of its opponent. This keeps the
+    # traditional Juventus v Next Gen friendly while standalone Next Gen,
+    # Women and youth fixtures still fail the exact first-team alias check.
+    return bool(home and away and (_is_juventus(home) or _is_juventus(away)))
 
 
 def parse_official_json(payload: Any, source_url: str = OFFICIAL_PAGE) -> list[dict[str, Any]]:
