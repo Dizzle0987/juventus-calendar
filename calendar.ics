@@ -198,18 +198,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Frosinone - Juventus
 DTSTART;TZID=Europe/Rome:20260823T183000
 DTEND;TZID=Europe/Rome:20260823T203000
-DTSTAMP:20260807T071517Z
+DTSTAMP:20260823T191130Z
 UID:4956e99f48f43767220fb75f@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: scheduled\n
- Turno: Regular Season · Giornata 1\nStadio: Stadio Benito Stirpe\nLocalit
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nStato: finished\nT
+ urno: Regular Season · Giornata 1\nStadio: Stadio Benito Stirpe\nLocalit
  à: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spor
  t/NOW\nFonte orario: Juventus\nLink orario: https://www.juventus.com/en/te
  ams/first-team-men/fixtures-results/\nFonte principale: https://www.juvent
  us.com/en/teams/first-team-men/fixtures-results/\nFonte TV: https://www.da
  zn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6
-LAST-MODIFIED:20260807T071517Z
+LAST-MODIFIED:20260823T191130Z
 LOCATION:Stadio Benito Stirpe\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

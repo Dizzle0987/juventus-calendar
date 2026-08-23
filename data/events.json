@@ -194,16 +194,16 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Frosinone",
-      "last_modified": "2026-08-07T07:15:17Z",
+      "last_modified": "2026-08-23T19:11:30Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 1",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "6u75dbi2nuiavlw1uckpki5uc",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-08-23T16:30:00+00:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_source": "Juventus",
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Frosinone - Juventus",
@@ -1110,7 +1110,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-18T12:35:07Z",
+  "last_changed": "2026-08-23T19:11:30Z",
   "schema_version": 1,
   "source_errors": [
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
