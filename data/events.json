@@ -194,12 +194,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Frosinone",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 1",
-      "sequence": 2,
+      "sequence": 3,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -208,7 +240,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -230,12 +262,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 2",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -244,7 +308,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -266,12 +330,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -280,7 +376,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -302,12 +398,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -316,7 +444,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -342,12 +470,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 2,
+      "sequence": 3,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -356,7 +516,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -385,12 +545,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -399,7 +591,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -421,12 +613,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -435,7 +659,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -457,12 +681,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -471,7 +727,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -493,12 +749,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -507,7 +795,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -529,12 +817,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 10",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -543,7 +863,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -565,12 +885,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Fiorentina",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 11",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -579,7 +931,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -601,12 +953,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 12",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -615,7 +999,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -637,12 +1021,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Como",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 13",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -651,7 +1067,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -673,12 +1089,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 14",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -687,7 +1135,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -709,12 +1157,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 15",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -723,7 +1203,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -745,12 +1225,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Roma",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 16",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -759,7 +1271,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -781,12 +1293,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Bologna",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 17",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -795,7 +1339,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -817,12 +1361,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 18",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -831,7 +1407,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -853,12 +1429,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Internazionale",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 19",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -867,7 +1475,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -889,12 +1497,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 20",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -903,7 +1543,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -925,12 +1565,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 21",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -939,7 +1611,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -961,12 +1633,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Milan",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 22",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -975,7 +1679,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -997,12 +1701,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 23",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1011,7 +1747,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1033,12 +1769,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Napoli",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 24",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1047,7 +1815,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1069,12 +1837,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 25",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1083,7 +1883,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1105,12 +1905,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Monza",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 26",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1119,7 +1951,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1141,12 +1973,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 27",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1155,7 +2019,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1177,12 +2041,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lazio",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 28",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1191,7 +2087,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1213,12 +2109,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 29",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1227,7 +2155,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1249,12 +2177,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Torino",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 30",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1263,7 +2223,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1285,12 +2245,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 31",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1299,7 +2291,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1321,12 +2313,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Venezia",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 32",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1335,7 +2359,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1357,12 +2381,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 33",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1371,7 +2427,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1393,12 +2449,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Atalanta",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 34",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1407,7 +2495,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1429,12 +2517,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Udinese",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 35",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1443,7 +2563,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1465,12 +2585,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 36",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1479,7 +2631,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1501,12 +2653,44 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Parma",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 37",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1515,7 +2699,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1537,12 +2721,44 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-24T06:41:03Z",
+      "last_modified": "2026-08-24T06:52:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 38",
-      "sequence": 1,
+      "sequence": 2,
       "serie_a_standing": {
+        "context": [
+          {
+            "played": 1,
+            "points": 3,
+            "position": 5,
+            "team": "Atalanta"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 6,
+            "team": "Cagliari"
+          },
+          {
+            "played": 1,
+            "points": 3,
+            "position": 7,
+            "team": "Juventus"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 8,
+            "team": "Como"
+          },
+          {
+            "played": 1,
+            "points": 1,
+            "position": 9,
+            "team": "Udinese"
+          }
+        ],
         "draws": 0,
         "goal_difference": 1,
         "losses": 0,
@@ -1551,7 +2767,7 @@
         "position": 7,
         "source": "ESPN",
         "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-        "updated_at": "2026-08-24T06:41:03Z",
+        "updated_at": "2026-08-24T06:52:37Z",
         "wins": 1
       },
       "source": "Juventus",
@@ -1566,9 +2782,41 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-24T06:41:03Z",
+  "last_changed": "2026-08-24T06:52:37Z",
   "schema_version": 1,
   "serie_a_standing": {
+    "context": [
+      {
+        "played": 1,
+        "points": 3,
+        "position": 5,
+        "team": "Atalanta"
+      },
+      {
+        "played": 1,
+        "points": 3,
+        "position": 6,
+        "team": "Cagliari"
+      },
+      {
+        "played": 1,
+        "points": 3,
+        "position": 7,
+        "team": "Juventus"
+      },
+      {
+        "played": 1,
+        "points": 1,
+        "position": 8,
+        "team": "Como"
+      },
+      {
+        "played": 1,
+        "points": 1,
+        "position": 9,
+        "team": "Udinese"
+      }
+    ],
     "draws": 0,
     "goal_difference": 1,
     "losses": 0,
@@ -1577,7 +2825,7 @@
     "position": 7,
     "source": "ESPN",
     "source_url": "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season=2026",
-    "updated_at": "2026-08-24T06:41:03Z",
+    "updated_at": "2026-08-24T06:52:37Z",
     "wins": 1
   },
   "source_errors": [
