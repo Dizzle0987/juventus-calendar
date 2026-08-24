@@ -16,12 +16,45 @@ from juventus_calendar.generator import (
     merge_manual_events,
     merge_remote_events,
     parse_espn_json,
+    parse_espn_standings_json,
     parse_official_json,
     parse_official_opta_json,
     parse_schedule_html,
     parse_thesportsdb_json,
     update_calendar,
 )
+
+
+def test_parse_espn_standings_json_extracts_juventus_row():
+    payload = {
+        "children": [{
+            "standings": {
+                "entries": [{
+                    "team": {"id": "111", "displayName": "Juventus"},
+                    "stats": [
+                        {"name": "rank", "value": 3},
+                        {"name": "points", "value": 21},
+                        {"name": "gamesPlayed", "value": 10},
+                        {"name": "wins", "value": 6},
+                        {"name": "ties", "value": 3},
+                        {"name": "losses", "value": 1},
+                        {"name": "pointDifferential", "value": 9},
+                    ],
+                }]
+            }
+        }]
+    }
+
+    assert parse_espn_standings_json(payload) == {
+        "position": 3,
+        "points": 21,
+        "played": 10,
+        "wins": 6,
+        "draws": 3,
+        "losses": 1,
+        "goal_difference": 9,
+        "source": "ESPN",
+    }
 
 
 def official_match(**overrides):
@@ -413,6 +446,13 @@ def test_ical_timezone_alarm_tv_and_validity():
         broadcast_source_url="https://dazn.example",
         last_modified="2026-08-01T10:00:00Z",
         sequence=2,
+        serie_a_standing={
+            "position": 3,
+            "points": 21,
+            "played": 10,
+            "goal_difference": 9,
+            "updated_at": "2026-08-24T10:00:00Z",
+        },
     )
     payload = build_ical([event])
     calendar = Calendar.from_ical(payload)
@@ -421,7 +461,11 @@ def test_ical_timezone_alarm_tv_and_validity():
     assert getattr(component.decoded("dtstart").tzinfo, "key", None) == "Europe/Rome"
     assert alarm.decoded("trigger").total_seconds() == -(2 * 60 + 30) * 60
     assert component.decoded("sequence") == 2
-    assert "Dove vederla in Italia: DAZN" in component.decoded("description").decode()
+    description = component.decoded("description").decode()
+    assert "Orario (Roma): 12/09/2026 20:45" in description
+    assert "Dove vederla in Italia: DAZN" in description
+    assert "Classifica Juventus: 3º — 21 pt — 10 PG — DR +9" in description
+    assert "https://" not in description
     assert b"BEGIN:VCALENDAR" in payload and b"END:VCALENDAR" in payload
 
 
@@ -442,6 +486,39 @@ def test_competition_assigns_italian_tv_coverage(tmp_path, monkeypatch):
     )
     event = update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))[0]
     assert "DAZN" in event["broadcast_it"]
+
+
+def test_update_attaches_current_standing_only_to_serie_a(tmp_path, monkeypatch):
+    write_manual(tmp_path)
+    serie_a = base_event()
+    champions = base_event(
+        source_id="champions-1",
+        away_team="Paris Saint-Germain",
+        competition="UEFA Champions League",
+        start="2026-09-16T19:00:00+00:00",
+    )
+    standing = {
+        "position": 3,
+        "points": 21,
+        "played": 10,
+        "goal_difference": 9,
+        "source": "ESPN",
+        "source_url": "https://espn.example/standings",
+    }
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: FetchResult(
+            [serie_a, champions], ["Juventus", "ESPN classifica"], [], standing
+        ),
+    )
+
+    events = update_calendar(tmp_path, session=object(), today=date(2026, 8, 24))
+
+    league = next(event for event in events if event["competition"] == "Serie A")
+    europe = next(event for event in events if "Champions" in event["competition"])
+    assert league["serie_a_standing"]["position"] == 3
+    assert "updated_at" in league["serie_a_standing"]
+    assert "serie_a_standing" not in europe
 
 
 def test_manual_event_has_final_precedence(tmp_path, monkeypatch):
