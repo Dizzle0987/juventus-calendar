@@ -254,20 +254,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
-DTSTART;TZID=Europe/Rome:20260912T180000
-DTEND;TZID=Europe/Rome:20260912T200000
-DTSTAMP:20260824T065237Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20260824T142730Z
 UID:5a23aeb3327f080f81a89566@juventus-calendar
-SEQUENCE:2
+SEQUENCE:3
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 12/
- 09/2026 18:00\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium 
- - Città del Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\; a
- lcune partite anche su Sky Sport/NOW\nFonte orario: Juventus\nClassifica S
- erie A:\n  5. Atalanta — 3 pt\n  6. Cagliari — 3 pt\n▶ 7. Juventus 
- — 3 pt — 1 PG — DR +1\n  8. Como — 1 pt\n  9. Udinese — 1 pt\nCl
- assifica aggiornata: 24/08/2026 08:52
-LAST-MODIFIED:20260824T065237Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
+ are\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium - Città d
+ el Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune part
+ ite anche su Sky Sport/NOW\nClassifica Serie A:\n  5. Atalanta — 3 pt\n 
+  6. Cagliari — 3 pt\n▶ 7. Juventus — 3 pt — 1 PG — DR +1\n  8. C
+ omo — 1 pt\n  9. Udinese — 1 pt\nClassifica aggiornata: 24/08/2026 08:
+ 52
+LAST-MODIFIED:20260824T142730Z
 LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

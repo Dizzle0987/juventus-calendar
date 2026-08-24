@@ -391,18 +391,18 @@
       "venue": "Allianz Stadium"
     },
     {
-      "all_day": false,
+      "all_day": true,
       "away_team": "Juventus",
       "broadcast_it": "DAZN; alcune partite anche su Sky Sport/NOW",
       "broadcast_source_url": "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6",
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-08-24T06:52:37Z",
+      "last_modified": "2026-08-24T14:27:30Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 2,
+      "sequence": 3,
       "serie_a_standing": {
         "context": [
           {
@@ -450,10 +450,10 @@
       "source": "Juventus",
       "source_id": "75g3fr1c7phhoq2aofhljua6s",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
-      "start": "2026-09-12T16:00:00+00:00",
+      "start": "2026-09-12",
       "status": "scheduled",
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "time_source": "",
+      "time_source_url": "",
       "title": "Sassuolo - Juventus",
       "uid": "5a23aeb3327f080f81a89566@juventus-calendar",
       "venue": "MAPEI Stadium - Città del Tricolore"
@@ -2782,7 +2782,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-24T06:52:37Z",
+  "last_changed": "2026-08-24T14:27:30Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
