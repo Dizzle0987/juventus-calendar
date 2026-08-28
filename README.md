@@ -6,7 +6,7 @@ Calendario iCalendar pubblico e sottoscrivibile con tutte le partite della Prima
 - Feed: <https://dizzle0987.github.io/juventus-calendar/calendar.ics>
 - iPhone: <webcal://dizzle0987.github.io/juventus-calendar/calendar.ics>
 
-Il feed comprende Serie A, Coppa Italia, Supercoppa Italiana, competizioni UEFA e FIFA, amichevoli, tournée e partite di preparazione. Include inoltre sorteggi ufficiali e pubblicazioni di calendari o tabelloni. Juventus Women, Next Gen e formazioni giovanili sono escluse automaticamente, a meno che un evento venga aggiunto intenzionalmente in `data/manual_events.json`.
+Il feed comprende Serie A, Coppa Italia, Supercoppa Italiana, Champions League, Europa League, Conference League, Supercoppa UEFA, Coppa del Mondo per Club FIFA, Coppa Intercontinentale FIFA, amichevoli, tournée e partite di preparazione. Include inoltre sorteggi ufficiali e pubblicazioni di calendari o tabelloni. Juventus Women, Next Gen e formazioni giovanili sono escluse automaticamente, a meno che un evento venga aggiunto intenzionalmente in `data/manual_events.json`.
 
 ## Iscrizione
 
