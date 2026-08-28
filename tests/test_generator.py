@@ -33,11 +33,18 @@ from juventus_calendar.generator import (
 )
 
 
-def test_all_milan_calendar_competitions_are_explicitly_monitored() -> None:
+def test_all_potential_competitions_are_explicitly_monitored() -> None:
+    assert ESPN_COMPETITIONS["ita.2"] == "Serie B"
     assert ESPN_COMPETITIONS["uefa.super_cup"] == "Supercoppa UEFA"
     assert ESPN_COMPETITIONS["fifa.intercontinental_cup"] == "Coppa Intercontinentale FIFA"
+    assert ESPN_COMPETITIONS["global.club_challenge"] == "UEFA–CONMEBOL Club Challenge"
+    assert _competition_family("Serie B") == "serie-b"
     assert _competition_family("Supercoppa UEFA") == "supercoppa-uefa"
     assert _competition_family("Coppa Intercontinentale FIFA") == "coppa-intercontinentale-fifa"
+    assert (
+        _competition_family("UEFA–CONMEBOL Club Challenge")
+        == "uefa-conmebol-club-challenge"
+    )
 
 
 def test_parse_uefa_draw_prefers_exact_localtime_timestamp() -> None:
