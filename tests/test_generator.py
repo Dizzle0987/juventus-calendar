@@ -8,9 +8,11 @@ import pytest
 from icalendar import Calendar
 
 from juventus_calendar.generator import (
+    ESPN_COMPETITIONS,
     FetchResult,
     UpdateError,
     _canonical_event,
+    _competition_family,
     _uid_for,
     build_ical,
     find_lega_calendar_articles,
@@ -29,6 +31,13 @@ from juventus_calendar.generator import (
     parse_uefa_draw_html,
     update_calendar,
 )
+
+
+def test_all_milan_calendar_competitions_are_explicitly_monitored() -> None:
+    assert ESPN_COMPETITIONS["uefa.super_cup"] == "Supercoppa UEFA"
+    assert ESPN_COMPETITIONS["fifa.intercontinental_cup"] == "Coppa Intercontinentale FIFA"
+    assert _competition_family("Supercoppa UEFA") == "supercoppa-uefa"
+    assert _competition_family("Coppa Intercontinentale FIFA") == "coppa-intercontinentale-fifa"
 
 
 def test_parse_uefa_draw_prefers_exact_localtime_timestamp() -> None:
