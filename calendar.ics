@@ -8,23 +8,66 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 X-WR-TIMEZONE:Europe/Rome
 BEGIN:VEVENT
+SUMMARY:🗓️ Presentazione calendario Serie A 2026/27
+DTSTART;TZID=Europe/Rome:20260605T183000
+DTEND;TZID=Europe/Rome:20260605T193000
+DTSTAMP:20260828T113202Z
+UID:2aab385bc481dce82366758d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Serie A,Juventus
+DESCRIPTION:Competizione: Serie A\nTipo: Pubblicazione calendario/tabellon
+ e\nOrario (Roma): 05/06/2026 18:30\nStadio: Teatro Regio\nLocalità: Parma
+ \nPresentazione ufficiale del calendario della Serie A Enilive 2026/27.
+LAST-MODIFIED:20260828T113202Z
+LOCATION:Teatro Regio\, Parma
+TRANSP:OPAQUE
+URL:https://www.legaseriea.it/serie-a/news/aspettando-il-calendario-della-
+ serie-a-enilive-2026-27
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 30 minuti: Presentazione calendario Serie A 2026/27
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🗓️ Pubblicazione tabellone Coppa Italia 2026/27
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+DTSTAMP:20260828T113202Z
+UID:0048e0e4ce6385318116817e@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Coppa Italia,Juventus
+DESCRIPTION:Competizione: Coppa Italia\nTipo: Pubblicazione calendario/tab
+ ellone\nOrario: da confermare\nPubblicazione ufficiale del tabellone\; l'o
+ rario non è stato comunicato.
+LAST-MODIFIED:20260828T113202Z
+TRANSP:OPAQUE
+URL:https://images.legaseriea.it/image/private/fl_attachment/prd/jviyjl2na
+ ohigmnprshx.pdf
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 30 minuti: Pubblicazione tabellone Coppa Italia 2026/27
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ FC Basel - Juventus
 DTSTART;TZID=Europe/Rome:20260718T153000
 DTEND;TZID=Europe/Rome:20260718T173000
-DTSTAMP:20260807T071336Z
+DTSTAMP:20260828T113202Z
 UID:8fdb687aedeaf974ecc5225f@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nOrario (Roma): 18
  /07/2026 15:30\nStadio: St. Jakob-Park\nLocalità: Basel\nDove vederla in 
  Italia: Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20260807T071336Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:St. Jakob-Park\, Basel
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: FC Basel - Juventus
+DESCRIPTION:Tra 150 minuti: FC Basel - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -32,20 +75,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Standard Liège - Juventus
 DTSTART;TZID=Europe/Rome:20260725T200000
 DTEND;TZID=Europe/Rome:20260725T220000
-DTSTAMP:20260807T071336Z
+DTSTAMP:20260828T113202Z
 UID:3a77fbf18d0cb9102df0a0dc@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nOrario (Roma): 25
  /07/2026 20:00\nStadio: Stade Maurice Dufrasne\nLocalità: Liege\nDove ved
  erla in Italia: Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20260807T071336Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Stade Maurice Dufrasne\, Liege
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Standard Liège - Juventus
+DESCRIPTION:Tra 150 minuti: Standard Liège - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -53,20 +96,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - OGC NIce
 DTSTART;TZID=Europe/Rome:20260731T180000
 DTEND;TZID=Europe/Rome:20260731T200000
-DTSTAMP:20260807T071517Z
+DTSTAMP:20260828T113202Z
 UID:201b66a7dbfb95fc623e81b7@juventus-calendar
-SEQUENCE:1
+SEQUENCE:2
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nOrario (Roma): 31/07/2
  026 18:00\nStadio: Training Center Continassa\nDove vederla in Italia: Da 
  definire\nFonte orario: Juventus
-LAST-MODIFIED:20260807T071517Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Training Center Continassa
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - OGC NIce
+DESCRIPTION:Tra 150 minuti: Juventus - OGC NIce
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -74,20 +117,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Chelsea - Juventus
 DTSTART;TZID=Europe/Rome:20260805T133000
 DTEND;TZID=Europe/Rome:20260805T153000
-DTSTAMP:20260807T071336Z
+DTSTAMP:20260828T113202Z
 UID:34d15f44c644041d5e2dc656@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Trasferta\nOrario (Roma): 05
  /08/2026 13:30\nStadio: Kai Tak Stadium\nLocalità: Mongkok\, Kowloon\nDov
  e vederla in Italia: Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20260807T071336Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Kai Tak Stadium\, Mongkok\, Kowloon
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Chelsea - Juventus
+DESCRIPTION:Tra 150 minuti: Chelsea - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -95,20 +138,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Inter
 DTSTART;TZID=Europe/Rome:20260808T130000
 DTEND;TZID=Europe/Rome:20260808T150000
-DTSTAMP:20260809T044851Z
+DTSTAMP:20260828T113202Z
 UID:9d9e645e765f3e91d1ba6bcc@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nOrario (Roma): 08/08/2
  026 13:00\nStadio: Optus Stadium\nLocalità: Perth\nDove vederla in Italia
  : Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20260809T044851Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Optus Stadium\, Perth
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Inter
+DESCRIPTION:Tra 150 minuti: Juventus - Inter
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -116,20 +159,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Palermo
 DTSTART;TZID=Europe/Rome:20260811T120000
 DTEND;TZID=Europe/Rome:20260811T140000
-DTSTAMP:20260812T055005Z
+DTSTAMP:20260828T113202Z
 UID:0950209f36495bd8b8e98d58@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nOrario (Roma): 11/08/2
  026 12:00\nStadio: HBF Park - Perth\nLocalità: Perth\nDove vederla in Ita
  lia: Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20260812T055005Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:HBF Park - Perth\, Perth
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Palermo
+DESCRIPTION:Tra 150 minuti: Juventus - Palermo
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -137,20 +180,20 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Next Gen
 DTSTART;TZID=Europe/Rome:20260817T180000
 DTEND;TZID=Europe/Rome:20260817T200000
-DTSTAMP:20260818T063753Z
+DTSTAMP:20260828T113202Z
 UID:5a0041f09535e887e260d59f@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nOrario (Roma): 17/08/2
  026 18:00\nStadio: Allianz Stadium\nDove vederla in Italia: Da definire\nF
  onte orario: Juventus
-LAST-MODIFIED:20260818T063753Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Next Gen
+DESCRIPTION:Tra 150 minuti: Juventus - Next Gen
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -173,7 +216,7 @@ URL:https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-bigliet
  ti-in-vendita
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Juventus Next Gen
+DESCRIPTION:Tra 150 minuti: Juventus - Juventus Next Gen
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -181,9 +224,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Frosinone - Juventus
 DTSTART;TZID=Europe/Rome:20260823T183000
 DTEND;TZID=Europe/Rome:20260823T203000
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260828T113202Z
 UID:4956e99f48f43767220fb75f@juventus-calendar
-SEQUENCE:5
+SEQUENCE:6
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 23/
  08/2026 18:30\nTurno: Regular Season · Giornata 1\nStadio: Stadio Benito 
@@ -192,13 +235,13 @@ DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 23/
  alanta — 3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG
   — DR +1\n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornat
  a: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Stadio Benito Stirpe\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Frosinone - Juventus
+DESCRIPTION:Tra 150 minuti: Frosinone - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -206,9 +249,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Parma
 DTSTART;TZID=Europe/Rome:20260829T204500
 DTEND;TZID=Europe/Rome:20260829T224500
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260828T113202Z
 UID:2665ec5e05f8af032918501b@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
  26 20:45\nTurno: Regular Season · Giornata 2\nStadio: Allianz Stadium\nLo
@@ -217,13 +260,13 @@ DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
   3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1
  \n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2
  026 05:27
-LAST-MODIFIED:20260825T032740Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Parma
+DESCRIPTION:Tra 150 minuti: Juventus - Parma
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -231,9 +274,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260828T113202Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
@@ -242,13 +285,13 @@ DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
   3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1
  \n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2
  026 05:27
-LAST-MODIFIED:20260825T032740Z
+LAST-MODIFIED:20260828T113202Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Milan
+DESCRIPTION:Tra 150 minuti: Juventus - Milan
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -273,7 +316,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Sassuolo - Juventus
+DESCRIPTION:Tra 150 minuti: Sassuolo - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -298,7 +341,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Atalanta
+DESCRIPTION:Tra 150 minuti: Juventus - Atalanta
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -322,7 +365,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Cagliari - Juventus
+DESCRIPTION:Tra 150 minuti: Cagliari - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -346,7 +389,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lazio
+DESCRIPTION:Tra 150 minuti: Juventus - Lazio
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -371,7 +414,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Lecce - Juventus
+DESCRIPTION:Tra 150 minuti: Lecce - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -395,7 +438,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Genoa - Juventus
+DESCRIPTION:Tra 150 minuti: Genoa - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -419,7 +462,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Napoli
+DESCRIPTION:Tra 150 minuti: Juventus - Napoli
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -443,7 +486,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Fiorentina - Juventus
+DESCRIPTION:Tra 150 minuti: Fiorentina - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -467,7 +510,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Venezia
+DESCRIPTION:Tra 150 minuti: Juventus - Venezia
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -491,7 +534,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Como - Juventus
+DESCRIPTION:Tra 150 minuti: Como - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -515,7 +558,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Udinese
+DESCRIPTION:Tra 150 minuti: Juventus - Udinese
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -539,7 +582,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Monza
+DESCRIPTION:Tra 150 minuti: Juventus - Monza
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -563,7 +606,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Roma - Juventus
+DESCRIPTION:Tra 150 minuti: Roma - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -587,7 +630,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Bologna - Juventus
+DESCRIPTION:Tra 150 minuti: Bologna - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -611,7 +654,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Torino
+DESCRIPTION:Tra 150 minuti: Juventus - Torino
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -635,7 +678,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Internazionale - Juventus
+DESCRIPTION:Tra 150 minuti: Internazionale - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -659,7 +702,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Genoa
+DESCRIPTION:Tra 150 minuti: Juventus - Genoa
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -683,7 +726,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Cagliari
+DESCRIPTION:Tra 150 minuti: Juventus - Cagliari
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -707,7 +750,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Milan - Juventus
+DESCRIPTION:Tra 150 minuti: Milan - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -731,7 +774,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Sassuolo
+DESCRIPTION:Tra 150 minuti: Juventus - Sassuolo
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -755,7 +798,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Napoli - Juventus
+DESCRIPTION:Tra 150 minuti: Napoli - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -779,7 +822,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Bologna
+DESCRIPTION:Tra 150 minuti: Juventus - Bologna
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -803,7 +846,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Monza - Juventus
+DESCRIPTION:Tra 150 minuti: Monza - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -827,7 +870,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Roma
+DESCRIPTION:Tra 150 minuti: Juventus - Roma
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -851,7 +894,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Lazio - Juventus
+DESCRIPTION:Tra 150 minuti: Lazio - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -875,7 +918,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Como
+DESCRIPTION:Tra 150 minuti: Juventus - Como
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -899,7 +942,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Torino - Juventus
+DESCRIPTION:Tra 150 minuti: Torino - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -923,7 +966,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Lecce
+DESCRIPTION:Tra 150 minuti: Juventus - Lecce
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -947,7 +990,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Venezia - Juventus
+DESCRIPTION:Tra 150 minuti: Venezia - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -971,7 +1014,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Fiorentina
+DESCRIPTION:Tra 150 minuti: Juventus - Fiorentina
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -995,7 +1038,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Atalanta - Juventus
+DESCRIPTION:Tra 150 minuti: Atalanta - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -1019,7 +1062,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Udinese - Juventus
+DESCRIPTION:Tra 150 minuti: Udinese - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -1043,7 +1086,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Internazionale
+DESCRIPTION:Tra 150 minuti: Juventus - Internazionale
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -1067,7 +1110,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Parma - Juventus
+DESCRIPTION:Tra 150 minuti: Parma - Juventus
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
@@ -1091,7 +1134,7 @@ TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tra 2 ore e 30 minuti: Juventus - Frosinone
+DESCRIPTION:Tra 150 minuti: Juventus - Frosinone
 TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
