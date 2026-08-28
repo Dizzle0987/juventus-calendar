@@ -13,6 +13,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import requests
@@ -31,6 +32,21 @@ ESPN_API = (
 ESPN_STANDINGS_URL = (
     "https://site.api.espn.com/apis/v2/sports/soccer/ita.1/standings?season={season}"
 )
+UEFA_DRAW_URLS = {
+    "champions-league": (
+        "UEFA Champions League",
+        "https://www.uefa.com/uefachampionsleague/draws/",
+    ),
+    "europa-league": (
+        "UEFA Europa League",
+        "https://www.uefa.com/uefaeuropaleague/draws/",
+    ),
+    "conference-league": (
+        "UEFA Conference League",
+        "https://www.uefa.com/uefaconferenceleague/draws/",
+    ),
+}
+LEGA_NEWS_URL = "https://www.legaseriea.it/serie-a/news"
 THESPORTSDB_API = "https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133676"
 OFFICIAL_OPTA_API = (
     "https://api.performfeeds.com/soccerdata/match/1beaeep63zsv71a04kk2qk29pw"
@@ -122,6 +138,7 @@ class FetchResult:
     successful_sources: list[str]
     errors: list[str]
     serie_a_standing: dict[str, Any] | None = None
+    calendar_events: list[dict[str, Any]] | None = None
 
 
 def build_session() -> requests.Session:
@@ -398,6 +415,207 @@ def parse_espn_standings_json(payload: dict[str, Any]) -> dict[str, Any] | None:
     return result
 
 
+def parse_uefa_draw_html(
+    html: str, competition: str, source_url: str
+) -> list[dict[str, Any]]:
+    """Parse the current official UEFA draw from structured page metadata."""
+    decoded_html = html_module.unescape(html)
+    target_dates = re.findall(r'targetDate"\s*:\s*"([^"}]+)', decoded_html)
+    structured_events: list[dict[str, Any]] = []
+    for raw in re.findall(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        try:
+            value = json.loads(html_module.unescape(raw))
+        except (json.JSONDecodeError, TypeError):
+            continue
+        values = value if isinstance(value, list) else [value]
+        structured_events.extend(
+            item
+            for item in values
+            if isinstance(item, dict) and str(item.get("@type") or "") == "SportsEvent"
+        )
+
+    results: list[dict[str, Any]] = []
+    for index, item in enumerate(structured_events):
+        name = str(item.get("name") or item.get("description") or "").strip()
+        if "draw" not in name.lower():
+            continue
+        raw_start = target_dates[index] if index < len(target_dates) else str(item.get("startDate") or "")
+        if not raw_start:
+            continue
+        try:
+            start = datetime.fromisoformat(raw_start.replace("Z", "+00:00")).astimezone(ROME)
+        except ValueError:
+            continue
+        page_title = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
+        season_match = re.search(
+            r"(20\d{2})[/\\-](\d{2,4})",
+            html_module.unescape(page_title.group(1) if page_title else ""),
+        )
+        season = (
+            f"{season_match.group(1)}/{season_match.group(2)[-2:]}"
+            if season_match
+            else f"{season_start(start.date())}/{str(season_start(start.date()) + 1)[-2:]}"
+        )
+        phase = re.sub(r"^UEFA\s+.+?\s+-\s+", "", name, flags=re.IGNORECASE)
+        phase = re.sub(r"\s+draw$", "", phase, flags=re.IGNORECASE).strip()
+        phase_it = {
+            "league phase": "fase campionato",
+            "knockout phase play-off": "play-off fase a eliminazione diretta",
+            "round of 16": "ottavi di finale",
+        }.get(phase.lower(), phase)
+        location = item.get("location") or []
+        places = location if isinstance(location, list) else [location]
+        place = next(
+            (
+                value
+                for value in places
+                if isinstance(value, dict) and str(value.get("@type") or "") == "Place"
+            ),
+            {},
+        )
+        source_id = str(item.get("@id") or "").rsplit("#", 1)[-1]
+        results.append(
+            {
+                "source_id": source_id or f"uefa-draw-{_normalize(competition)}-{season}-{_normalize(phase)}",
+                "source": "UEFA",
+                "source_url": source_url,
+                "event_kind": "draw",
+                "title": f"Sorteggio {phase_it} {competition} {season}",
+                "competition": competition,
+                "start": start.isoformat(),
+                "all_day": False,
+                "venue": str(place.get("name") or ""),
+                "location": str(place.get("address") or place.get("name") or ""),
+                "status": "scheduled",
+                "reminder_minutes": 30,
+                "notes": "Data e orario recuperati automaticamente dalla pagina ufficiale UEFA.",
+            }
+        )
+    return results
+
+
+def find_lega_calendar_articles(html: str, source_url: str = LEGA_NEWS_URL) -> list[str]:
+    """Find recent official Lega articles that may announce a calendar event."""
+    links: list[str] = []
+    for href in re.findall(r'href=["\']([^"\']+)["\']', html, re.IGNORECASE):
+        url = urljoin(source_url, html_module.unescape(href))
+        slug = _normalize(url.rsplit("/", 1)[-1])
+        if "/serie-a/news/" not in url or not any(
+            word in slug for word in ("sorteggio", "calendario", "tabellone")
+        ):
+            continue
+        if url not in links:
+            links.append(url)
+    return links
+
+
+def parse_lega_calendar_article(html: str, source_url: str) -> list[dict[str, Any]]:
+    """Parse only explicit dates from an official Lega calendar/draw article."""
+    headline = ""
+    published_year: int | None = None
+    for raw in re.findall(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        try:
+            value = json.loads(html_module.unescape(raw))
+        except (json.JSONDecodeError, TypeError):
+            continue
+        values = value if isinstance(value, list) else [value]
+        article = next(
+            (
+                item
+                for item in values
+                if isinstance(item, dict) and str(item.get("@type") or "") == "NewsArticle"
+            ),
+            None,
+        )
+        if not article:
+            continue
+        headline = str(article.get("headline") or "")
+        published = str(article.get("datePublished") or "")
+        if published[:4].isdigit():
+            published_year = int(published[:4])
+        break
+    normalized_headline = _normalize(headline)
+    if not headline or not any(
+        word in normalized_headline for word in ("sorteggio", "calendario", "tabellone")
+    ):
+        return []
+    if "coppa italia" in normalized_headline:
+        competition = "Coppa Italia"
+    elif "supercoppa" in normalized_headline:
+        competition = "Supercoppa Italiana"
+    elif "serie a" in normalized_headline:
+        competition = "Serie A"
+    else:
+        return []
+
+    text = html_module.unescape(re.sub(r"<[^>]+>", " ", html))
+    text = re.sub(r"\s+", " ", text)
+    months = {
+        "gennaio": 1, "febbraio": 2, "marzo": 3, "aprile": 4,
+        "maggio": 5, "giugno": 6, "luglio": 7, "agosto": 8,
+        "settembre": 9, "ottobre": 10, "novembre": 11, "dicembre": 12,
+    }
+    match = re.search(
+        rf"(?P<day>\d{{1,2}})\s+(?P<month>{'|'.join(months)})"
+        r"(?:\s+(?P<year>20\d{2}))?"
+        r"(?:.{0,45}?(?:alle\s+ore|ore)\s*(?P<hour>\d{1,2})[.:](?P<minute>\d{2}))?",
+        text,
+        re.IGNORECASE,
+    )
+    if not match:
+        return []
+    year = int(match.group("year") or published_year or 0)
+    if not year:
+        return []
+    month = months[match.group("month").lower()]
+    if match.group("hour") is not None:
+        start_value = datetime(
+            year, month, int(match.group("day")),
+            int(match.group("hour")), int(match.group("minute")), tzinfo=ROME,
+        ).isoformat()
+        all_day = False
+    else:
+        start_value = date(year, month, int(match.group("day"))).isoformat()
+        all_day = True
+    season_match = re.search(r"(20\d{2})[/\\-](\d{2,4})", headline)
+    season = (
+        f"{season_match.group(1)}/{season_match.group(2)[-2:]}" if season_match else str(year)
+    )
+    if "sorteggio" in normalized_headline:
+        kind = "draw"
+        title = f"Sorteggio {competition} {season}"
+    else:
+        kind = "calendar_publication"
+        title = (
+            f"Presentazione calendario {competition} {season}"
+            if competition == "Serie A"
+            else f"Pubblicazione tabellone {competition} {season}"
+        )
+    return [{
+        "source_id": f"lega-{_normalize(source_url.rsplit('/', 1)[-1])}",
+        "source": "Lega Serie A",
+        "source_url": source_url,
+        "event_kind": kind,
+        "title": title,
+        "competition": competition,
+        "start": start_value,
+        "all_day": all_day,
+        "venue": "",
+        "location": "",
+        "status": "scheduled",
+        "reminder_minutes": 30,
+        "notes": "Data e orario recuperati automaticamente da un annuncio ufficiale Lega Serie A.",
+    }]
+
+
 def parse_thesportsdb_json(payload: dict[str, Any]) -> list[dict[str, Any]]:
     events: list[dict[str, Any]] = []
     for item in payload.get("events") or []:
@@ -572,6 +790,7 @@ def parse_schedule_html(
 
 def fetch_remote_events(session: requests.Session, today: date) -> FetchResult:
     events: list[dict[str, Any]] = []
+    calendar_events: list[dict[str, Any]] = []
     successful: list[str] = []
     errors: list[str] = []
     start_year = season_start(today)
@@ -667,7 +886,47 @@ def fetch_remote_events(session: requests.Session, today: date) -> FetchResult:
         except requests.RequestException as exc:
             errors.append(f"{source}: {exc}")
 
-    return FetchResult(events, list(dict.fromkeys(successful)), errors, serie_a_standing)
+    uefa_draws_ok = False
+    for competition, url in UEFA_DRAW_URLS.values():
+        try:
+            response = session.get(url, timeout=20)
+            response.raise_for_status()
+            parsed_draws = parse_uefa_draw_html(response.text, competition, url)
+            if not parsed_draws:
+                raise ValueError("nessun sorteggio strutturato disponibile")
+            calendar_events.extend(parsed_draws)
+            uefa_draws_ok = True
+        except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+            errors.append(f"UEFA sorteggi {competition}: {exc}")
+            LOGGER.info("Fonte sorteggi UEFA %s non disponibile: %s", competition, exc)
+    if uefa_draws_ok:
+        successful.append("UEFA sorteggi")
+
+    try:
+        response = session.get(LEGA_NEWS_URL, timeout=20)
+        response.raise_for_status()
+        lega_events: list[dict[str, Any]] = []
+        for article_url in find_lega_calendar_articles(response.text)[:8]:
+            try:
+                article = session.get(article_url, timeout=20)
+                article.raise_for_status()
+                lega_events.extend(parse_lega_calendar_article(article.text, article_url))
+            except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+                errors.append(f"Lega calendario {article_url}: {exc}")
+        if lega_events:
+            calendar_events.extend(lega_events)
+            successful.append("Lega calendario")
+    except (requests.RequestException, ValueError, json.JSONDecodeError) as exc:
+        errors.append(f"Lega calendario: {exc}")
+        LOGGER.info("Fonte calendario Lega Serie A non disponibile: %s", exc)
+
+    return FetchResult(
+        events,
+        list(dict.fromkeys(successful)),
+        errors,
+        serie_a_standing,
+        calendar_events,
+    )
 
 
 def _event_datetime(event: dict[str, Any]) -> datetime:
@@ -684,12 +943,21 @@ def _season_for(event: dict[str, Any]) -> int:
 
 
 def _semantic_base(event: dict[str, Any]) -> str:
+    if str(event.get("event_kind") or "match") != "match":
+        return "|".join(
+            (
+                str(_season_for(event)),
+                str(event.get("event_kind") or "calendar-event"),
+                _normalize(str(event.get("source_id") or event.get("id") or event.get("title") or "")),
+                _competition_family(str(event.get("competition") or "")),
+            )
+        )
     teams = (_team_key(str(event.get("home_team") or "")), _team_key(str(event.get("away_team") or "")))
     return "|".join((str(_season_for(event)), *teams, _competition_family(str(event.get("competition") or ""))))
 
 
 def _uid_for(event: dict[str, Any]) -> str:
-    explicit = str(event.get("uid") or event.get("id") or "").strip()
+    explicit = str(event.get("uid") or "").strip()
     if explicit:
         return explicit if "@" in explicit else f"{explicit}@juventus-calendar"
     return f"{hashlib.sha256(_semantic_base(event).encode()).hexdigest()[:24]}@juventus-calendar"
@@ -856,6 +1124,87 @@ def load_manual_events(path: Path) -> list[dict[str, Any]]:
     return result
 
 
+def load_calendar_events(
+    path: Path, participating_competitions: set[str]
+) -> list[dict[str, Any]]:
+    """Load official non-match dates, filtering competitions Juventus does not play."""
+    payload = load_json(path, {"events": []})
+    events = payload.get("events", []) if isinstance(payload, dict) else payload
+    if not isinstance(events, list):
+        raise ValueError("data/calendar_events.json deve contenere una lista o un oggetto con 'events'")
+    result: list[dict[str, Any]] = []
+    for index, event in enumerate(events):
+        if not isinstance(event, dict):
+            raise ValueError(f"Evento calendario #{index + 1} non valido")
+        if event.get("enabled") is False:
+            continue
+        required = {"title", "competition", "start", "source_url"}
+        missing = sorted(required - event.keys())
+        if missing:
+            raise ValueError(
+                f"Evento calendario #{index + 1}: campi mancanti: {', '.join(missing)}"
+            )
+        family = _competition_family(str(event["competition"]))
+        if (
+            event.get("requires_participation", True)
+            and not event.get("participation_confirmed", False)
+            and family not in participating_competitions
+        ):
+            continue
+        normalized = deepcopy(event)
+        normalized.pop("enabled", None)
+        normalized.pop("requires_participation", None)
+        normalized.pop("participation_confirmed", None)
+        normalized.setdefault("event_kind", "draw")
+        normalized.setdefault("source", "Calendario ufficiale")
+        normalized.setdefault("source_id", str(event.get("id") or f"calendar-{index + 1}"))
+        normalized.setdefault("round", "")
+        normalized.setdefault("venue", "")
+        normalized.setdefault("location", "")
+        normalized.setdefault("all_day", len(str(event["start"])) == 10)
+        normalized.setdefault("status", "scheduled")
+        normalized.setdefault("reminder_minutes", 30)
+        result.append(normalized)
+    return sorted(result, key=_event_datetime)
+
+
+def _same_calendar_event(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    if str(left.get("event_kind") or "match") == "match" or str(
+        right.get("event_kind") or "match"
+    ) == "match":
+        return False
+    return (
+        str(left.get("event_kind") or "") == str(right.get("event_kind") or "")
+        and _competition_family(str(left.get("competition") or ""))
+        == _competition_family(str(right.get("competition") or ""))
+        and abs((_event_datetime(left) - _event_datetime(right)).total_seconds())
+        <= 36 * 60 * 60
+    )
+
+
+def merge_calendar_events(*sources: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Merge automatic, configured and previously discovered non-match events."""
+    merged: list[dict[str, Any]] = []
+    for source in sources:
+        for candidate in source:
+            existing = next(
+                (
+                    event
+                    for event in merged
+                    if _same_source_id(event, candidate)
+                    or _same_calendar_event(event, candidate)
+                ),
+                None,
+            )
+            if existing is None:
+                merged.append(deepcopy(candidate))
+                continue
+            for key, value in candidate.items():
+                if not existing.get(key) and value:
+                    existing[key] = deepcopy(value)
+    return sorted(merged, key=_event_datetime)
+
+
 def merge_manual_events(remote: list[dict[str, Any]], manual: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged = deepcopy(remote)
     for candidate in manual:
@@ -903,13 +1252,24 @@ def _canonical_event(
     result = deepcopy(event)
     result.pop("_time_overlay", None)
     result.pop("_time_priority", None)
+    result.setdefault("location", "")
+    result.setdefault("neutral", False)
+    result.setdefault("time_source", "")
+    result.setdefault("time_source_url", "")
+    is_match = str(result.get("event_kind") or "match") == "match"
+    if result.get("all_day"):
+        result["start"] = str(result["start"])[:10]
+    else:
+        result["start"] = _event_datetime(result).astimezone(ROME).isoformat()
     result["uid"] = _uid_for(result)
     generated_uid = result["uid"]
     old = next((x for x in previous if _same_source_id(x, result)), None)
-    if old is None:
+    if old is None and not is_match:
+        old = next((x for x in previous if _same_calendar_event(x, result)), None)
+    if old is None and is_match:
         long_range_matches = [x for x in previous if _same_long_range_fixture(x, result)]
         old = long_range_matches[0] if len(long_range_matches) == 1 else None
-    if old is None:
+    if old is None and is_match:
         old = next((x for x in previous if _same_fixture(x, result, unordered=True)), None)
     if old is None:
         old = next((x for x in previous if x.get("uid") == generated_uid), None)
@@ -928,28 +1288,33 @@ def _canonical_event(
             )
         )
         result["uid"] = f"{hashlib.sha256(collision_base.encode()).hexdigest()[:24]}@juventus-calendar"
-    result["home_away"] = "Casa" if _is_juventus(str(result.get("home_team"))) else "Trasferta"
-    if result.get("neutral"):
-        result["home_away"] = "Campo neutro"
-    base_title = f"{result['home_team']} - {result['away_team']}"
+    if is_match:
+        result["home_away"] = "Casa" if _is_juventus(str(result.get("home_team"))) else "Trasferta"
+        if result.get("neutral"):
+            result["home_away"] = "Campo neutro"
+        base_title = f"{result['home_team']} - {result['away_team']}"
+    else:
+        result["home_away"] = ""
+        base_title = str(result["title"])
     family = _competition_family(str(result.get("competition") or ""))
-    if not result.get("broadcast_it") and family in BROADCASTERS_BY_COMPETITION:
+    if is_match and not result.get("broadcast_it") and family in BROADCASTERS_BY_COMPETITION:
         result["broadcast_it"], result["broadcast_source_url"] = BROADCASTERS_BY_COMPETITION[family]
-    result.setdefault("broadcast_it", "Da definire")
-    result.setdefault("broadcast_source_url", "")
-    if not result.get("time_source") and not result.get("all_day"):
+    if is_match:
+        result.setdefault("broadcast_it", "Da definire")
+        result.setdefault("broadcast_source_url", "")
+    if is_match and not result.get("time_source") and not result.get("all_day"):
         result["time_source"] = str(result.get("source") or "")
         result["time_source_url"] = str(result.get("source_url") or "")
 
     explicitly_cleared = result.get("postponed") is False
-    if not explicitly_cleared and _is_postponed(result):
+    if is_match and not explicitly_cleared and _is_postponed(result):
         result["postponed"] = True
         result.setdefault(
             "postponed_from",
             str((old or {}).get("postponed_from") or (old or {}).get("start") or result["start"]),
         )
         result.setdefault("postponed_to", "")
-    elif not explicitly_cleared and old and old.get("postponed"):
+    elif is_match and not explicitly_cleared and old and old.get("postponed"):
         if str(result.get("start")) != str(old.get("start")):
             result["postponed"] = True
             result["postponed_from"] = str(old.get("postponed_from") or old.get("start") or "")
@@ -961,7 +1326,7 @@ def _canonical_event(
                 if old.get(key) and not result.get(key):
                     result[key] = old[key]
 
-    if result.get("postponed"):
+    if is_match and result.get("postponed"):
         postponed_to = str(result.get("postponed_to") or "")
         if postponed_to:
             new_date = date.fromisoformat(postponed_to[:10]).strftime("%d/%m/%Y")
@@ -999,14 +1364,19 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
     for data in events:
         component = Event()
         component.add("uid", data["uid"])
-        component.add("summary", f"⏸ {data['title']}" if data.get("postponed") else f"⚽ {data['title']}")
+        is_match = str(data.get("event_kind") or "match") == "match"
+        summary_icon = "⚽" if is_match else ("🎲" if data.get("event_kind") == "draw" else "🗓️")
+        component.add(
+            "summary",
+            f"⏸ {data['title']}" if data.get("postponed") else f"{summary_icon} {data['title']}",
+        )
         start = _event_datetime(data).astimezone(ROME)
         if data.get("all_day"):
             component.add("dtstart", start.date())
             component.add("dtend", start.date() + timedelta(days=1))
         else:
             component.add("dtstart", start)
-            component.add("dtend", start + timedelta(hours=2))
+            component.add("dtend", start + timedelta(hours=2 if is_match else 1))
         modified = datetime.fromisoformat(str(data["last_modified"]).replace("Z", "+00:00"))
         component.add("dtstamp", modified.astimezone(timezone.utc))
         component.add("last-modified", modified.astimezone(timezone.utc))
@@ -1018,10 +1388,15 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
             component.add("location", place)
         if data.get("source_url"):
             component.add("url", str(data["source_url"]))
-        details = [
-            f"Competizione: {data['competition']}",
-            f"Juventus: {data['home_away']}",
-        ]
+        details = [f"Competizione: {data['competition']}"]
+        if is_match:
+            details.append(f"Juventus: {data['home_away']}")
+        else:
+            details.append(
+                "Tipo: Sorteggio"
+                if data.get("event_kind") == "draw"
+                else "Tipo: Pubblicazione calendario/tabellone"
+            )
         details.append(
             "Orario: da confermare"
             if data.get("all_day")
@@ -1042,12 +1417,14 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
             details.append(f"Stadio: {data['venue']}")
         if data.get("location"):
             details.append(f"Località: {data['location']}")
-        if data.get("broadcast_it"):
+        if is_match and data.get("broadcast_it"):
             details.append(f"Dove vederla in Italia: {data['broadcast_it']}")
-        if data.get("time_source"):
+        if is_match and data.get("time_source"):
             details.append(f"Fonte orario: {data['time_source']}")
+        if not is_match and data.get("notes"):
+            details.append(str(data["notes"]))
         standing = data.get("serie_a_standing") or {}
-        if _competition_family(str(data.get("competition") or "")) == "serie-a" and standing:
+        if is_match and _competition_family(str(data.get("competition") or "")) == "serie-a" and standing:
             goal_difference = standing.get("goal_difference")
             goal_difference_text = (
                 f" — DR {int(goal_difference):+d}" if goal_difference is not None else ""
@@ -1080,10 +1457,11 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
         component.add("categories", [str(data["competition"]), "Juventus"])
         component.add("transp", "OPAQUE")
         if not data.get("postponed") or data.get("postponed_to"):
+            reminder_minutes = int(data.get("reminder_minutes") or (150 if is_match else 30))
             alarm = Alarm()
             alarm.add("action", "DISPLAY")
-            alarm.add("description", f"Tra 2 ore e 30 minuti: {data['title']}")
-            alarm.add("trigger", timedelta(hours=-2, minutes=-30))
+            alarm.add("description", f"Tra {reminder_minutes} minuti: {data['title']}")
+            alarm.add("trigger", timedelta(minutes=-reminder_minutes))
             component.add_component(alarm)
         calendar.add_component(component)
     return calendar.to_ical()
@@ -1119,6 +1497,7 @@ def update_calendar(
     root = root.resolve()
     events_path = root / "data" / "events.json"
     manual_path = root / "data" / "manual_events.json"
+    calendar_events_path = root / "data" / "calendar_events.json"
     previous_payload = load_json(events_path, {"events": []})
     previous = previous_payload.get("events", []) if isinstance(previous_payload, dict) else []
     changed_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -1133,6 +1512,43 @@ def update_calendar(
         )
     remote = merge_remote_events(fetched.events)
     combined = merge_manual_events(remote, load_manual_events(manual_path))
+    participating_competitions = {
+        _competition_family(str(event.get("competition") or ""))
+        for event in combined
+        if str(event.get("event_kind") or "match") == "match"
+    }
+    configured_calendar_events = load_calendar_events(
+        calendar_events_path, participating_competitions
+    )
+    participating_competitions.update(
+        _competition_family(str(event.get("competition") or ""))
+        for event in configured_calendar_events
+    )
+    automatic_calendar_events = [
+        event
+        for event in (fetched.calendar_events or [])
+        if (
+            _competition_family(str(event.get("competition") or ""))
+            in participating_competitions
+            or (
+                _competition_family(str(event.get("competition") or "")) == "coppa-italia"
+                and "serie-a" in participating_competitions
+            )
+        )
+    ]
+    previous_calendar_events = [
+        event
+        for event in previous
+        if str(event.get("event_kind") or "match") != "match"
+    ]
+    combined.extend(
+        merge_calendar_events(
+            automatic_calendar_events,
+            configured_calendar_events,
+            previous_calendar_events,
+        )
+    )
+    combined.sort(key=_event_datetime)
     standing_with_timestamp: dict[str, Any] | None = None
     if fetched.serie_a_standing:
         standing_with_timestamp = deepcopy(fetched.serie_a_standing)
@@ -1157,6 +1573,8 @@ def update_calendar(
     canonical: list[dict[str, Any]] = []
     for event in combined:
         if (
+            str(event.get("event_kind") or "match") == "match"
+            and
             _competition_family(str(event.get("competition") or "")) == "serie-a"
             and standing_with_timestamp
         ):
