@@ -10,19 +10,109 @@ from icalendar import Calendar
 from juventus_calendar.generator import (
     FetchResult,
     UpdateError,
+    _canonical_event,
     _uid_for,
     build_ical,
+    find_lega_calendar_articles,
+    load_calendar_events,
     load_manual_events,
+    merge_calendar_events,
     merge_manual_events,
     merge_remote_events,
     parse_espn_json,
     parse_espn_standings_json,
+    parse_lega_calendar_article,
     parse_official_json,
     parse_official_opta_json,
     parse_schedule_html,
     parse_thesportsdb_json,
+    parse_uefa_draw_html,
     update_calendar,
 )
+
+
+def test_parse_uefa_draw_prefers_exact_localtime_timestamp() -> None:
+    html = """
+    <html><head><title>UEFA Champions League league phase draw | 2026/27</title></head>
+    <body>
+      <span data-options="{&quot;targetDate&quot;:&quot;2026-08-27T16:00:00+00:00&quot;}"></span>
+      <script type="application/ld+json">
+      {
+        "@type": "SportsEvent", "@id": "https://www.uefa.com/draws/#draw-123",
+        "name": "UEFA Champions League - League phase draw",
+        "startDate": "2026-08-27T15:00:00+00:00",
+        "location": [{"@type": "Place", "name": "Monaco", "address": "Monaco"}]
+      }
+      </script>
+    </body></html>
+    """
+
+    events = parse_uefa_draw_html(
+        html, "UEFA Champions League", "https://www.uefa.com/uefachampionsleague/draws/"
+    )
+
+    assert len(events) == 1
+    assert events[0]["source_id"] == "draw-123"
+    assert events[0]["start"] == "2026-08-27T18:00:00+02:00"
+    assert events[0]["title"] == "Sorteggio fase campionato UEFA Champions League 2026/27"
+
+
+def test_lega_news_discovery_and_explicit_calendar_datetime() -> None:
+    listing = """
+      <a href="/serie-a/news/una-notizia">Notizia</a>
+      <a href="/serie-a/news/sorteggio-coppa-italia-2027-28">Sorteggio</a>
+    """
+    urls = find_lega_calendar_articles(listing)
+    assert urls == [
+        "https://www.legaseriea.it/serie-a/news/sorteggio-coppa-italia-2027-28"
+    ]
+    article = """
+      <script type="application/ld+json">
+      {"@type": "NewsArticle", "headline": "Sorteggio Coppa Italia 2027/28",
+       "datePublished": "2027-06-03T10:00:00Z"}
+      </script>
+      <p>Il sorteggio si terrà venerdì 4 giugno alle ore 18.30.</p>
+    """
+
+    events = parse_lega_calendar_article(article, urls[0])
+
+    assert events[0]["start"] == "2027-06-04T18:30:00+02:00"
+    assert events[0]["title"] == "Sorteggio Coppa Italia 2027/28"
+
+
+def test_calendar_event_merge_filter_uid_and_ical(tmp_path: Path) -> None:
+    path = tmp_path / "calendar_events.json"
+    path.write_text(json.dumps({"events": [
+        {
+            "id": "ucl-draw", "title": "Sorteggio Champions League",
+            "competition": "UEFA Champions League",
+            "start": "2026-08-27T18:00:00+02:00",
+            "source_url": "https://www.uefa.com/uefachampionsleague/draws/",
+            "participation_confirmed": True,
+        },
+        {
+            "id": "uel-draw", "title": "Sorteggio Europa League",
+            "competition": "UEFA Europa League",
+            "start": "2026-08-28T13:00:00+02:00",
+            "source_url": "https://www.uefa.com/uefaeuropaleague/draws/",
+        },
+    ]}), encoding="utf-8")
+    configured = load_calendar_events(path, set())
+    assert [event["source_id"] for event in configured] == ["ucl-draw"]
+
+    automatic = {**configured[0], "source": "UEFA", "source_id": "draw-123"}
+    merged = merge_calendar_events([automatic], configured, configured)
+    assert len(merged) == 1
+    canonical = _canonical_event(merged[0], [], "2026-08-20T08:00:00Z", set())
+    parsed = next(
+        component for component in Calendar.from_ical(build_ical([canonical])).walk()
+        if component.name == "VEVENT"
+    )
+    alarm = next(component for component in parsed.subcomponents if component.name == "VALARM")
+    assert parsed.decoded("summary").decode().startswith("🎲")
+    assert "Tipo: Sorteggio" in parsed.decoded("description").decode()
+    assert "Juventus:" not in parsed.decoded("description").decode()
+    assert alarm.decoded("trigger").total_seconds() == -30 * 60
 
 
 def test_parse_espn_standings_json_extracts_juventus_row():
