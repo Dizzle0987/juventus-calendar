@@ -6,7 +6,7 @@ Calendario iCalendar pubblico e sottoscrivibile con tutte le partite della Prima
 - Feed: <https://dizzle0987.github.io/juventus-calendar/calendar.ics>
 - iPhone: <webcal://dizzle0987.github.io/juventus-calendar/calendar.ics>
 
-Il feed comprende Serie A, Coppa Italia, Supercoppa Italiana, competizioni UEFA e FIFA, amichevoli, tournée e partite di preparazione. Juventus Women, Next Gen e formazioni giovanili sono escluse automaticamente, a meno che un evento venga aggiunto intenzionalmente in `data/manual_events.json`.
+Il feed comprende Serie A, Coppa Italia, Supercoppa Italiana, competizioni UEFA e FIFA, amichevoli, tournée e partite di preparazione. Include inoltre sorteggi ufficiali e pubblicazioni di calendari o tabelloni. Juventus Women, Next Gen e formazioni giovanili sono escluse automaticamente, a meno che un evento venga aggiunto intenzionalmente in `data/manual_events.json`.
 
 ## Iscrizione
 
@@ -49,6 +49,12 @@ python update_calendar.py
 ```
 
 Gli output sono `calendar.ics` e `data/events.json`.
+
+## Sorteggi, calendari e tabelloni
+
+`data/calendar_events.json` è il fallback strutturato per date ufficiali che non sono partite. Il generatore cerca inoltre automaticamente i sorteggi nelle pagine ufficiali di Champions League, Europa League e Conference League e gli annunci Lega Serie A relativi a sorteggi, calendari e tabelloni.
+
+Un evento con `requires_participation: true` appare soltanto se la Juventus risulta iscritta alla competizione. `participation_confirmed: true` consente di confermare manualmente la partecipazione prima che le fonti pubblichino la prima partita. Vengono accettate solo date esplicite; in assenza di un orario dichiarato l'evento resta giornaliero. Gli eventi scoperti vengono conservati anche quando la pagina ufficiale passa al sorteggio della fase successiva.
 
 ## Eventi manuali
 
