@@ -87,7 +87,9 @@ ESPN_COMPETITIONS = {
     "uefa.champions": "UEFA Champions League",
     "uefa.europa": "UEFA Europa League",
     "uefa.europa.conf": "UEFA Conference League",
+    "uefa.super_cup": "Supercoppa UEFA",
     "fifa.cwc": "FIFA Club World Cup",
+    "fifa.intercontinental_cup": "Coppa Intercontinentale FIFA",
     "club.friendly": "Amichevole",
 }
 
@@ -193,11 +195,13 @@ def _competition_family(name: str) -> str:
     mappings = (
         (("serie a", "italian serie a"), "serie-a"),
         (("coppa italia", "italian coppa italia"), "coppa-italia"),
+        (("uefa super cup", "supercoppa uefa"), "supercoppa-uefa"),
         (("supercoppa", "italian super cup"), "supercoppa-italiana"),
         (("champions",), "champions-league"),
         (("europa conference", "conference league"), "conference-league"),
         (("europa",), "europa-league"),
         (("club world cup", "coppa del mondo per club"), "fifa-club-world-cup"),
+        (("intercontinental", "coppa intercontinentale"), "coppa-intercontinentale-fifa"),
         (("friendly", "amichevole", "friendlies"), "amichevole"),
     )
     for needles, family in mappings:
