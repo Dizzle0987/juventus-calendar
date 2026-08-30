@@ -224,18 +224,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Frosinone - Juventus
 DTSTART;TZID=Europe/Rome:20260823T183000
 DTEND;TZID=Europe/Rome:20260823T203000
-DTSTAMP:20260828T113202Z
+DTSTAMP:20260830T002121Z
 UID:4956e99f48f43767220fb75f@juventus-calendar
-SEQUENCE:6
+SEQUENCE:7
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 23/
  08/2026 18:30\nTurno: Regular Season · Giornata 1\nStadio: Stadio Benito 
  Stirpe\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite an
- che su Sky Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  6. At
- alanta — 3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG
-  — DR +1\n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornat
- a: 25/08/2026 05:27
-LAST-MODIFIED:20260828T113202Z
+ che su Sky Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  1. Mi
+ lan — 6 pt\n▶ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese 
+ — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica agg
+ iornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Benito Stirpe\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -246,21 +246,43 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:🎲 Sorteggio fase campionato UEFA Europa League 2026/27
+DTSTART;TZID=Europe/Rome:20260828T130000
+DTEND;TZID=Europe/Rome:20260828T140000
+DTSTAMP:20260830T002121Z
+UID:307d3ab0c96383a0bb20f4d5@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nTipo: Sorteggio\nOrario (Rom
+ a): 28/08/2026 13:00\nStadio: Monaco\nLocalità: Monaco\nData e orario rec
+ uperati automaticamente dalla pagina ufficiale UEFA.
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Monaco\, Monaco
+TRANSP:OPAQUE
+URL:https://www.uefa.com/uefaeuropaleague/draws/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 30 minuti: Sorteggio fase campionato UEFA Europa League 20
+ 26/27
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Parma
 DTSTART;TZID=Europe/Rome:20260829T204500
 DTEND;TZID=Europe/Rome:20260829T224500
-DTSTAMP:20260828T113202Z
+DTSTAMP:20260830T002121Z
 UID:2665ec5e05f8af032918501b@juventus-calendar
-SEQUENCE:5
+SEQUENCE:6
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
  26 20:45\nTurno: Regular Season · Giornata 2\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
-  Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  6. Atalanta —
-  3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1
- \n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2
- 026 05:27
-LAST-MODIFIED:20260828T113202Z
+  Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  1. Milan — 6 
+ pt\n▶ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  
+ 4. AS Roma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/
+ 08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -274,18 +296,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260828T113202Z
+DTSTAMP:20260830T002121Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:5
+SEQUENCE:6
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
-  Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  6. Atalanta —
-  3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1
- \n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2
- 026 05:27
-LAST-MODIFIED:20260828T113202Z
+  Sport/NOW\nFonte orario: Juventus\nClassifica Serie A:\n  1. Milan — 6 
+ pt\n▶ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  
+ 4. AS Roma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/
+ 08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -296,21 +318,46 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - AC Milan
+DTSTART;TZID=Europe/Rome:20260906T204500
+DTEND;TZID=Europe/Rome:20260906T224500
+DTSTAMP:20260830T002121Z
+UID:b79e4394b0b63db480ff283a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Italian Serie A,Juventus
+DESCRIPTION:Competizione: Italian Serie A\nJuventus: Casa\nOrario (Roma): 
+ 06/09/2026 20:45\nTurno: 3\nStadio: Allianz Stadium Turin\nLocalità: Ital
+ y\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nF
+ onte orario: TheSportsDB\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2.
+  Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma
+  — 3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02
+ :21
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Allianz Stadium Turin\, Italy
+TRANSP:OPAQUE
+URL:https://www.thesportsdb.com/event/2482161
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - AC Milan
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:5a23aeb3327f080f81a89566@juventus-calendar
-SEQUENCE:5
+SEQUENCE:6
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium - Città d
  el Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune part
- ite anche su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n 
-  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. L
- azio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:2
- 7
-LAST-MODIFIED:20260825T032740Z
+ ite anche su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 
+ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Ro
+ ma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 
+ 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -321,21 +368,43 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - NEC
+DTSTART;TZID=Europe/Rome:20260917T210000
+DTEND;TZID=Europe/Rome:20260917T230000
+DTSTAMP:20260830T002121Z
+UID:5b5787d628a97597ccd5bf5d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
+ ): 17/09/2026 21:00\nTurno: League Stage · Giornata 1\nStadio: Allianz St
+ adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
+ rario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Allianz Stadium\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - NEC
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Atalanta
 DTSTART;TZID=Europe/Rome:20260918T180000
 DTEND;TZID=Europe/Rome:20260918T200000
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:64f6a6f8063a8abff2a34145@juventus-calendar
-SEQUENCE:5
+SEQUENCE:6
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/09/20
  26 18:00\nTurno: Regular Season · Giornata 5\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
-  Sport/NOW\; Sky Sport e NOW\nFonte orario: NOW\nClassifica Serie A:\n  6.
-  Atalanta — 3 pt\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1
-  PG — DR +1\n  9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggior
- nata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+  Sport/NOW\; Sky Sport e NOW\nFonte orario: NOW\nClassifica Serie A:\n  1.
+  Milan — 6 pt\n▶ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese
+  — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica ag
+ giornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -349,17 +418,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\nLocalità:
   Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/N
- OW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ OW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt —
+  2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter 
+ Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Unipol Domus\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -370,20 +439,42 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Celta de Vigo - Juventus
+DTSTART;TZID=Europe/Rome:20261015T210000
+DTEND;TZID=Europe/Rome:20261015T230000
+DTSTAMP:20260830T002121Z
+UID:c92be9bc57a8e4b7555178e8@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
+ (Roma): 15/10/2026 21:00\nTurno: League Stage · Giornata 2\nStadio: Estad
+ io Abanca-Balaídos\nLocalità: Europe\nDove vederla in Italia: Sky Sport 
+ e NOW\nFonte orario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Estadio Abanca-Balaídos\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Celta de Vigo - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nLocalità: I
  taly\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW
- \nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n▶
-  8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Como 
- — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ \nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 2
+  PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter Mi
+ lan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -394,21 +485,43 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Rennes
+DTSTART;TZID=Europe/Rome:20261022T184500
+DTEND;TZID=Europe/Rome:20261022T204500
+DTSTAMP:20260830T002121Z
+UID:50b2d3de9164a63ba5b4de07@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
+ ): 22/10/2026 18:45\nTurno: League Stage · Giornata 3\nStadio: Allianz St
+ adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
+ rario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Allianz Stadium\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - Rennes
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Lecce - Juventus
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:e5a843116296d3266280a5bb@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore Giardinier
  o - Via del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune 
- partite anche su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 p
- t\n  7. Cagliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  
- 9. Lazio — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 
- 05:27
-LAST-MODIFIED:20260825T032740Z
+ partite anche su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n
+ ▶ 2. Juventus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. A
+ S Roma — 3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2
+ 026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Ettore Giardiniero - Via del Mare\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -422,17 +535,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Genoa - Juventus
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:2f08c9145cdd9a03fb73324f@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunale Luigi Fe
  rraris\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite an
- che su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Ca
- gliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio 
- — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ che su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juv
+ entus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma —
+  3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Comunale Luigi Ferraris\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -446,17 +559,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Napoli
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:0b2427b7e6b1886ec6081963@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 10\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -467,20 +580,42 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ AZ - Juventus
+DTSTART;TZID=Europe/Rome:20261105T210000
+DTEND;TZID=Europe/Rome:20261105T230000
+DTSTAMP:20260830T002121Z
+UID:280ce3cd1a3a948214d932f9@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
+ (Roma): 05/11/2026 21:00\nTurno: League Stage · Giornata 4\nStadio: AFAS 
+ Stadion\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte
+  orario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:AFAS Stadion\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: AZ - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Fiorentina - Juventus
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:ae960ed183fe1ac5522f474d@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 11\nStadio: Stadio Artemio Franchi\
  nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su 
- Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari 
- — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt
- \n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus 
+ — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\
+ n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Artemio Franchi\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -494,17 +629,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Venezia
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -515,20 +650,42 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Omonia Nicosia
+DTSTART;TZID=Europe/Rome:20261126T210000
+DTEND;TZID=Europe/Rome:20261126T230000
+DTSTAMP:20260830T002121Z
+UID:b1ace972877a75e30f32b861@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
+ ): 26/11/2026 21:00\nTurno: League Stage · Giornata 5\nStadio: Allianz St
+ adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
+ rario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Allianz Stadium\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - Omonia Nicosia
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Como - Juventus
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:d05821f8f6e164e198b1ef80@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 13\nStadio: Stadio Giuseppe Sinigag
  lia\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche
-  su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagli
- ari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 
- 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+  su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juvent
+ us — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 
+ pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Giuseppe Sinigaglia\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -542,17 +699,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Udinese
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:1eb5eb718b1ba7bf18e0488e@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 14\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -563,20 +720,41 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Hapoel Be'er Sheva - Juventus
+DTSTART;TZID=Europe/Rome:20261210T184500
+DTEND;TZID=Europe/Rome:20261210T204500
+DTSTAMP:20260830T002121Z
+UID:c2fd6f37b98bad6a00b3916d@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
+ (Roma): 10/12/2026 18:45\nTurno: League Stage · Giornata 6\nLocalità: Eu
+ rope\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Hapoel Be'er Sheva - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Monza
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:842b206d9c8338422e67e2d5@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 15\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -590,17 +768,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Roma - Juventus
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:d1615e69f9aa02967f319649@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 16\nStadio: Stadio Olimpico\nLocali
  tà: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spo
- rt/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 p
- t\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10.
-  Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ rt/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt
+  — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. In
+ ter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Olimpico\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -614,17 +792,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Bologna - Juventus
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:2964446684cb24ad99ed7e59@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 17\nStadio: Stadio Renato Dall'Ara\
  nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su 
- Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari 
- — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt
- \n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus 
+ — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\
+ n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Renato Dall'Ara\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -638,17 +816,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Torino
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:c883bf5c8b9f39282d284b4e@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 18\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -662,17 +840,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Internazionale - Juventus
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:95796e6e292f964716a8155f@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 19\nStadio: Stadio Giuseppe Meazza\
  nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su 
- Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari 
- — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt
- \n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus 
+ — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\
+ n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Giuseppe Meazza\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -686,17 +864,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Genoa
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:ad0233d3b5e1ab73f6d06568@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 20\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -707,20 +885,42 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Ferencváros - Juventus
+DTSTART;TZID=Europe/Rome:20270121T184500
+DTEND;TZID=Europe/Rome:20270121T204500
+DTSTAMP:20260830T002121Z
+UID:e6a29ac070001054161b733a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
+ (Roma): 21/01/2027 18:45\nTurno: League Stage · Giornata 7\nStadio: Group
+ ama Aréna\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFo
+ nte orario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Groupama Aréna\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Ferencváros - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Cagliari
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:b9e0d2b57350f80db3e45c11@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 21\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -731,20 +931,42 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - Real Sociedad
+DTSTART;TZID=Europe/Rome:20270128T210000
+DTEND;TZID=Europe/Rome:20270128T230000
+DTSTAMP:20260830T002121Z
+UID:aa6b90c81af5b7828394e312@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
+ ): 28/01/2027 21:00\nTurno: League Stage · Giornata 8\nStadio: Allianz St
+ adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
+ rario: Juventus
+LAST-MODIFIED:20260830T002121Z
+LOCATION:Allianz Stadium\, Europe
+TRANSP:OPAQUE
+URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - Real Sociedad
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Milan - Juventus
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:7901b36118e346044724f817@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 22\nStadio: Stadio Giuseppe Meazza\
  nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su 
- Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari 
- — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt
- \n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus 
+ — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\
+ n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Giuseppe Meazza\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -758,17 +980,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Sassuolo
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:f64b4766ad023caa5e94938d@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 23\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -782,17 +1004,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Napoli - Juventus
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:0a7f6133a76cc14914aa40c9@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 24\nStadio: Stadio Diego Armando Ma
  radona\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite an
- che su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Ca
- gliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio 
- — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ che su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juv
+ entus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma —
+  3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Diego Armando Maradona\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -806,17 +1028,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Bologna
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:6a64aa2cd32e092401522ab6@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 25\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -830,17 +1052,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Monza - Juventus
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:6cd2bc5a30e07a738ff3a0c9@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 26\nStadio: U-Power Stadium\nLocali
  tà: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spo
- rt/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 p
- t\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10.
-  Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ rt/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt
+  — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. In
+ ter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:U-Power Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -854,17 +1076,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Roma
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:97d0a6bd4d52357216b45858@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 27\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -878,17 +1100,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Lazio - Juventus
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:f56d5dd200549d219f5388e8@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 28\nStadio: Stadio Olimpico\nLocali
  tà: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Spo
- rt/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 p
- t\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10.
-  Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ rt/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt
+  — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. In
+ ter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Olimpico\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -902,17 +1124,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Como
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:c518d8f1960d727762d9c694@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 29\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -926,17 +1148,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Torino - Juventus
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:cadc8db17dd5a1f7aa87f18e@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 30\nStadio: Stadio Olimpico Grande 
  Torino\nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite an
- che su Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Ca
- gliari — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio 
- — 3 pt\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ che su Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juv
+ entus — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma —
+  3 pt\n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Olimpico Grande Torino\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -950,17 +1172,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lecce
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:0d1e2f8cb01153d2db4fb4d7@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 31\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -974,17 +1196,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Venezia - Juventus
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:70b349f863b9762dc28badde@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 32\nStadio: Stadio Pier Luigi Penzo
  \nLocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su
-  Sky Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari
-  — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 p
- t\n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+  Sky Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus 
+ — 6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\
+ n  5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Pier Luigi Penzo\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -998,17 +1220,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Fiorentina
 DTSTART;VALUE=DATE:20270425
 DTEND;VALUE=DATE:20270426
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:dedc817a3f718f60e3c76f27@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 33\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -1022,17 +1244,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Atalanta - Juventus
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:31343195839f233d61fff517@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 34\nStadio: New Balance Arena\nLoca
  lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
- port/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3
-  pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  1
- 0. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ port/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 
+ pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. 
+ Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:New Balance Arena\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -1046,17 +1268,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Udinese - Juventus
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:30cfe8816ecc5aef6dd42602@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 35\nStadio: Bluenergy Stadium\nLoca
  lità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky S
- port/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3
-  pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  1
- 0. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ port/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 
+ pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. 
+ Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Bluenergy Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -1070,17 +1292,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Internazionale
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:49fca05b66c6856d4b68330e@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 36\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -1094,17 +1316,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Parma - Juventus
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:7a2d7db43e6c3e0c9d2d1b1d@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
  are\nTurno: Regular Season · Giornata 37\nStadio: Stadio Ennio Tardini\nL
  ocalità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sk
- y Sport/NOW\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari 
- — 3 pt\n▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt
- \n  10. Como — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ y Sport/NOW\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus —
+  6 pt — 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  
+ 5. Inter Milan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Stadio Ennio Tardini\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -1118,17 +1340,17 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Frosinone
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
-DTSTAMP:20260825T032740Z
+DTSTAMP:20260830T002121Z
 UID:fe47dff49d88225ef0d96002@juventus-calendar
-SEQUENCE:4
+SEQUENCE:5
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
  Turno: Regular Season · Giornata 38\nStadio: Allianz Stadium\nLocalità: 
  Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NO
- W\nClassifica Serie A:\n  6. Atalanta — 3 pt\n  7. Cagliari — 3 pt\n
- ▶ 8. Juventus — 3 pt — 1 PG — DR +1\n  9. Lazio — 3 pt\n  10. Co
- mo — 1 pt\nClassifica aggiornata: 25/08/2026 05:27
-LAST-MODIFIED:20260825T032740Z
+ W\nClassifica Serie A:\n  1. Milan — 6 pt\n▶ 2. Juventus — 6 pt — 
+ 2 PG — DR +3\n  3. Udinese — 4 pt\n  4. AS Roma — 3 pt\n  5. Inter M
+ ilan — 3 pt\nClassifica aggiornata: 30/08/2026 02:21
+LAST-MODIFIED:20260830T002121Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
