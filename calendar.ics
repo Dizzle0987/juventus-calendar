@@ -723,15 +723,16 @@ BEGIN:VEVENT
 SUMMARY:⚽ Hapoel Be'er Sheva - Juventus
 DTSTART;TZID=Europe/Rome:20261210T184500
 DTEND;TZID=Europe/Rome:20261210T204500
-DTSTAMP:20260830T002121Z
+DTSTAMP:20260830T182109Z
 UID:c2fd6f37b98bad6a00b3916d@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
- (Roma): 10/12/2026 18:45\nTurno: League Stage · Giornata 6\nLocalità: Eu
- rope\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: Juventus
-LAST-MODIFIED:20260830T002121Z
-LOCATION:Europe
+ (Roma): 10/12/2026 18:45\nTurno: League Stage · Giornata 6\nStadio: Stadi
+ onul Valentin Stănescu (old)\nLocalità: Europe\nDove vederla in Italia: 
+ Sky Sport e NOW\nFonte orario: Juventus
+LAST-MODIFIED:20260830T182109Z
+LOCATION:Stadionul Valentin Stănescu (old)\, Europe
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
 BEGIN:VALARM

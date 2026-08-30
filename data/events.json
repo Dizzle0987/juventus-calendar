@@ -1422,11 +1422,11 @@
       "competition": "UEFA Europa League",
       "home_away": "Trasferta",
       "home_team": "Hapoel Be'er Sheva",
-      "last_modified": "2026-08-30T00:21:21Z",
+      "last_modified": "2026-08-30T18:21:09Z",
       "location": "Europe",
       "neutral": false,
       "round": "League Stage · Giornata 6",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "efygv5il9h6kc8m6fmpxhuqdw",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1436,7 +1436,7 @@
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Hapoel Be'er Sheva - Juventus",
       "uid": "c2fd6f37b98bad6a00b3916d@juventus-calendar",
-      "venue": ""
+      "venue": "Stadionul Valentin Stănescu (old)"
     },
     {
       "all_day": true,
@@ -3119,7 +3119,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-30T00:21:21Z",
+  "last_changed": "2026-08-30T18:21:09Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
