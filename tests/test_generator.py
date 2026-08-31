@@ -5,6 +5,7 @@ from datetime import date
 from pathlib import Path
 
 import pytest
+import requests
 from icalendar import Calendar
 
 from juventus_calendar.generator import (
@@ -15,6 +16,7 @@ from juventus_calendar.generator import (
     _competition_family,
     _uid_for,
     build_ical,
+    fetch_remote_events,
     find_lega_calendar_articles,
     load_calendar_events,
     load_manual_events,
@@ -22,8 +24,10 @@ from juventus_calendar.generator import (
     merge_manual_events,
     merge_remote_events,
     parse_espn_json,
+    parse_espn_pending_recoveries_json,
     parse_espn_standings_json,
     parse_lega_calendar_article,
+    parse_lega_standings_json,
     parse_official_json,
     parse_official_opta_json,
     parse_schedule_html,
@@ -175,8 +179,122 @@ def test_parse_espn_standings_json_extracts_juventus_row():
             {"team": "Roma", "position": 4, "points": 19, "played": 10},
             {"team": "Napoli", "position": 5, "points": 18, "played": 10},
         ],
+        "provisional": False,
         "source": "ESPN",
     }
+
+
+def test_parse_official_lega_standings_uses_juventus_identifiers_and_state():
+    def team(name: str, rank: int, points: int, played: int = 10, *, juventus=False) -> dict:
+        return {
+            "teamId": (
+                "serie-a::Football_Team::0ae9210dce6f4f9b9d50aeeb19b0d371"
+                if juventus else f"team-{rank}"
+            ),
+            "providerId": "opta:Team:bqbbqm98ud8obe45ds9ohgyrd" if juventus else "",
+            "shortName": name,
+            "officialName": name,
+            "stats": [
+                {"statsId": "rank", "statsValue": rank},
+                {"statsId": "points", "statsValue": points},
+                {"statsId": "matches-played", "statsValue": played},
+                {"statsId": "win", "statsValue": 6},
+                {"statsId": "draw", "statsValue": 2},
+                {"statsId": "lose", "statsValue": 2},
+                {"statsId": "goal-difference", "statsValue": 8},
+            ],
+        }
+
+    teams = [
+        team("Inter", 1, 25),
+        team("JFC", 2, 24, juventus=True),
+        team("Milan", 3, 22),
+        team("Roma", 4, 20),
+        team("Napoli", 5, 19, played=9),
+        team("Atalanta", 6, 18),
+    ]
+    standing = parse_lega_standings_json({"standings": [{"teams": teams}]})
+
+    assert standing is not None
+    assert standing["position"] == 2
+    assert standing["goal_difference"] == 8
+    assert standing["provisional"] is True
+    assert standing["source"] == "Lega Serie A"
+    assert [row["team"] for row in standing["context"]] == [
+        "Inter", "Juventus", "Milan", "Roma", "Napoli"
+    ]
+
+    for stat in teams[4]["stats"]:
+        if stat["statsId"] == "matches-played":
+            stat["statsValue"] = 10
+    completed = parse_lega_standings_json({"standings": [{"teams": teams}]})
+    assert completed is not None
+    assert completed["provisional"] is False
+
+
+def test_parse_espn_pending_recoveries_json_names_postponed_matches():
+    def event(home: str, away: str, status: str) -> dict:
+        return {
+            "status": {"type": {"name": status}},
+            "competitions": [{
+                "competitors": [
+                    {"homeAway": "home", "team": {"displayName": home}},
+                    {"homeAway": "away", "team": {"displayName": away}},
+                ]
+            }],
+        }
+
+    recoveries = parse_espn_pending_recoveries_json({
+        "events": [
+            event("SS Lazio", "Juventus FC", "STATUS_POSTPONED"),
+            event("Roma", "Inter", "STATUS_SCHEDULED"),
+        ]
+    })
+
+    assert recoveries == ["SS Lazio–Juventus"]
+
+
+def test_espn_standings_is_used_when_official_feed_fails():
+    espn_payload = {
+        "standings": {"entries": [
+            {
+                "team": {"id": "111", "displayName": "Juventus FC"},
+                "stats": [
+                    {"name": "rank", "value": 3},
+                    {"name": "points", "value": 6},
+                    {"name": "gamesPlayed", "value": 2},
+                    {"name": "pointDifferential", "value": 3},
+                ],
+            }
+        ]}
+    }
+
+    class Response:
+        text = ""
+
+        def __init__(self, payload=None):
+            self.payload = payload or {}
+
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return self.payload
+
+    class Session:
+        def get(self, url, **kwargs):
+            if "apis/v2/sports/soccer/ita.1/standings" in url:
+                return Response(espn_payload)
+            if "api-sdp.legaseriea.it" in url:
+                raise requests.ConnectionError("feed ufficiale non disponibile")
+            return Response()
+
+    fetched = fetch_remote_events(Session(), date(2026, 8, 31))
+
+    assert fetched.serie_a_standing is not None
+    assert fetched.serie_a_standing["source"] == "ESPN"
+    assert "ESPN classifica" in fetched.successful_sources
+    assert any("Lega Serie A classifica" in error for error in fetched.errors)
 
 
 def official_match(**overrides):
@@ -573,6 +691,9 @@ def test_ical_timezone_alarm_tv_and_validity():
             "points": 21,
             "played": 10,
             "goal_difference": 9,
+            "provisional": True,
+            "pending_recoveries": ["Lazio–Juventus"],
+            "source": "Lega Serie A",
             "updated_at": "2026-08-24T10:00:00Z",
             "context": [
                 {"team": "Inter", "position": 1, "points": 24, "played": 10},
@@ -593,10 +714,15 @@ def test_ical_timezone_alarm_tv_and_validity():
     description = component.decoded("description").decode()
     assert "Orario (Roma): 12/09/2026 20:45" in description
     assert "Dove vederla in Italia: DAZN" in description
-    assert "Classifica Serie A:" in description
+    assert (
+        "Classifica Serie A provvisoria — recupero Lazio–Juventus ancora da disputare:"
+        in description
+    )
     assert "  1. Inter — 24 pt" in description
     assert "▶ 3. Juventus — 21 pt — 10 PG — DR +9" in description
     assert "  5. Napoli — 18 pt" in description
+    assert "Classifica aggiornata: 24/08/2026 12:00" in description
+    assert "Fonte classifica: Lega Serie A" in description
     assert "https://" not in description
     assert b"BEGIN:VCALENDAR" in payload and b"END:VCALENDAR" in payload
 
@@ -620,9 +746,33 @@ def test_competition_assigns_italian_tv_coverage(tmp_path, monkeypatch):
     assert "DAZN" in event["broadcast_it"]
 
 
-def test_update_attaches_current_standing_only_to_serie_a(tmp_path, monkeypatch):
+def test_update_attaches_standing_only_to_previous_and_next_serie_a_matches(
+    tmp_path, monkeypatch
+):
     write_manual(tmp_path)
-    serie_a = base_event()
+    previous = base_event(
+        source_id="previous",
+        away_team="Torino",
+        start="2026-08-10T18:45:00+00:00",
+        status="finished",
+    )
+    just_played = base_event(
+        source_id="just-played",
+        away_team="Roma",
+        start="2026-08-24T18:45:00+00:00",
+        status="finished",
+    )
+    upcoming = base_event(
+        source_id="upcoming",
+        home_team="Inter",
+        away_team="Juventus",
+        start="2026-09-12T18:45:00+00:00",
+    )
+    later = base_event(
+        source_id="later",
+        away_team="Napoli",
+        start="2026-09-20T18:45:00+00:00",
+    )
     champions = base_event(
         source_id="champions-1",
         away_team="Paris Saint-Germain",
@@ -634,22 +784,40 @@ def test_update_attaches_current_standing_only_to_serie_a(tmp_path, monkeypatch)
         "points": 21,
         "played": 10,
         "goal_difference": 9,
-        "source": "ESPN",
-        "source_url": "https://espn.example/standings",
+        "provisional": False,
+        "source": "Lega Serie A",
     }
     monkeypatch.setattr(
         "juventus_calendar.generator.fetch_remote_events",
         lambda session, today: FetchResult(
-            [serie_a, champions], ["Juventus", "ESPN classifica"], [], standing
+            [previous, just_played, upcoming, later, champions],
+            ["Juventus", "Lega Serie A classifica"],
+            [],
+            standing,
         ),
     )
 
-    events = update_calendar(tmp_path, session=object(), today=date(2026, 8, 24))
+    events_today = update_calendar(tmp_path, session=object(), today=date(2026, 8, 24))
+    assert [
+        event["source_id"] for event in events_today if event.get("serie_a_standing")
+    ] == ["just-played", "upcoming"]
 
-    league = next(event for event in events if event["competition"] == "Serie A")
+    events = update_calendar(tmp_path, session=object(), today=date(2026, 8, 25))
+
+    with_standing = [
+        event["source_id"] for event in events if event.get("serie_a_standing")
+    ]
+    previous_meta = {
+        event["source_id"]: (event["sequence"], event["last_modified"])
+        for event in events_today
+    }
+    current_meta = {
+        event["source_id"]: (event["sequence"], event["last_modified"])
+        for event in events
+    }
     europe = next(event for event in events if "Champions" in event["competition"])
-    assert league["serie_a_standing"]["position"] == 3
-    assert "updated_at" in league["serie_a_standing"]
+    assert with_standing == ["just-played", "upcoming"]
+    assert current_meta == previous_meta
     assert "serie_a_standing" not in europe
 
 
