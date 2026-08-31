@@ -295,11 +295,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-31T14:34:33Z",
+      "last_modified": "2026-08-31T16:39:00Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 2",
-      "sequence": 8,
+      "sequence": 9,
       "serie_a_standing": {
         "context": [
           {
@@ -330,7 +330,7 @@
             "played": 2,
             "points": 4,
             "position": 5,
-            "team": "Udinese"
+            "team": "Roma"
           }
         ],
         "draws": 0,
@@ -343,7 +343,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-08-31T14:34:33Z",
+        "updated_at": "2026-08-31T16:39:00Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -365,11 +365,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-31T14:34:33Z",
+      "last_modified": "2026-08-31T16:39:00Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 8,
+      "sequence": 9,
       "serie_a_standing": {
         "context": [
           {
@@ -400,7 +400,7 @@
             "played": 2,
             "points": 4,
             "position": 5,
-            "team": "Udinese"
+            "team": "Roma"
           }
         ],
         "draws": 0,
@@ -413,7 +413,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-08-31T14:34:33Z",
+        "updated_at": "2026-08-31T16:39:00Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1495,7 +1495,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-31T16:23:59Z",
+  "last_changed": "2026-08-31T16:39:00Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1527,7 +1527,7 @@
         "played": 2,
         "points": 4,
         "position": 5,
-        "team": "Udinese"
+        "team": "Roma"
       }
     ],
     "draws": 0,
@@ -1540,7 +1540,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-08-31T14:34:33Z",
+    "updated_at": "2026-08-31T16:39:00Z",
     "wins": 2
   },
   "source_errors": [
