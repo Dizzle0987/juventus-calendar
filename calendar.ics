@@ -268,18 +268,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Parma
 DTSTART;TZID=Europe/Rome:20260829T204500
 DTEND;TZID=Europe/Rome:20260829T224500
-DTSTAMP:20260831T163900Z
+DTSTAMP:20260831T165402Z
 UID:2665ec5e05f8af032918501b@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
  26 20:45\nTurno: Regular Season · Giornata 2\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
   Sport/NOW\nFonte orario: Juventus\nClassifica Serie A provvisoria — gio
- rnata in corso:\n  1. Inter — 6 pt\n  2. Milan — 6 pt\n▶ 3. Juventus
-  — 6 pt — 2 PG — DR +3\n  4. Lazio — 6 pt\n  5. Roma — 4 pt\nCla
- ssifica aggiornata: 31/08/2026 18:39\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260831T163900Z
+ rnata in corso:\n  2. Inter — 6 pt\n  3. Milan — 6 pt\n▶ 4. Juventus
+  — 6 pt — 2 PG — DR +3\n  5. Lazio — 6 pt\n  6. Udinese — 4 pt\n
+ Classifica aggiornata: 31/08/2026 18:54\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260831T165402Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -293,18 +293,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260831T163900Z
+DTSTAMP:20260831T165402Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
   Sport/NOW\nFonte orario: Juventus\nClassifica Serie A provvisoria — gio
- rnata in corso:\n  1. Inter — 6 pt\n  2. Milan — 6 pt\n▶ 3. Juventus
-  — 6 pt — 2 PG — DR +3\n  4. Lazio — 6 pt\n  5. Roma — 4 pt\nCla
- ssifica aggiornata: 31/08/2026 18:39\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260831T163900Z
+ rnata in corso:\n  2. Inter — 6 pt\n  3. Milan — 6 pt\n▶ 4. Juventus
+  — 6 pt — 2 PG — DR +3\n  5. Lazio — 6 pt\n  6. Udinese — 4 pt\n
+ Classifica aggiornata: 31/08/2026 18:54\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260831T165402Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
