@@ -268,18 +268,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Parma
 DTSTART;TZID=Europe/Rome:20260829T204500
 DTEND;TZID=Europe/Rome:20260829T224500
-DTSTAMP:20260831T185349Z
+DTSTAMP:20260831T203923Z
 UID:2665ec5e05f8af032918501b@juventus-calendar
-SEQUENCE:11
+SEQUENCE:12
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
  26 20:45\nTurno: Regular Season · Giornata 2\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
   Sport/NOW\nFonte orario: Juventus\nClassifica Serie A aggiornata — gior
  nata completata:\n  2. Inter — 6 pt\n  3. Milan — 6 pt\n▶ 4. Juventu
- s — 6 pt — 2 PG — DR +3\n  5. Lazio — 6 pt\n  6. Udinese — 4 pt\
- nClassifica aggiornata: 31/08/2026 20:53\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260831T185349Z
+ s — 6 pt — 2 PG — DR +3\n  5. Atalanta — 6 pt\n  6. Lazio — 6 pt
+ \nClassifica aggiornata: 31/08/2026 22:39\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260831T203923Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -293,18 +293,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260831T185349Z
+DTSTAMP:20260831T203923Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:11
+SEQUENCE:12
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; alcune partite anche su Sky
   Sport/NOW\nFonte orario: Juventus\nClassifica Serie A aggiornata — gior
  nata completata:\n  2. Inter — 6 pt\n  3. Milan — 6 pt\n▶ 4. Juventu
- s — 6 pt — 2 PG — DR +3\n  5. Lazio — 6 pt\n  6. Udinese — 4 pt\
- nClassifica aggiornata: 31/08/2026 20:53\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260831T185349Z
+ s — 6 pt — 2 PG — DR +3\n  5. Atalanta — 6 pt\n  6. Lazio — 6 pt
+ \nClassifica aggiornata: 31/08/2026 22:39\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260831T203923Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

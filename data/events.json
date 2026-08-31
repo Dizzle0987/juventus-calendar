@@ -295,11 +295,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-31T18:53:49Z",
+      "last_modified": "2026-08-31T20:39:23Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 2",
-      "sequence": 11,
+      "sequence": 12,
       "serie_a_standing": {
         "context": [
           {
@@ -324,13 +324,13 @@
             "played": 2,
             "points": 6,
             "position": 5,
-            "team": "Lazio"
+            "team": "Atalanta"
           },
           {
             "played": 2,
-            "points": 4,
+            "points": 6,
             "position": 6,
-            "team": "Udinese"
+            "team": "Lazio"
           }
         ],
         "draws": 0,
@@ -342,7 +342,7 @@
         "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-08-31T18:53:49Z",
+        "updated_at": "2026-08-31T20:39:23Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -364,11 +364,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-31T18:53:49Z",
+      "last_modified": "2026-08-31T20:39:23Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 11,
+      "sequence": 12,
       "serie_a_standing": {
         "context": [
           {
@@ -393,13 +393,13 @@
             "played": 2,
             "points": 6,
             "position": 5,
-            "team": "Lazio"
+            "team": "Atalanta"
           },
           {
             "played": 2,
-            "points": 4,
+            "points": 6,
             "position": 6,
-            "team": "Udinese"
+            "team": "Lazio"
           }
         ],
         "draws": 0,
@@ -411,7 +411,7 @@
         "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-08-31T18:53:49Z",
+        "updated_at": "2026-08-31T20:39:23Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1493,7 +1493,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-31T18:53:49Z",
+  "last_changed": "2026-08-31T20:39:23Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1519,13 +1519,13 @@
         "played": 2,
         "points": 6,
         "position": 5,
-        "team": "Lazio"
+        "team": "Atalanta"
       },
       {
         "played": 2,
-        "points": 4,
+        "points": 6,
         "position": 6,
-        "team": "Udinese"
+        "team": "Lazio"
       }
     ],
     "draws": 0,
@@ -1537,7 +1537,7 @@
     "provisional": false,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-08-31T18:53:49Z",
+    "updated_at": "2026-08-31T20:39:23Z",
     "wins": 2
   },
   "source_errors": [
