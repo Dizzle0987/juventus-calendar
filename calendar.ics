@@ -315,6 +315,28 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Juventus - AC Milan
+DTSTART;TZID=Europe/Rome:20260906T204500
+DTEND;TZID=Europe/Rome:20260906T224500
+DTSTAMP:20260831T162359Z
+UID:b79e4394b0b63db480ff283a@juventus-calendar
+SEQUENCE:0
+CATEGORIES:Italian Serie A,Juventus
+DESCRIPTION:Competizione: Italian Serie A\nJuventus: Casa\nOrario (Roma): 
+ 06/09/2026 20:45\nTurno: 3\nStadio: Allianz Stadium Turin\nLocalità: Ital
+ y\nDove vederla in Italia: DAZN\; alcune partite anche su Sky Sport/NOW\nF
+ onte orario: TheSportsDB
+LAST-MODIFIED:20260831T162359Z
+LOCATION:Allianz Stadium Turin\, Italy
+TRANSP:OPAQUE
+URL:https://www.thesportsdb.com/event/2482161
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Juventus - AC Milan
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
 DTSTART;TZID=Europe/Rome:20260913T204500
 DTEND;TZID=Europe/Rome:20260913T224500
