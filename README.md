@@ -50,6 +50,12 @@ python update_calendar.py
 
 Gli output sono `calendar.ics` e `data/events.json`.
 
+## Classifica Serie A
+
+Il feed JSON pubblico che alimenta la classifica ufficiale di Lega Serie A è la fonte primaria; ESPN viene usato come fallback. La mini-classifica mostra Juventus, due squadre davanti e due dietro, adattando la finestra quando la squadra è vicina alla testa o al fondo.
+
+La classifica compare soltanto nella partita della giornata corrente — oppure nell'ultima appena disputata — e nella prossima partita di Serie A. Le note indicano posizione, punti, partite giocate, differenza reti, stato provvisorio/completato, ora di aggiornamento e fonte, senza mostrare URL tecnici. Se la classifica è provvisoria, il calendario distingue una giornata ancora in corso da uno o più recuperi ufficialmente rinviati e mostra le partite ancora da disputare quando ESPN le espone; gli eventi Juventus già acquisiti vengono usati come fallback.
+
 ## Sorteggi, calendari e tabelloni
 
 `data/calendar_events.json` è il fallback strutturato per date ufficiali che non sono partite. Il generatore cerca inoltre automaticamente i sorteggi nelle pagine ufficiali di Champions League, Europa League e Conference League e gli annunci Lega Serie A relativi a sorteggi, calendari e tabelloni.
@@ -68,6 +74,8 @@ Sono supportati `id`/`uid`, `round`, `venue`, `location`, `neutral`, `status`, `
 ## Automazione
 
 `.github/workflows/update.yml` gira ogni 6 ore e supporta l'avvio manuale. Impedisce esecuzioni sovrapposte, installa le dipendenze, esegue tutti i test, genera gli output e committa soltanto se cambiano.
+
+`.github/workflows/standings.yml` controlla la classifica ogni 15 minuti nelle normali fasce delle partite italiane e committa soltanto quando `calendar.ics` o `data/events.json` cambiano realmente.
 
 `.github/workflows/pages.yml` pubblica `index.html`, `calendar.ics` e `data/events.json` dal branch `main` come artifact GitHub Pages con permessi minimi e concorrenza controllata.
 
