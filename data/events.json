@@ -1,5 +1,5 @@
 {
-  "event_count": 58,
+  "event_count": 56,
   "events": [
     {
       "all_day": false,
@@ -195,30 +195,6 @@
     },
     {
       "all_day": false,
-      "away_team": "Next Gen",
-      "broadcast_it": "Da definire",
-      "broadcast_source_url": "",
-      "competition": "Friendly",
-      "home_away": "Casa",
-      "home_team": "Juventus",
-      "last_modified": "2026-08-28T11:32:02Z",
-      "location": "",
-      "neutral": false,
-      "round": "",
-      "sequence": 1,
-      "source": "Juventus",
-      "source_id": "",
-      "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
-      "start": "2026-08-17T18:00:00+02:00",
-      "status": "scheduled",
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
-      "title": "Juventus - Next Gen",
-      "uid": "5a0041f09535e887e260d59f@juventus-calendar",
-      "venue": "Allianz Stadium"
-    },
-    {
-      "all_day": false,
       "away_team": "Juventus Next Gen",
       "broadcast_it": "Juventus.com e app Juventus (streaming gratuito)",
       "broadcast_source_url": "https://www.juventus.com/it/amichevoli-estive",
@@ -226,19 +202,20 @@
       "home_away": "Casa",
       "home_team": "Juventus",
       "id": "juventus-next-gen-2026-08-17",
-      "last_modified": "2026-08-18T12:35:07Z",
+      "last_modified": "2026-09-01T06:34:04Z",
       "location": "Torino",
       "neutral": false,
       "round": "Amichevole in famiglia",
-      "sequence": 0,
+      "sequence": 2,
       "source": "Manuale",
+      "source_id": "",
       "source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
       "start": "2026-08-17T18:00:00+02:00",
       "status": "finished",
       "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/it/news/articoli/juventus-vs-next-gen-biglietti-in-vendita",
+      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Juventus - Juventus Next Gen",
-      "uid": "juventus-next-gen-2026-08-17@juventus-calendar",
+      "uid": "5a0041f09535e887e260d59f@juventus-calendar",
       "venue": "Allianz Stadium"
     },
     {
@@ -427,30 +404,6 @@
     },
     {
       "all_day": false,
-      "away_team": "AC Milan",
-      "broadcast_it": "DAZN; alcune partite anche su Sky Sport/NOW",
-      "broadcast_source_url": "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6",
-      "competition": "Italian Serie A",
-      "home_away": "Casa",
-      "home_team": "Juventus",
-      "last_modified": "2026-08-31T16:23:59Z",
-      "location": "Italy",
-      "neutral": false,
-      "round": "3",
-      "sequence": 0,
-      "source": "TheSportsDB",
-      "source_id": "2482161",
-      "source_url": "https://www.thesportsdb.com/event/2482161",
-      "start": "2026-09-06T20:45:00+02:00",
-      "status": "NS",
-      "time_source": "TheSportsDB",
-      "time_source_url": "https://www.thesportsdb.com/event/2482161",
-      "title": "Juventus - AC Milan",
-      "uid": "b79e4394b0b63db480ff283a@juventus-calendar",
-      "venue": "Allianz Stadium Turin"
-    },
-    {
-      "all_day": false,
       "away_team": "Juventus",
       "broadcast_it": "DAZN; alcune partite anche su Sky Sport/NOW",
       "broadcast_source_url": "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6",
@@ -509,25 +462,27 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-31T14:34:33Z",
+      "last_modified": "2026-09-01T06:34:04Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 8,
+      "sequence": 9,
       "source": "Juventus",
       "source_id": "77a9rnv901wm3mwfoq92d1rf8",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
-      "start": "2026-09-18T18:00:00+02:00",
+      "start": "2026-09-20T18:00:00+02:00",
       "status": "scheduled",
       "time_conflicts": [
         {
-          "source": "Juventus",
-          "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
-          "start": "2026-09-20T16:00:00+00:00"
+          "conflicting_fixture": "Juventus - NEC",
+          "rejected_reason": "meno di 48 ore da un'altra partita",
+          "source": "NOW",
+          "source_url": "https://www.nowtv.it/sport/calcio/juventus",
+          "start": "2026-09-18T18:00:00+02:00"
         }
       ],
-      "time_source": "NOW",
-      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "time_source": "Juventus",
+      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Juventus - Atalanta",
       "uid": "64f6a6f8063a8abff2a34145@juventus-calendar",
       "venue": "Allianz Stadium"
@@ -1493,7 +1448,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-08-31T20:39:23Z",
+  "last_changed": "2026-09-01T06:34:04Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
