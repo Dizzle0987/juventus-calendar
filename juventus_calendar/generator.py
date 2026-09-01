@@ -87,9 +87,12 @@ EXCLUDED_SQUADS = (
     "u19",
 )
 TEAM_EQUIVALENTS = {
+    "ac milan": "milan",
     "internazionale": "inter",
     "inter milan": "inter",
     "fc internazionale": "inter",
+    "juventus next gen": "next gen",
+    "juventus u23": "next gen",
     "ogc nice": "nice",
     "ogc nice cote dazur": "nice",
 }
@@ -1279,6 +1282,38 @@ def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]
             and _event_datetime(existing).astimezone(timezone.utc)
             == _event_datetime(overlay).astimezone(timezone.utc)
         )
+        conflicting_fixture = next(
+            (
+                other
+                for other in merged
+                if other is not existing
+                and str(other.get("event_kind") or "match") == "match"
+                and not other.get("all_day")
+                and abs(
+                    (
+                        _event_datetime(other).astimezone(timezone.utc)
+                        - _event_datetime(overlay).astimezone(timezone.utc)
+                    ).total_seconds()
+                )
+                < 48 * 3600
+            ),
+            None,
+        )
+        if conflicting_fixture is not None and not same_instant:
+            conflict = {
+                "source": str(overlay.get("source") or ""),
+                "source_url": str(overlay.get("source_url") or ""),
+                "start": candidate_start,
+                "rejected_reason": "meno di 48 ore da un'altra partita",
+                "conflicting_fixture": str(conflicting_fixture.get("title") or "").strip()
+                or f"{conflicting_fixture.get('home_team', '')} - {conflicting_fixture.get('away_team', '')}".strip(),
+            }
+            conflicts = existing.setdefault("time_conflicts", [])
+            if conflict not in conflicts:
+                conflicts.append(conflict)
+            if overlay.get("broadcast_it"):
+                _merge_broadcaster_overlay(existing, overlay)
+            continue
         if previous_start and not existing.get("all_day") and not same_instant:
             conflict = {
                 "source": str(existing.get("time_source") or existing.get("source") or ""),
