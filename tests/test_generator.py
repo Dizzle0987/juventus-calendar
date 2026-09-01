@@ -525,6 +525,59 @@ def test_common_opponent_aliases_are_deduplicated():
     assert len(merge_remote_events([inter_fallback, inter_official])) == 1
 
 
+def test_milan_and_next_gen_aliases_are_deduplicated():
+    milan_official = base_event(away_team="Milan", competition="Serie A")
+    milan_fallback = base_event(
+        source="TheSportsDB", away_team="AC Milan", competition="Italian Serie A"
+    )
+    next_gen_official = base_event(
+        away_team="Next Gen", competition="Friendly", start="2026-08-17T18:00:00+02:00"
+    )
+    next_gen_manual = base_event(
+        source="Manuale",
+        away_team="Juventus Next Gen",
+        competition="Amichevole",
+        start="2026-08-17T18:00:00+02:00",
+    )
+
+    assert len(merge_remote_events([milan_fallback, milan_official])) == 1
+    assert len(merge_manual_events([next_gen_official], [next_gen_manual])) == 1
+
+
+def test_time_overlay_cannot_create_a_next_day_fixture():
+    europa = base_event(
+        away_team="NEC",
+        competition="UEFA Europa League",
+        start="2026-09-17T21:00:00+02:00",
+    )
+    official = base_event(
+        away_team="Atalanta",
+        start="2026-09-20T18:00:00+02:00",
+        time_source="Juventus",
+    )
+    misleading_now = parse_schedule_html(
+        '<script type="application/ld+json">{"text":"18 settembre ore 18:00 - Juventus vs Atalanta."}</script>',
+        "NOW",
+        "https://now.example",
+        2026,
+        50,
+        "Sky Sport e NOW",
+    )[0]
+
+    merged = merge_remote_events([europa, official, misleading_now])
+    atalanta = next(event for event in merged if event["away_team"] == "Atalanta")
+
+    assert atalanta["start"] == "2026-09-20T18:00:00+02:00"
+    assert atalanta["time_source"] == "Juventus"
+    assert atalanta["time_conflicts"] == [{
+        "source": "NOW",
+        "source_url": "https://now.example",
+        "start": "2026-09-18T18:00:00+02:00",
+        "rejected_reason": "meno di 48 ore da un'altra partita",
+        "conflicting_fixture": "Juventus - NEC",
+    }]
+
+
 def test_uid_is_stable_after_date_time_venue_round_and_tv_changes():
     before = base_event()
     after = base_event(
