@@ -502,7 +502,7 @@ def test_dazn_sky_now_use_the_same_priority_order_as_milan_calendar():
 
     assert merged["start"] == "2026-09-12T21:00:00+02:00"
     assert merged["time_source"] == "DAZN"
-    assert merged["broadcast_it"] == "DAZN; alcune partite anche su Sky Sport/NOW; Sky Sport e NOW"
+    assert merged["broadcast_it"] == "DAZN; Sky Sport e NOW"
     assert merged["broadcast_source_url"] == "https://dazn.example"
 
 
@@ -569,6 +569,7 @@ def test_time_overlay_cannot_create_a_next_day_fixture():
 
     assert atalanta["start"] == "2026-09-20T18:00:00+02:00"
     assert atalanta["time_source"] == "Juventus"
+    assert "broadcast_it" not in atalanta
     assert atalanta["time_conflicts"] == [{
         "source": "NOW",
         "source_url": "https://now.example",
@@ -919,7 +920,7 @@ def test_dazn_time_overrides_unlocked_manual_data():
 
     assert event["start"] == "2026-09-12T21:00:00+02:00"
     assert event["time_source"] == "DAZN"
-    assert event["broadcast_it"] == "DAZN; alcune partite anche su Sky Sport/NOW"
+    assert event["broadcast_it"] == "DAZN"
 
 
 def test_manual_events_can_intentionally_include_other_squad(tmp_path):
