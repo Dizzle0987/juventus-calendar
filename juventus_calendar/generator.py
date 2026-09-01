@@ -140,10 +140,22 @@ TIME_SOURCES = (
 )
 
 BROADCASTERS_BY_COMPETITION = {
-    "serie-a": ("DAZN; alcune partite anche su Sky Sport/NOW", "https://www.dazn.com/it-IT/competition/Competition:1pq3co4h7b7h5p8rqq2s8e4r6"),
-    "coppa-italia": ("Mediaset e Mediaset Infinity", "https://mediasetinfinity.mediaset.it/calcio-e-sport/"),
-    "supercoppa-italiana": ("Mediaset e Mediaset Infinity", "https://mediasetinfinity.mediaset.it/calcio-e-sport/"),
-    "champions-league": ("Sky Sport/NOW; possibile esclusiva Prime Video da verificare per la singola partita", "https://sport.sky.it/calcio/champions-league"),
+    "serie-a": (
+        "DAZN",
+        "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+    ),
+    "coppa-italia": (
+        "Mediaset (canali in chiaro), Mediaset Infinity e SportMediaset.it",
+        "https://mediasetinfinity.mediaset.it/calcio-e-sport/coppaitaliacalcio_SE000000001529",
+    ),
+    "supercoppa-italiana": (
+        "Mediaset (canali in chiaro), Mediaset Infinity e SportMediaset.it",
+        "https://mediasetinfinity.mediaset.it/calcio-e-sport/supercoppaditaliacalcio_SE000000001643",
+    ),
+    "champions-league": (
+        "Sky Sport/NOW; possibile esclusiva Prime Video da verificare",
+        "https://sport.sky.it/calcio/champions-league/2025/11/20/champions-league-2027-2031-su-sky",
+    ),
     "europa-league": ("Sky Sport e NOW", "https://sport.sky.it/calcio/europa-league"),
     "conference-league": ("Sky Sport e NOW", "https://sport.sky.it/calcio/conference-league"),
 }
@@ -1311,8 +1323,6 @@ def merge_remote_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]
             conflicts = existing.setdefault("time_conflicts", [])
             if conflict not in conflicts:
                 conflicts.append(conflict)
-            if overlay.get("broadcast_it"):
-                _merge_broadcaster_overlay(existing, overlay)
             continue
         if previous_start and not existing.get("all_day") and not same_instant:
             conflict = {
