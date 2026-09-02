@@ -779,11 +779,11 @@
       "competition": "Coppa Italia",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-02T15:21:34Z",
+      "last_modified": "2026-09-02T16:45:00Z",
       "location": "Italy",
       "neutral": false,
       "round": "8th Finals",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "1jsmzg3599v3rizc9ipr2ihas",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -793,7 +793,7 @@
       "time_source_url": "",
       "title": "Juventus - Sassuolo",
       "uid": "fc354384e460a997ff26826b@juventus-calendar",
-      "venue": ""
+      "venue": "Allianz Stadium"
     },
     {
       "all_day": true,
@@ -1468,7 +1468,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-02T15:21:34Z",
+  "last_changed": "2026-09-02T16:45:00Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
