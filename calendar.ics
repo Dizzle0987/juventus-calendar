@@ -341,14 +341,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Atalanta
 DTSTART;TZID=Europe/Rome:20260920T180000
 DTEND;TZID=Europe/Rome:20260920T200000
-DTSTAMP:20260901T065916Z
+DTSTAMP:20260904T154333Z
 UID:64f6a6f8063a8abff2a34145@juventus-calendar
-SEQUENCE:10
+SEQUENCE:11
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 20/09/20
  26 18:00\nTurno: Regular Season · Giornata 5\nStadio: Allianz Stadium\nLo
- calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
-LAST-MODIFIED:20260901T065916Z
+ calità: Italy\nDove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orar
+ io: NOW
+LAST-MODIFIED:20260904T154333Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -426,15 +427,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Rennes
 DTSTART;TZID=Europe/Rome:20261022T184500
 DTEND;TZID=Europe/Rome:20261022T204500
-DTSTAMP:20260830T002121Z
+DTSTAMP:20260904T154333Z
 UID:50b2d3de9164a63ba5b4de07@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 22/10/2026 18:45\nTurno: League Stage · Giornata 3\nStadio: Allianz St
  adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
- rario: Juventus
-LAST-MODIFIED:20260830T002121Z
+ rario: NOW
+LAST-MODIFIED:20260904T154333Z
 LOCATION:Allianz Stadium\, Europe
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

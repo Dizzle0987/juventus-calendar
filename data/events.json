@@ -453,32 +453,27 @@
     {
       "all_day": false,
       "away_team": "Atalanta",
-      "broadcast_it": "DAZN",
-      "broadcast_source_url": "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+      "broadcast_it": "DAZN; Sky Sport e NOW",
+      "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-01T06:59:16Z",
+      "last_modified": "2026-09-04T15:43:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 10,
+      "sequence": 11,
       "source": "Juventus",
       "source_id": "77a9rnv901wm3mwfoq92d1rf8",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-09-20T18:00:00+02:00",
       "status": "scheduled",
-      "time_conflicts": [
-        {
-          "conflicting_fixture": "Juventus - NEC",
-          "rejected_reason": "meno di 48 ore da un'altra partita",
-          "source": "NOW",
-          "source_url": "https://www.nowtv.it/sport/calcio/juventus",
-          "start": "2026-09-18T18:00:00+02:00"
-        }
-      ],
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "time_source": "NOW",
+      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Atalanta",
       "uid": "64f6a6f8063a8abff2a34145@juventus-calendar",
       "venue": "Allianz Stadium"
@@ -559,22 +554,26 @@
       "all_day": false,
       "away_team": "Rennes",
       "broadcast_it": "Sky Sport e NOW",
-      "broadcast_source_url": "https://sport.sky.it/calcio/europa-league",
+      "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://sport.sky.it/calcio/europa-league",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "UEFA Europa League",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-08-30T00:21:21Z",
+      "last_modified": "2026-09-04T15:43:33Z",
       "location": "Europe",
       "neutral": false,
       "round": "League Stage · Giornata 3",
-      "sequence": 0,
+      "sequence": 1,
       "source": "Juventus",
       "source_id": "dz4wz6on7hxiihw9lz3vn24gk",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-10-22T18:45:00+02:00",
       "status": "scheduled",
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "time_source": "NOW",
+      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Rennes",
       "uid": "50b2d3de9164a63ba5b4de07@juventus-calendar",
       "venue": "Allianz Stadium"
@@ -1468,7 +1467,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-04T12:32:58Z",
+  "last_changed": "2026-09-04T15:43:33Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
