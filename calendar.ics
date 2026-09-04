@@ -247,18 +247,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Parma
 DTSTART;TZID=Europe/Rome:20260829T204500
 DTEND;TZID=Europe/Rome:20260829T224500
-DTSTAMP:20260904T185448Z
+DTSTAMP:20260904T192431Z
 UID:2665ec5e05f8af032918501b@juventus-calendar
-SEQUENCE:14
+SEQUENCE:15
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 29/08/20
  26 20:45\nTurno: Regular Season · Giornata 2\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClas
- sifica Serie A provvisoria — giornata in corso:\n  2. Inter — 6 pt\n  
- 3. Milan — 6 pt\n▶ 4. Juventus — 6 pt — 2 PG — DR +3\n  5. Atala
- nta — 6 pt\n  6. Lazio — 6 pt\nClassifica aggiornata: 04/09/2026 20:54
+ sifica Serie A provvisoria — giornata in corso:\n  3. Inter — 6 pt\n  
+ 4. Milan — 6 pt\n▶ 5. Juventus — 6 pt — 2 PG — DR +3\n  6. Atala
+ nta — 6 pt\n  7. Lazio — 6 pt\nClassifica aggiornata: 04/09/2026 21:24
  \nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260904T185448Z
+LAST-MODIFIED:20260904T192431Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -272,18 +272,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260904T185448Z
+DTSTAMP:20260904T192431Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:14
+SEQUENCE:15
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClas
- sifica Serie A provvisoria — giornata in corso:\n  2. Inter — 6 pt\n  
- 3. Milan — 6 pt\n▶ 4. Juventus — 6 pt — 2 PG — DR +3\n  5. Atala
- nta — 6 pt\n  6. Lazio — 6 pt\nClassifica aggiornata: 04/09/2026 20:54
+ sifica Serie A provvisoria — giornata in corso:\n  3. Inter — 6 pt\n  
+ 4. Milan — 6 pt\n▶ 5. Juventus — 6 pt — 2 PG — DR +3\n  6. Atala
+ nta — 6 pt\n  7. Lazio — 6 pt\nClassifica aggiornata: 04/09/2026 21:24
  \nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260904T185448Z
+LAST-MODIFIED:20260904T192431Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
