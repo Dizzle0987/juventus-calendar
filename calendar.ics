@@ -360,16 +360,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
-DTSTART;VALUE=DATE:20261011
-DTEND;VALUE=DATE:20261012
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261011T204500
+DTEND;TZID=Europe/Rome:20261011T224500
+DTSTAMP:20260904T123258Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
- are\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\nLocalità:
-  Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 11/
+ 10/2026 20:45\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\n
+ Località: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Unipol Domus\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -403,16 +403,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
-DTSTART;VALUE=DATE:20261017
-DTEND;VALUE=DATE:20261018
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261018T204500
+DTEND;TZID=Europe/Rome:20261018T224500
+DTSTAMP:20260904T123258Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
- Turno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nLocalità: I
- taly\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/10/20
+ 26 20:45\nTurno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nLo
+ calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -446,16 +446,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Lecce - Juventus
-DTSTART;VALUE=DATE:20261025
-DTEND;VALUE=DATE:20261026
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261025T180000
+DTEND;TZID=Europe/Rome:20261025T200000
+DTSTAMP:20260904T123258Z
 UID:e5a843116296d3266280a5bb@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
- are\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore Giardinier
- o - Via del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 25/
+ 10/2026 18:00\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore 
+ Giardiniero - Via del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN
+ \nFonte orario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Stadio Ettore Giardiniero - Via del Mare\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -467,16 +468,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Genoa - Juventus
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261028T204500
+DTEND;TZID=Europe/Rome:20261028T224500
+DTSTAMP:20260904T123258Z
 UID:2f08c9145cdd9a03fb73324f@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
- are\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunale Luigi Fe
- rraris\nLocalità: Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 28/
+ 10/2026 20:45\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunal
+ e Luigi Ferraris\nLocalità: Italy\nDove vederla in Italia: DAZN\nFonte or
+ ario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Stadio Comunale Luigi Ferraris\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -488,16 +490,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Napoli
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261101T204500
+DTEND;TZID=Europe/Rome:20261101T224500
+DTSTAMP:20260904T123258Z
 UID:0b2427b7e6b1886ec6081963@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
- Turno: Regular Season · Giornata 10\nStadio: Allianz Stadium\nLocalità: 
- Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 01/11/20
+ 26 20:45\nTurno: Regular Season · Giornata 10\nStadio: Allianz Stadium\nL
+ ocalità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -531,16 +533,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Fiorentina - Juventus
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261108T204500
+DTEND;TZID=Europe/Rome:20261108T224500
+DTSTAMP:20260904T123258Z
 UID:ae960ed183fe1ac5522f474d@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario: da conferm
- are\nTurno: Regular Season · Giornata 11\nStadio: Stadio Artemio Franchi\
- nLocalità: Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 08/
+ 11/2026 20:45\nTurno: Regular Season · Giornata 11\nStadio: Stadio Artemi
+ o Franchi\nLocalità: Italy\nDove vederla in Italia: DAZN\nFonte orario: J
+ uventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Stadio Artemio Franchi\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -552,16 +555,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Venezia
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-DTSTAMP:20260901T065916Z
+DTSTART;TZID=Europe/Rome:20261123T204500
+DTEND;TZID=Europe/Rome:20261123T224500
+DTSTAMP:20260904T123258Z
 UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
-SEQUENCE:8
+SEQUENCE:9
 CATEGORIES:Serie A,Juventus
-DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario: da confermare\n
- Turno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nLocalità: 
- Italy\nDove vederla in Italia: DAZN
-LAST-MODIFIED:20260901T065916Z
+DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 23/11/20
+ 26 20:45\nTurno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nL
+ ocalità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20260904T123258Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
