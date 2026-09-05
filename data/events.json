@@ -272,11 +272,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-05T20:21:38Z",
+      "last_modified": "2026-09-05T21:21:45Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 2",
-      "sequence": 18,
+      "sequence": 19,
       "serie_a_standing": {
         "context": [
           {
@@ -307,7 +307,7 @@
             "played": 3,
             "points": 6,
             "position": 7,
-            "team": "Roma"
+            "team": "Atalanta"
           }
         ],
         "draws": 0,
@@ -320,7 +320,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-05T20:21:38Z",
+        "updated_at": "2026-09-05T21:21:45Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -342,11 +342,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-05T20:21:38Z",
+      "last_modified": "2026-09-05T21:21:45Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 18,
+      "sequence": 19,
       "serie_a_standing": {
         "context": [
           {
@@ -377,7 +377,7 @@
             "played": 3,
             "points": 6,
             "position": 7,
-            "team": "Roma"
+            "team": "Atalanta"
           }
         ],
         "draws": 0,
@@ -390,7 +390,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-05T20:21:38Z",
+        "updated_at": "2026-09-05T21:21:45Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1469,7 +1469,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-05T20:21:38Z",
+  "last_changed": "2026-09-05T21:21:45Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1501,7 +1501,7 @@
         "played": 3,
         "points": 6,
         "position": 7,
-        "team": "Roma"
+        "team": "Atalanta"
       }
     ],
     "draws": 0,
@@ -1514,7 +1514,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-05T20:21:38Z",
+    "updated_at": "2026-09-05T21:21:45Z",
     "wins": 2
   },
   "source_errors": [
