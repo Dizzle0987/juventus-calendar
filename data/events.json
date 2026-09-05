@@ -272,57 +272,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-05T21:21:45Z",
+      "last_modified": "2026-09-05T23:00:01Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 2",
-      "sequence": 19,
-      "serie_a_standing": {
-        "context": [
-          {
-            "played": 3,
-            "points": 7,
-            "position": 3,
-            "team": "Como"
-          },
-          {
-            "played": 2,
-            "points": 6,
-            "position": 4,
-            "team": "Milan"
-          },
-          {
-            "played": 2,
-            "points": 6,
-            "position": 5,
-            "team": "Juventus"
-          },
-          {
-            "played": 2,
-            "points": 6,
-            "position": 6,
-            "team": "Lazio"
-          },
-          {
-            "played": 3,
-            "points": 6,
-            "position": 7,
-            "team": "Atalanta"
-          }
-        ],
-        "draws": 0,
-        "goal_difference": 3,
-        "losses": 0,
-        "pending_recoveries": [],
-        "played": 2,
-        "points": 6,
-        "position": 5,
-        "provisional": true,
-        "source": "Lega Serie A",
-        "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-05T21:21:45Z",
-        "wins": 2
-      },
+      "sequence": 20,
       "source": "Juventus",
       "source_id": "6y34eirf94bl7dryf0th0nz84",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -412,11 +366,57 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-01T06:59:16Z",
+      "last_modified": "2026-09-05T23:00:01Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 9,
+      "sequence": 10,
+      "serie_a_standing": {
+        "context": [
+          {
+            "played": 3,
+            "points": 7,
+            "position": 3,
+            "team": "Como"
+          },
+          {
+            "played": 2,
+            "points": 6,
+            "position": 4,
+            "team": "Milan"
+          },
+          {
+            "played": 2,
+            "points": 6,
+            "position": 5,
+            "team": "Juventus"
+          },
+          {
+            "played": 2,
+            "points": 6,
+            "position": 6,
+            "team": "Lazio"
+          },
+          {
+            "played": 3,
+            "points": 6,
+            "position": 7,
+            "team": "Atalanta"
+          }
+        ],
+        "draws": 0,
+        "goal_difference": 3,
+        "losses": 0,
+        "pending_recoveries": [],
+        "played": 2,
+        "points": 6,
+        "position": 5,
+        "provisional": true,
+        "source": "Lega Serie A",
+        "source_url": "https://www.legaseriea.it/serie-a/classifica",
+        "updated_at": "2026-09-05T21:21:45Z",
+        "wins": 2
+      },
       "source": "Juventus",
       "source_id": "75g3fr1c7phhoq2aofhljua6s",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1469,7 +1469,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-05T21:21:45Z",
+  "last_changed": "2026-09-05T23:00:01Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
