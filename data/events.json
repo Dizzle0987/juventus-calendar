@@ -296,11 +296,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-05T21:21:45Z",
+      "last_modified": "2026-09-06T15:28:38Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
           {
@@ -331,7 +331,7 @@
             "played": 3,
             "points": 6,
             "position": 7,
-            "team": "Atalanta"
+            "team": "Frosinone"
           }
         ],
         "draws": 0,
@@ -344,7 +344,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-05T21:21:45Z",
+        "updated_at": "2026-09-06T15:28:38Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -366,11 +366,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-05T23:00:01Z",
+      "last_modified": "2026-09-06T15:28:38Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 10,
+      "sequence": 11,
       "serie_a_standing": {
         "context": [
           {
@@ -401,7 +401,7 @@
             "played": 3,
             "points": 6,
             "position": 7,
-            "team": "Atalanta"
+            "team": "Frosinone"
           }
         ],
         "draws": 0,
@@ -414,7 +414,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-05T21:21:45Z",
+        "updated_at": "2026-09-06T15:28:38Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1469,7 +1469,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-05T23:00:01Z",
+  "last_changed": "2026-09-06T15:28:38Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1501,7 +1501,7 @@
         "played": 3,
         "points": 6,
         "position": 7,
-        "team": "Atalanta"
+        "team": "Frosinone"
       }
     ],
     "draws": 0,
@@ -1514,7 +1514,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-05T21:21:45Z",
+    "updated_at": "2026-09-06T15:28:38Z",
     "wins": 2
   },
   "source_errors": [
