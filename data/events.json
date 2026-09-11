@@ -296,11 +296,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-07T21:31:30Z",
+      "last_modified": "2026-09-11T20:58:22Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 25,
+      "sequence": 26,
       "serie_a_standing": {
         "context": [
           {
@@ -337,13 +337,14 @@
         "draws": 1,
         "goal_difference": 3,
         "losses": 0,
+        "pending_recoveries": [],
         "played": 3,
         "points": 7,
         "position": 6,
-        "provisional": false,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-07T21:31:30Z",
+        "updated_at": "2026-09-11T20:58:22Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -365,11 +366,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-07T21:31:30Z",
+      "last_modified": "2026-09-11T20:58:22Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 16,
+      "sequence": 17,
       "serie_a_standing": {
         "context": [
           {
@@ -406,13 +407,14 @@
         "draws": 1,
         "goal_difference": 3,
         "losses": 0,
+        "pending_recoveries": [],
         "played": 3,
         "points": 7,
         "position": 6,
-        "provisional": false,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-07T21:31:30Z",
+        "updated_at": "2026-09-11T20:58:22Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1475,7 +1477,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-11T16:29:14Z",
+  "last_changed": "2026-09-11T20:58:22Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1513,13 +1515,14 @@
     "draws": 1,
     "goal_difference": 3,
     "losses": 0,
+    "pending_recoveries": [],
     "played": 3,
     "points": 7,
     "position": 6,
-    "provisional": false,
+    "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-07T21:31:30Z",
+    "updated_at": "2026-09-11T20:58:22Z",
     "wins": 2
   },
   "source_errors": [
@@ -1532,6 +1535,7 @@
     "ESPN",
     "ESPN classifica",
     "Lega Serie A classifica",
+    "ESPN recuperi Serie A",
     "TheSportsDB",
     "NOW",
     "UEFA sorteggi"
