@@ -581,23 +581,27 @@
     {
       "all_day": false,
       "away_team": "Juventus",
-      "broadcast_it": "DAZN",
-      "broadcast_source_url": "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+      "broadcast_it": "DAZN; Sky Sport e NOW",
+      "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-09-04T12:32:58Z",
+      "last_modified": "2026-09-11T16:29:14Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 9,
+      "sequence": 10,
       "source": "Juventus",
       "source_id": "7hgj3iezpigj4bwyp5z79cwt0",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-10-25T18:00:00+01:00",
       "status": "scheduled",
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "time_source": "NOW",
+      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Lecce - Juventus",
       "uid": "e5a843116296d3266280a5bb@juventus-calendar",
       "venue": "Stadio Ettore Giardiniero - Via del Mare"
@@ -701,23 +705,27 @@
     {
       "all_day": false,
       "away_team": "Venezia",
-      "broadcast_it": "DAZN",
-      "broadcast_source_url": "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+      "broadcast_it": "DAZN; Sky Sport e NOW",
+      "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-04T12:32:58Z",
+      "last_modified": "2026-09-11T16:29:14Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 12",
-      "sequence": 9,
+      "sequence": 10,
       "source": "Juventus",
       "source_id": "7swd2xv6gei68ddws82y8ku8k",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-11-23T20:45:00+01:00",
       "status": "scheduled",
-      "time_source": "Juventus",
-      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "time_source": "NOW",
+      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Venezia",
       "uid": "4ffe78d9e41e9ee8168ef052@juventus-calendar",
       "venue": "Allianz Stadium"
@@ -1467,7 +1475,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-07T21:31:30Z",
+  "last_changed": "2026-09-11T16:29:14Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [

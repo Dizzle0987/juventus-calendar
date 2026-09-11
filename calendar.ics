@@ -448,15 +448,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Lecce - Juventus
 DTSTART;TZID=Europe/Rome:20261025T180000
 DTEND;TZID=Europe/Rome:20261025T200000
-DTSTAMP:20260904T123258Z
+DTSTAMP:20260911T162914Z
 UID:e5a843116296d3266280a5bb@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 25/
  10/2026 18:00\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore 
  Giardiniero - Via del Mare\nLocalità: Italy\nDove vederla in Italia: DAZN
- \nFonte orario: Juventus
-LAST-MODIFIED:20260904T123258Z
+ \; Sky Sport e NOW\nFonte orario: NOW
+LAST-MODIFIED:20260911T162914Z
 LOCATION:Stadio Ettore Giardiniero - Via del Mare\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -557,14 +557,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Venezia
 DTSTART;TZID=Europe/Rome:20261123T204500
 DTEND;TZID=Europe/Rome:20261123T224500
-DTSTAMP:20260904T123258Z
+DTSTAMP:20260911T162914Z
 UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 23/11/20
  26 20:45\nTurno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nL
- ocalità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
-LAST-MODIFIED:20260904T123258Z
+ ocalità: Italy\nDove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte ora
+ rio: NOW
+LAST-MODIFIED:20260911T162914Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
