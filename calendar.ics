@@ -268,18 +268,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Milan
 DTSTART;TZID=Europe/Rome:20260906T204500
 DTEND;TZID=Europe/Rome:20260906T224500
-DTSTAMP:20260912T193903Z
+DTSTAMP:20260912T203349Z
 UID:f6a0e961c790cc99304f973a@juventus-calendar
-SEQUENCE:29
+SEQUENCE:30
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 06/09/20
  26 20:45\nTurno: Regular Season · Giornata 3\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClas
- sifica Serie A provvisoria — giornata in corso:\n  5. Como — 7 pt\n  6
- . Frosinone — 7 pt\n▶ 7. Juventus — 7 pt — 3 PG — DR +3\n  8. At
- alanta — 7 pt\n  9. Cagliari — 7 pt\nClassifica aggiornata: 12/09/2026
-  21:39\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260912T193903Z
+ sifica Serie A provvisoria — giornata in corso:\n  6. Como — 7 pt\n  7
+ . Frosinone — 7 pt\n▶ 8. Juventus — 7 pt — 3 PG — DR +3\n  9. At
+ alanta — 6 pt\n  10. Sassuolo — 4 pt\nClassifica aggiornata: 12/09/202
+ 6 22:33\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260912T203349Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -293,18 +293,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
 DTSTART;TZID=Europe/Rome:20260913T204500
 DTEND;TZID=Europe/Rome:20260913T224500
-DTSTAMP:20260912T193903Z
+DTSTAMP:20260912T203349Z
 UID:5a23aeb3327f080f81a89566@juventus-calendar
-SEQUENCE:20
+SEQUENCE:21
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 13/
  09/2026 20:45\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium 
  - Città del Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\nFo
  nte orario: Juventus\nClassifica Serie A provvisoria — giornata in corso
- :\n  5. Como — 7 pt\n  6. Frosinone — 7 pt\n▶ 7. Juventus — 7 pt 
- — 3 PG — DR +3\n  8. Atalanta — 7 pt\n  9. Cagliari — 7 pt\nClassi
- fica aggiornata: 12/09/2026 21:39\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260912T193903Z
+ :\n  6. Como — 7 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt 
+ — 3 PG — DR +3\n  9. Atalanta — 6 pt\n  10. Sassuolo — 4 pt\nClass
+ ifica aggiornata: 12/09/2026 22:33\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260912T203349Z
 LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
