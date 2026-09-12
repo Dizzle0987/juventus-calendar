@@ -296,42 +296,42 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-11T20:58:22Z",
+      "last_modified": "2026-09-12T15:32:24Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 26,
+      "sequence": 27,
       "serie_a_standing": {
         "context": [
           {
-            "played": 3,
-            "points": 7,
-            "position": 4,
-            "team": "Como"
-          },
-          {
-            "played": 3,
+            "played": 4,
             "points": 7,
             "position": 5,
-            "team": "Milan"
+            "team": "Frosinone"
           },
           {
             "played": 3,
             "points": 7,
             "position": 6,
-            "team": "Juventus"
+            "team": "Milan"
           },
           {
             "played": 3,
-            "points": 6,
+            "points": 7,
             "position": 7,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
             "played": 3,
             "points": 6,
             "position": 8,
             "team": "Atalanta"
+          },
+          {
+            "played": 3,
+            "points": 6,
+            "position": 9,
+            "team": "Cagliari"
           }
         ],
         "draws": 1,
@@ -340,11 +340,11 @@
         "pending_recoveries": [],
         "played": 3,
         "points": 7,
-        "position": 6,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-11T20:58:22Z",
+        "updated_at": "2026-09-12T15:32:24Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -366,42 +366,42 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-11T20:58:22Z",
+      "last_modified": "2026-09-12T15:32:24Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 17,
+      "sequence": 18,
       "serie_a_standing": {
         "context": [
           {
-            "played": 3,
-            "points": 7,
-            "position": 4,
-            "team": "Como"
-          },
-          {
-            "played": 3,
+            "played": 4,
             "points": 7,
             "position": 5,
-            "team": "Milan"
+            "team": "Frosinone"
           },
           {
             "played": 3,
             "points": 7,
             "position": 6,
-            "team": "Juventus"
+            "team": "Milan"
           },
           {
             "played": 3,
-            "points": 6,
+            "points": 7,
             "position": 7,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
             "played": 3,
             "points": 6,
             "position": 8,
             "team": "Atalanta"
+          },
+          {
+            "played": 3,
+            "points": 6,
+            "position": 9,
+            "team": "Cagliari"
           }
         ],
         "draws": 1,
@@ -410,11 +410,11 @@
         "pending_recoveries": [],
         "played": 3,
         "points": 7,
-        "position": 6,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-11T20:58:22Z",
+        "updated_at": "2026-09-12T15:32:24Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1477,39 +1477,39 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-11T20:58:22Z",
+  "last_changed": "2026-09-12T15:32:24Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 3,
-        "points": 7,
-        "position": 4,
-        "team": "Como"
-      },
-      {
-        "played": 3,
+        "played": 4,
         "points": 7,
         "position": 5,
-        "team": "Milan"
+        "team": "Frosinone"
       },
       {
         "played": 3,
         "points": 7,
         "position": 6,
-        "team": "Juventus"
+        "team": "Milan"
       },
       {
         "played": 3,
-        "points": 6,
+        "points": 7,
         "position": 7,
-        "team": "Frosinone"
+        "team": "Juventus"
       },
       {
         "played": 3,
         "points": 6,
         "position": 8,
         "team": "Atalanta"
+      },
+      {
+        "played": 3,
+        "points": 6,
+        "position": 9,
+        "team": "Cagliari"
       }
     ],
     "draws": 1,
@@ -1518,11 +1518,11 @@
     "pending_recoveries": [],
     "played": 3,
     "points": 7,
-    "position": 6,
+    "position": 7,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-11T20:58:22Z",
+    "updated_at": "2026-09-12T15:32:24Z",
     "wins": 2
   },
   "source_errors": [
