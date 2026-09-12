@@ -296,11 +296,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-12T17:44:08Z",
+      "last_modified": "2026-09-12T19:39:03Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 3",
-      "sequence": 28,
+      "sequence": 29,
       "serie_a_standing": {
         "context": [
           {
@@ -322,14 +322,14 @@
             "team": "Juventus"
           },
           {
-            "played": 3,
-            "points": 6,
+            "played": 4,
+            "points": 7,
             "position": 8,
             "team": "Atalanta"
           },
           {
-            "played": 3,
-            "points": 6,
+            "played": 4,
+            "points": 7,
             "position": 9,
             "team": "Cagliari"
           }
@@ -344,7 +344,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-12T17:44:08Z",
+        "updated_at": "2026-09-12T19:39:03Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -366,11 +366,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-12T17:44:08Z",
+      "last_modified": "2026-09-12T19:39:03Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
           {
@@ -392,14 +392,14 @@
             "team": "Juventus"
           },
           {
-            "played": 3,
-            "points": 6,
+            "played": 4,
+            "points": 7,
             "position": 8,
             "team": "Atalanta"
           },
           {
-            "played": 3,
-            "points": 6,
+            "played": 4,
+            "points": 7,
             "position": 9,
             "team": "Cagliari"
           }
@@ -414,7 +414,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-12T17:44:08Z",
+        "updated_at": "2026-09-12T19:39:03Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1477,7 +1477,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-12T17:44:08Z",
+  "last_changed": "2026-09-12T19:39:03Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1500,14 +1500,14 @@
         "team": "Juventus"
       },
       {
-        "played": 3,
-        "points": 6,
+        "played": 4,
+        "points": 7,
         "position": 8,
         "team": "Atalanta"
       },
       {
-        "played": 3,
-        "points": 6,
+        "played": 4,
+        "points": 7,
         "position": 9,
         "team": "Cagliari"
       }
@@ -1522,7 +1522,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-12T17:44:08Z",
+    "updated_at": "2026-09-12T19:39:03Z",
     "wins": 2
   },
   "source_errors": [
