@@ -289,18 +289,19 @@ BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
 DTSTART;TZID=Europe/Rome:20260913T204500
 DTEND;TZID=Europe/Rome:20260913T224500
-DTSTAMP:20260913T134655Z
+DTSTAMP:20260913T161759Z
 UID:5a23aeb3327f080f81a89566@juventus-calendar
-SEQUENCE:22
+SEQUENCE:23
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 13/
  09/2026 20:45\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium 
  - Città del Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\nFo
  nte orario: Juventus\nClassifica Serie A provvisoria — giornata in corso
- :\n  6. Como — 7 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt 
- — 3 PG — DR +3\n  9. Atalanta — 6 pt\n  10. Lecce — 6 pt\nClassifi
- ca aggiornata: 13/09/2026 15:46\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260913T134655Z
+ :\n  7. Frosinone — 7 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7
+  pt — 3 PG — DR +3\n▶ 8. Juventus — 7 pt — 3 PG — DR +3\n▶ 8
+ . Juventus — 7 pt — 3 PG — DR +3\nClassifica aggiornata: 13/09/2026 
+ 18:17\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260913T161759Z
 LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -336,18 +337,19 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Atalanta
 DTSTART;TZID=Europe/Rome:20260920T180000
 DTEND;TZID=Europe/Rome:20260920T200000
-DTSTAMP:20260913T134655Z
+DTSTAMP:20260913T161759Z
 UID:64f6a6f8063a8abff2a34145@juventus-calendar
-SEQUENCE:13
+SEQUENCE:14
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 20/09/20
  26 18:00\nTurno: Regular Season · Giornata 5\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orar
- io: NOW\nClassifica Serie A provvisoria — giornata in corso:\n  6. Como 
- — 7 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt — 3 PG — D
- R +3\n  9. Atalanta — 6 pt\n  10. Lecce — 6 pt\nClassifica aggiornata:
-  13/09/2026 15:46\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260913T134655Z
+ io: NOW\nClassifica Serie A provvisoria — giornata in corso:\n  7. Frosi
+ none — 7 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt — 3 PG 
+ — DR +3\n▶ 8. Juventus — 7 pt — 3 PG — DR +3\n▶ 8. Juventus 
+ — 7 pt — 3 PG — DR +3\nClassifica aggiornata: 13/09/2026 18:17\nFont
+ e classifica: Lega Serie A
+LAST-MODIFIED:20260913T161759Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
