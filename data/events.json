@@ -320,11 +320,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-12T20:33:49Z",
+      "last_modified": "2026-09-13T13:46:55Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 21,
+      "sequence": 22,
       "serie_a_standing": {
         "context": [
           {
@@ -352,10 +352,10 @@
             "team": "Atalanta"
           },
           {
-            "played": 3,
-            "points": 4,
+            "played": 4,
+            "points": 6,
             "position": 10,
-            "team": "Sassuolo"
+            "team": "Lecce"
           }
         ],
         "draws": 1,
@@ -368,7 +368,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-12T20:33:49Z",
+        "updated_at": "2026-09-13T13:46:55Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -418,11 +418,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-12T23:26:22Z",
+      "last_modified": "2026-09-13T13:46:55Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 12,
+      "sequence": 13,
       "serie_a_standing": {
         "context": [
           {
@@ -450,10 +450,10 @@
             "team": "Atalanta"
           },
           {
-            "played": 3,
-            "points": 4,
+            "played": 4,
+            "points": 6,
             "position": 10,
-            "team": "Sassuolo"
+            "team": "Lecce"
           }
         ],
         "draws": 1,
@@ -466,7 +466,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-12T20:33:49Z",
+        "updated_at": "2026-09-13T13:46:55Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1477,7 +1477,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-12T23:26:22Z",
+  "last_changed": "2026-09-13T13:46:55Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1506,10 +1506,10 @@
         "team": "Atalanta"
       },
       {
-        "played": 3,
-        "points": 4,
+        "played": 4,
+        "points": 6,
         "position": 10,
-        "team": "Sassuolo"
+        "team": "Lecce"
       }
     ],
     "draws": 1,
@@ -1522,7 +1522,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-12T20:33:49Z",
+    "updated_at": "2026-09-13T13:46:55Z",
     "wins": 2
   },
   "source_errors": [
