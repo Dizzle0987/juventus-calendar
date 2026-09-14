@@ -1,5 +1,5 @@
 {
-  "event_count": 57,
+  "event_count": 58,
   "events": [
     {
       "all_day": false,
@@ -405,6 +405,30 @@
       "title": "Juventus - NEC",
       "uid": "5b5787d628a97597ccd5bf5d@juventus-calendar",
       "venue": "Allianz Stadium"
+    },
+    {
+      "all_day": false,
+      "away_team": "NEC Nijmegen",
+      "broadcast_it": "Sky Sport e NOW",
+      "broadcast_source_url": "https://sport.sky.it/calcio/europa-league",
+      "competition": "UEFA Europa League",
+      "home_away": "Casa",
+      "home_team": "Juventus",
+      "last_modified": "2026-09-14T04:57:48Z",
+      "location": "Turin",
+      "neutral": false,
+      "round": "1",
+      "sequence": 0,
+      "source": "TheSportsDB",
+      "source_id": "2594873",
+      "source_url": "https://www.thesportsdb.com/event/2594873",
+      "start": "2026-09-17T21:00:00+02:00",
+      "status": "NS",
+      "time_source": "TheSportsDB",
+      "time_source_url": "https://www.thesportsdb.com/event/2594873",
+      "title": "Juventus - NEC Nijmegen",
+      "uid": "9409eef432be8bb6a2ab3fe6@juventus-calendar",
+      "venue": "Allianz Stadium Turin"
     },
     {
       "all_day": false,
@@ -1477,7 +1501,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-13T20:41:24Z",
+  "last_changed": "2026-09-14T04:57:48Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
