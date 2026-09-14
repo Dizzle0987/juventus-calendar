@@ -320,18 +320,18 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Sassuolo",
-      "last_modified": "2026-09-13T20:41:24Z",
+      "last_modified": "2026-09-14T19:48:27Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 4",
-      "sequence": 25,
+      "sequence": 26,
       "serie_a_standing": {
         "context": [
           {
-            "played": 3,
-            "points": 7,
+            "played": 4,
+            "points": 8,
             "position": 6,
-            "team": "Como"
+            "team": "Milan"
           },
           {
             "played": 4,
@@ -361,14 +361,13 @@
         "draws": 1,
         "goal_difference": 2,
         "losses": 1,
-        "pending_recoveries": [],
         "played": 4,
         "points": 7,
         "position": 8,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-13T20:41:24Z",
+        "updated_at": "2026-09-14T19:48:27Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -442,18 +441,18 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-13T20:41:24Z",
+      "last_modified": "2026-09-14T19:48:27Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 16,
+      "sequence": 17,
       "serie_a_standing": {
         "context": [
           {
-            "played": 3,
-            "points": 7,
+            "played": 4,
+            "points": 8,
             "position": 6,
-            "team": "Como"
+            "team": "Milan"
           },
           {
             "played": 4,
@@ -483,14 +482,13 @@
         "draws": 1,
         "goal_difference": 2,
         "losses": 1,
-        "pending_recoveries": [],
         "played": 4,
         "points": 7,
         "position": 8,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-13T20:41:24Z",
+        "updated_at": "2026-09-14T19:48:27Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1501,15 +1499,15 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-14T04:57:48Z",
+  "last_changed": "2026-09-14T19:48:27Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 3,
-        "points": 7,
+        "played": 4,
+        "points": 8,
         "position": 6,
-        "team": "Como"
+        "team": "Milan"
       },
       {
         "played": 4,
@@ -1539,14 +1537,13 @@
     "draws": 1,
     "goal_difference": 2,
     "losses": 1,
-    "pending_recoveries": [],
     "played": 4,
     "points": 7,
     "position": 8,
-    "provisional": true,
+    "provisional": false,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-13T20:41:24Z",
+    "updated_at": "2026-09-14T19:48:27Z",
     "wins": 2
   },
   "source_errors": [
@@ -1559,7 +1556,6 @@
     "ESPN",
     "ESPN classifica",
     "Lega Serie A classifica",
-    "ESPN recuperi Serie A",
     "TheSportsDB",
     "NOW",
     "UEFA sorteggi"
