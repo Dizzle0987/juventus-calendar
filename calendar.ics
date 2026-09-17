@@ -336,17 +336,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - NEC Nijmegen
 DTSTART;TZID=Europe/Rome:20260917T210000
 DTEND;TZID=Europe/Rome:20260917T230000
-DTSTAMP:20260917T212315Z
+DTSTAMP:20260917T220337Z
 UID:9409eef432be8bb6a2ab3fe6@juventus-calendar
-SEQUENCE:1
+SEQUENCE:2
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
- ): 17/09/2026 21:00\nTurno: 1\nStadio: Allianz Stadium Turin\nLocalità: T
- urin\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: TheSportsDB
-LAST-MODIFIED:20260917T212315Z
-LOCATION:Allianz Stadium Turin\, Turin
+ ): 17/09/2026 21:00\nTurno: 1\nStadio: Allianz Stadium\nLocalità: Torino\
+ nDove vederla in Italia: Sky Sport e NOW\nFonte orario: ESPN
+LAST-MODIFIED:20260917T220337Z
+LOCATION:Allianz Stadium\, Torino
 TRANSP:OPAQUE
-URL:https://www.thesportsdb.com/event/2594873
+URL:https://www.espn.com/soccer/match/_/gameId/401915582/nec-nijmegen-juve
+ ntus
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tra 150 minuti: Juventus - NEC Nijmegen
