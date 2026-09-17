@@ -314,15 +314,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - NEC
 DTSTART;TZID=Europe/Rome:20260917T210000
 DTEND;TZID=Europe/Rome:20260917T230000
-DTSTAMP:20260830T002121Z
+DTSTAMP:20260917T212315Z
 UID:5b5787d628a97597ccd5bf5d@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 17/09/2026 21:00\nTurno: League Stage · Giornata 1\nStadio: Allianz St
  adium\nLocalità: Europe\nDove vederla in Italia: Sky Sport e NOW\nFonte o
  rario: Juventus
-LAST-MODIFIED:20260830T002121Z
+LAST-MODIFIED:20260917T212315Z
 LOCATION:Allianz Stadium\, Europe
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -336,14 +336,14 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - NEC Nijmegen
 DTSTART;TZID=Europe/Rome:20260917T210000
 DTEND;TZID=Europe/Rome:20260917T230000
-DTSTAMP:20260914T045748Z
+DTSTAMP:20260917T212315Z
 UID:9409eef432be8bb6a2ab3fe6@juventus-calendar
-SEQUENCE:0
+SEQUENCE:1
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 17/09/2026 21:00\nTurno: 1\nStadio: Allianz Stadium Turin\nLocalità: T
  urin\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: TheSportsDB
-LAST-MODIFIED:20260914T045748Z
+LAST-MODIFIED:20260917T212315Z
 LOCATION:Allianz Stadium Turin\, Turin
 TRANSP:OPAQUE
 URL:https://www.thesportsdb.com/event/2594873
