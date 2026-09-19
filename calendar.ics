@@ -289,18 +289,15 @@ BEGIN:VEVENT
 SUMMARY:⚽ Sassuolo - Juventus
 DTSTART;TZID=Europe/Rome:20260913T204500
 DTEND;TZID=Europe/Rome:20260913T224500
-DTSTAMP:20260918T205458Z
+DTSTAMP:20260919T222617Z
 UID:5a23aeb3327f080f81a89566@juventus-calendar
-SEQUENCE:27
+SEQUENCE:28
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 13/
  09/2026 20:45\nTurno: Regular Season · Giornata 4\nStadio: MAPEI Stadium 
  - Città del Tricolore\nLocalità: Italy\nDove vederla in Italia: DAZN\nFo
- nte orario: Juventus\nClassifica Serie A provvisoria — giornata in corso
- :\n  6. Milan — 8 pt\n  7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt 
- — 4 PG — DR +2\n  9. Sassuolo — 7 pt\n  10. Napoli — 6 pt\nClassif
- ica aggiornata: 18/09/2026 22:54\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20260918T205458Z
+ nte orario: Juventus
+LAST-MODIFIED:20260919T222617Z
 LOCATION:MAPEI Stadium - Città del Tricolore\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -383,14 +380,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
 DTSTART;TZID=Europe/Rome:20261011T204500
 DTEND;TZID=Europe/Rome:20261011T224500
-DTSTAMP:20260904T123258Z
+DTSTAMP:20260919T222617Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 11/
  10/2026 20:45\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\n
- Località: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus
-LAST-MODIFIED:20260904T123258Z
+ Località: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
+ assifica Serie A provvisoria — giornata in corso:\n  6. Milan — 8 pt\n
+   7. Frosinone — 7 pt\n▶ 8. Juventus — 7 pt — 4 PG — DR +2\n  9.
+  Sassuolo — 7 pt\n  10. Napoli — 6 pt\nClassifica aggiornata: 18/09/20
+ 26 22:54\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20260919T222617Z
 LOCATION:Unipol Domus\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
