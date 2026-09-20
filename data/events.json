@@ -396,18 +396,18 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-20T13:33:35Z",
+      "last_modified": "2026-09-20T16:06:53Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 20,
+      "sequence": 21,
       "serie_a_standing": {
         "context": [
           {
             "played": 5,
             "points": 10,
             "position": 6,
-            "team": "Frosinone"
+            "team": "Como"
           },
           {
             "played": 4,
@@ -416,8 +416,8 @@
             "team": "Milan"
           },
           {
-            "played": 4,
-            "points": 7,
+            "played": 5,
+            "points": 8,
             "position": 8,
             "team": "Juventus"
           },
@@ -434,17 +434,17 @@
             "team": "Sassuolo"
           }
         ],
-        "draws": 1,
+        "draws": 2,
         "goal_difference": 2,
         "losses": 1,
         "pending_recoveries": [],
-        "played": 4,
-        "points": 7,
+        "played": 5,
+        "points": 8,
         "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-20T13:33:35Z",
+        "updated_at": "2026-09-20T16:06:53Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -466,18 +466,18 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-09-20T13:33:35Z",
+      "last_modified": "2026-09-20T16:06:53Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 12,
+      "sequence": 13,
       "serie_a_standing": {
         "context": [
           {
             "played": 5,
             "points": 10,
             "position": 6,
-            "team": "Frosinone"
+            "team": "Como"
           },
           {
             "played": 4,
@@ -486,8 +486,8 @@
             "team": "Milan"
           },
           {
-            "played": 4,
-            "points": 7,
+            "played": 5,
+            "points": 8,
             "position": 8,
             "team": "Juventus"
           },
@@ -504,17 +504,17 @@
             "team": "Sassuolo"
           }
         ],
-        "draws": 1,
+        "draws": 2,
         "goal_difference": 2,
         "losses": 1,
         "pending_recoveries": [],
-        "played": 4,
-        "points": 7,
+        "played": 5,
+        "points": 8,
         "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-20T13:33:35Z",
+        "updated_at": "2026-09-20T16:06:53Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1501,7 +1501,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-20T13:33:35Z",
+  "last_changed": "2026-09-20T16:06:53Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1509,7 +1509,7 @@
         "played": 5,
         "points": 10,
         "position": 6,
-        "team": "Frosinone"
+        "team": "Como"
       },
       {
         "played": 4,
@@ -1518,8 +1518,8 @@
         "team": "Milan"
       },
       {
-        "played": 4,
-        "points": 7,
+        "played": 5,
+        "points": 8,
         "position": 8,
         "team": "Juventus"
       },
@@ -1536,17 +1536,17 @@
         "team": "Sassuolo"
       }
     ],
-    "draws": 1,
+    "draws": 2,
     "goal_difference": 2,
     "losses": 1,
     "pending_recoveries": [],
-    "played": 4,
-    "points": 7,
+    "played": 5,
+    "points": 8,
     "position": 8,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-20T13:33:35Z",
+    "updated_at": "2026-09-20T16:06:53Z",
     "wins": 2
   },
   "source_errors": [
