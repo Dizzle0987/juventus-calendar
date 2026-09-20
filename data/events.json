@@ -396,13 +396,19 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-20T11:25:17Z",
+      "last_modified": "2026-09-20T13:33:35Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
+          {
+            "played": 5,
+            "points": 10,
+            "position": 6,
+            "team": "Frosinone"
+          },
           {
             "played": 4,
             "points": 8,
@@ -413,25 +419,19 @@
             "played": 4,
             "points": 7,
             "position": 8,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
-            "played": 4,
+            "played": 5,
             "points": 7,
             "position": 9,
-            "team": "Juventus"
+            "team": "Napoli"
           },
           {
             "played": 5,
             "points": 7,
             "position": 10,
             "team": "Sassuolo"
-          },
-          {
-            "played": 4,
-            "points": 6,
-            "position": 11,
-            "team": "Atalanta"
           }
         ],
         "draws": 1,
@@ -440,11 +440,11 @@
         "pending_recoveries": [],
         "played": 4,
         "points": 7,
-        "position": 9,
+        "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-20T11:25:17Z",
+        "updated_at": "2026-09-20T13:33:35Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -466,13 +466,19 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-09-20T11:25:17Z",
+      "last_modified": "2026-09-20T13:33:35Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 11,
+      "sequence": 12,
       "serie_a_standing": {
         "context": [
+          {
+            "played": 5,
+            "points": 10,
+            "position": 6,
+            "team": "Frosinone"
+          },
           {
             "played": 4,
             "points": 8,
@@ -483,25 +489,19 @@
             "played": 4,
             "points": 7,
             "position": 8,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
-            "played": 4,
+            "played": 5,
             "points": 7,
             "position": 9,
-            "team": "Juventus"
+            "team": "Napoli"
           },
           {
             "played": 5,
             "points": 7,
             "position": 10,
             "team": "Sassuolo"
-          },
-          {
-            "played": 4,
-            "points": 6,
-            "position": 11,
-            "team": "Atalanta"
           }
         ],
         "draws": 1,
@@ -510,11 +510,11 @@
         "pending_recoveries": [],
         "played": 4,
         "points": 7,
-        "position": 9,
+        "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-09-20T11:25:17Z",
+        "updated_at": "2026-09-20T13:33:35Z",
         "wins": 2
       },
       "source": "Juventus",
@@ -1501,10 +1501,16 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-20T11:25:17Z",
+  "last_changed": "2026-09-20T13:33:35Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
+      {
+        "played": 5,
+        "points": 10,
+        "position": 6,
+        "team": "Frosinone"
+      },
       {
         "played": 4,
         "points": 8,
@@ -1515,25 +1521,19 @@
         "played": 4,
         "points": 7,
         "position": 8,
-        "team": "Frosinone"
+        "team": "Juventus"
       },
       {
-        "played": 4,
+        "played": 5,
         "points": 7,
         "position": 9,
-        "team": "Juventus"
+        "team": "Napoli"
       },
       {
         "played": 5,
         "points": 7,
         "position": 10,
         "team": "Sassuolo"
-      },
-      {
-        "played": 4,
-        "points": 6,
-        "position": 11,
-        "team": "Atalanta"
       }
     ],
     "draws": 1,
@@ -1542,11 +1542,11 @@
     "pending_recoveries": [],
     "played": 4,
     "points": 7,
-    "position": 9,
+    "position": 8,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-09-20T11:25:17Z",
+    "updated_at": "2026-09-20T13:33:35Z",
     "wins": 2
   },
   "source_errors": [
