@@ -368,18 +368,18 @@
       "competition": "UEFA Europa League",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-09-22T18:44:06Z",
+      "last_modified": "2026-09-22T21:19:52Z",
       "location": "Torino",
       "neutral": false,
       "round": "",
-      "sequence": 4,
+      "sequence": 5,
       "source": "ESPN",
       "source_id": "401915582",
-      "source_url": "https://www.espn.com/soccer/match?gameId=401915582/nec-nijmegen-juventus",
+      "source_url": "https://www.espn.com/soccer/match/_/gameId/401915582/nec-nijmegen-juventus",
       "start": "2026-09-17T21:00:00+02:00",
       "status": "scheduled",
       "time_source": "ESPN",
-      "time_source_url": "https://www.espn.com/soccer/match?gameId=401915582/nec-nijmegen-juventus",
+      "time_source_url": "https://www.espn.com/soccer/match/_/gameId/401915582/nec-nijmegen-juventus",
       "title": "Juventus - NEC Nijmegen",
       "uid": "9409eef432be8bb6a2ab3fe6@juventus-calendar",
       "venue": "Allianz Stadium"
@@ -1499,7 +1499,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-22T18:44:06Z",
+  "last_changed": "2026-09-22T21:19:52Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
