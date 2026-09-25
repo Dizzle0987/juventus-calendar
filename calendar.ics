@@ -642,17 +642,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Sassuolo
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-DTSTAMP:20260902T164500Z
+DTSTART;TZID=Europe/Rome:20261203T210000
+DTEND;TZID=Europe/Rome:20261203T230000
+DTSTAMP:20260925T171202Z
 UID:fc354384e460a997ff26826b@juventus-calendar
-SEQUENCE:1
+SEQUENCE:2
 CATEGORIES:Coppa Italia,Juventus
-DESCRIPTION:Competizione: Coppa Italia\nJuventus: Casa\nOrario: da conferm
- are\nTurno: 8th Finals\nStadio: Allianz Stadium\nLocalità: Italy\nDove ve
- derla in Italia: Mediaset (canali in chiaro)\, Mediaset Infinity e SportMe
- diaset.it
-LAST-MODIFIED:20260902T164500Z
+DESCRIPTION:Competizione: Coppa Italia\nJuventus: Casa\nOrario (Roma): 03/
+ 12/2026 21:00\nTurno: 8th Finals\nStadio: Allianz Stadium\nLocalità: Ital
+ y\nDove vederla in Italia: Mediaset (canali in chiaro)\, Mediaset Infinity
+  e SportMediaset.it\nFonte orario: Juventus
+LAST-MODIFIED:20260925T171202Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
