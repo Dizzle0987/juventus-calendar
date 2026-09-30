@@ -1,5 +1,5 @@
 {
-  "event_count": 58,
+  "event_count": 59,
   "events": [
     {
       "all_day": false,
@@ -456,6 +456,30 @@
       "title": "Juventus - Atalanta",
       "uid": "64f6a6f8063a8abff2a34145@juventus-calendar",
       "venue": "Allianz Stadium"
+    },
+    {
+      "all_day": false,
+      "away_team": "Cremonese",
+      "broadcast_it": "Da definire",
+      "broadcast_source_url": "",
+      "competition": "Friendly",
+      "home_away": "Casa",
+      "home_team": "Juventus",
+      "last_modified": "2026-09-30T12:35:39Z",
+      "location": "",
+      "neutral": false,
+      "round": "",
+      "sequence": 0,
+      "source": "Juventus",
+      "source_id": "",
+      "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "start": "2026-10-02T12:30:00+02:00",
+      "status": "scheduled",
+      "time_source": "Juventus",
+      "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
+      "title": "Juventus - Cremonese",
+      "uid": "5ee0bdf8a7c017f8d3fb3ede@juventus-calendar",
+      "venue": "Training Center Continassa"
     },
     {
       "all_day": false,
@@ -1506,7 +1530,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-09-25T19:12:19Z",
+  "last_changed": "2026-09-30T12:35:39Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
