@@ -380,14 +380,14 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Cremonese
 DTSTART;TZID=Europe/Rome:20261002T123000
 DTEND;TZID=Europe/Rome:20261002T143000
-DTSTAMP:20261002T195137Z
+DTSTAMP:20261002T231821Z
 UID:5ee0bdf8a7c017f8d3fb3ede@juventus-calendar
-SEQUENCE:2
+SEQUENCE:3
 CATEGORIES:Friendly,Juventus
 DESCRIPTION:Competizione: Friendly\nJuventus: Casa\nOrario (Roma): 02/10/2
- 026 12:30\nTurno: 0\nStadio: Training Center Continassa\nDove vederla in I
- talia: Da definire\nFonte orario: Juventus
-LAST-MODIFIED:20261002T195137Z
+ 026 12:30\nStadio: Training Center Continassa\nDove vederla in Italia: Da 
+ definire\nFonte orario: Juventus
+LAST-MODIFIED:20261002T231821Z
 LOCATION:Training Center Continassa
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

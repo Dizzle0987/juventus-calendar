@@ -465,11 +465,11 @@
       "competition": "Friendly",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-02T19:51:37Z",
+      "last_modified": "2026-10-02T23:18:21Z",
       "location": "",
       "neutral": false,
-      "round": "0",
-      "sequence": 2,
+      "round": "",
+      "sequence": 3,
       "source": "Juventus",
       "source_id": "401927431",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1530,7 +1530,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-02T19:51:37Z",
+  "last_changed": "2026-10-02T23:18:21Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
