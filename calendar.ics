@@ -355,18 +355,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Atalanta
 DTSTART;TZID=Europe/Rome:20260920T180000
 DTEND;TZID=Europe/Rome:20260920T200000
-DTSTAMP:20261010T151704Z
+DTSTAMP:20261010T191317Z
 UID:64f6a6f8063a8abff2a34145@juventus-calendar
-SEQUENCE:25
+SEQUENCE:26
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 20/09/20
  26 18:00\nTurno: Regular Season · Giornata 5\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orar
  io: NOW\nClassifica Serie A provvisoria — giornata in corso:\n  5. Milan
-  — 11 pt\n  6. Frosinone — 10 pt\n▶ 7. Juventus — 10 pt — 5 PG 
- — DR +4\n  8. Como — 10 pt\n  9. Napoli — 7 pt\nClassifica aggiornat
- a: 10/10/2026 17:17\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261010T151704Z
+  — 11 pt\n  6. Frosinone — 11 pt\n▶ 7. Juventus — 10 pt — 5 PG 
+ — DR +4\n  8. Como — 10 pt\n  9. Napoli — 8 pt\nClassifica aggiornat
+ a: 10/10/2026 21:13\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261010T191317Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -401,18 +401,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
 DTSTART;TZID=Europe/Rome:20261011T204500
 DTEND;TZID=Europe/Rome:20261011T224500
-DTSTAMP:20261010T151704Z
+DTSTAMP:20261010T191317Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:17
+SEQUENCE:18
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 11/
  10/2026 20:45\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\n
  Località: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
  assifica Serie A provvisoria — giornata in corso:\n  5. Milan — 11 pt\
- n  6. Frosinone — 10 pt\n▶ 7. Juventus — 10 pt — 5 PG — DR +4\n 
-  8. Como — 10 pt\n  9. Napoli — 7 pt\nClassifica aggiornata: 10/10/202
- 6 17:17\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261010T151704Z
+ n  6. Frosinone — 11 pt\n▶ 7. Juventus — 10 pt — 5 PG — DR +4\n 
+  8. Como — 10 pt\n  9. Napoli — 8 pt\nClassifica aggiornata: 10/10/202
+ 6 21:13\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261010T191317Z
 LOCATION:Unipol Domus\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
