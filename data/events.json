@@ -396,11 +396,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-10T19:13:17Z",
+      "last_modified": "2026-10-10T21:45:01Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 5",
-      "sequence": 26,
+      "sequence": 27,
       "serie_a_standing": {
         "context": [
           {
@@ -411,9 +411,9 @@
           },
           {
             "played": 6,
-            "points": 11,
+            "points": 10,
             "position": 6,
-            "team": "Frosinone"
+            "team": "Napoli"
           },
           {
             "played": 5,
@@ -429,9 +429,9 @@
           },
           {
             "played": 6,
-            "points": 8,
+            "points": 10,
             "position": 9,
-            "team": "Napoli"
+            "team": "Frosinone"
           }
         ],
         "draws": 1,
@@ -444,7 +444,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-10T19:13:17Z",
+        "updated_at": "2026-10-10T21:45:01Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -490,11 +490,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-10-10T19:13:17Z",
+      "last_modified": "2026-10-10T21:45:01Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 18,
+      "sequence": 19,
       "serie_a_standing": {
         "context": [
           {
@@ -505,9 +505,9 @@
           },
           {
             "played": 6,
-            "points": 11,
+            "points": 10,
             "position": 6,
-            "team": "Frosinone"
+            "team": "Napoli"
           },
           {
             "played": 5,
@@ -523,9 +523,9 @@
           },
           {
             "played": 6,
-            "points": 8,
+            "points": 10,
             "position": 9,
-            "team": "Napoli"
+            "team": "Frosinone"
           }
         ],
         "draws": 1,
@@ -538,7 +538,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-10T19:13:17Z",
+        "updated_at": "2026-10-10T21:45:01Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1532,7 +1532,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-10T19:13:17Z",
+  "last_changed": "2026-10-10T21:45:01Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1544,9 +1544,9 @@
       },
       {
         "played": 6,
-        "points": 11,
+        "points": 10,
         "position": 6,
-        "team": "Frosinone"
+        "team": "Napoli"
       },
       {
         "played": 5,
@@ -1562,9 +1562,9 @@
       },
       {
         "played": 6,
-        "points": 8,
+        "points": 10,
         "position": 9,
-        "team": "Napoli"
+        "team": "Frosinone"
       }
     ],
     "draws": 1,
@@ -1577,7 +1577,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-10T19:13:17Z",
+    "updated_at": "2026-10-10T21:45:01Z",
     "wins": 3
   },
   "source_errors": [
