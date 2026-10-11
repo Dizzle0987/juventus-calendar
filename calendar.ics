@@ -442,6 +442,27 @@ TRIGGER:-PT2H30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚽ Celta Vigo - Juventus
+DTSTART;TZID=Europe/Rome:20261015T210000
+DTEND;TZID=Europe/Rome:20261015T230000
+DTSTAMP:20261011T230605Z
+UID:da71f490957b5ac3b68bf803@juventus-calendar
+SEQUENCE:0
+CATEGORIES:UEFA Europa League,Juventus
+DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
+ (Roma): 15/10/2026 21:00\nTurno: 2\nStadio: Estadio Abanca-Balaídos\nLoca
+ lità: Vigo\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: NOW
+LAST-MODIFIED:20261011T230605Z
+LOCATION:Estadio Abanca-Balaídos\, Vigo
+TRANSP:OPAQUE
+URL:https://www.thesportsdb.com/event/2594878
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tra 150 minuti: Celta Vigo - Juventus
+TRIGGER:-PT2H30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;TZID=Europe/Rome:20261018T204500
 DTEND;TZID=Europe/Rome:20261018T224500

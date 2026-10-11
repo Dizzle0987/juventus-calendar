@@ -1,5 +1,5 @@
 {
-  "event_count": 59,
+  "event_count": 60,
   "events": [
     {
       "all_day": false,
@@ -528,6 +528,34 @@
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Celta de Vigo - Juventus",
       "uid": "c92be9bc57a8e4b7555178e8@juventus-calendar",
+      "venue": "Estadio Abanca-Balaídos"
+    },
+    {
+      "all_day": false,
+      "away_team": "Juventus",
+      "broadcast_it": "Sky Sport e NOW",
+      "broadcast_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "broadcast_source_urls": [
+        "https://sport.sky.it/calcio/europa-league",
+        "https://www.nowtv.it/sport/calcio/juventus"
+      ],
+      "competition": "UEFA Europa League",
+      "home_away": "Trasferta",
+      "home_team": "Celta Vigo",
+      "last_modified": "2026-10-11T23:06:05Z",
+      "location": "Vigo",
+      "neutral": false,
+      "round": "2",
+      "sequence": 0,
+      "source": "TheSportsDB",
+      "source_id": "2594878",
+      "source_url": "https://www.thesportsdb.com/event/2594878",
+      "start": "2026-10-15T21:00:00+02:00",
+      "status": "NS",
+      "time_source": "NOW",
+      "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
+      "title": "Celta Vigo - Juventus",
+      "uid": "da71f490957b5ac3b68bf803@juventus-calendar",
       "venue": "Estadio Abanca-Balaídos"
     },
     {
@@ -1532,7 +1560,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-11T21:58:39Z",
+  "last_changed": "2026-10-11T23:06:05Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
