@@ -398,18 +398,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
 DTSTART;TZID=Europe/Rome:20261011T204500
 DTEND;TZID=Europe/Rome:20261011T224500
-DTSTAMP:20261011T192724Z
+DTSTAMP:20261011T215839Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:21
+SEQUENCE:22
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 11/
  10/2026 20:45\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\n
  Località: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
- assifica Serie A provvisoria — giornata in corso:\n  6. Como — 11 pt\n
-   7. Napoli — 10 pt\n▶ 8. Juventus — 10 pt — 6 PG — DR +3\n  9. 
- Frosinone — 10 pt\n  10. Sassuolo — 8 pt\nClassifica aggiornata: 11/10
- /2026 21:27\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261011T192724Z
+ assifica Serie A provvisoria — giornata in corso:\n  4. Cagliari — 13 
+ pt\n  5. Milan — 12 pt\n▶ 6. Juventus — 11 pt — 6 PG — DR +4\n  
+ 7. Como — 11 pt\n  8. Napoli — 10 pt\nClassifica aggiornata: 11/10/202
+ 6 23:58\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261011T215839Z
 LOCATION:Unipol Domus\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -445,18 +445,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;TZID=Europe/Rome:20261018T204500
 DTEND;TZID=Europe/Rome:20261018T224500
-DTSTAMP:20261011T192724Z
+DTSTAMP:20261011T215839Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:12
+SEQUENCE:13
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/10/20
  26 20:45\nTurno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nLo
  calità: Italy\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClas
- sifica Serie A provvisoria — giornata in corso:\n  6. Como — 11 pt\n  
- 7. Napoli — 10 pt\n▶ 8. Juventus — 10 pt — 6 PG — DR +3\n  9. Fr
- osinone — 10 pt\n  10. Sassuolo — 8 pt\nClassifica aggiornata: 11/10/2
- 026 21:27\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261011T192724Z
+ sifica Serie A provvisoria — giornata in corso:\n  4. Cagliari — 13 pt
+ \n  5. Milan — 12 pt\n▶ 6. Juventus — 11 pt — 6 PG — DR +4\n  7.
+  Como — 11 pt\n  8. Napoli — 10 pt\nClassifica aggiornata: 11/10/2026 
+ 23:58\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261011T215839Z
 LOCATION:Allianz Stadium\, Italy
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
