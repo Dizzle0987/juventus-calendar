@@ -444,11 +444,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-10-11T21:58:39Z",
+      "last_modified": "2026-10-12T22:27:55Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 22,
+      "sequence": 23,
       "serie_a_standing": {
         "context": [
           {
@@ -485,14 +485,13 @@
         "draws": 2,
         "goal_difference": 4,
         "losses": 1,
-        "pending_recoveries": [],
         "played": 6,
         "points": 11,
         "position": 6,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-11T21:58:39Z",
+        "updated_at": "2026-10-12T22:27:55Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -566,11 +565,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-11T21:58:39Z",
+      "last_modified": "2026-10-12T22:27:55Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 13,
+      "sequence": 14,
       "serie_a_standing": {
         "context": [
           {
@@ -607,14 +606,13 @@
         "draws": 2,
         "goal_difference": 4,
         "losses": 1,
-        "pending_recoveries": [],
         "played": 6,
         "points": 11,
         "position": 6,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-11T21:58:39Z",
+        "updated_at": "2026-10-12T22:27:55Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1560,7 +1558,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-11T23:06:05Z",
+  "last_changed": "2026-10-12T22:27:55Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -1598,18 +1596,16 @@
     "draws": 2,
     "goal_difference": 4,
     "losses": 1,
-    "pending_recoveries": [],
     "played": 6,
     "points": 11,
     "position": 6,
-    "provisional": true,
+    "provisional": false,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-11T21:58:39Z",
+    "updated_at": "2026-10-12T22:27:55Z",
     "wins": 3
   },
   "source_errors": [
-    "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
     "DAZN: 403 Client Error: Forbidden for url: https://www.dazn.com/it-IT/schedule",
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/"
