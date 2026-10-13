@@ -50,6 +50,14 @@ python update_calendar.py
 
 Gli output sono `calendar.ics` e `data/events.json`.
 
+## Dove vederla
+
+I fallback italiani sono configurati in `data/broadcast_sources.json` e hanno un intervallo di stagioni: quando i diritti configurati scadono, il calendario torna a `Da definire` invece di riutilizzare automaticamente un'emittente vecchia.
+
+Per la prossima partita ufficiale UEFA, FIFA o intercontinentale il generatore cerca inoltre una conferma della singola gara. I diritti generali di una competizione non bastano: data, squadre e, quando richiesto, orario devono coincidere. Le opzioni italiane e le alternative estere gratuite compaiono nelle note solo se raggiungono la soglia di affidabilità; i canali non confermati restano nei dati diagnostici e non vengono mostrati all'utente. In caso di errore temporaneo della fonte viene conservata l'ultima conferma valida della stessa partita.
+
+La homepage usa `data/events.json` per mostrare un Match Center con prossima partita, quattro gare successive e mini-classifica Serie A. Se il JSON non è momentaneamente disponibile, l'iscrizione al feed `.ics` continua comunque a funzionare.
+
 ## Classifica Serie A
 
 Il feed JSON pubblico che alimenta la classifica ufficiale di Lega Serie A è la fonte primaria; ESPN viene usato come fallback. La mini-classifica mostra Juventus, due squadre davanti e due dietro, adattando la finestra quando la squadra è vicina alla testa o al fondo.
@@ -78,6 +86,8 @@ Sono supportati `id`/`uid`, `round`, `venue`, `location`, `neutral`, `status`, `
 `.github/workflows/standings.yml` controlla la classifica ogni 15 minuti nelle normali fasce delle partite italiane e committa soltanto quando `calendar.ics` o `data/events.json` cambiano realmente.
 
 `.github/workflows/pages.yml` pubblica `index.html`, `calendar.ics` e `data/events.json` dal branch `main` come artifact GitHub Pages con permessi minimi e concorrenza controllata.
+
+`.github/workflows/health-alerts.yml` sorveglia aggiornamento, classifica e pubblicazione Pages. In caso di errore apre una sola Issue per il workflow interessato, aggiunge gli errori successivi alla stessa Issue e la chiude quando il servizio torna operativo; l'ultimo calendario valido rimane pubblicato.
 
 ## Sviluppo e sicurezza
 

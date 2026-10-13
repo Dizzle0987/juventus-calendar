@@ -4,105 +4,407 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="Il calendario aggiornato con tutte le partite della Prima Squadra maschile della Juventus.">
-    <title>Juventus Calendar</title>
+    <title>Juventus Calendar — La Juventus, sempre con te</title>
+    <meta name="description" content="Tutte le partite della Prima Squadra maschile della Juventus, aggiornate automaticamente nel tuo calendario.">
     <style>
-      :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --red: #b9ff2c; --red-deep: #6f9800; --ink: #080808; --panel: #121212;
+        --line: #2b2b2b; --muted: #b8b8b8; --white: #fff;
+      }
       * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; background: #050505; color: #f8f8f8; }
-      body::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 80% 5%, #333 0, transparent 30%), linear-gradient(120deg, transparent 0 47%, #ffffff08 47% 53%, transparent 53%); }
-      main { position: relative; width: min(100% - 32px, 960px); margin: 0 auto; padding: clamp(44px, 8vw, 88px) 0 72px; }
-      .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #b9ff2c; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; font-size: .75rem; }
-      .eyebrow::before { content: ""; width: 28px; height: 3px; background: #b9ff2c; }
-      h1 { max-width: 780px; margin: 18px 0; font-size: clamp(3.4rem, 12vw, 8.5rem); line-height: .82; letter-spacing: -.075em; }
-      .lead { max-width: 700px; color: #c3c3c3; font-size: clamp(1.08rem, 2.5vw, 1.35rem); line-height: 1.55; }
-      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 14px; }
-      .button { min-height: 54px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #b9ff2c; border-radius: 5px; padding: 0 22px; background: #b9ff2c; color: #050505; font: inherit; font-weight: 900; text-decoration: none; cursor: pointer; transition: transform .15s, background .15s; }
-      .button:hover { transform: translateY(-2px); background: #cbff62; }
-      .button.secondary { background: transparent; color: #f8f8f8; border-color: #555; }
-      .button.secondary:hover { border-color: #f8f8f8; background: #151515; }
-      .direct { color: #aaa; overflow-wrap: anywhere; }
-      .direct a { color: #fff; }
-      .copied { min-height: 1.4em; color: #b9ff2c; font-weight: 700; }
-      .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 42px 0; border: 1px solid #2b2b2b; background: #2b2b2b; }
-      .stat { padding: 24px; background: #0d0d0d; }
-      .stat strong { display: block; font-size: clamp(1.5rem, 5vw, 2.4rem); letter-spacing: -.04em; }
-      .stat span { color: #929292; }
-      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-      .card { padding: clamp(22px, 5vw, 32px); border: 1px solid #303030; border-radius: 8px; background: #0d0d0ddd; }
-      .card h2 { margin: 0 0 14px; font-size: 1.25rem; }
-      .card ol { margin: 0; padding-left: 20px; color: #c2c2c2; line-height: 1.65; }
-      .notice { margin-top: 18px; padding: 18px; border-left: 3px solid #b9ff2c; background: #12170b; color: #d7d7d7; line-height: 1.55; }
-      footer { margin-top: 38px; color: #888; line-height: 1.6; }
-      code { color: #ddd; overflow-wrap: anywhere; }
-      @media (max-width: 640px) { .grid, .stats { grid-template-columns: 1fr; } .actions, .button { width: 100%; } h1 { font-size: clamp(3.2rem, 22vw, 5.4rem); } }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; min-height: 100vh; overflow-x: hidden; color: var(--white);
+        background: radial-gradient(circle at 78% 8%, #243304 0, transparent 34rem), linear-gradient(180deg, #0e0e0e 0, var(--ink) 48rem);
+      }
+      body::before {
+        position: fixed; inset: 0; z-index: -1; content: ""; opacity: .16;
+        background: repeating-linear-gradient(105deg, transparent 0 72px, #b9ff2c 72px 74px, transparent 74px 146px);
+        mask-image: linear-gradient(to bottom, #000, transparent 80%);
+      }
+      a { color: inherit; }
+      button, a { -webkit-tap-highlight-color: transparent; }
+      .shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+      .topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; min-height: 82px; border-bottom: 1px solid #ffffff18; background: #080808e8; backdrop-filter: blur(18px); }
+      .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -.02em; }
+      .brand-mark {
+        display: grid; width: 42px; aspect-ratio: 1; place-items: center; border: 1px solid #ffffff3d; border-radius: 50%;
+        background: linear-gradient(135deg, var(--red), #55070d); box-shadow: inset 0 0 0 4px #090909; font-size: .72rem; letter-spacing: -.06em;
+      }
+      .brand small { color: #8f8f8f; font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      .brand-text { display: grid; }
+      .top-status { color: #a8a8a8; font-size: .8rem; }
+      .top-status::before { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #55cf7b; box-shadow: 0 0 12px #55cf7b; content: ""; }
+      .top-actions { display: flex; align-items: center; gap: 18px; }
+      .mini-button { padding: 9px 14px; border: 1px solid #ffffff38; border-radius: 8px; font-size: .8rem; font-weight: 850; text-decoration: none; }
+      .hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(290px, .75fr); gap: clamp(40px, 8vw, 100px); align-items: center; min-height: 650px; padding: 76px 0 84px; }
+      .kicker { margin: 0 0 18px; color: #b9ff2c; font-size: .78rem; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
+      h1 { max-width: 760px; margin: 0; font-size: clamp(3.6rem, 9vw, 7.8rem); line-height: .82; letter-spacing: -.075em; }
+      h1 em { color: var(--red); font-style: normal; }
+      .lead { max-width: 650px; margin: 30px 0 0; color: #d1d1d1; font-size: clamp(1.06rem, 2vw, 1.3rem); line-height: 1.65; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+      .button {
+        display: inline-flex; align-items: center; justify-content: center; min-height: 58px; padding: 0 25px; border: 1px solid transparent; border-radius: 9px;
+        background: linear-gradient(135deg, #c9ff5f, var(--red-deep)); color: #050505; box-shadow: 0 12px 34px #77a60f4f; cursor: pointer;
+        font: inherit; font-weight: 900; text-decoration: none; transition: transform .2s ease, border-color .2s ease, background .2s ease;
+      }
+      .button:hover { transform: translateY(-2px); }
+      .button.secondary { border-color: #ffffff2d; background: #ffffff0a; box-shadow: none; }
+      .button.secondary:hover { border-color: #ffffff70; background: #ffffff10; }
+      .copied { min-height: 1.4em; margin: 12px 0 0; color: #8fe0a5; font-size: .9rem; }
+      .match-card {
+        position: relative; overflow: hidden; min-height: 390px; padding: 34px; border: 1px solid #ffffff24; border-radius: 22px;
+        background: linear-gradient(150deg, #1f1f1f, #0a0a0a 62%); box-shadow: 0 40px 100px #000a; transform: rotate(2deg);
+      }
+      .match-card::after { position: absolute; right: -60px; bottom: -80px; width: 260px; height: 260px; border: 34px solid #d50f20; border-radius: 50%; opacity: .16; content: ""; }
+      .card-label { color: #b9ff2c; font-size: .72rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+      .card-number { margin-top: 30px; font-size: clamp(4rem, 8vw, 6.6rem); font-weight: 950; line-height: .85; letter-spacing: -.08em; }
+      .card-number span { display: block; margin-top: 14px; color: #8d8d8d; font-size: 1rem; font-weight: 700; letter-spacing: 0; }
+      .card-copy { position: absolute; right: 34px; bottom: 32px; left: 34px; z-index: 1; margin: 0; color: #c7c7c7; line-height: 1.55; }
+      .proof { border-top: 1px solid #ffffff14; border-bottom: 1px solid #ffffff14; background: #050505a6; }
+      .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+      .proof article { padding: 35px clamp(18px, 4vw, 46px); border-right: 1px solid #ffffff14; }
+      .proof article:first-child { padding-left: 0; }
+      .proof article:last-child { border-right: 0; }
+      .proof strong { display: block; margin-bottom: 7px; font-size: 1.02rem; }
+      .proof p { margin: 0; color: #969696; font-size: .91rem; line-height: 1.55; }
+      .match-center { padding: 105px 0 0; }
+      .center-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 34px; }
+      .center-heading h2 { margin: 0; font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: .92; letter-spacing: -.06em; }
+      .data-status { margin: 0; color: #8f8f8f; font-size: .82rem; }
+      .dashboard { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(310px, .65fr); gap: 16px; }
+      .next-match, .standing-card { border: 1px solid var(--line); border-radius: 20px; background: #101010; }
+      .next-match { position: relative; overflow: hidden; min-height: 350px; padding: clamp(28px, 5vw, 52px); }
+      .next-match::before { position: absolute; top: 0; right: 0; width: 38%; height: 5px; background: var(--red); content: ""; }
+      .match-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: #9f9f9f; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .match-meta span + span::before { margin-right: 8px; color: #5a5a5a; content: "•"; }
+      .fixture { display: grid; grid-template-columns: 1fr auto 1fr; gap: 22px; align-items: center; margin-top: 58px; }
+      .team { font-size: clamp(1.75rem, 4vw, 3.4rem); font-weight: 950; line-height: .95; letter-spacing: -.055em; }
+      .team.away { text-align: right; }
+      .versus { color: #616161; font-size: .8rem; font-weight: 900; letter-spacing: .12em; }
+      .kickoff { margin: 45px 0 0; color: #ececec; font-size: 1.05rem; }
+      .kickoff strong { color: #fff; }
+      .watch-info { margin: 10px 0 0; color: #9e9e9e; font-size: .9rem; }
+      .watch-info a { color: #b9ff2c; font-weight: 700; text-decoration: none; }
+      .watch-info a:hover { text-decoration: underline; }
+      .upcoming { display: grid; gap: 1px; margin-top: 16px; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--line); }
+      .upcoming-row { display: grid; grid-template-columns: 106px 1fr auto; gap: 18px; align-items: center; padding: 18px 20px; background: #0e0e0e; }
+      .upcoming-date { color: #b9ff2c; font-size: .8rem; font-weight: 850; text-transform: uppercase; }
+      .upcoming-fixture { font-weight: 800; }
+      .upcoming-competition { color: #858585; font-size: .78rem; text-align: right; }
+      .standing-card { padding: 28px; }
+      .standing-card h3 { margin: 0; font-size: 1.35rem; letter-spacing: -.025em; }
+      .standing-subtitle { margin: 7px 0 22px; color: #8f8f8f; font-size: .82rem; line-height: 1.45; }
+      .standing-table { width: 100%; border-collapse: collapse; }
+      .standing-table th, .standing-table td { padding: 12px 7px; border-bottom: 1px solid #ffffff10; font-size: .88rem; }
+      .standing-table th { color: #777; font-size: .68rem; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
+      .standing-table th:nth-child(2) { text-align: left; }
+      .standing-table td:first-child { width: 32px; color: #777; text-align: center; }
+      .standing-table td:nth-child(3), .standing-table td:last-child { text-align: right; }
+      .standing-table tr.is-juventus { background: linear-gradient(90deg, #b9ff2c1f, transparent); color: #fff; font-weight: 900; }
+      .standing-table tr.is-juventus td:first-child { color: #b9ff2c; }
+      .standing-source { display: block; margin-top: 18px; color: #777; font-size: .72rem; text-decoration: none; }
+      .loading { color: #888; }
+      .data-error { padding: 28px; border: 1px solid var(--line); border-radius: 15px; background: #101010; color: #aaa; }
+      .content { padding: 105px 0; }
+      .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 42px; }
+      .section-heading h2 { max-width: 650px; margin: 0; font-size: clamp(2.2rem, 5vw, 4rem); line-height: .96; letter-spacing: -.055em; }
+      .section-heading p { margin: 0; color: var(--muted); line-height: 1.7; }
+      .iphone-guide { display: grid; grid-template-columns: .78fr 1.22fr; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); }
+      .guide-intro { padding: clamp(28px, 5vw, 55px); background: linear-gradient(145deg, #a80714, #3a0509); }
+      .guide-intro h3 { margin: 12px 0; font-size: 2rem; letter-spacing: -.04em; }
+      .guide-intro p { margin: 0; color: #f2c8cc; line-height: 1.6; }
+      .steps { margin: 0; padding: clamp(28px, 5vw, 55px); list-style: none; counter-reset: steps; }
+      .steps li { position: relative; min-height: 58px; padding: 0 0 25px 58px; color: #c9c9c9; line-height: 1.55; counter-increment: steps; }
+      .steps li:last-child { padding-bottom: 0; }
+      .steps li::before { position: absolute; top: -4px; left: 0; display: grid; width: 37px; height: 37px; place-items: center; border: 1px solid #ffffff2b; border-radius: 50%; color: #fff; font-size: .83rem; font-weight: 900; content: counter(steps, decimal-leading-zero); }
+      .steps strong { color: #fff; }
+      .notice { margin: 18px 0 0; padding: 14px 16px; border: 1px solid #ff7d8738; border-radius: 10px; background: #2d0e12; color: #f1c8cc; font-size: .92rem; line-height: 1.55; }
+      .notice strong { color: #fff; }
+      .devices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 58px; }
+      details { overflow: hidden; border: 1px solid var(--line); border-radius: 15px; background: #0e0e0e; transition: border-color .2s ease, background .2s ease; }
+      details[open] { border-color: #6f2027; background: #141010; }
+      summary { display: flex; align-items: center; justify-content: space-between; padding: 22px; cursor: pointer; font-weight: 850; list-style: none; }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { color: #ef4050; font-size: 1.35rem; content: "+"; }
+      details[open] summary::after { content: "−"; }
+      details ol, details p { margin: 0; padding: 0 24px 24px; color: #aaa; font-size: .94rem; line-height: 1.65; }
+      details ol { padding-left: 45px; }
+      details li + li { margin-top: 8px; }
+      details a { color: #fff; text-decoration-color: #e01828; text-underline-offset: 3px; }
+      .closing { padding: 70px 0 85px; border-top: 1px solid #ffffff16; text-align: center; }
+      .closing strong { display: block; font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -.06em; }
+      .closing p { max-width: 600px; margin: 20px auto 0; color: #999; line-height: 1.6; }
+      footer { padding: 24px 0 35px; border-top: 1px solid #ffffff12; color: #757575; font-size: .8rem; }
+      footer .shell { display: flex; justify-content: space-between; gap: 20px; }
+      @media (max-width: 820px) {
+        .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 60px; }
+        .match-card { min-height: 300px; transform: none; }
+        .proof-grid, .section-heading, .iphone-guide, .dashboard { grid-template-columns: 1fr; }
+        .proof article, .proof article:first-child { padding: 25px 0; border-right: 0; border-bottom: 1px solid #ffffff14; }
+        .proof article:last-child { border-bottom: 0; }
+      }
+      @media (max-width: 600px) {
+        .shell { width: min(100% - 28px, 1160px); }
+        .top-status { display: none; }
+        .top-actions { gap: 0; }
+        .hero { padding: 50px 0 65px; }
+        h1 { font-size: clamp(3.45rem, 19vw, 5.2rem); }
+        .actions, .button { width: 100%; }
+        .devices { grid-template-columns: 1fr; }
+        .center-heading { display: block; }
+        .data-status { margin-top: 12px; }
+        .fixture { gap: 10px; margin-top: 44px; }
+        .team { font-size: clamp(1.55rem, 9vw, 2.6rem); }
+        .upcoming-row { grid-template-columns: 92px 1fr; }
+        .upcoming-competition { display: none; }
+        .content { padding: 78px 0; }
+        footer .shell { display: block; }
+        footer span { display: block; margin-top: 7px; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
     </style>
   </head>
   <body>
+    <header class="shell topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">JC</span><span class="brand-text">Juventus Calendar <small>Calendario indipendente</small></span></div>
+      <div class="top-actions">
+        <span class="top-status">Aggiornamento automatico attivo</span>
+        <a class="mini-button" href="webcal://dizzle0987.github.io/juventus-calendar/calendar.ics" rel="external">Iscriviti</a>
+      </div>
+    </header>
     <main>
-      <div class="eyebrow">Prima Squadra maschile</div>
-      <h1>Juventus<br>Calendar</h1>
-      <p class="lead">Serie A, coppe, Europa, amichevoli e tournée in un unico calendario che segue automaticamente date e orari.</p>
-      <div class="actions">
-        <a class="button" id="subscribe-link" href="webcal://dizzle0987.github.io/juventus-calendar/calendar.ics" rel="external">Iscriviti al calendario</a>
-        <button class="button secondary" id="copy-link" type="button">Copia il link</button>
-      </div>
-      <p class="direct">Link HTTPS diretto: <a href="https://dizzle0987.github.io/juventus-calendar/calendar.ics">dizzle0987.github.io/juventus-calendar/calendar.ics</a></p>
-      <p class="copied" id="copy-status" role="status" aria-live="polite"></p>
-
-      <section class="stats" aria-label="Stato del calendario">
-        <div class="stat"><strong id="event-count">—</strong><span>eventi nel feed</span></div>
-        <div class="stat"><strong id="last-update">—</strong><span>ultimo aggiornamento</span></div>
+      <section class="shell hero">
+        <div>
+          <p class="kicker">Sempre Juve. Sempre aggiornato.</p>
+          <h1>Ogni partita.<br><em>Ovunque.</em></h1>
+          <p class="lead">Il cammino della Prima Squadra maschile, dalle notti europee alle trasferte d'agosto. Date, orari di Roma, stadio e TV arrivano direttamente nel calendario che usi ogni giorno.</p>
+          <div class="actions">
+            <a class="button" id="subscribe-link" rel="external" href="webcal://dizzle0987.github.io/juventus-calendar/calendar.ics">Porta la Juventus nel calendario</a>
+            <button class="button secondary" id="copy-link" type="button">Copia il link</button>
+          </div>
+          <p class="copied" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+        <aside class="match-card" aria-label="Informazioni sul calendario">
+          <span class="card-label">Una sola iscrizione</span>
+          <div class="card-number">6H<span>tra due controlli completi</span></div>
+          <p class="card-copy">Se cambia un calcio d'inizio, una partita viene rinviata o arriva una nuova amichevole, lo stesso evento si aggiorna senza creare doppioni.</p>
+        </aside>
       </section>
-
-      <div class="grid">
-        <section class="card">
-          <h2>iPhone e iPad</h2>
-          <ol>
-            <li>Apri questa pagina in Safari e tocca “Iscriviti al calendario”.</li>
-            <li>Se non funziona, copia il link.</li>
-            <li>Apri Calendario → Calendari → Aggiungi calendario → Aggiungi calendario con iscrizione.</li>
-            <li>Incolla il link HTTPS e conferma.</li>
+      <section class="proof">
+        <div class="shell proof-grid">
+          <article><strong>Tutta la stagione</strong><p>Serie A, coppe, Europa, amichevoli e tournée della Prima Squadra.</p></article>
+          <article><strong>Orari italiani</strong><p>Ogni calcio d'inizio viene convertito e mostrato nel fuso Europe/Rome.</p></article>
+          <article><strong>Dove vederla</strong><p>Emittenti confermate per la singola partita, con priorità alle opzioni gratuite.</p></article>
+        </div>
+      </section>
+      <section class="shell match-center" aria-labelledby="match-center-title">
+        <div class="center-heading">
+          <div>
+            <p class="kicker">Match center</p>
+            <h2 id="match-center-title">La Juventus,<br>adesso.</h2>
+          </div>
+          <p class="data-status" id="data-status">Caricamento degli ultimi dati…</p>
+        </div>
+        <div id="live-dashboard" aria-live="polite">
+          <p class="data-error loading">Sto preparando prossima partita e classifica.</p>
+        </div>
+      </section>
+      <section class="shell content" id="come-iscriversi">
+        <div class="section-heading">
+          <h2>Due minuti adesso.<br>Tutta la stagione dopo.</h2>
+          <p>Non importare il file una sola volta: iscriviti tramite URL. È così che variazioni di orario, rinvii, nuove gare e informazioni TV continueranno ad arrivare automaticamente.</p>
+        </div>
+        <div class="iphone-guide">
+          <div class="guide-intro">
+            <p class="kicker">iPhone e iPad</p>
+            <h3>Il metodo che non sbaglia</h3>
+            <p>Apple a volte apre il singolo evento invece dell'iscrizione. La procedura manuale richiede pochi tocchi e collega davvero il feed.</p>
+            <p class="notice"><strong>Apri questa pagina in Safari.</strong> I browser integrati nelle app possono aprire Calendario senza completare l'iscrizione.</p>
+          </div>
+          <ol class="steps">
+            <li>Tocca <strong>Copia il link</strong> qui sopra.</li>
+            <li>Apri <strong>Calendario</strong> e scegli <strong>Calendari</strong>.</li>
+            <li>Vai su <strong>Aggiungi calendario → Aggiungi calendario con iscrizione</strong>.</li>
+            <li>Incolla il link, tocca <strong>Trova</strong>, scegli <strong>iCloud</strong> e concludi con <strong>Fine</strong>.</li>
           </ol>
-        </section>
-        <section class="card">
-          <h2>Android e Google Calendar</h2>
-          <ol>
-            <li>Da computer apri Google Calendar.</li>
-            <li>Accanto ad “Altri calendari” scegli + → Da URL.</li>
-            <li>Incolla il link HTTPS e scegli “Aggiungi calendario”.</li>
-            <li>Il calendario apparirà anche sui dispositivi Android collegati.</li>
-          </ol>
-        </section>
-      </div>
-
-      <p class="notice"><strong>Iscrizione, non importazione.</strong> Un feed <code>.ics</code> sottoscritto si aggiorna automaticamente. La frequenza di sincronizzazione dipende dall’app; normalmente iPhone non mostra una notifica push specifica per ogni modifica di data o orario.</p>
-      <footer>Le fonti principali sono il calendario ufficiale Juventus, API sportive strutturate di fallback e palinsesti italiani affidabili. Il feed viene ricontrollato ogni 6 ore; gli orari non confermati restano eventi giornalieri.</footer>
+        </div>
+        <div class="devices" aria-label="Guide per gli altri dispositivi">
+          <details>
+            <summary>Android — Google Calendar</summary>
+            <ol><li>Apri <a href="https://calendar.google.com/" rel="external">Google Calendar</a> dal browser; sul telefono usa eventualmente <strong>Sito desktop</strong>.</li><li>Accanto ad <strong>Altri calendari</strong> scegli <strong>+ → Da URL</strong>.</li><li>Incolla il link e scegli <strong>Aggiungi calendario</strong>.</li><li>Nell'app Android verifica che il nuovo calendario sia visibile e sincronizzato.</li></ol>
+          </details>
+          <details>
+            <summary>Mac — Calendario Apple</summary>
+            <ol><li>Apri <strong>Calendario</strong>.</li><li>Scegli <strong>File → Nuova iscrizione calendario</strong>.</li><li>Incolla il link HTTPS, scegli <strong>Iscriviti</strong> e abilita l'aggiornamento automatico.</li></ol>
+          </details>
+          <details>
+            <summary>PC Windows — Outlook</summary>
+            <ol><li>Apri <a href="https://outlook.live.com/calendar/" rel="external">Outlook Calendar</a> sul web.</li><li>Scegli <strong>Aggiungi calendario → Sottoscrivi dal Web</strong>.</li><li>Incolla il link, assegna un nome al calendario e scegli <strong>Importa</strong>.</li></ol>
+          </details>
+          <details>
+            <summary>PC o Linux · Google Calendar</summary>
+            <p>In Google Calendar scegli <strong>Altri calendari → + → Da URL</strong> e incolla il link HTTPS. La sottoscrizione via URL, a differenza del semplice download, riceve gli aggiornamenti futuri.</p>
+          </details>
+        </div>
+      </section>
+      <section class="shell closing">
+        <strong>Il prossimo fischio<br>non ti sfuggirà.</strong>
+        <p>Il calendario è gratuito, in sola lettura e si aggiorna automaticamente. L'app calendario decide la frequenza di sincronizzazione e normalmente non invia una notifica push specifica per ogni cambio di orario.</p>
+      </section>
     </main>
+    <footer><div class="shell">Progetto indipendente per i tifosi della Juventus.<span>Fuso orario Europe/Rome · Aggiornamento ogni 6 ore</span></div></footer>
     <script>
       const calendarUrl = "https://dizzle0987.github.io/juventus-calendar/calendar.ics";
-      const status = document.getElementById("copy-status");
+      const dataUrl = "data/events.json";
+      const romeDate = new Intl.DateTimeFormat("it-IT", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/Rome" });
+      const romeShortDate = new Intl.DateTimeFormat("it-IT", { day: "2-digit", month: "short", timeZone: "Europe/Rome" });
+      const romeTime = new Intl.DateTimeFormat("it-IT", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
+
+      function make(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function startDate(event) {
+        return new Date(event.all_day || /^\d{4}-\d{2}-\d{2}$/.test(event.start) ? `${event.start.slice(0, 10)}T12:00:00` : event.start);
+      }
+
+      function kickoffText(event) {
+        if (event.postponed && !event.postponed_to) return "Rinviata — data da destinarsi";
+        const date = startDate(event);
+        const day = romeDate.format(date);
+        return event.all_day ? `${day} · orario da confermare` : `${day} · ${romeTime.format(date)}`;
+      }
+
+      function broadcastText(event) {
+        const italian = (event.broadcast_options || []).filter(option => option.country_code === "IT" && option.status === "confirmed");
+        if (italian.length) return italian.map(option => option.broadcaster).join(" · ");
+        if (event.broadcast_italy_tbc) return "TV italiana da confermare";
+        return event.broadcast_it && event.broadcast_it !== "Da definire" ? event.broadcast_it : "TV da confermare";
+      }
+
+      function broadcastElement(event) {
+        const element = make("p", "watch-info");
+        const confirmed = event.broadcast_options || [];
+        const italian = confirmed.filter(option => option.country_code === "IT" && option.status === "confirmed");
+        const foreign = confirmed.filter(option => option.country_code !== "IT" && option.access === "free" && option.status === "confirmed");
+        const rows = [];
+        if (italian.length) rows.push(...italian.map(option => ({ label: `🇮🇹 ${option.broadcaster}`, option })));
+        else rows.push({ label: `🇮🇹 ${broadcastText(event)}` });
+        if (foreign.length) rows.push(...foreign.map(option => ({ label: `🌍 ${option.broadcaster} — ${option.country} ✓`, option })));
+        else rows.push({ label: "🌍 In chiaro all'estero — Da confermare" });
+
+        element.append(document.createTextNode("Dove vederla: "));
+        rows.forEach((row, index) => {
+          if (index) element.append(document.createElement("br"));
+          element.append(document.createTextNode(row.label));
+          const url = row.option && (row.option.watch_url || row.option.broadcaster_home_url);
+          if (url) {
+            element.append(document.createTextNode(" · "));
+            const link = document.createElement("a");
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = row.option.watch_url ? "Guarda" : "Sito ufficiale";
+            element.append(link);
+          }
+        });
+        return element;
+      }
+
+      function renderMatchCenter(payload) {
+        const dashboard = document.getElementById("live-dashboard");
+        const status = document.getElementById("data-status");
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const matches = (payload.events || [])
+          .filter(event => event.home_team && event.away_team && (event.event_kind || "match") === "match")
+          .sort((a, b) => startDate(a) - startDate(b));
+        const future = matches.filter(event => startDate(event) >= today && !["played", "final", "completed"].includes(String(event.status || "").toLowerCase()));
+        const next = future[0];
+        if (!next) throw new Error("Nessuna prossima partita disponibile");
+
+        const grid = make("div", "dashboard");
+        const matchColumn = make("div");
+        const card = make("article", "next-match");
+        const meta = make("div", "match-meta");
+        meta.append(make("span", "", "Prossima partita"), make("span", "", next.competition || "Competizione da confermare"));
+        if (next.round) meta.append(make("span", "", `Turno ${next.round}`));
+        const fixture = make("div", "fixture");
+        fixture.append(make("div", "team", next.home_team), make("span", "versus", "VS"), make("div", "team away", next.away_team));
+        const kickoff = make("p", "kickoff");
+        kickoff.append(make("strong", "", kickoffText(next)));
+        if (next.venue) kickoff.append(document.createTextNode(` · ${next.venue}`));
+        card.append(meta, fixture, kickoff, broadcastElement(next));
+        matchColumn.append(card);
+
+        if (future.length > 1) {
+          const upcoming = make("div", "upcoming");
+          future.slice(1, 5).forEach(event => {
+            const row = make("div", "upcoming-row");
+            const date = event.all_day ? romeShortDate.format(startDate(event)) : `${romeShortDate.format(startDate(event))} · ${romeTime.format(startDate(event))}`;
+            row.append(make("span", "upcoming-date", date), make("span", "upcoming-fixture", `${event.home_team} – ${event.away_team}`), make("span", "upcoming-competition", event.competition || ""));
+            upcoming.append(row);
+          });
+          matchColumn.append(upcoming);
+        }
+        grid.append(matchColumn);
+
+        const standing = payload.serie_a_standing;
+        if (standing && Array.isArray(standing.context) && standing.context.length) {
+          const standingCard = make("aside", "standing-card");
+          standingCard.append(make("h3", "", "Classifica Serie A"));
+          const qualifier = standing.provisional ? "Classifica provvisoria" : "Giornata completata";
+          standingCard.append(make("p", "standing-subtitle", `${qualifier} · ${standing.played || 0} partite giocate dalla Juventus`));
+          const table = make("table", "standing-table");
+          const head = document.createElement("thead");
+          const headRow = document.createElement("tr");
+          ["#", "Squadra", "PG", "Pt"].forEach(label => headRow.append(make("th", "", label)));
+          head.append(headRow); table.append(head);
+          const body = document.createElement("tbody");
+          standing.context.forEach(team => {
+            const row = document.createElement("tr");
+            if (String(team.team).toLowerCase() === "juventus") row.className = "is-juventus";
+            [team.position, team.team, team.played, team.points].forEach(value => row.append(make("td", "", String(value))));
+            body.append(row);
+          });
+          table.append(body); standingCard.append(table);
+          if (standing.source_url) {
+            const source = make("a", "standing-source", `Fonte: ${standing.source || "classifica ufficiale"} ↗`);
+            source.href = standing.source_url; source.rel = "external"; standingCard.append(source);
+          }
+          grid.append(standingCard);
+        }
+        dashboard.replaceChildren(grid);
+        const changed = payload.last_changed ? new Date(payload.last_changed) : null;
+        status.textContent = changed && !Number.isNaN(changed.valueOf()) ? `Dati aggiornati il ${changed.toLocaleDateString("it-IT", { day: "numeric", month: "long", timeZone: "Europe/Rome" })} alle ${romeTime.format(changed)}` : "Dati aggiornati automaticamente";
+      }
+
+      fetch(`${dataUrl}?v=${Date.now()}`, { cache: "no-store" })
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.json();
+        })
+        .then(renderMatchCenter)
+        .catch(() => {
+          document.getElementById("data-status").textContent = "Dati temporaneamente non disponibili";
+          const fallback = make("p", "data-error", "Il calendario continua a funzionare regolarmente. Riprova tra poco per vedere prossima partita e classifica.");
+          document.getElementById("live-dashboard").replaceChildren(fallback);
+        });
+
       document.getElementById("subscribe-link").addEventListener("click", () => {
-        status.textContent = "Se non compare la schermata d’iscrizione, copia il link e usa la procedura manuale.";
+        document.getElementById("copy-status").textContent = "Se l'iscrizione non parte, copia il link e segui la guida del tuo dispositivo.";
       });
       document.getElementById("copy-link").addEventListener("click", async () => {
-        try {
-          await navigator.clipboard.writeText(calendarUrl);
-          status.textContent = "Link copiato. Ora incollalo nella funzione di iscrizione della tua app calendario.";
-        } catch {
-          window.prompt("Copia questo link calendario:", calendarUrl);
-        }
+        const status = document.getElementById("copy-status");
+        try { await navigator.clipboard.writeText(calendarUrl); status.textContent = "Link copiato. Ora scegli il tuo dispositivo qui sotto."; }
+        catch { window.prompt("Copia questo link calendario:", calendarUrl); }
       });
-      fetch("data/events.json", { cache: "no-store" })
-        .then((response) => response.ok ? response.json() : Promise.reject())
-        .then((data) => {
-          document.getElementById("event-count").textContent = data.event_count ?? data.events?.length ?? "—";
-          const updated = data.last_changed ? new Date(data.last_changed) : null;
-          document.getElementById("last-update").textContent = updated && !Number.isNaN(updated.valueOf())
-            ? new Intl.DateTimeFormat("it-IT", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Rome" }).format(updated)
-            : "—";
-        })
-        .catch(() => {});
     </script>
   </body>
 </html>
