@@ -1149,3 +1149,27 @@ def test_subscription_page_links_and_instructions():
     assert "navigator.clipboard.writeText(calendarUrl)" in html
     assert "Google Calendar" in html
     assert "notifica push" in html
+
+
+def test_transient_source_errors_do_not_rewrite_unchanged_outputs(tmp_path, monkeypatch):
+    write_manual(tmp_path)
+    calls = iter(
+        (
+            FetchResult([base_event()], ["Juventus"], ["DAZN: timeout"]),
+            FetchResult([base_event()], ["Juventus", "ESPN"], ["DAZN: 403"]),
+        )
+    )
+    monkeypatch.setattr(
+        "juventus_calendar.generator.fetch_remote_events",
+        lambda session, today: next(calls),
+    )
+
+    update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))
+    first = (tmp_path / "data" / "events.json").read_bytes()
+    update_calendar(tmp_path, session=object(), today=date(2026, 8, 1))
+    second = (tmp_path / "data" / "events.json").read_bytes()
+    payload = json.loads(second)
+
+    assert second == first
+    assert payload["sources_used"] == ["Juventus"]
+    assert payload["source_errors"] == ["DAZN: timeout"]
