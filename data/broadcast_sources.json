@@ -1,0 +1,320 @@
+{
+  "market_tiers": {
+    "1": ["AT", "CH", "DE", "BE", "AZ", "TR", "AL", "RS"],
+    "2": ["XK", "HR", "BA", "MD", "MT", "KZ", "GE", "CY"]
+  },
+  "italian_defaults": [
+    {
+      "competition_family": "serie-a", "broadcaster": "DAZN",
+      "source_url": "https://www.dazn.com/it-IT/help/articles/19177098524573-modello-di-organizzazione-gestione-e-controllo-modello-231",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    },
+    {
+      "competition_family": "coppa-italia",
+      "broadcaster": "Mediaset (canali in chiaro), Mediaset Infinity e SportMediaset.it",
+      "source_url": "https://mediasetinfinity.mediaset.it/calcio-e-sport/coppaitaliacalcio_SE000000001529",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    },
+    {
+      "competition_family": "supercoppa-italiana",
+      "broadcaster": "Mediaset (canali in chiaro), Mediaset Infinity e SportMediaset.it",
+      "source_url": "https://mediasetinfinity.mediaset.it/calcio-e-sport/supercoppaditaliacalcio_SE000000001643",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    },
+    {
+      "competition_family": "champions-league",
+      "broadcaster": "Sky Sport/NOW; possibile esclusiva Prime Video da verificare",
+      "source_url": "https://sport.sky.it/calcio/champions-league/2025/11/20/champions-league-2027-2031-su-sky",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    },
+    {
+      "competition_family": "europa-league", "broadcaster": "Sky Sport e NOW",
+      "source_url": "https://sport.sky.it/calcio/champions-league/2025/11/20/champions-league-2027-2031-su-sky",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    },
+    {
+      "competition_family": "conference-league", "broadcaster": "Sky Sport e NOW",
+      "source_url": "https://sport.sky.it/calcio/champions-league/2025/11/20/champions-league-2027-2031-su-sky",
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27", "priority": 100
+    }
+  ],
+  "sources": [
+    {
+      "country": "Italia", "country_code": "IT", "broadcaster": "Sky Sport / Sky Go",
+      "access": "paid", "platforms": "TV + streaming", "language": "italiano",
+      "url": "https://programmi.sky.it/sport/coppe-europee",
+      "url_templates": {
+        "champions-league": "https://programmi.sky.it/sport/coppe-europee/uefa-champions-league/dove-vedere-{home}-{away}",
+        "europa-league": "https://programmi.sky.it/sport/coppe-europee/uefa-europa-league/dove-vedere-{home}-{away}",
+        "conference-league": "https://programmi.sky.it/sport/coppe-europee/uefa-conference-league/dove-vedere-{home}-{away}"
+      },
+      "source_type": "fixture_page",
+      "italian_primary": true,
+      "channel_pattern": "Sky Sport(?: Uno| Calcio| Arena| Football| 4K| \\d{3})",
+      "additional_channels": [{"marker": "sky go", "label": "Sky Go"}],
+      "replaces_broadcasters": ["Sky Sport / NOW", "Sky Sport e NOW"],
+      "competition_families": ["champions-league", "europa-league", "conference-league", "supercoppa-uefa"],
+      "rights_from_season": 2024, "rights_through_season": 2030,
+      "rights_cycle": "2024/25-2030/31",
+      "lookahead_days": 240, "priority": 100
+    },
+    {
+      "country": "Italia", "country_code": "IT", "broadcaster": "TV8",
+      "access": "free", "platforms": "TV + streaming", "language": "italiano",
+      "url": "https://www.tv8.it/programmazione",
+      "public_url": "https://www.tv8.it/programmazione",
+      "endpoint": "https://www.tv8.it/api/programmingCarousel", "source_type": "tv8_api",
+      "lookahead_days": 21, "priority": 110
+    },
+    {
+      "country": "Italia", "country_code": "IT", "broadcaster": "Prime Video",
+      "access": "included", "platforms": "streaming", "language": "italiano",
+      "url": "https://www.primevideo.com/sports", "competition_families": ["champions-league"],
+      "lookahead_days": 21, "priority": 105
+    },
+    {
+      "country": "Germania", "country_code": "DE", "broadcaster": "RTL / NITRO",
+      "access": "free", "platforms": "TV", "language": "tedesco",
+      "url": "https://www.rtl.de/sport/fussball/europa-league/",
+      "competition_families": ["europa-league", "conference-league"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 90
+    },
+    {
+      "country": "Germania", "country_code": "DE", "broadcaster": "RTL+",
+      "access": "paid", "platforms": "streaming", "language": "tedesco",
+      "url": "https://plus.rtl.de/video-tv/sport",
+      "match_terms": ["RTL+", "RTL Plus"],
+      "competition_families": ["europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 85
+    },
+    {
+      "country": "Germania", "country_code": "DE", "broadcaster": "FootAz Germania",
+      "access": "free", "platforms": "guida TV", "language": "tedesco",
+      "timezone": "Europe/Berlin",
+      "url": "https://www.footaz.de/", "url_template": "https://www.footaz.de/spiel/{home}-vs-{away}/",
+      "team_slugs": {"juventus": "juventus", "celta-vigo": "celta-vigo", "celta-de-vigo": "celta-vigo"},
+      "team_aliases": {"juventus": ["Juventus", "Juventus FC", "Juve"]},
+      "source_type": "guide", "require_kickoff_time": true, "reliability": 70,
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 70
+    },
+    {
+      "country": "Azerbaijan", "country_code": "AZ", "broadcaster": "CBC Sport",
+      "country_aliases": ["Azerbaijan", "Azerbaigian"],
+      "access": "free", "platforms": "TV in chiaro + streaming", "language": "azero",
+      "timezone": "Asia/Baku", "market_tier": 1,
+      "url": "https://cbcsport.az/tv_program_schedule",
+      "source_type": "fixture_page", "require_kickoff_time": true,
+      "rights_confirmed": true,
+      "rights_source_url": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000--where-to-watch-the-europa-league-final-tv-broadcast-partners-live-streams/",
+      "broadcast_free": true, "web_stream_free": "unknown",
+      "watch_url": "https://cbcsport.az/live/", "watch_url_type": "live_page",
+      "broadcaster_home_url": "https://cbcsport.az/",
+      "official_domains": ["cbcsport.az", "cbcsport.tv"],
+      "match_terms": ["CBC Sport", "CBC Sport TV"],
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "rights_cycle": "2026/27",
+      "lookahead_days": 21, "priority": 110
+    },
+    {
+      "country": "Azerbaijan", "country_code": "AZ", "broadcaster": "Spor Ekranı",
+      "access": "free", "platforms": "guida TV", "language": "turco",
+      "timezone": "Europe/Istanbul", "market_tier": 1,
+      "url": "https://www.sporekrani.com/", "source_type": "guide",
+      "require_kickoff_time": true, "country_scope": "*",
+      "discover_broadcasters": true,
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 75
+    },
+    {
+      "country": "Azerbaijan", "country_code": "AZ", "broadcaster": "Sportkritik",
+      "access": "free", "platforms": "guida TV", "language": "azero",
+      "timezone": "Asia/Baku", "market_tier": 1,
+      "url": "https://sportkritik.az/wp-json/wp/v2/search",
+      "url_template": "https://sportkritik.az/wp-json/wp/v2/search?search={home}%20{away}",
+      "team_slugs": {"juventus": "Juventus", "celta-vigo": "Celta Vigo"},
+      "team_aliases": {
+        "juventus": ["Juventus", "Juventus FC", "Juve"],
+        "celta-vigo": ["Celta Vigo", "Celta de Vigo", "RC Celta"]
+      },
+      "source_type": "wordpress_search", "require_kickoff_time": true,
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 70
+    },
+    {
+      "country": "Austria", "country_code": "AT", "broadcaster": "ServusTV / ServusTV On",
+      "access": "free", "platforms": "TV + streaming", "language": "tedesco",
+      "url": "https://www.servustv.com/de/epg", "public_url": "https://www.servustv.com/de/sport/",
+      "endpoint": "https://www.servustv.com/de/epg", "source_type": "servus_epg",
+      "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["salzburg", "sturm-graz"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 100
+    },
+    {
+      "country": "Austria", "country_code": "AT", "broadcaster": "Sky Austria",
+      "access": "paid", "platforms": "TV + streaming", "language": "tedesco",
+      "url": "https://www.sky.at/tvguide-7599", "competition_families": ["europa-league", "conference-league"],
+      "match_terms": ["Sky Austria", "Sky Sport Austria", "Sky X"],
+      "team_keywords": ["salzburg", "sturm-graz"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Austria", "country_code": "AT", "broadcaster": "CANAL+ Austria",
+      "access": "paid", "platforms": "TV + streaming", "language": "tedesco",
+      "url": "https://www.canalplus.at/sport/fussball/uefa-europa-league/", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["salzburg", "sturm-graz"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 75
+    },
+    {
+      "country": "Austria", "country_code": "AT", "broadcaster": "FootAz Austria",
+      "access": "free", "platforms": "guida TV", "language": "tedesco",
+      "timezone": "Europe/Vienna",
+      "url": "https://www.footaz.at/", "url_template": "https://www.footaz.at/spiel/{home}-vs-{away}/",
+      "team_slugs": {"juventus": "juventus", "celta-vigo": "celta-vigo", "celta-de-vigo": "celta-vigo"},
+      "team_aliases": {"juventus": ["Juventus", "Juventus FC", "Juve"]},
+      "source_type": "guide", "require_kickoff_time": true, "reliability": 70,
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 70
+    },
+    {
+      "country": "Portogallo", "country_code": "PT", "broadcaster": "Sport TV",
+      "country_aliases": ["Portugal"],
+      "access": "paid", "platforms": "TV + streaming", "language": "portoghese",
+      "url": "https://www.sporttv.pt/?programacao=1", "competition_families": ["europa-league", "conference-league"],
+      "rights_confirmed": true,
+      "rights_source_url": "https://www.uefa.com/uefaeuropaleague/news/028d-1af1354fca61-efb642e380e6-1000/",
+      "team_keywords": ["benfica", "torreense"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 85
+    },
+    {
+      "country": "Portogallo", "country_code": "PT", "broadcaster": "DAZN Portugal",
+      "country_aliases": ["Portugal"],
+      "access": "paid", "platforms": "streaming", "language": "portoghese",
+      "url": "https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l", "competition_families": ["europa-league", "conference-league"],
+      "rights_confirmed": true,
+      "rights_source_url": "https://www.uefa.com/uefaeuropaleague/news/028d-1af1354fca61-efb642e380e6-1000/",
+      "team_keywords": ["benfica", "torreense"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Portogallo", "country_code": "PT", "broadcaster": "FootAz",
+      "country_aliases": ["Portugal"],
+      "access": "free", "platforms": "guida TV", "language": "portoghese",
+      "url": "https://www.footaz.pt/", "url_template": "https://www.footaz.pt/jogo/{home}-vs-{away}/",
+      "team_slugs": {"juventus": "juventus"},
+      "source_type": "guide", "reliability": 70,
+      "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["benfica", "torreense"],
+      "lookahead_days": 21, "priority": 70
+    },
+    {
+      "country": "Portogallo", "country_code": "PT", "broadcaster": "Futebol na TV",
+      "country_aliases": ["Portugal"],
+      "access": "free", "platforms": "guida TV", "language": "portoghese",
+      "url": "https://www.futebolnatv.pt/equipe/juventus",
+      "source_type": "guide", "reliability": 70,
+      "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["benfica", "torreense"],
+      "lookahead_days": 21, "priority": 65
+    },
+    {
+      "country": "Regno Unito", "country_code": "GB", "broadcaster": "HBO Max",
+      "access": "paid", "platforms": "streaming", "language": "inglese",
+      "url": "https://www.hbomax.com/gb/en/sports", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["bournemouth", "sunderland", "crystal-palace"],
+      "rights_from_season": 2026, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Ungheria", "country_code": "HU", "broadcaster": "M4 Sport",
+      "access": "free", "platforms": "TV + streaming", "language": "ungherese",
+      "url": "https://m4sport.hu/musorujsag/", "competition_families": ["europa-league"],
+      "team_keywords": ["ferencvaros", "ferencvarosi"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 100
+    },
+    {
+      "country": "Grecia", "country_code": "GR", "broadcaster": "ANT1",
+      "access": "free", "platforms": "TV + streaming", "language": "greco",
+      "url": "https://www.antenna.gr/tvguide", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["olympiacos", "ofi-crete"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 95
+    },
+    {
+      "country": "Grecia", "country_code": "GR", "broadcaster": "Cosmote TV",
+      "access": "paid", "platforms": "TV + streaming", "language": "greco",
+      "url": "https://www.cosmotetv.gr/portal/program", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["olympiacos", "ofi-crete"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Bulgaria", "country_code": "BG", "broadcaster": "bTV",
+      "access": "free", "platforms": "TV + streaming", "language": "bulgaro",
+      "url": "https://www.btv.bg/programata/", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["levski"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 95
+    },
+    {
+      "country": "Bulgaria", "country_code": "BG", "broadcaster": "A1 Bulgaria",
+      "access": "paid", "platforms": "TV + streaming", "language": "bulgaro",
+      "url": "https://www.a1.bg/sporten-tv-buletin", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["levski"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 75
+    },
+    {
+      "country": "Armenia", "country_code": "AM", "broadcaster": "Fast Media",
+      "access": "paid", "platforms": "TV + streaming", "language": "armeno",
+      "timezone": "Asia/Yerevan",
+      "url": "https://www.fastmedia.am/ottPlatform", "competition_families": ["europa-league", "conference-league"],
+      "team_keywords": ["ararat-armenia"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Svizzera", "country_code": "CH", "broadcaster": "SRG / SRF",
+      "access": "free", "platforms": "TV + streaming", "language": "tedesco",
+      "url": "https://www.srf.ch/play/tv/programm", "competition_families": ["europa-league", "conference-league"],
+      "rights_from_season": 2024, "rights_through_season": 2026,
+      "lookahead_days": 21, "priority": 85
+    },
+    {
+      "country": "Svizzera", "country_code": "CH", "broadcaster": "Blue Sport",
+      "access": "paid", "platforms": "TV + streaming", "language": "tedesco",
+      "url": "https://www.blueplus.ch/sport",
+      "match_terms": ["Blue Sport"],
+      "competition_families": ["champions-league", "europa-league", "conference-league"],
+      "lookahead_days": 21, "priority": 80
+    },
+    {
+      "country": "Svizzera", "country_code": "CH", "broadcaster": "Fußball im TV Schweiz",
+      "access": "free", "platforms": "guida TV", "language": "tedesco",
+      "timezone": "Europe/Zurich",
+      "url": "https://www.fussball-im-tv.ch/",
+      "url_templates": {
+        "champions-league": "https://www.fussball-im-tv.ch/wettbewerbe/liga-campeones",
+        "europa-league": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league"
+      },
+      "team_aliases": {"juventus": ["Juventus", "Juventus FC", "Juve"]},
+      "source_type": "guide", "require_kickoff_time": true, "reliability": 70,
+      "competition_families": ["champions-league", "europa-league"],
+      "lookahead_days": 21, "priority": 70
+    }
+  ]
+}
