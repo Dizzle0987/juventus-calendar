@@ -1931,12 +1931,20 @@ def update_calendar(
         if isinstance(previous_payload, dict) and old_core == new_core and previous_payload.get("last_changed")
         else changed_at
     )
+    metadata_unchanged = old_core == new_core
+    stable_sources = fetched.successful_sources
+    stable_errors = fetched.errors
+    if metadata_unchanged and isinstance(previous_payload, dict):
+        if isinstance(previous_payload.get("sources_used"), list):
+            stable_sources = previous_payload["sources_used"]
+        if isinstance(previous_payload.get("source_errors"), list):
+            stable_errors = previous_payload["source_errors"]
     payload = {
         "schema_version": 1,
         "timezone": "Europe/Rome",
         "last_changed": last_changed,
-        "sources_used": fetched.successful_sources,
-        "source_errors": fetched.errors,
+        "sources_used": stable_sources,
+        "source_errors": stable_errors,
         "serie_a_standing": standing_with_timestamp,
         "event_count": len(canonical),
         "events": canonical,
