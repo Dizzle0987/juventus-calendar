@@ -1,12 +1,21 @@
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pytest
 import requests
 from icalendar import Calendar
+
+from juventus_calendar.broadcasts import (
+    _broadcast_description_lines,
+    _configured_broadcast_default,
+    _is_official_international_match,
+    apply_verified_broadcasts,
+    identify_opponent_country,
+    page_confirms_fixture,
+)
 
 from juventus_calendar.generator import (
     ESPN_COMPETITIONS,
@@ -49,6 +58,136 @@ def test_all_potential_competitions_are_explicitly_monitored() -> None:
         _competition_family("UEFA–CONMEBOL Club Challenge")
         == "uefa-conmebol-club-challenge"
     )
+
+
+def test_celta_name_variants_are_deduplicated() -> None:
+    first = base_event(
+        source="Juventus",
+        source_id="official-celta",
+        home_team="Celta de Vigo",
+        away_team="Juventus",
+        competition="UEFA Europa League",
+        start="2026-10-15T21:00:00+02:00",
+    )
+    second = dict(
+        first,
+        source="ESPN",
+        source_id="espn-celta",
+        home_team="Celta Vigo",
+    )
+
+    merged = merge_remote_events([first, second])
+
+    assert len(merged) == 1
+
+
+def test_nec_name_variants_are_deduplicated() -> None:
+    first = base_event(
+        source="Juventus", source_id="official-nec", home_team="Juventus",
+        away_team="NEC", competition="UEFA Europa League",
+        start="2026-09-17T21:00:00+02:00",
+    )
+    second = dict(first, source="ESPN", source_id="espn-nec", away_team="NEC Nijmegen")
+
+    assert len(merge_remote_events([first, second])) == 1
+
+
+def test_international_broadcast_requires_exact_fixture_evidence() -> None:
+    event = {
+        "event_kind": "match",
+        "home_team": "Juventus",
+        "away_team": "Celta Vigo",
+        "competition": "UEFA Europa League",
+        "start": "2026-10-15T21:00:00+02:00",
+    }
+    assert _is_official_international_match(event)
+    assert page_confirms_fixture(
+        "Juventus - Celta Vigo, 15 ottobre 2026: diretta TV8 e streaming.",
+        event,
+        "TV8",
+    )
+
+
+def test_opponent_country_registry_recognizes_celta_name_variant() -> None:
+    event = {
+        "event_kind": "match", "home_team": "Celta de Vigo", "away_team": "Juventus",
+        "competition": "UEFA Europa League", "start": "2026-10-15T21:00:00+02:00",
+    }
+
+    country, error = identify_opponent_country(object(), event, [])
+
+    assert error is None
+    assert country == {
+        "country": "Spagna", "country_code": "ES", "source": "registro squadre"
+    }
+    assert not page_confirms_fixture(
+        "TV8 ha i diritti dell'Europa League. Juventus e Celta Vigo partecipano.",
+        event,
+        "TV8",
+    )
+
+
+def test_seasonal_broadcast_default_expires() -> None:
+    current = base_event(start="2026-10-01T20:45:00+02:00")
+    future = base_event(start="2027-10-01T20:45:00+02:00")
+
+    assert _configured_broadcast_default(current)["broadcaster"] == "DAZN"
+    assert _configured_broadcast_default(future) is None
+
+
+def test_structured_broadcast_notes_hide_unconfirmed_names() -> None:
+    data = {
+        "broadcast_options": [{
+            "country": "Italia", "country_code": "IT", "broadcaster": "Sky Sport",
+            "access": "paid", "platforms": "TV + streaming", "language": "italiano",
+            "registration_required": False, "url": "https://sky.test/",
+        }],
+        "foreign_possible_broadcasts": [{
+            "country": "Azerbaijan", "country_code": "AZ", "broadcaster": "CBC Sport",
+            "status": "POSSIBLE_FREE", "confidence": 60,
+        }],
+        "broadcast_international_tbc": True,
+    }
+
+    text = "\n".join(_broadcast_description_lines(data))
+
+    assert "🇮🇹 Italia — Sky Sport" in text
+    assert "CBC Sport" not in text
+    assert "Nessuna emittente gratuita confermata" in text
+
+
+def test_confirmed_broadcast_survives_temporary_source_failure() -> None:
+    event = {
+        "event_kind": "match", "home_team": "Juventus", "away_team": "Celta Vigo",
+        "competition": "UEFA Europa League", "round": "3", "status": "Fixture",
+        "start": "2026-10-15T21:00:00+02:00",
+    }
+    option = {
+        "country": "Italia", "country_code": "IT", "broadcaster": "TV8",
+        "access": "free", "platforms": "TV + streaming", "language": "italiano",
+        "registration_required": False, "url": "https://www.tv8.it/programmazione",
+        "source_url": "https://www.tv8.it/programmazione", "status": "confirmed",
+        "verified_at": "2026-10-10T10:00:00Z", "priority": 100,
+    }
+
+    class FailingSession:
+        def get(self, url: str, timeout: int) -> None:
+            raise requests.RequestException("temporaneamente non disponibile")
+
+    updated, errors = apply_verified_broadcasts(
+        FailingSession(),
+        [event],
+        [dict(event, broadcast_options=[option])],
+        [{
+            "country": "Italia", "country_code": "IT", "broadcaster": "TV8",
+            "access": "free", "url": "https://www.tv8.it/programmazione",
+        }],
+        "2026-10-12T10:00:00Z",
+        datetime(2026, 10, 12, tzinfo=timezone.utc),
+    )
+
+    assert errors
+    assert updated[0]["broadcast_options"] == [option]
 
 
 def test_parse_uefa_draw_prefers_exact_localtime_timestamp() -> None:
@@ -788,6 +927,41 @@ def test_ical_all_day_uses_date_value():
     )
     component = next(x for x in Calendar.from_ical(build_ical([event])).walk() if x.name == "VEVENT")
     assert component.decoded("dtstart") == date(2026, 9, 12)
+
+
+def test_ical_includes_structured_broadcasts_and_deduplicates_location() -> None:
+    event = base_event(
+        competition="UEFA Europa League",
+        start="2026-10-15T21:00:00+02:00",
+        home_team="Celta Vigo",
+        away_team="Juventus",
+        title="Celta Vigo - Juventus",
+        home_away="Trasferta",
+        venue="Estadio de Balaídos",
+        location="Estadio de Balaídos",
+        uid="celta-juventus@juventus-calendar",
+        last_modified="2026-10-12T10:00:00Z",
+        sequence=0,
+        broadcast_options=[{
+            "country": "Italia", "country_code": "IT", "broadcaster": "Sky Sport",
+            "access": "paid", "platforms": "TV + streaming", "language": "italiano",
+            "registration_required": False, "url": "https://sky.test/",
+            "status": "confirmed",
+        }],
+        broadcast_international_tbc=True,
+    )
+
+    component = next(
+        item for item in Calendar.from_ical(build_ical([event])).walk()
+        if item.name == "VEVENT"
+    )
+    description = component.decoded("description").decode()
+
+    assert component.decoded("location").decode() == "Estadio de Balaídos"
+    assert "Dove vederla:" in description
+    assert "🇮🇹 Italia — Sky Sport" in description
+    assert "Nessuna emittente gratuita confermata" in description
+    assert "Dove vederla in Italia:" not in description
 
 
 def test_competition_assigns_italian_tv_coverage(tmp_path, monkeypatch):
