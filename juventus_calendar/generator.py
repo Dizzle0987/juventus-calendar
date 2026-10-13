@@ -21,6 +21,14 @@ from icalendar import Alarm, Calendar, Event
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from .broadcasts import (
+    _broadcast_description_lines,
+    _configured_broadcast_default,
+    _is_official_international_match,
+    apply_verified_broadcasts,
+    load_broadcast_sources,
+)
+
 LOGGER = logging.getLogger(__name__)
 ROME = ZoneInfo("Europe/Rome")
 OFFICIAL_PAGE = "https://www.juventus.com/en/teams/first-team-men/fixtures-results/"
@@ -95,6 +103,10 @@ TEAM_EQUIVALENTS = {
     "juventus u23": "next gen",
     "ogc nice": "nice",
     "ogc nice cote dazur": "nice",
+    "celta de vigo": "celta vigo",
+    "rc celta de vigo": "celta vigo",
+    "az alkmaar": "az",
+    "nec nijmegen": "nec",
 }
 
 ESPN_COMPETITIONS = {
@@ -1186,11 +1198,10 @@ def _uid_for(event: dict[str, Any]) -> str:
 
 
 def _merge_broadcaster_overlay(event: dict[str, Any], overlay: dict[str, Any]) -> None:
-    rights = BROADCASTERS_BY_COMPETITION.get(
-        _competition_family(str(event.get("competition") or ""))
-    )
-    if rights and not event.get("broadcast_it"):
-        event["broadcast_it"], event["broadcast_source_url"] = rights
+    configured = _configured_broadcast_default(event)
+    if configured and not event.get("broadcast_it"):
+        event["broadcast_it"] = str(configured["broadcaster"])
+        event["broadcast_source_url"] = str(configured.get("source_url") or "")
 
     candidate = str(overlay.get("broadcast_it") or "").strip()
     existing = str(event.get("broadcast_it") or "").strip()
@@ -1548,9 +1559,10 @@ def _canonical_event(
     else:
         result["home_away"] = ""
         base_title = str(result["title"])
-    family = _competition_family(str(result.get("competition") or ""))
-    if is_match and not result.get("broadcast_it") and family in BROADCASTERS_BY_COMPETITION:
-        result["broadcast_it"], result["broadcast_source_url"] = BROADCASTERS_BY_COMPETITION[family]
+    configured_broadcast = _configured_broadcast_default(result) if is_match else None
+    if is_match and not result.get("broadcast_it") and configured_broadcast:
+        result["broadcast_it"] = str(configured_broadcast["broadcaster"])
+        result["broadcast_source_url"] = str(configured_broadcast.get("source_url") or "")
     if is_match:
         result.setdefault("broadcast_it", "Da definire")
         result.setdefault("broadcast_source_url", "")
@@ -1635,7 +1647,22 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
         component.add("sequence", int(data.get("sequence") or 0))
         if data.get("postponed"):
             component.add("status", "CONFIRMED" if data.get("postponed_to") else "TENTATIVE")
-        place = ", ".join(x for x in (str(data.get("venue") or ""), str(data.get("location") or "")) if x)
+        raw_location = str(data.get("location") or "")
+        visible_location = (
+            ""
+            if _normalize(raw_location) in {"europe", "italy", "italia"}
+            else raw_location
+        )
+        place = ", ".join(
+            dict.fromkeys(
+                value
+                for value in (
+                    str(data.get("venue") or ""),
+                    visible_location,
+                )
+                if value
+            )
+        )
         if place:
             component.add("location", place)
         if data.get("source_url"):
@@ -1667,9 +1694,11 @@ def build_ical(events: list[dict[str, Any]]) -> bytes:
                 details.append(f"Motivo: {data['postponement_reason']}")
         if data.get("venue"):
             details.append(f"Stadio: {data['venue']}")
-        if data.get("location"):
-            details.append(f"Località: {data['location']}")
-        if is_match and data.get("broadcast_it"):
+        if visible_location:
+            details.append(f"Località: {visible_location}")
+        if is_match and _is_official_international_match(data) and "broadcast_options" in data:
+            details.extend(_broadcast_description_lines(data))
+        elif is_match and data.get("broadcast_it"):
             details.append(f"Dove vederla in Italia: {data['broadcast_it']}")
         if is_match and data.get("time_source"):
             details.append(f"Fonte orario: {data['time_source']}")
@@ -1774,7 +1803,8 @@ def update_calendar(
     previous = previous_payload.get("events", []) if isinstance(previous_payload, dict) else []
     changed_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     reference_today = today or datetime.now(ROME).date()
-    fetched = fetch_remote_events(session or build_session(), reference_today)
+    active_session = session or build_session()
+    fetched = fetch_remote_events(active_session, reference_today)
     discovery_sources = {"Juventus", "ESPN", "TheSportsDB"}
     if not discovery_sources.intersection(fetched.successful_sources) or not any(
         not item.get("_time_overlay") for item in fetched.events
@@ -1785,6 +1815,17 @@ def update_calendar(
         )
     remote = merge_remote_events(fetched.events)
     combined = merge_manual_events(remote, load_manual_events(manual_path))
+    if hasattr(active_session, "get"):
+        broadcast_sources = load_broadcast_sources(root / "data" / "broadcast_sources.json")
+        combined, broadcast_errors = apply_verified_broadcasts(
+            active_session,
+            combined,
+            previous,
+            broadcast_sources,
+            changed_at,
+            datetime.combine(reference_today, time.min, ROME),
+        )
+        fetched.errors.extend(broadcast_errors)
     participating_competitions = {
         _competition_family(str(event.get("competition") or ""))
         for event in combined
