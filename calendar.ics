@@ -398,9 +398,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Celta de Vigo - Juventus
 DTSTART;TZID=Europe/Rome:20261015T210000
 DTEND;TZID=Europe/Rome:20261015T230000
-DTSTAMP:20261014T214144Z
+DTSTAMP:20261015T212321Z
 UID:c92be9bc57a8e4b7555178e8@juventus-calendar
-SEQUENCE:2
+SEQUENCE:3
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
  (Roma): 15/10/2026 21:00\nTurno: League Stage · Giornata 2\nStadio: Estad
@@ -409,7 +409,7 @@ DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario
  pee/uefa-europa-league/dove-vedere-celta-vigo-juventus\n🌍 In chiaro all
  'estero — Nessuna emittente gratuita confermata al momento\nFonte orario
  : NOW
-LAST-MODIFIED:20261014T214144Z
+LAST-MODIFIED:20261015T212321Z
 LOCATION:Estadio Abanca-Balaídos
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
