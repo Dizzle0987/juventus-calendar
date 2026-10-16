@@ -420,54 +420,55 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-10-12T22:27:55Z",
+      "last_modified": "2026-10-16T21:09:32Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 23,
+      "sequence": 24,
       "serie_a_standing": {
         "context": [
           {
             "played": 6,
             "points": 13,
-            "position": 4,
+            "position": 5,
             "team": "Cagliari"
           },
           {
             "played": 6,
             "points": 12,
-            "position": 5,
+            "position": 6,
             "team": "Milan"
           },
           {
             "played": 6,
             "points": 11,
-            "position": 6,
+            "position": 7,
             "team": "Juventus"
           },
           {
             "played": 6,
             "points": 11,
-            "position": 7,
+            "position": 8,
             "team": "Como"
           },
           {
             "played": 6,
             "points": 10,
-            "position": 8,
+            "position": 9,
             "team": "Napoli"
           }
         ],
         "draws": 2,
         "goal_difference": 4,
         "losses": 1,
+        "pending_recoveries": [],
         "played": 6,
         "points": 11,
-        "position": 6,
-        "provisional": false,
+        "position": 7,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-12T22:27:55Z",
+        "updated_at": "2026-10-16T21:09:32Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -878,54 +879,55 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-12T22:27:55Z",
+      "last_modified": "2026-10-16T21:09:32Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 14,
+      "sequence": 15,
       "serie_a_standing": {
         "context": [
           {
             "played": 6,
             "points": 13,
-            "position": 4,
+            "position": 5,
             "team": "Cagliari"
           },
           {
             "played": 6,
             "points": 12,
-            "position": 5,
+            "position": 6,
             "team": "Milan"
           },
           {
             "played": 6,
             "points": 11,
-            "position": 6,
+            "position": 7,
             "team": "Juventus"
           },
           {
             "played": 6,
             "points": 11,
-            "position": 7,
+            "position": 8,
             "team": "Como"
           },
           {
             "played": 6,
             "points": 10,
-            "position": 8,
+            "position": 9,
             "team": "Napoli"
           }
         ],
         "draws": 2,
         "goal_difference": 4,
         "losses": 1,
+        "pending_recoveries": [],
         "played": 6,
         "points": 11,
-        "position": 6,
-        "provisional": false,
+        "position": 7,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-12T22:27:55Z",
+        "updated_at": "2026-10-16T21:09:32Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2317,68 +2319,71 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-15T22:06:58Z",
+  "last_changed": "2026-10-16T21:09:32Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
         "played": 6,
         "points": 13,
-        "position": 4,
+        "position": 5,
         "team": "Cagliari"
       },
       {
         "played": 6,
         "points": 12,
-        "position": 5,
+        "position": 6,
         "team": "Milan"
       },
       {
         "played": 6,
         "points": 11,
-        "position": 6,
+        "position": 7,
         "team": "Juventus"
       },
       {
         "played": 6,
         "points": 11,
-        "position": 7,
+        "position": 8,
         "team": "Como"
       },
       {
         "played": 6,
         "points": 10,
-        "position": 8,
+        "position": 9,
         "team": "Napoli"
       }
     ],
     "draws": 2,
     "goal_difference": 4,
     "losses": 1,
+    "pending_recoveries": [],
     "played": 6,
     "points": 11,
-    "position": 6,
-    "provisional": false,
+    "position": 7,
+    "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-12T22:27:55Z",
+    "updated_at": "2026-10-16T21:09:32Z",
     "wins": 3
   },
   "source_errors": [
-    "TheSportsDB: 522 Server Error: <none> for url: https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133676",
+    "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
     "DAZN: 403 Client Error: Forbidden for url: https://www.dazn.com/it-IT/schedule",
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/",
     "CBC Sport (None): 403 Client Error: Forbidden for url: https://cbcsport.az/tv_program_schedule",
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
-    "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l"
+    "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
+    "Futebol na TV (None): HTTPSConnectionPool(host='www.futebolnatv.pt', port=443): Read timed out. (read timeout=10)"
   ],
   "sources_used": [
     "Juventus",
     "ESPN",
     "ESPN classifica",
     "Lega Serie A classifica",
+    "TheSportsDB",
     "NOW",
     "UEFA sorteggi"
   ],

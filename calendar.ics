@@ -373,18 +373,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Cagliari - Juventus
 DTSTART;TZID=Europe/Rome:20261011T204500
 DTEND;TZID=Europe/Rome:20261011T224500
-DTSTAMP:20261012T222755Z
+DTSTAMP:20261016T210932Z
 UID:92ac5f5f3b00147b26f48d67@juventus-calendar
-SEQUENCE:23
+SEQUENCE:24
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 11/
  10/2026 20:45\nTurno: Regular Season · Giornata 6\nStadio: Unipol Domus\n
- Dove vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A a
- ggiornata — giornata completata:\n  4. Cagliari — 13 pt\n  5. Milan 
- — 12 pt\n▶ 6. Juventus — 11 pt — 6 PG — DR +4\n  7. Como — 11 
- pt\n  8. Napoli — 10 pt\nClassifica aggiornata: 13/10/2026 00:27\nFonte 
- classifica: Lega Serie A
-LAST-MODIFIED:20261012T222755Z
+ Dove vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A p
+ rovvisoria — giornata in corso:\n  5. Cagliari — 13 pt\n  6. Milan —
+  12 pt\n▶ 7. Juventus — 11 pt — 6 PG — DR +4\n  8. Como — 11 pt\
+ n  9. Napoli — 10 pt\nClassifica aggiornata: 16/10/2026 23:09\nFonte cla
+ ssifica: Lega Serie A
+LAST-MODIFIED:20261016T210932Z
 LOCATION:Unipol Domus
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -423,18 +423,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;TZID=Europe/Rome:20261018T204500
 DTEND;TZID=Europe/Rome:20261018T224500
-DTSTAMP:20261012T222755Z
+DTSTAMP:20261016T210932Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:14
+SEQUENCE:15
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/10/20
  26 20:45\nTurno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nDo
- ve vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A agg
- iornata — giornata completata:\n  4. Cagliari — 13 pt\n  5. Milan — 
- 12 pt\n▶ 6. Juventus — 11 pt — 6 PG — DR +4\n  7. Como — 11 pt\n
-   8. Napoli — 10 pt\nClassifica aggiornata: 13/10/2026 00:27\nFonte clas
- sifica: Lega Serie A
-LAST-MODIFIED:20261012T222755Z
+ ve vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A pro
+ vvisoria — giornata in corso:\n  5. Cagliari — 13 pt\n  6. Milan — 1
+ 2 pt\n▶ 7. Juventus — 11 pt — 6 PG — DR +4\n  8. Como — 11 pt\n 
+  9. Napoli — 10 pt\nClassifica aggiornata: 16/10/2026 23:09\nFonte class
+ ifica: Lega Serie A
+LAST-MODIFIED:20261016T210932Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
