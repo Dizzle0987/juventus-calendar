@@ -420,11 +420,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Cagliari",
-      "last_modified": "2026-10-16T21:09:32Z",
+      "last_modified": "2026-10-17T15:35:51Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 6",
-      "sequence": 24,
+      "sequence": 25,
       "serie_a_standing": {
         "context": [
           {
@@ -452,7 +452,7 @@
             "team": "Como"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 10,
             "position": 9,
             "team": "Napoli"
@@ -468,7 +468,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-16T21:09:32Z",
+        "updated_at": "2026-10-17T15:35:51Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -879,11 +879,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-16T21:09:32Z",
+      "last_modified": "2026-10-17T15:35:51Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 15,
+      "sequence": 16,
       "serie_a_standing": {
         "context": [
           {
@@ -911,7 +911,7 @@
             "team": "Como"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 10,
             "position": 9,
             "team": "Napoli"
@@ -927,7 +927,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-16T21:09:32Z",
+        "updated_at": "2026-10-17T15:35:51Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2319,7 +2319,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-16T21:09:32Z",
+  "last_changed": "2026-10-17T15:35:51Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2348,7 +2348,7 @@
         "team": "Como"
       },
       {
-        "played": 6,
+        "played": 7,
         "points": 10,
         "position": 9,
         "team": "Napoli"
@@ -2364,7 +2364,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-16T21:09:32Z",
+    "updated_at": "2026-10-17T15:35:51Z",
     "wins": 3
   },
   "source_errors": [
@@ -2375,8 +2375,7 @@
     "CBC Sport (None): 403 Client Error: Forbidden for url: https://cbcsport.az/tv_program_schedule",
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
-    "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
-    "Futebol na TV (None): HTTPSConnectionPool(host='www.futebolnatv.pt', port=443): Read timed out. (read timeout=10)"
+    "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l"
   ],
   "sources_used": [
     "Juventus",
