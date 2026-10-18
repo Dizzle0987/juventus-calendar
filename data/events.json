@@ -833,11 +833,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-18T16:36:36Z",
+      "last_modified": "2026-10-18T20:28:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
           {
@@ -853,7 +853,7 @@
             "team": "Cagliari"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 11,
             "position": 8,
             "team": "Juventus"
@@ -872,16 +872,16 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 4,
-        "losses": 1,
+        "goal_difference": 2,
+        "losses": 2,
         "pending_recoveries": [],
-        "played": 6,
+        "played": 7,
         "points": 11,
         "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T16:36:36Z",
+        "updated_at": "2026-10-18T20:28:33Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1377,11 +1377,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-18T16:36:36Z",
+      "last_modified": "2026-10-18T20:28:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 14,
+      "sequence": 15,
       "serie_a_standing": {
         "context": [
           {
@@ -1397,7 +1397,7 @@
             "team": "Cagliari"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 11,
             "position": 8,
             "team": "Juventus"
@@ -1416,16 +1416,16 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 4,
-        "losses": 1,
+        "goal_difference": 2,
+        "losses": 2,
         "pending_recoveries": [],
-        "played": 6,
+        "played": 7,
         "points": 11,
         "position": 8,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T16:36:36Z",
+        "updated_at": "2026-10-18T20:28:33Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2319,7 +2319,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-18T16:36:36Z",
+  "last_changed": "2026-10-18T20:28:33Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2336,7 +2336,7 @@
         "team": "Cagliari"
       },
       {
-        "played": 6,
+        "played": 7,
         "points": 11,
         "position": 8,
         "team": "Juventus"
@@ -2355,16 +2355,16 @@
       }
     ],
     "draws": 2,
-    "goal_difference": 4,
-    "losses": 1,
+    "goal_difference": 2,
+    "losses": 2,
     "pending_recoveries": [],
-    "played": 6,
+    "played": 7,
     "points": 11,
     "position": 8,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-18T16:36:36Z",
+    "updated_at": "2026-10-18T20:28:33Z",
     "wins": 3
   },
   "source_errors": [
