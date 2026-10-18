@@ -833,24 +833,24 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-18T15:53:00Z",
+      "last_modified": "2026-10-18T16:36:36Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 18,
+      "sequence": 19,
       "serie_a_standing": {
         "context": [
           {
-            "played": 6,
+            "played": 7,
             "points": 13,
             "position": 6,
-            "team": "Cagliari"
+            "team": "Frosinone"
           },
           {
             "played": 6,
-            "points": 12,
+            "points": 13,
             "position": 7,
-            "team": "Milan"
+            "team": "Cagliari"
           },
           {
             "played": 6,
@@ -865,7 +865,7 @@
             "team": "Napoli"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 9,
             "position": 10,
             "team": "Atalanta"
@@ -881,7 +881,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T15:53:00Z",
+        "updated_at": "2026-10-18T16:36:36Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1377,24 +1377,24 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-18T15:53:00Z",
+      "last_modified": "2026-10-18T16:36:36Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 13,
+      "sequence": 14,
       "serie_a_standing": {
         "context": [
           {
-            "played": 6,
+            "played": 7,
             "points": 13,
             "position": 6,
-            "team": "Cagliari"
+            "team": "Frosinone"
           },
           {
             "played": 6,
-            "points": 12,
+            "points": 13,
             "position": 7,
-            "team": "Milan"
+            "team": "Cagliari"
           },
           {
             "played": 6,
@@ -1409,7 +1409,7 @@
             "team": "Napoli"
           },
           {
-            "played": 6,
+            "played": 7,
             "points": 9,
             "position": 10,
             "team": "Atalanta"
@@ -1425,7 +1425,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T15:53:00Z",
+        "updated_at": "2026-10-18T16:36:36Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2319,21 +2319,21 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-18T15:53:00Z",
+  "last_changed": "2026-10-18T16:36:36Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 6,
+        "played": 7,
         "points": 13,
         "position": 6,
-        "team": "Cagliari"
+        "team": "Frosinone"
       },
       {
         "played": 6,
-        "points": 12,
+        "points": 13,
         "position": 7,
-        "team": "Milan"
+        "team": "Cagliari"
       },
       {
         "played": 6,
@@ -2348,7 +2348,7 @@
         "team": "Napoli"
       },
       {
-        "played": 6,
+        "played": 7,
         "points": 9,
         "position": 10,
         "team": "Atalanta"
@@ -2364,7 +2364,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-18T15:53:00Z",
+    "updated_at": "2026-10-18T16:36:36Z",
     "wins": 3
   },
   "source_errors": [

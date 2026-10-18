@@ -419,18 +419,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;TZID=Europe/Rome:20261018T204500
 DTEND;TZID=Europe/Rome:20261018T224500
-DTSTAMP:20261018T155300Z
+DTSTAMP:20261018T163636Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:18
+SEQUENCE:19
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/10/20
  26 20:45\nTurno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nDo
  ve vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A pro
- vvisoria — giornata in corso:\n  6. Cagliari — 13 pt\n  7. Milan — 1
- 2 pt\n▶ 8. Juventus — 11 pt — 6 PG — DR +4\n  9. Napoli — 10 pt\
- n  10. Atalanta — 9 pt\nClassifica aggiornata: 18/10/2026 17:53\nFonte c
- lassifica: Lega Serie A
-LAST-MODIFIED:20261018T155300Z
+ vvisoria — giornata in corso:\n  6. Frosinone — 13 pt\n  7. Cagliari 
+ — 13 pt\n▶ 8. Juventus — 11 pt — 6 PG — DR +4\n  9. Napoli — 1
+ 0 pt\n  10. Atalanta — 9 pt\nClassifica aggiornata: 18/10/2026 18:36\nFo
+ nte classifica: Lega Serie A
+LAST-MODIFIED:20261018T163636Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -469,18 +469,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Lecce - Juventus
 DTSTART;TZID=Europe/Rome:20261025T180000
 DTEND;TZID=Europe/Rome:20261025T200000
-DTSTAMP:20261018T155300Z
+DTSTAMP:20261018T163636Z
 UID:e5a843116296d3266280a5bb@juventus-calendar
-SEQUENCE:13
+SEQUENCE:14
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 25/
  10/2026 18:00\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore 
  Giardiniero - Via del Mare\nDove vederla in Italia: DAZN\; Sky Sport e NOW
  \nFonte orario: NOW\nClassifica Serie A provvisoria — giornata in corso:
- \n  6. Cagliari — 13 pt\n  7. Milan — 12 pt\n▶ 8. Juventus — 11 pt
-  — 6 PG — DR +4\n  9. Napoli — 10 pt\n  10. Atalanta — 9 pt\nClass
- ifica aggiornata: 18/10/2026 17:53\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261018T155300Z
+ \n  6. Frosinone — 13 pt\n  7. Cagliari — 13 pt\n▶ 8. Juventus — 1
+ 1 pt — 6 PG — DR +4\n  9. Napoli — 10 pt\n  10. Atalanta — 9 pt\nC
+ lassifica aggiornata: 18/10/2026 18:36\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261018T163636Z
 LOCATION:Stadio Ettore Giardiniero - Via del Mare
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
