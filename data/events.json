@@ -833,11 +833,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-18T20:28:33Z",
+      "last_modified": "2026-10-18T20:44:39Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 20,
+      "sequence": 21,
       "serie_a_standing": {
         "context": [
           {
@@ -872,7 +872,7 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 2,
+        "goal_difference": 1,
         "losses": 2,
         "pending_recoveries": [],
         "played": 7,
@@ -881,14 +881,14 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T20:28:33Z",
+        "updated_at": "2026-10-18T20:44:39Z",
         "wins": 3
       },
       "source": "Juventus",
       "source_id": "7dew37b9l7q6xwitsh2jym978",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-10-18T20:45:00+02:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_source": "Juventus",
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Juventus - Lazio",
@@ -1377,11 +1377,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-18T20:28:33Z",
+      "last_modified": "2026-10-18T20:44:39Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 15,
+      "sequence": 16,
       "serie_a_standing": {
         "context": [
           {
@@ -1416,7 +1416,7 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 2,
+        "goal_difference": 1,
         "losses": 2,
         "pending_recoveries": [],
         "played": 7,
@@ -1425,7 +1425,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-18T20:28:33Z",
+        "updated_at": "2026-10-18T20:44:39Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2319,7 +2319,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-18T20:28:33Z",
+  "last_changed": "2026-10-18T20:44:39Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2355,7 +2355,7 @@
       }
     ],
     "draws": 2,
-    "goal_difference": 2,
+    "goal_difference": 1,
     "losses": 2,
     "pending_recoveries": [],
     "played": 7,
@@ -2364,7 +2364,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-18T20:28:33Z",
+    "updated_at": "2026-10-18T20:44:39Z",
     "wins": 3
   },
   "source_errors": [
