@@ -953,13 +953,7 @@
             {
               "source_type": "official_match",
               "source_url": "https://www.blueplus.ch/sport",
-              "verified_at": "2026-10-15T22:06:58Z"
-            },
-            {
-              "guide": "Fußball im TV Schweiz",
-              "source_type": "guide",
-              "source_url": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league",
-              "verified_at": "2026-10-15T22:06:58Z"
+              "verified_at": "2026-10-19T22:21:36Z"
             }
           ],
           "fixture_cache_key": "europa-league|2026/27|2026-10-22|juventus|rennes",
@@ -987,7 +981,7 @@
           "source_url": "https://www.blueplus.ch/sport",
           "status": "CONFIRMED_PAY",
           "url": "https://www.blueplus.ch/sport",
-          "verified_at": "2026-10-15T22:06:58Z",
+          "verified_at": "2026-10-19T22:21:36Z",
           "watch_url": null,
           "watch_url_type": null,
           "web_stream_free": "unknown"
@@ -1314,7 +1308,7 @@
       "free_italian_broadcasts": [],
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-15T22:06:58Z",
+      "last_modified": "2026-10-19T22:21:36Z",
       "location": "Europe",
       "neutral": false,
       "opponent_country": "Francia",
@@ -1352,7 +1346,7 @@
         "web_stream_free": "unknown"
       },
       "round": "League Stage · Giornata 3",
-      "sequence": 2,
+      "sequence": 3,
       "source": "Juventus",
       "source_id": "dz4wz6on7hxiihw9lz3vn24gk",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -2317,7 +2311,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-19T20:30:45Z",
+  "last_changed": "2026-10-19T22:21:36Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2370,6 +2364,8 @@
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/",
     "CBC Sport (None): 403 Client Error: Forbidden for url: https://cbcsport.az/tv_program_schedule",
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
+    "Sportkritik (None): 403 Client Error: Forbidden for url: https://sportkritik.az/wp-json/wp/v2/search?search=Juventus%20rennes",
+    "Fußball im TV Schweiz (None): HTTPSConnectionPool(host='www.fussball-im-tv.ch', port=443): Read timed out.",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l"
   ],
