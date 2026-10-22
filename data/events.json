@@ -1,5 +1,5 @@
 {
-  "event_count": 58,
+  "event_count": 59,
   "events": [
     {
       "all_day": false,
@@ -899,54 +899,6 @@
       "away_team": "Rennes",
       "broadcast_candidates": [
         {
-          "broadcast_free": true,
-          "broadcaster": "CBC Sport",
-          "broadcaster_home_url": "https://cbcsport.az/",
-          "competition": "UEFA Europa League",
-          "confidence": 75,
-          "country": "Azerbaijan",
-          "country_code": "AZ",
-          "date": "2026-10-22",
-          "discovered_dynamically": false,
-          "evidence": [
-            {
-              "guide": "Spor Ekranı",
-              "source_type": "guide",
-              "source_url": "https://www.sporekrani.com/",
-              "verified_at": "2026-10-21T21:43:20Z"
-            }
-          ],
-          "fixture_cache_key": "europa-league|2026/27|2026-10-22|juventus|rennes",
-          "free_or_pay": "free",
-          "italian_primary": false,
-          "language": "azero",
-          "market_tier": 1,
-          "match": "Juventus - Rennes",
-          "match_confirmed": true,
-          "platforms": "TV in chiaro + streaming",
-          "priority": 110,
-          "reason": "exact fixture found in match-specific schedule",
-          "registration": "not_required",
-          "requires_registration": false,
-          "rights_cache_key": "europa-league|2026/27|AZ",
-          "rights_confirmed": true,
-          "rights_cycle": "2026/27",
-          "rights_valid_from": null,
-          "rights_valid_to": null,
-          "season": "2026/27",
-          "season_start": 2026,
-          "source_rights": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000--where-to-watch-the-europa-league-final-tv-broadcast-partners-live-streams/",
-          "source_schedule": "https://www.sporekrani.com/",
-          "source_type": "guide",
-          "source_url": "https://www.sporekrani.com/",
-          "status": "POSSIBLE_FREE",
-          "url": "https://cbcsport.az/live/",
-          "verified_at": "2026-10-21T21:43:20Z",
-          "watch_url": "https://cbcsport.az/live/",
-          "watch_url_type": "live_page",
-          "web_stream_free": "unknown"
-        },
-        {
           "broadcast_free": false,
           "broadcaster": "Blue Sport",
           "broadcaster_home_url": null,
@@ -1230,6 +1182,54 @@
           "watch_url": null,
           "watch_url_type": null,
           "web_stream_free": "unknown"
+        },
+        {
+          "broadcast_free": true,
+          "broadcaster": "CBC Sport",
+          "broadcaster_home_url": "https://cbcsport.az/",
+          "competition": "UEFA Europa League",
+          "confidence": 75,
+          "country": "Azerbaijan",
+          "country_code": "AZ",
+          "date": "2026-10-22",
+          "discovered_dynamically": false,
+          "evidence": [
+            {
+              "guide": "Spor Ekranı",
+              "source_type": "guide",
+              "source_url": "https://www.sporekrani.com/",
+              "verified_at": "2026-10-21T21:43:20Z"
+            }
+          ],
+          "fixture_cache_key": "europa-league|2026/27|2026-10-22|juventus|rennes",
+          "free_or_pay": "free",
+          "italian_primary": false,
+          "language": "azero",
+          "market_tier": 1,
+          "match": "Juventus - Rennes",
+          "match_confirmed": true,
+          "platforms": "TV in chiaro + streaming",
+          "priority": 110,
+          "reason": "exact fixture found in match-specific schedule",
+          "registration": "not_required",
+          "requires_registration": false,
+          "rights_cache_key": "europa-league|2026/27|AZ",
+          "rights_confirmed": true,
+          "rights_cycle": "2026/27",
+          "rights_valid_from": null,
+          "rights_valid_to": null,
+          "season": "2026/27",
+          "season_start": 2026,
+          "source_rights": "https://www.uefa.com/uefaeuropaleague/news/028d-1ae6d62165d6-69b17b354deb-1000--where-to-watch-the-europa-league-final-tv-broadcast-partners-live-streams/",
+          "source_schedule": "https://www.sporekrani.com/",
+          "source_type": "guide",
+          "source_url": "https://www.sporekrani.com/",
+          "status": "POSSIBLE_FREE",
+          "url": "https://cbcsport.az/live/",
+          "verified_at": "2026-10-21T21:43:20Z",
+          "watch_url": "https://cbcsport.az/live/",
+          "watch_url_type": "live_page",
+          "web_stream_free": "unknown"
         }
       ],
       "broadcast_international_tbc": true,
@@ -1328,7 +1328,7 @@
       "free_italian_broadcasts": [],
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-22T19:08:02Z",
+      "last_modified": "2026-10-22T21:36:28Z",
       "location": "Europe",
       "neutral": false,
       "opponent_country": "Francia",
@@ -1366,7 +1366,7 @@
         "web_stream_free": "unknown"
       },
       "round": "League Stage · Giornata 3",
-      "sequence": 9,
+      "sequence": 10,
       "source": "Juventus",
       "source_id": "dz4wz6on7hxiihw9lz3vn24gk",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1376,6 +1376,30 @@
       "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Juventus - Rennes",
       "uid": "50b2d3de9164a63ba5b4de07@juventus-calendar",
+      "venue": "Allianz Stadium"
+    },
+    {
+      "all_day": false,
+      "away_team": "Stade Rennais",
+      "broadcast_it": "Sky Sport e NOW",
+      "broadcast_source_url": "https://sport.sky.it/calcio/champions-league/2025/11/20/champions-league-2027-2031-su-sky",
+      "competition": "UEFA Europa League",
+      "home_away": "Casa",
+      "home_team": "Juventus",
+      "last_modified": "2026-10-22T21:36:28Z",
+      "location": "Torino",
+      "neutral": false,
+      "round": "",
+      "sequence": 0,
+      "source": "ESPN",
+      "source_id": "401915547",
+      "source_url": "https://www.espn.com/soccer/match/_/gameId/401915547/stade-rennais-juventus",
+      "start": "2026-10-22T18:45:00+02:00",
+      "status": "scheduled",
+      "time_source": "ESPN",
+      "time_source_url": "https://www.espn.com/soccer/match/_/gameId/401915547/stade-rennais-juventus",
+      "title": "Juventus - Stade Rennais",
+      "uid": "af3f19d709224d1fa7b51c3a@juventus-calendar",
       "venue": "Allianz Stadium"
     },
     {
@@ -2331,7 +2355,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-22T19:08:02Z",
+  "last_changed": "2026-10-22T21:36:28Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
