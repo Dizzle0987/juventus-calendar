@@ -444,9 +444,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Rennes
 DTSTART;TZID=Europe/Rome:20261022T184500
 DTEND;TZID=Europe/Rome:20261022T204500
-DTSTAMP:20261022T213628Z
+DTSTAMP:20261022T222306Z
 UID:50b2d3de9164a63ba5b4de07@juventus-calendar
-SEQUENCE:10
+SEQUENCE:11
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 22/10/2026 18:45\nTurno: League Stage · Giornata 3\nStadio: Allianz St
@@ -455,7 +455,7 @@ DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  -europee/uefa-europa-league/dove-vedere-juventus-rennes\n🌍 In chiaro al
  l'estero — Nessuna emittente gratuita confermata al momento\nFonte orari
  o: NOW
-LAST-MODIFIED:20261022T213628Z
+LAST-MODIFIED:20261022T222306Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -558,14 +558,16 @@ BEGIN:VEVENT
 SUMMARY:⚽ AZ - Juventus
 DTSTART;TZID=Europe/Rome:20261105T210000
 DTEND;TZID=Europe/Rome:20261105T230000
-DTSTAMP:20261013T061050Z
+DTSTAMP:20261022T222306Z
 UID:280ce3cd1a3a948214d932f9@juventus-calendar
-SEQUENCE:1
+SEQUENCE:2
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Trasferta\nOrario 
  (Roma): 05/11/2026 21:00\nTurno: League Stage · Giornata 4\nStadio: AFAS 
- Stadion\nDove vederla in Italia: Sky Sport e NOW\nFonte orario: NOW
-LAST-MODIFIED:20261013T061050Z
+ Stadion\nDove vederla:\n🇮🇹 Italia — Da confermare\n🌍 In chiaro 
+ all'estero — Nessuna emittente gratuita confermata al momento\nFonte ora
+ rio: NOW
+LAST-MODIFIED:20261022T222306Z
 LOCATION:AFAS Stadion
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
