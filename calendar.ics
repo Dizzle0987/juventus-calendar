@@ -444,9 +444,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Rennes
 DTSTART;TZID=Europe/Rome:20261022T184500
 DTEND;TZID=Europe/Rome:20261022T204500
-DTSTAMP:20261021T214320Z
+DTSTAMP:20261022T171121Z
 UID:50b2d3de9164a63ba5b4de07@juventus-calendar
-SEQUENCE:7
+SEQUENCE:8
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 22/10/2026 18:45\nTurno: League Stage · Giornata 3\nStadio: Allianz St
@@ -455,7 +455,7 @@ DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  -europee/uefa-europa-league/dove-vedere-juventus-rennes\n🌍 In chiaro al
  l'estero — Nessuna emittente gratuita confermata al momento\nFonte orari
  o: NOW
-LAST-MODIFIED:20261021T214320Z
+LAST-MODIFIED:20261022T171121Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
