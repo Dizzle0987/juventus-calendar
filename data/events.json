@@ -833,24 +833,24 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-23T19:03:16Z",
+      "last_modified": "2026-10-23T21:24:41Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 23,
+      "sequence": 24,
       "serie_a_standing": {
         "context": [
           {
-            "played": 7,
+            "played": 8,
             "points": 13,
             "position": 7,
-            "team": "Cagliari"
+            "team": "Torino"
           },
           {
-            "played": 8,
-            "points": 11,
+            "played": 7,
+            "points": 13,
             "position": 8,
-            "team": "Torino"
+            "team": "Cagliari"
           },
           {
             "played": 7,
@@ -881,7 +881,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-23T19:03:16Z",
+        "updated_at": "2026-10-23T21:24:41Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1332,24 +1332,24 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-23T19:03:16Z",
+      "last_modified": "2026-10-23T21:24:41Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 18,
+      "sequence": 19,
       "serie_a_standing": {
         "context": [
           {
-            "played": 7,
+            "played": 8,
             "points": 13,
             "position": 7,
-            "team": "Cagliari"
+            "team": "Torino"
           },
           {
-            "played": 8,
-            "points": 11,
+            "played": 7,
+            "points": 13,
             "position": 8,
-            "team": "Torino"
+            "team": "Cagliari"
           },
           {
             "played": 7,
@@ -1380,7 +1380,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-23T19:03:16Z",
+        "updated_at": "2026-10-23T21:24:41Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2451,21 +2451,21 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-23T19:03:16Z",
+  "last_changed": "2026-10-23T21:24:41Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 7,
+        "played": 8,
         "points": 13,
         "position": 7,
-        "team": "Cagliari"
+        "team": "Torino"
       },
       {
-        "played": 8,
-        "points": 11,
+        "played": 7,
+        "points": 13,
         "position": 8,
-        "team": "Torino"
+        "team": "Cagliari"
       },
       {
         "played": 7,
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-23T19:03:16Z",
+    "updated_at": "2026-10-23T21:24:41Z",
     "wins": 3
   },
   "source_errors": [
@@ -2508,7 +2508,6 @@
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "FootAz Germania (None): 410 Client Error: Gone for url: https://www.footaz.de/spiel/az-vs-juventus/",
     "FootAz Austria (None): 410 Client Error: Gone for url: https://www.footaz.at/spiel/az-vs-juventus/",
-    "TV8: 500 Server Error: Internal Server Error for url: https://www.tv8.it/api/programmingCarousel?from=2026-11-04T23%3A00%3A00.000Z&to=2026-11-05T22%3A59%3A59.999Z",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
     "FootAz (None): 410 Client Error: Gone for url: https://www.footaz.pt/jogo/az-vs-juventus/"
