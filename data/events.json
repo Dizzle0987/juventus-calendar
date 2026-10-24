@@ -833,24 +833,24 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-24T16:42:38Z",
+      "last_modified": "2026-10-24T18:01:30Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 27,
+      "sequence": 28,
       "serie_a_standing": {
         "context": [
           {
             "played": 8,
             "points": 13,
             "position": 8,
-            "team": "Torino"
+            "team": "Cagliari"
           },
           {
             "played": 8,
-            "points": 13,
+            "points": 11,
             "position": 9,
-            "team": "Cagliari"
+            "team": "Napoli"
           },
           {
             "played": 7,
@@ -881,7 +881,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-24T16:42:38Z",
+        "updated_at": "2026-10-24T18:01:30Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1332,24 +1332,24 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-24T16:42:38Z",
+      "last_modified": "2026-10-24T18:01:30Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 22,
+      "sequence": 23,
       "serie_a_standing": {
         "context": [
           {
             "played": 8,
             "points": 13,
             "position": 8,
-            "team": "Torino"
+            "team": "Cagliari"
           },
           {
             "played": 8,
-            "points": 13,
+            "points": 11,
             "position": 9,
-            "team": "Cagliari"
+            "team": "Napoli"
           },
           {
             "played": 7,
@@ -1380,7 +1380,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-24T16:42:38Z",
+        "updated_at": "2026-10-24T18:01:30Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2451,7 +2451,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-24T16:42:38Z",
+  "last_changed": "2026-10-24T18:01:30Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2459,13 +2459,13 @@
         "played": 8,
         "points": 13,
         "position": 8,
-        "team": "Torino"
+        "team": "Cagliari"
       },
       {
         "played": 8,
-        "points": 13,
+        "points": 11,
         "position": 9,
-        "team": "Cagliari"
+        "team": "Napoli"
       },
       {
         "played": 7,
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-24T16:42:38Z",
+    "updated_at": "2026-10-24T18:01:30Z",
     "wins": 3
   },
   "source_errors": [
