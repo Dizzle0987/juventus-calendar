@@ -419,18 +419,14 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Lazio
 DTSTART;TZID=Europe/Rome:20261018T204500
 DTEND;TZID=Europe/Rome:20261018T224500
-DTSTAMP:20261024T180130Z
+DTSTAMP:20261024T224233Z
 UID:58e4c8f210209748376eb04b@juventus-calendar
-SEQUENCE:28
+SEQUENCE:29
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 18/10/20
  26 20:45\nTurno: Regular Season · Giornata 7\nStadio: Allianz Stadium\nDo
- ve vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A pro
- vvisoria — giornata in corso:\n  8. Cagliari — 13 pt\n  9. Napoli — 
- 11 pt\n▶ 10. Juventus — 11 pt — 7 PG — DR +1\n  11. Atalanta — 9
-  pt\n  12. Lecce — 9 pt\nClassifica aggiornata: 24/10/2026 20:01\nFonte 
- classifica: Lega Serie A
-LAST-MODIFIED:20261024T180130Z
+ ve vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20261024T224233Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -516,14 +512,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Genoa - Juventus
 DTSTART;TZID=Europe/Rome:20261028T204500
 DTEND;TZID=Europe/Rome:20261028T224500
-DTSTAMP:20260904T123258Z
+DTSTAMP:20261024T224233Z
 UID:2f08c9145cdd9a03fb73324f@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 28/
  10/2026 20:45\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunal
- e Luigi Ferraris\nDove vederla in Italia: DAZN\nFonte orario: Juventus
-LAST-MODIFIED:20260904T123258Z
+ e Luigi Ferraris\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
+ assifica Serie A provvisoria — giornata in corso:\n  8. Cagliari — 13 
+ pt\n  9. Napoli — 11 pt\n▶ 10. Juventus — 11 pt — 7 PG — DR +1\n
+   11. Atalanta — 9 pt\n  12. Lecce — 9 pt\nClassifica aggiornata: 24/1
+ 0/2026 20:01\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261024T224233Z
 LOCATION:Stadio Comunale Luigi Ferraris
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

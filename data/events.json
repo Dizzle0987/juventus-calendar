@@ -833,57 +833,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-24T18:01:30Z",
+      "last_modified": "2026-10-24T22:42:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 7",
-      "sequence": 28,
-      "serie_a_standing": {
-        "context": [
-          {
-            "played": 8,
-            "points": 13,
-            "position": 8,
-            "team": "Cagliari"
-          },
-          {
-            "played": 8,
-            "points": 11,
-            "position": 9,
-            "team": "Napoli"
-          },
-          {
-            "played": 7,
-            "points": 11,
-            "position": 10,
-            "team": "Juventus"
-          },
-          {
-            "played": 7,
-            "points": 9,
-            "position": 11,
-            "team": "Atalanta"
-          },
-          {
-            "played": 7,
-            "points": 9,
-            "position": 12,
-            "team": "Lecce"
-          }
-        ],
-        "draws": 2,
-        "goal_difference": 1,
-        "losses": 2,
-        "pending_recoveries": [],
-        "played": 7,
-        "points": 11,
-        "position": 10,
-        "provisional": true,
-        "source": "Lega Serie A",
-        "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-24T18:01:30Z",
-        "wins": 3
-      },
+      "sequence": 29,
       "source": "Juventus",
       "source_id": "7dew37b9l7q6xwitsh2jym978",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -1402,11 +1356,57 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-09-04T12:32:58Z",
+      "last_modified": "2026-10-24T22:42:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 9,
+      "sequence": 10,
+      "serie_a_standing": {
+        "context": [
+          {
+            "played": 8,
+            "points": 13,
+            "position": 8,
+            "team": "Cagliari"
+          },
+          {
+            "played": 8,
+            "points": 11,
+            "position": 9,
+            "team": "Napoli"
+          },
+          {
+            "played": 7,
+            "points": 11,
+            "position": 10,
+            "team": "Juventus"
+          },
+          {
+            "played": 7,
+            "points": 9,
+            "position": 11,
+            "team": "Atalanta"
+          },
+          {
+            "played": 7,
+            "points": 9,
+            "position": 12,
+            "team": "Lecce"
+          }
+        ],
+        "draws": 2,
+        "goal_difference": 1,
+        "losses": 2,
+        "pending_recoveries": [],
+        "played": 7,
+        "points": 11,
+        "position": 10,
+        "provisional": true,
+        "source": "Lega Serie A",
+        "source_url": "https://www.legaseriea.it/serie-a/classifica",
+        "updated_at": "2026-10-24T18:01:30Z",
+        "wins": 3
+      },
       "source": "Juventus",
       "source_id": "7jbmtosoictni132rw0e6xr84",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -2451,7 +2451,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-24T18:01:30Z",
+  "last_changed": "2026-10-24T22:42:33Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
