@@ -1286,11 +1286,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-24T18:01:30Z",
+      "last_modified": "2026-10-25T14:18:26Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 23,
+      "sequence": 24,
       "serie_a_standing": {
         "context": [
           {
@@ -1312,7 +1312,7 @@
             "team": "Juventus"
           },
           {
-            "played": 7,
+            "played": 8,
             "points": 9,
             "position": 11,
             "team": "Atalanta"
@@ -1334,7 +1334,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-24T18:01:30Z",
+        "updated_at": "2026-10-25T14:18:26Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1356,11 +1356,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-24T22:42:33Z",
+      "last_modified": "2026-10-25T14:18:26Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 10,
+      "sequence": 11,
       "serie_a_standing": {
         "context": [
           {
@@ -1382,7 +1382,7 @@
             "team": "Juventus"
           },
           {
-            "played": 7,
+            "played": 8,
             "points": 9,
             "position": 11,
             "team": "Atalanta"
@@ -1404,7 +1404,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-24T18:01:30Z",
+        "updated_at": "2026-10-25T14:18:26Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2451,7 +2451,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-24T22:42:33Z",
+  "last_changed": "2026-10-25T14:18:26Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2474,7 +2474,7 @@
         "team": "Juventus"
       },
       {
-        "played": 7,
+        "played": 8,
         "points": 9,
         "position": 11,
         "team": "Atalanta"
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-24T18:01:30Z",
+    "updated_at": "2026-10-25T14:18:26Z",
     "wins": 3
   },
   "source_errors": [

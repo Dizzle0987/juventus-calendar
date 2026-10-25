@@ -487,9 +487,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Lecce - Juventus
 DTSTART;TZID=Europe/Rome:20261025T180000
 DTEND;TZID=Europe/Rome:20261025T200000
-DTSTAMP:20261024T180130Z
+DTSTAMP:20261025T141826Z
 UID:e5a843116296d3266280a5bb@juventus-calendar
-SEQUENCE:23
+SEQUENCE:24
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 25/
  10/2026 18:00\nTurno: Regular Season · Giornata 8\nStadio: Stadio Ettore 
@@ -497,8 +497,8 @@ DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 25/
  \nFonte orario: NOW\nClassifica Serie A provvisoria — giornata in corso:
  \n  8. Cagliari — 13 pt\n  9. Napoli — 11 pt\n▶ 10. Juventus — 11 
  pt — 7 PG — DR +1\n  11. Atalanta — 9 pt\n  12. Lecce — 9 pt\nClas
- sifica aggiornata: 24/10/2026 20:01\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261024T180130Z
+ sifica aggiornata: 25/10/2026 15:18\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261025T141826Z
 LOCATION:Stadio Ettore Giardiniero - Via del Mare
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -512,18 +512,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Genoa - Juventus
 DTSTART;TZID=Europe/Rome:20261028T204500
 DTEND;TZID=Europe/Rome:20261028T224500
-DTSTAMP:20261024T224233Z
+DTSTAMP:20261025T141826Z
 UID:2f08c9145cdd9a03fb73324f@juventus-calendar
-SEQUENCE:10
+SEQUENCE:11
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 28/
  10/2026 20:45\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunal
  e Luigi Ferraris\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
  assifica Serie A provvisoria — giornata in corso:\n  8. Cagliari — 13 
  pt\n  9. Napoli — 11 pt\n▶ 10. Juventus — 11 pt — 7 PG — DR +1\n
-   11. Atalanta — 9 pt\n  12. Lecce — 9 pt\nClassifica aggiornata: 24/1
- 0/2026 20:01\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261024T224233Z
+   11. Atalanta — 9 pt\n  12. Lecce — 9 pt\nClassifica aggiornata: 25/1
+ 0/2026 15:18\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261025T141826Z
 LOCATION:Stadio Comunale Luigi Ferraris
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
