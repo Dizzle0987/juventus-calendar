@@ -1286,18 +1286,18 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-25T18:52:54Z",
+      "last_modified": "2026-10-25T20:51:43Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 27,
+      "sequence": 28,
       "serie_a_standing": {
         "context": [
           {
-            "played": 7,
-            "points": 15,
+            "played": 8,
+            "points": 17,
             "position": 5,
-            "team": "Milan"
+            "team": "Como"
           },
           {
             "played": 8,
@@ -1327,21 +1327,20 @@
         "draws": 2,
         "goal_difference": 3,
         "losses": 2,
-        "pending_recoveries": [],
         "played": 8,
         "points": 14,
         "position": 7,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T18:52:54Z",
+        "updated_at": "2026-10-25T20:51:43Z",
         "wins": 4
       },
       "source": "Juventus",
       "source_id": "7hgj3iezpigj4bwyp5z79cwt0",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-10-25T18:00:00+01:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_source": "NOW",
       "time_source_url": "https://www.nowtv.it/sport/calcio/juventus",
       "title": "Lecce - Juventus",
@@ -1356,18 +1355,18 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-25T18:52:54Z",
+      "last_modified": "2026-10-25T20:51:43Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 14,
+      "sequence": 15,
       "serie_a_standing": {
         "context": [
           {
-            "played": 7,
-            "points": 15,
+            "played": 8,
+            "points": 17,
             "position": 5,
-            "team": "Milan"
+            "team": "Como"
           },
           {
             "played": 8,
@@ -1397,14 +1396,13 @@
         "draws": 2,
         "goal_difference": 3,
         "losses": 2,
-        "pending_recoveries": [],
         "played": 8,
         "points": 14,
         "position": 7,
-        "provisional": true,
+        "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T18:52:54Z",
+        "updated_at": "2026-10-25T20:51:43Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2451,15 +2449,15 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-25T18:52:54Z",
+  "last_changed": "2026-10-25T20:51:43Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 7,
-        "points": 15,
+        "played": 8,
+        "points": 17,
         "position": 5,
-        "team": "Milan"
+        "team": "Como"
       },
       {
         "played": 8,
@@ -2489,18 +2487,16 @@
     "draws": 2,
     "goal_difference": 3,
     "losses": 2,
-    "pending_recoveries": [],
     "played": 8,
     "points": 14,
     "position": 7,
-    "provisional": true,
+    "provisional": false,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-25T18:52:54Z",
+    "updated_at": "2026-10-25T20:51:43Z",
     "wins": 4
   },
   "source_errors": [
-    "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
     "DAZN: 403 Client Error: Forbidden for url: https://www.dazn.com/it-IT/schedule",
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/",
