@@ -1286,56 +1286,56 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-25T16:20:43Z",
+      "last_modified": "2026-10-25T17:42:20Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 25,
+      "sequence": 26,
       "serie_a_standing": {
         "context": [
           {
-            "played": 8,
-            "points": 13,
-            "position": 8,
-            "team": "Cagliari"
-          },
-          {
-            "played": 8,
-            "points": 11,
-            "position": 9,
-            "team": "Napoli"
-          },
-          {
             "played": 7,
-            "points": 11,
-            "position": 10,
+            "points": 15,
+            "position": 5,
+            "team": "Milan"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 6,
+            "team": "Frosinone"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 7,
             "team": "Juventus"
           },
           {
             "played": 8,
-            "points": 10,
-            "position": 11,
-            "team": "Atalanta"
+            "points": 13,
+            "position": 8,
+            "team": "Torino"
           },
           {
-            "played": 7,
-            "points": 9,
-            "position": 12,
-            "team": "Lecce"
+            "played": 8,
+            "points": 13,
+            "position": 9,
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
-        "goal_difference": 1,
+        "goal_difference": 2,
         "losses": 2,
         "pending_recoveries": [],
-        "played": 7,
-        "points": 11,
-        "position": 10,
+        "played": 8,
+        "points": 14,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T16:20:43Z",
-        "wins": 3
+        "updated_at": "2026-10-25T17:42:20Z",
+        "wins": 4
       },
       "source": "Juventus",
       "source_id": "7hgj3iezpigj4bwyp5z79cwt0",
@@ -1356,56 +1356,56 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-25T16:20:43Z",
+      "last_modified": "2026-10-25T17:42:20Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 12,
+      "sequence": 13,
       "serie_a_standing": {
         "context": [
           {
-            "played": 8,
-            "points": 13,
-            "position": 8,
-            "team": "Cagliari"
-          },
-          {
-            "played": 8,
-            "points": 11,
-            "position": 9,
-            "team": "Napoli"
-          },
-          {
             "played": 7,
-            "points": 11,
-            "position": 10,
+            "points": 15,
+            "position": 5,
+            "team": "Milan"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 6,
+            "team": "Frosinone"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 7,
             "team": "Juventus"
           },
           {
             "played": 8,
-            "points": 10,
-            "position": 11,
-            "team": "Atalanta"
+            "points": 13,
+            "position": 8,
+            "team": "Torino"
           },
           {
-            "played": 7,
-            "points": 9,
-            "position": 12,
-            "team": "Lecce"
+            "played": 8,
+            "points": 13,
+            "position": 9,
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
-        "goal_difference": 1,
+        "goal_difference": 2,
         "losses": 2,
         "pending_recoveries": [],
-        "played": 7,
-        "points": 11,
-        "position": 10,
+        "played": 8,
+        "points": 14,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T16:20:43Z",
-        "wins": 3
+        "updated_at": "2026-10-25T17:42:20Z",
+        "wins": 4
       },
       "source": "Juventus",
       "source_id": "7jbmtosoictni132rw0e6xr84",
@@ -2451,53 +2451,53 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-25T16:20:43Z",
+  "last_changed": "2026-10-25T17:42:20Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 8,
-        "points": 13,
-        "position": 8,
-        "team": "Cagliari"
-      },
-      {
-        "played": 8,
-        "points": 11,
-        "position": 9,
-        "team": "Napoli"
-      },
-      {
         "played": 7,
-        "points": 11,
-        "position": 10,
+        "points": 15,
+        "position": 5,
+        "team": "Milan"
+      },
+      {
+        "played": 8,
+        "points": 14,
+        "position": 6,
+        "team": "Frosinone"
+      },
+      {
+        "played": 8,
+        "points": 14,
+        "position": 7,
         "team": "Juventus"
       },
       {
         "played": 8,
-        "points": 10,
-        "position": 11,
-        "team": "Atalanta"
+        "points": 13,
+        "position": 8,
+        "team": "Torino"
       },
       {
-        "played": 7,
-        "points": 9,
-        "position": 12,
-        "team": "Lecce"
+        "played": 8,
+        "points": 13,
+        "position": 9,
+        "team": "Cagliari"
       }
     ],
     "draws": 2,
-    "goal_difference": 1,
+    "goal_difference": 2,
     "losses": 2,
     "pending_recoveries": [],
-    "played": 7,
-    "points": 11,
-    "position": 10,
+    "played": 8,
+    "points": 14,
+    "position": 7,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-25T16:20:43Z",
-    "wins": 3
+    "updated_at": "2026-10-25T17:42:20Z",
+    "wins": 4
   },
   "source_errors": [
     "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
@@ -2508,7 +2508,6 @@
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "FootAz Germania (None): 410 Client Error: Gone for url: https://www.footaz.de/spiel/az-vs-juventus/",
     "FootAz Austria (None): 410 Client Error: Gone for url: https://www.footaz.at/spiel/az-vs-juventus/",
-    "Sky Sport / Sky Go (None): HTTPSConnectionPool(host='programmi.sky.it', port=443): Read timed out. (read timeout=10)",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
     "FootAz (None): 410 Client Error: Gone for url: https://www.footaz.pt/jogo/az-vs-juventus/"
