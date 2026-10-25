@@ -1286,11 +1286,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-25T14:18:26Z",
+      "last_modified": "2026-10-25T16:20:43Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 24,
+      "sequence": 25,
       "serie_a_standing": {
         "context": [
           {
@@ -1313,7 +1313,7 @@
           },
           {
             "played": 8,
-            "points": 9,
+            "points": 10,
             "position": 11,
             "team": "Atalanta"
           },
@@ -1334,7 +1334,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T14:18:26Z",
+        "updated_at": "2026-10-25T16:20:43Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -1356,11 +1356,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-25T14:18:26Z",
+      "last_modified": "2026-10-25T16:20:43Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 11,
+      "sequence": 12,
       "serie_a_standing": {
         "context": [
           {
@@ -1383,7 +1383,7 @@
           },
           {
             "played": 8,
-            "points": 9,
+            "points": 10,
             "position": 11,
             "team": "Atalanta"
           },
@@ -1404,7 +1404,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T14:18:26Z",
+        "updated_at": "2026-10-25T16:20:43Z",
         "wins": 3
       },
       "source": "Juventus",
@@ -2451,7 +2451,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-25T14:18:26Z",
+  "last_changed": "2026-10-25T16:20:43Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2475,7 +2475,7 @@
       },
       {
         "played": 8,
-        "points": 9,
+        "points": 10,
         "position": 11,
         "team": "Atalanta"
       },
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-25T14:18:26Z",
+    "updated_at": "2026-10-25T16:20:43Z",
     "wins": 3
   },
   "source_errors": [
@@ -2508,6 +2508,7 @@
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "FootAz Germania (None): 410 Client Error: Gone for url: https://www.footaz.de/spiel/az-vs-juventus/",
     "FootAz Austria (None): 410 Client Error: Gone for url: https://www.footaz.at/spiel/az-vs-juventus/",
+    "Sky Sport / Sky Go (None): HTTPSConnectionPool(host='programmi.sky.it', port=443): Read timed out. (read timeout=10)",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
     "FootAz (None): 410 Client Error: Gone for url: https://www.footaz.pt/jogo/az-vs-juventus/"
