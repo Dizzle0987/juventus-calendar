@@ -1286,11 +1286,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-25T17:42:20Z",
+      "last_modified": "2026-10-25T18:52:54Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 26,
+      "sequence": 27,
       "serie_a_standing": {
         "context": [
           {
@@ -1325,7 +1325,7 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 2,
+        "goal_difference": 3,
         "losses": 2,
         "pending_recoveries": [],
         "played": 8,
@@ -1334,7 +1334,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T17:42:20Z",
+        "updated_at": "2026-10-25T18:52:54Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -1356,11 +1356,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-25T17:42:20Z",
+      "last_modified": "2026-10-25T18:52:54Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 13,
+      "sequence": 14,
       "serie_a_standing": {
         "context": [
           {
@@ -1395,7 +1395,7 @@
           }
         ],
         "draws": 2,
-        "goal_difference": 2,
+        "goal_difference": 3,
         "losses": 2,
         "pending_recoveries": [],
         "played": 8,
@@ -1404,7 +1404,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-25T17:42:20Z",
+        "updated_at": "2026-10-25T18:52:54Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2451,7 +2451,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-25T17:42:20Z",
+  "last_changed": "2026-10-25T18:52:54Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2487,7 +2487,7 @@
       }
     ],
     "draws": 2,
-    "goal_difference": 2,
+    "goal_difference": 3,
     "losses": 2,
     "pending_recoveries": [],
     "played": 8,
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-25T17:42:20Z",
+    "updated_at": "2026-10-25T18:52:54Z",
     "wins": 4
   },
   "source_errors": [
