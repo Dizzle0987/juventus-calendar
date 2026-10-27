@@ -1286,42 +1286,42 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Lecce",
-      "last_modified": "2026-10-27T20:34:27Z",
+      "last_modified": "2026-10-27T22:14:53Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 8",
-      "sequence": 30,
+      "sequence": 31,
       "serie_a_standing": {
         "context": [
           {
-            "played": 9,
-            "points": 16,
-            "position": 6,
-            "team": "Torino"
+            "played": 8,
+            "points": 18,
+            "position": 5,
+            "team": "Milan"
           },
           {
             "played": 8,
             "points": 14,
-            "position": 7,
+            "position": 6,
             "team": "Frosinone"
           },
           {
             "played": 8,
             "points": 14,
-            "position": 8,
+            "position": 7,
             "team": "Juventus"
+          },
+          {
+            "played": 9,
+            "points": 13,
+            "position": 8,
+            "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
             "position": 9,
             "team": "Cagliari"
-          },
-          {
-            "played": 8,
-            "points": 11,
-            "position": 10,
-            "team": "Napoli"
           }
         ],
         "draws": 2,
@@ -1330,11 +1330,11 @@
         "pending_recoveries": [],
         "played": 8,
         "points": 14,
-        "position": 8,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-27T20:34:27Z",
+        "updated_at": "2026-10-27T22:14:53Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -1356,42 +1356,42 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-27T20:34:27Z",
+      "last_modified": "2026-10-27T22:14:53Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 17,
+      "sequence": 18,
       "serie_a_standing": {
         "context": [
           {
-            "played": 9,
-            "points": 16,
-            "position": 6,
-            "team": "Torino"
+            "played": 8,
+            "points": 18,
+            "position": 5,
+            "team": "Milan"
           },
           {
             "played": 8,
             "points": 14,
-            "position": 7,
+            "position": 6,
             "team": "Frosinone"
           },
           {
             "played": 8,
             "points": 14,
-            "position": 8,
+            "position": 7,
             "team": "Juventus"
+          },
+          {
+            "played": 9,
+            "points": 13,
+            "position": 8,
+            "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
             "position": 9,
             "team": "Cagliari"
-          },
-          {
-            "played": 8,
-            "points": 11,
-            "position": 10,
-            "team": "Napoli"
           }
         ],
         "draws": 2,
@@ -1400,11 +1400,11 @@
         "pending_recoveries": [],
         "played": 8,
         "points": 14,
-        "position": 8,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-27T20:34:27Z",
+        "updated_at": "2026-10-27T22:14:53Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2451,39 +2451,39 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-27T20:34:27Z",
+  "last_changed": "2026-10-27T22:14:53Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 9,
-        "points": 16,
-        "position": 6,
-        "team": "Torino"
+        "played": 8,
+        "points": 18,
+        "position": 5,
+        "team": "Milan"
       },
       {
         "played": 8,
         "points": 14,
-        "position": 7,
+        "position": 6,
         "team": "Frosinone"
       },
       {
         "played": 8,
         "points": 14,
-        "position": 8,
+        "position": 7,
         "team": "Juventus"
+      },
+      {
+        "played": 9,
+        "points": 13,
+        "position": 8,
+        "team": "Torino"
       },
       {
         "played": 9,
         "points": 13,
         "position": 9,
         "team": "Cagliari"
-      },
-      {
-        "played": 8,
-        "points": 11,
-        "position": 10,
-        "team": "Napoli"
       }
     ],
     "draws": 2,
@@ -2492,11 +2492,11 @@
     "pending_recoveries": [],
     "played": 8,
     "points": 14,
-    "position": 8,
+    "position": 7,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-27T20:34:27Z",
+    "updated_at": "2026-10-27T22:14:53Z",
     "wins": 4
   },
   "source_errors": [
