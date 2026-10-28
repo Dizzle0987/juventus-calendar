@@ -1310,24 +1310,24 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-28T20:56:27Z",
+      "last_modified": "2026-10-28T22:35:36Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
           {
-            "played": 8,
-            "points": 14,
-            "position": 6,
-            "team": "Frosinone"
-          },
-          {
             "played": 9,
             "points": 14,
-            "position": 7,
+            "position": 6,
             "team": "Napoli"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 7,
+            "team": "Frosinone"
           },
           {
             "played": 9,
@@ -1358,14 +1358,14 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-28T20:56:27Z",
+        "updated_at": "2026-10-28T22:35:36Z",
         "wins": 4
       },
       "source": "Juventus",
       "source_id": "7jbmtosoictni132rw0e6xr84",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-10-28T20:45:00+01:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_source": "Juventus",
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Genoa - Juventus",
@@ -1380,24 +1380,24 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-28T20:56:27Z",
+      "last_modified": "2026-10-28T22:35:36Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 10",
-      "sequence": 11,
+      "sequence": 12,
       "serie_a_standing": {
         "context": [
           {
-            "played": 8,
-            "points": 14,
-            "position": 6,
-            "team": "Frosinone"
-          },
-          {
             "played": 9,
             "points": 14,
-            "position": 7,
+            "position": 6,
             "team": "Napoli"
+          },
+          {
+            "played": 8,
+            "points": 14,
+            "position": 7,
+            "team": "Frosinone"
           },
           {
             "played": 9,
@@ -1428,7 +1428,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-28T20:56:27Z",
+        "updated_at": "2026-10-28T22:35:36Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2451,21 +2451,21 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-28T20:56:27Z",
+  "last_changed": "2026-10-28T22:35:36Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 8,
-        "points": 14,
-        "position": 6,
-        "team": "Frosinone"
-      },
-      {
         "played": 9,
         "points": 14,
-        "position": 7,
+        "position": 6,
         "team": "Napoli"
+      },
+      {
+        "played": 8,
+        "points": 14,
+        "position": 7,
+        "team": "Frosinone"
       },
       {
         "played": 9,
@@ -2496,7 +2496,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-28T20:56:27Z",
+    "updated_at": "2026-10-28T22:35:36Z",
     "wins": 4
   },
   "source_errors": [

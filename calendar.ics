@@ -509,18 +509,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Genoa - Juventus
 DTSTART;TZID=Europe/Rome:20261028T204500
 DTEND;TZID=Europe/Rome:20261028T224500
-DTSTAMP:20261028T205627Z
+DTSTAMP:20261028T223536Z
 UID:2f08c9145cdd9a03fb73324f@juventus-calendar
-SEQUENCE:19
+SEQUENCE:20
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 28/
  10/2026 20:45\nTurno: Regular Season · Giornata 9\nStadio: Stadio Comunal
  e Luigi Ferraris\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nCl
- assifica Serie A provvisoria — giornata in corso:\n  6. Frosinone — 14
-  pt\n  7. Napoli — 14 pt\n▶ 8. Juventus — 14 pt — 9 PG — DR +1\n
+ assifica Serie A provvisoria — giornata in corso:\n  6. Napoli — 14 pt
+ \n  7. Frosinone — 14 pt\n▶ 8. Juventus — 14 pt — 9 PG — DR +1\n
    9. Torino — 13 pt\n  10. Cagliari — 13 pt\nClassifica aggiornata: 28
- /10/2026 21:56\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261028T205627Z
+ /10/2026 23:35\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261028T223536Z
 LOCATION:Stadio Comunale Luigi Ferraris
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -534,18 +534,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Napoli
 DTSTART;TZID=Europe/Rome:20261101T204500
 DTEND;TZID=Europe/Rome:20261101T224500
-DTSTAMP:20261028T205627Z
+DTSTAMP:20261028T223536Z
 UID:0b2427b7e6b1886ec6081963@juventus-calendar
-SEQUENCE:11
+SEQUENCE:12
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 01/11/20
  26 20:45\nTurno: Regular Season · Giornata 10\nStadio: Allianz Stadium\nD
  ove vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A pr
- ovvisoria — giornata in corso:\n  6. Frosinone — 14 pt\n  7. Napoli 
+ ovvisoria — giornata in corso:\n  6. Napoli — 14 pt\n  7. Frosinone 
  — 14 pt\n▶ 8. Juventus — 14 pt — 9 PG — DR +1\n  9. Torino — 1
- 3 pt\n  10. Cagliari — 13 pt\nClassifica aggiornata: 28/10/2026 21:56\nF
+ 3 pt\n  10. Cagliari — 13 pt\nClassifica aggiornata: 28/10/2026 23:35\nF
  onte classifica: Lega Serie A
-LAST-MODIFIED:20261028T205627Z
+LAST-MODIFIED:20261028T223536Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
