@@ -1310,11 +1310,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-29T20:59:36Z",
+      "last_modified": "2026-10-29T22:45:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 21,
+      "sequence": 22,
       "serie_a_standing": {
         "context": [
           {
@@ -1339,13 +1339,13 @@
             "played": 9,
             "points": 13,
             "position": 9,
-            "team": "Atalanta"
+            "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
             "position": 10,
-            "team": "Torino"
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
@@ -1357,7 +1357,7 @@
         "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-29T20:59:36Z",
+        "updated_at": "2026-10-29T22:45:33Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -1379,11 +1379,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-29T20:59:36Z",
+      "last_modified": "2026-10-29T22:45:33Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 10",
-      "sequence": 13,
+      "sequence": 14,
       "serie_a_standing": {
         "context": [
           {
@@ -1408,13 +1408,13 @@
             "played": 9,
             "points": 13,
             "position": 9,
-            "team": "Atalanta"
+            "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
             "position": 10,
-            "team": "Torino"
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
@@ -1426,7 +1426,7 @@
         "provisional": false,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-29T20:59:36Z",
+        "updated_at": "2026-10-29T22:45:33Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2449,7 +2449,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-29T20:59:36Z",
+  "last_changed": "2026-10-29T22:45:33Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2475,13 +2475,13 @@
         "played": 9,
         "points": 13,
         "position": 9,
-        "team": "Atalanta"
+        "team": "Torino"
       },
       {
         "played": 9,
         "points": 13,
         "position": 10,
-        "team": "Torino"
+        "team": "Cagliari"
       }
     ],
     "draws": 2,
@@ -2493,7 +2493,7 @@
     "provisional": false,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-29T20:59:36Z",
+    "updated_at": "2026-10-29T22:45:33Z",
     "wins": 4
   },
   "source_errors": [
