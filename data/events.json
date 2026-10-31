@@ -1310,19 +1310,13 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Genoa",
-      "last_modified": "2026-10-29T22:45:33Z",
+      "last_modified": "2026-10-31T15:41:59Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 9",
-      "sequence": 22,
+      "sequence": 23,
       "serie_a_standing": {
         "context": [
-          {
-            "played": 9,
-            "points": 17,
-            "position": 6,
-            "team": "Frosinone"
-          },
           {
             "played": 9,
             "points": 14,
@@ -1330,34 +1324,41 @@
             "team": "Napoli"
           },
           {
-            "played": 9,
+            "played": 10,
             "points": 14,
             "position": 8,
+            "team": "Bologna"
+          },
+          {
+            "played": 9,
+            "points": 14,
+            "position": 9,
             "team": "Juventus"
           },
           {
             "played": 9,
             "points": 13,
-            "position": 9,
+            "position": 10,
             "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
-            "position": 10,
+            "position": 11,
             "team": "Cagliari"
           }
         ],
         "draws": 2,
         "goal_difference": 1,
         "losses": 3,
+        "pending_recoveries": [],
         "played": 9,
         "points": 14,
-        "position": 8,
-        "provisional": false,
+        "position": 9,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-29T22:45:33Z",
+        "updated_at": "2026-10-31T15:41:59Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -1379,19 +1380,13 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-10-29T22:45:33Z",
+      "last_modified": "2026-10-31T15:41:59Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 10",
-      "sequence": 14,
+      "sequence": 15,
       "serie_a_standing": {
         "context": [
-          {
-            "played": 9,
-            "points": 17,
-            "position": 6,
-            "team": "Frosinone"
-          },
           {
             "played": 9,
             "points": 14,
@@ -1399,34 +1394,41 @@
             "team": "Napoli"
           },
           {
-            "played": 9,
+            "played": 10,
             "points": 14,
             "position": 8,
+            "team": "Bologna"
+          },
+          {
+            "played": 9,
+            "points": 14,
+            "position": 9,
             "team": "Juventus"
           },
           {
             "played": 9,
             "points": 13,
-            "position": 9,
+            "position": 10,
             "team": "Torino"
           },
           {
             "played": 9,
             "points": 13,
-            "position": 10,
+            "position": 11,
             "team": "Cagliari"
           }
         ],
         "draws": 2,
         "goal_difference": 1,
         "losses": 3,
+        "pending_recoveries": [],
         "played": 9,
         "points": 14,
-        "position": 8,
-        "provisional": false,
+        "position": 9,
+        "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-10-29T22:45:33Z",
+        "updated_at": "2026-10-31T15:41:59Z",
         "wins": 4
       },
       "source": "Juventus",
@@ -2449,16 +2451,10 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-10-29T22:45:33Z",
+  "last_changed": "2026-10-31T15:41:59Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
-      {
-        "played": 9,
-        "points": 17,
-        "position": 6,
-        "team": "Frosinone"
-      },
       {
         "played": 9,
         "points": 14,
@@ -2466,37 +2462,45 @@
         "team": "Napoli"
       },
       {
-        "played": 9,
+        "played": 10,
         "points": 14,
         "position": 8,
+        "team": "Bologna"
+      },
+      {
+        "played": 9,
+        "points": 14,
+        "position": 9,
         "team": "Juventus"
       },
       {
         "played": 9,
         "points": 13,
-        "position": 9,
+        "position": 10,
         "team": "Torino"
       },
       {
         "played": 9,
         "points": 13,
-        "position": 10,
+        "position": 11,
         "team": "Cagliari"
       }
     ],
     "draws": 2,
     "goal_difference": 1,
     "losses": 3,
+    "pending_recoveries": [],
     "played": 9,
     "points": 14,
-    "position": 8,
-    "provisional": false,
+    "position": 9,
+    "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-10-29T22:45:33Z",
+    "updated_at": "2026-10-31T15:41:59Z",
     "wins": 4
   },
   "source_errors": [
+    "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
     "Gazzetta dello Sport: 404 Client Error: Not Found for url: https://www.gazzetta.it/Calcio/Serie-A/Juventus/",
     "DAZN: 403 Client Error: Forbidden for url: https://www.dazn.com/it-IT/schedule",
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/",
