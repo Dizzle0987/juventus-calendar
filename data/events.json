@@ -1334,11 +1334,11 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-07T16:21:09Z",
+      "last_modified": "2026-11-07T20:07:35Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 10",
-      "sequence": 21,
+      "sequence": 22,
       "serie_a_standing": {
         "context": [
           {
@@ -1361,15 +1361,15 @@
           },
           {
             "played": 11,
-            "points": 16,
+            "points": 17,
             "position": 8,
-            "team": "Cagliari"
+            "team": "Bologna"
           },
           {
-            "played": 10,
-            "points": 14,
+            "played": 11,
+            "points": 16,
             "position": 9,
-            "team": "Napoli"
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
@@ -1382,7 +1382,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-07T16:21:09Z",
+        "updated_at": "2026-11-07T20:07:35Z",
         "wins": 5
       },
       "source": "Juventus",
@@ -1563,11 +1563,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Fiorentina",
-      "last_modified": "2026-11-07T16:21:09Z",
+      "last_modified": "2026-11-07T20:07:35Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 11",
-      "sequence": 16,
+      "sequence": 17,
       "serie_a_standing": {
         "context": [
           {
@@ -1590,15 +1590,15 @@
           },
           {
             "played": 11,
-            "points": 16,
+            "points": 17,
             "position": 8,
-            "team": "Cagliari"
+            "team": "Bologna"
           },
           {
-            "played": 10,
-            "points": 14,
+            "played": 11,
+            "points": 16,
             "position": 9,
-            "team": "Napoli"
+            "team": "Cagliari"
           }
         ],
         "draws": 2,
@@ -1611,7 +1611,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-07T16:21:09Z",
+        "updated_at": "2026-11-07T20:07:35Z",
         "wins": 5
       },
       "source": "Juventus",
@@ -2794,7 +2794,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-07T16:21:09Z",
+  "last_changed": "2026-11-07T20:07:35Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2818,15 +2818,15 @@
       },
       {
         "played": 11,
-        "points": 16,
+        "points": 17,
         "position": 8,
-        "team": "Cagliari"
+        "team": "Bologna"
       },
       {
-        "played": 10,
-        "points": 14,
+        "played": 11,
+        "points": 16,
         "position": 9,
-        "team": "Napoli"
+        "team": "Cagliari"
       }
     ],
     "draws": 2,
@@ -2839,7 +2839,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-11-07T16:21:09Z",
+    "updated_at": "2026-11-07T20:07:35Z",
     "wins": 5
   },
   "source_errors": [
