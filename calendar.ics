@@ -530,18 +530,14 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Napoli
 DTSTART;TZID=Europe/Rome:20261101T204500
 DTEND;TZID=Europe/Rome:20261101T224500
-DTSTAMP:20261107T200735Z
+DTSTAMP:20261107T233915Z
 UID:0b2427b7e6b1886ec6081963@juventus-calendar
-SEQUENCE:22
+SEQUENCE:23
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 01/11/20
  26 20:45\nTurno: Regular Season · Giornata 10\nStadio: Allianz Stadium\nD
- ove vederla in Italia: DAZN\nFonte orario: Juventus\nClassifica Serie A pr
- ovvisoria — giornata in corso:\n  5. Milan — 21 pt\n  6. Frosinone —
-  20 pt\n▶ 7. Juventus — 17 pt — 10 PG — DR +3\n  8. Bologna — 17
-  pt\n  9. Cagliari — 16 pt\nClassifica aggiornata: 07/11/2026 21:07\nFon
- te classifica: Lega Serie A
-LAST-MODIFIED:20261107T200735Z
+ ove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20261107T233915Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -603,14 +599,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Venezia
 DTSTART;TZID=Europe/Rome:20261123T204500
 DTEND;TZID=Europe/Rome:20261123T224500
-DTSTAMP:20260925T191219Z
+DTSTAMP:20261107T233915Z
 UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
-SEQUENCE:11
+SEQUENCE:12
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 23/11/20
  26 20:45\nTurno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nD
- ove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orario: NOW
-LAST-MODIFIED:20260925T191219Z
+ ove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orario: NOW\nClassifi
+ ca Serie A provvisoria — giornata in corso:\n  5. Milan — 21 pt\n  6. 
+ Frosinone — 20 pt\n▶ 7. Juventus — 17 pt — 10 PG — DR +3\n  8. B
+ ologna — 17 pt\n  9. Cagliari — 16 pt\nClassifica aggiornata: 07/11/20
+ 26 21:07\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261107T233915Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
