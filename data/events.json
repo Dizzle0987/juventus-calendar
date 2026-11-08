@@ -1517,18 +1517,18 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Fiorentina",
-      "last_modified": "2026-11-07T20:07:35Z",
+      "last_modified": "2026-11-08T16:38:06Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 11",
-      "sequence": 17,
+      "sequence": 18,
       "serie_a_standing": {
         "context": [
           {
             "played": 10,
-            "points": 21,
+            "points": 23,
             "position": 5,
-            "team": "Milan"
+            "team": "Como"
           },
           {
             "played": 11,
@@ -1565,7 +1565,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-07T20:07:35Z",
+        "updated_at": "2026-11-08T16:38:06Z",
         "wins": 5
       },
       "source": "Juventus",
@@ -1591,18 +1591,18 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-07T23:39:15Z",
+      "last_modified": "2026-11-08T16:38:06Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 12",
-      "sequence": 12,
+      "sequence": 13,
       "serie_a_standing": {
         "context": [
           {
             "played": 10,
-            "points": 21,
+            "points": 23,
             "position": 5,
-            "team": "Milan"
+            "team": "Como"
           },
           {
             "played": 11,
@@ -1639,7 +1639,7 @@
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-07T20:07:35Z",
+        "updated_at": "2026-11-08T16:38:06Z",
         "wins": 5
       },
       "source": "Juventus",
@@ -2794,15 +2794,15 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-07T23:39:15Z",
+  "last_changed": "2026-11-08T16:38:06Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
         "played": 10,
-        "points": 21,
+        "points": 23,
         "position": 5,
-        "team": "Milan"
+        "team": "Como"
       },
       {
         "played": 11,
@@ -2839,7 +2839,7 @@
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-11-07T20:07:35Z",
+    "updated_at": "2026-11-08T16:38:06Z",
     "wins": 5
   },
   "source_errors": [
