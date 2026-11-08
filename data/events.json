@@ -1517,11 +1517,11 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Fiorentina",
-      "last_modified": "2026-11-08T20:22:01Z",
+      "last_modified": "2026-11-08T22:06:02Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 11",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
           {
@@ -1571,7 +1571,7 @@
       "source_id": "7p7vyl3f7qsmu52wmv7jy9vkk",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-11-08T20:45:00+01:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_source": "Juventus",
       "time_source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "title": "Fiorentina - Juventus",
@@ -2792,7 +2792,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-08T20:22:01Z",
+  "last_changed": "2026-11-08T22:06:02Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
