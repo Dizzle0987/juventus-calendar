@@ -624,9 +624,9 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Omonia Nicosia
 DTSTART;TZID=Europe/Rome:20261126T210000
 DTEND;TZID=Europe/Rome:20261126T230000
-DTSTAMP:20261106T021246Z
+DTSTAMP:20261113T194231Z
 UID:b1ace972877a75e30f32b861@juventus-calendar
-SEQUENCE:1
+SEQUENCE:2
 CATEGORIES:UEFA Europa League,Juventus
 DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  ): 26/11/2026 21:00\nTurno: League Stage · Giornata 5\nStadio: Allianz St
@@ -635,7 +635,7 @@ DESCRIPTION:Competizione: UEFA Europa League\nJuventus: Casa\nOrario (Roma
  a-league/dove-vedere-juventus-omonia-nicosia\n🌍 In chiaro all'estero 
  — Nessuna emittente gratuita confermata al momento\nFonte orario: Juvent
  us
-LAST-MODIFIED:20261106T021246Z
+LAST-MODIFIED:20261113T194231Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/

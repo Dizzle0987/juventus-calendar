@@ -1801,6 +1801,54 @@
         },
         {
           "broadcast_free": false,
+          "broadcaster": "Blue Sport",
+          "broadcaster_home_url": null,
+          "competition": "UEFA Europa League",
+          "confidence": 70,
+          "country": "Svizzera",
+          "country_code": "CH",
+          "date": "2026-11-26",
+          "discovered_dynamically": false,
+          "evidence": [
+            {
+              "guide": "Fußball im TV Schweiz",
+              "source_type": "guide",
+              "source_url": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league",
+              "verified_at": "2026-11-13T19:42:31Z"
+            }
+          ],
+          "fixture_cache_key": "europa-league|2026/27|2026-11-26|juventus|omonia-nicosia",
+          "free_or_pay": "paid",
+          "italian_primary": false,
+          "language": "tedesco",
+          "market_tier": 1,
+          "match": "Juventus - Omonia Nicosia",
+          "match_confirmed": true,
+          "platforms": "TV + streaming",
+          "priority": 80,
+          "reason": "exact fixture found in match-specific schedule",
+          "registration": "not_required",
+          "requires_registration": false,
+          "rights_cache_key": "europa-league|2026/27|CH",
+          "rights_confirmed": false,
+          "rights_cycle": null,
+          "rights_valid_from": null,
+          "rights_valid_to": null,
+          "season": "2026/27",
+          "season_start": 2026,
+          "source_rights": null,
+          "source_schedule": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league",
+          "source_type": "guide",
+          "source_url": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league",
+          "status": "UNKNOWN",
+          "url": "https://www.fussball-im-tv.ch/wettbewerbe/europa-league",
+          "verified_at": "2026-11-13T19:42:31Z",
+          "watch_url": null,
+          "watch_url_type": null,
+          "web_stream_free": "unknown"
+        },
+        {
+          "broadcast_free": false,
           "broadcaster": "Sky Go",
           "broadcaster_home_url": null,
           "competition": "UEFA Europa League",
@@ -2021,7 +2069,7 @@
       "free_italian_broadcasts": [],
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-06T02:12:46Z",
+      "last_modified": "2026-11-13T19:42:31Z",
       "location": "Europe",
       "neutral": false,
       "opponent_country": "Cipro",
@@ -2059,7 +2107,7 @@
         "web_stream_free": "unknown"
       },
       "round": "League Stage · Giornata 5",
-      "sequence": 1,
+      "sequence": 2,
       "source": "Juventus",
       "source_id": "ee25e8dzztwvhd70x4l48rwno",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -2792,7 +2840,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-08T22:06:02Z",
+  "last_changed": "2026-11-13T19:42:31Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
@@ -2845,7 +2893,6 @@
     "Mediaset Infinity: 404 Client Error: Not Found for url: https://mediasetinfinity.mediaset.it/calcio-e-sport/",
     "CBC Sport (None): 403 Client Error: Forbidden for url: https://cbcsport.az/tv_program_schedule",
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
-    "TV8: 500 Server Error: Internal Server Error for url: https://www.tv8.it/api/programmingCarousel?from=2026-11-25T23%3A00%3A00.000Z&to=2026-11-26T22%3A59%3A59.999Z",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l"
   ],
