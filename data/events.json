@@ -1517,56 +1517,56 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Fiorentina",
-      "last_modified": "2026-11-21T21:34:30Z",
+      "last_modified": "2026-11-22T17:45:56Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 11",
-      "sequence": 22,
+      "sequence": 23,
       "serie_a_standing": {
         "context": [
           {
-            "played": 11,
-            "points": 20,
+            "played": 12,
+            "points": 27,
+            "position": 4,
+            "team": "Milan"
+          },
+          {
+            "played": 12,
+            "points": 26,
+            "position": 5,
+            "team": "Como"
+          },
+          {
+            "played": 12,
+            "points": 21,
             "position": 6,
+            "team": "Juventus"
+          },
+          {
+            "played": 12,
+            "points": 20,
+            "position": 7,
             "team": "Frosinone"
           },
           {
             "played": 12,
             "points": 18,
-            "position": 7,
-            "team": "Napoli"
-          },
-          {
-            "played": 11,
-            "points": 18,
             "position": 8,
-            "team": "Juventus"
-          },
-          {
-            "played": 11,
-            "points": 17,
-            "position": 9,
-            "team": "Bologna"
-          },
-          {
-            "played": 12,
-            "points": 16,
-            "position": 10,
-            "team": "Cagliari"
+            "team": "Napoli"
           }
         ],
         "draws": 3,
-        "goal_difference": 3,
+        "goal_difference": 7,
         "losses": 3,
         "pending_recoveries": [],
-        "played": 11,
-        "points": 18,
-        "position": 8,
+        "played": 12,
+        "points": 21,
+        "position": 6,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-21T21:34:30Z",
-        "wins": 5
+        "updated_at": "2026-11-22T17:45:56Z",
+        "wins": 6
       },
       "source": "Juventus",
       "source_id": "7p7vyl3f7qsmu52wmv7jy9vkk",
@@ -1591,62 +1591,62 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-21T21:34:30Z",
+      "last_modified": "2026-11-22T17:45:56Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 12",
-      "sequence": 16,
+      "sequence": 17,
       "serie_a_standing": {
         "context": [
           {
-            "played": 11,
-            "points": 20,
+            "played": 12,
+            "points": 27,
+            "position": 4,
+            "team": "Milan"
+          },
+          {
+            "played": 12,
+            "points": 26,
+            "position": 5,
+            "team": "Como"
+          },
+          {
+            "played": 12,
+            "points": 21,
             "position": 6,
+            "team": "Juventus"
+          },
+          {
+            "played": 12,
+            "points": 20,
+            "position": 7,
             "team": "Frosinone"
           },
           {
             "played": 12,
             "points": 18,
-            "position": 7,
-            "team": "Napoli"
-          },
-          {
-            "played": 11,
-            "points": 18,
             "position": 8,
-            "team": "Juventus"
-          },
-          {
-            "played": 11,
-            "points": 17,
-            "position": 9,
-            "team": "Bologna"
-          },
-          {
-            "played": 12,
-            "points": 16,
-            "position": 10,
-            "team": "Cagliari"
+            "team": "Napoli"
           }
         ],
         "draws": 3,
-        "goal_difference": 3,
+        "goal_difference": 7,
         "losses": 3,
         "pending_recoveries": [],
-        "played": 11,
-        "points": 18,
-        "position": 8,
+        "played": 12,
+        "points": 21,
+        "position": 6,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-21T21:34:30Z",
-        "wins": 5
+        "updated_at": "2026-11-22T17:45:56Z",
+        "wins": 6
       },
       "source": "Juventus",
       "source_id": "7swd2xv6gei68ddws82y8ku8k",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
       "start": "2026-11-23T20:45:00+01:00",
-      "status": "scheduled",
+      "status": "finished",
       "time_conflicts": [
         {
           "source": "Juventus",
@@ -2842,53 +2842,53 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-21T21:34:30Z",
+  "last_changed": "2026-11-22T17:45:56Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
       {
-        "played": 11,
-        "points": 20,
+        "played": 12,
+        "points": 27,
+        "position": 4,
+        "team": "Milan"
+      },
+      {
+        "played": 12,
+        "points": 26,
+        "position": 5,
+        "team": "Como"
+      },
+      {
+        "played": 12,
+        "points": 21,
         "position": 6,
+        "team": "Juventus"
+      },
+      {
+        "played": 12,
+        "points": 20,
+        "position": 7,
         "team": "Frosinone"
       },
       {
         "played": 12,
         "points": 18,
-        "position": 7,
-        "team": "Napoli"
-      },
-      {
-        "played": 11,
-        "points": 18,
         "position": 8,
-        "team": "Juventus"
-      },
-      {
-        "played": 11,
-        "points": 17,
-        "position": 9,
-        "team": "Bologna"
-      },
-      {
-        "played": 12,
-        "points": 16,
-        "position": 10,
-        "team": "Cagliari"
+        "team": "Napoli"
       }
     ],
     "draws": 3,
-    "goal_difference": 3,
+    "goal_difference": 7,
     "losses": 3,
     "pending_recoveries": [],
-    "played": 11,
-    "points": 18,
-    "position": 8,
+    "played": 12,
+    "points": 21,
+    "position": 6,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-11-21T21:34:30Z",
-    "wins": 5
+    "updated_at": "2026-11-22T17:45:56Z",
+    "wins": 6
   },
   "source_errors": [
     "ESPN recuperi Serie A: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20260801-20270630&limit=1000",
