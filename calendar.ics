@@ -595,18 +595,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Juventus - Venezia
 DTSTART;TZID=Europe/Rome:20261123T204500
 DTEND;TZID=Europe/Rome:20261123T224500
-DTSTAMP:20261122T174556Z
+DTSTAMP:20261123T235359Z
 UID:4ffe78d9e41e9ee8168ef052@juventus-calendar
-SEQUENCE:17
+SEQUENCE:18
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Casa\nOrario (Roma): 23/11/20
  26 20:45\nTurno: Regular Season · Giornata 12\nStadio: Allianz Stadium\nD
  ove vederla in Italia: DAZN\; Sky Sport e NOW\nFonte orario: NOW\nClassifi
- ca Serie A provvisoria — giornata in corso:\n  4. Milan — 27 pt\n  5. 
- Como — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Frosin
- one — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 22/11/2026 18
- :45\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261122T174556Z
+ ca Serie A aggiornata — giornata completata:\n  4. Milan — 27 pt\n  5.
+  Como — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Frosi
+ none — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 24/11/2026 0
+ 0:53\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261123T235359Z
 LOCATION:Allianz Stadium
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -645,18 +645,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Como - Juventus
 DTSTART;TZID=Europe/Rome:20261129T204500
 DTEND;TZID=Europe/Rome:20261129T224500
-DTSTAMP:20261123T015936Z
+DTSTAMP:20261123T235359Z
 UID:d05821f8f6e164e198b1ef80@juventus-calendar
-SEQUENCE:10
+SEQUENCE:11
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 29/
  11/2026 20:45\nTurno: Regular Season · Giornata 13\nStadio: Stadio Giusep
  pe Sinigaglia\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClass
- ifica Serie A provvisoria — giornata in corso:\n  4. Milan — 27 pt\n  
- 5. Como — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Fro
- sinone — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 22/11/2026
-  18:45\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261123T015936Z
+ ifica Serie A aggiornata — giornata completata:\n  4. Milan — 27 pt\n 
+  5. Como — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Fr
+ osinone — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 24/11/202
+ 6 00:53\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261123T235359Z
 LOCATION:Stadio Giuseppe Sinigaglia
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
