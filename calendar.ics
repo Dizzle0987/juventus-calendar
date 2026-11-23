@@ -574,18 +574,14 @@ BEGIN:VEVENT
 SUMMARY:⚽ Fiorentina - Juventus
 DTSTART;TZID=Europe/Rome:20261108T204500
 DTEND;TZID=Europe/Rome:20261108T224500
-DTSTAMP:20261122T174556Z
+DTSTAMP:20261123T015936Z
 UID:ae960ed183fe1ac5522f474d@juventus-calendar
-SEQUENCE:23
+SEQUENCE:24
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 08/
  11/2026 20:45\nTurno: Regular Season · Giornata 11\nStadio: Stadio Artemi
- o Franchi\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClassific
- a Serie A provvisoria — giornata in corso:\n  4. Milan — 27 pt\n  5. C
- omo — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Frosino
- ne — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 22/11/2026 18:
- 45\nFonte classifica: Lega Serie A
-LAST-MODIFIED:20261122T174556Z
+ o Franchi\nDove vederla in Italia: DAZN\nFonte orario: Juventus
+LAST-MODIFIED:20261123T015936Z
 LOCATION:Stadio Artemio Franchi
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
@@ -649,14 +645,18 @@ BEGIN:VEVENT
 SUMMARY:⚽ Como - Juventus
 DTSTART;TZID=Europe/Rome:20261129T204500
 DTEND;TZID=Europe/Rome:20261129T224500
-DTSTAMP:20260925T191219Z
+DTSTAMP:20261123T015936Z
 UID:d05821f8f6e164e198b1ef80@juventus-calendar
-SEQUENCE:9
+SEQUENCE:10
 CATEGORIES:Serie A,Juventus
 DESCRIPTION:Competizione: Serie A\nJuventus: Trasferta\nOrario (Roma): 29/
  11/2026 20:45\nTurno: Regular Season · Giornata 13\nStadio: Stadio Giusep
- pe Sinigaglia\nDove vederla in Italia: DAZN\nFonte orario: Juventus
-LAST-MODIFIED:20260925T191219Z
+ pe Sinigaglia\nDove vederla in Italia: DAZN\nFonte orario: Juventus\nClass
+ ifica Serie A provvisoria — giornata in corso:\n  4. Milan — 27 pt\n  
+ 5. Como — 26 pt\n▶ 6. Juventus — 21 pt — 12 PG — DR +7\n  7. Fro
+ sinone — 20 pt\n  8. Napoli — 18 pt\nClassifica aggiornata: 22/11/2026
+  18:45\nFonte classifica: Lega Serie A
+LAST-MODIFIED:20261123T015936Z
 LOCATION:Stadio Giuseppe Sinigaglia
 TRANSP:OPAQUE
 URL:https://www.juventus.com/en/teams/first-team-men/fixtures-results/
