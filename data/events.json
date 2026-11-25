@@ -1659,6 +1659,54 @@
           "web_stream_free": "unknown"
         },
         {
+          "broadcast_free": true,
+          "broadcaster": "TV8",
+          "broadcaster_home_url": null,
+          "competition": "UEFA Europa League",
+          "confidence": 70,
+          "country": "Italia",
+          "country_code": "IT",
+          "date": "2026-11-26",
+          "discovered_dynamically": false,
+          "evidence": [
+            {
+              "guide": "Spor Ekranı",
+              "source_type": "guide",
+              "source_url": "https://www.sporekrani.com/",
+              "verified_at": "2026-11-25T00:32:51Z"
+            }
+          ],
+          "fixture_cache_key": "europa-league|2026/27|2026-11-26|juventus|omonia-nicosia",
+          "free_or_pay": "free",
+          "italian_primary": false,
+          "language": "italiano",
+          "market_tier": 3,
+          "match": "Juventus - Omonia Nicosia",
+          "match_confirmed": true,
+          "platforms": "TV + streaming",
+          "priority": 110,
+          "reason": "exact fixture found in match-specific schedule",
+          "registration": "not_required",
+          "requires_registration": false,
+          "rights_cache_key": "europa-league|2026/27|IT",
+          "rights_confirmed": false,
+          "rights_cycle": null,
+          "rights_valid_from": null,
+          "rights_valid_to": null,
+          "season": "2026/27",
+          "season_start": 2026,
+          "source_rights": null,
+          "source_schedule": "https://www.sporekrani.com/",
+          "source_type": "guide",
+          "source_url": "https://www.sporekrani.com/",
+          "status": "UNKNOWN",
+          "url": "https://www.tv8.it/programmazione",
+          "verified_at": "2026-11-25T00:32:51Z",
+          "watch_url": null,
+          "watch_url_type": null,
+          "web_stream_free": "unknown"
+        },
+        {
           "broadcast_free": false,
           "broadcaster": "RTL+",
           "broadcaster_home_url": null,
@@ -2024,7 +2072,7 @@
       "free_italian_broadcasts": [],
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-13T19:42:31Z",
+      "last_modified": "2026-11-25T00:32:51Z",
       "location": "Europe",
       "neutral": false,
       "opponent_country": "Cipro",
@@ -2062,7 +2110,7 @@
         "web_stream_free": "unknown"
       },
       "round": "League Stage · Giornata 5",
-      "sequence": 2,
+      "sequence": 3,
       "source": "Juventus",
       "source_id": "ee25e8dzztwvhd70x4l48rwno",
       "source_url": "https://www.juventus.com/en/teams/first-team-men/fixtures-results/",
@@ -2840,7 +2888,7 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-23T23:53:59Z",
+  "last_changed": "2026-11-25T00:32:51Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
