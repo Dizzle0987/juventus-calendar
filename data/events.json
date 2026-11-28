@@ -1545,19 +1545,13 @@
       "competition": "Serie A",
       "home_away": "Casa",
       "home_team": "Juventus",
-      "last_modified": "2026-11-27T21:17:20Z",
+      "last_modified": "2026-11-28T18:11:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 12",
-      "sequence": 19,
+      "sequence": 20,
       "serie_a_standing": {
         "context": [
-          {
-            "played": 12,
-            "points": 27,
-            "position": 4,
-            "team": "Milan"
-          },
           {
             "played": 12,
             "points": 26,
@@ -1565,22 +1559,28 @@
             "team": "Como"
           },
           {
-            "played": 12,
-            "points": 21,
+            "played": 13,
+            "points": 23,
             "position": 6,
-            "team": "Juventus"
+            "team": "Frosinone"
           },
           {
             "played": 12,
-            "points": 20,
+            "points": 21,
             "position": 7,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
             "played": 13,
             "points": 19,
             "position": 8,
             "team": "Bologna"
+          },
+          {
+            "played": 12,
+            "points": 18,
+            "position": 9,
+            "team": "Napoli"
           }
         ],
         "draws": 3,
@@ -1589,11 +1589,11 @@
         "pending_recoveries": [],
         "played": 12,
         "points": 21,
-        "position": 6,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-27T21:17:20Z",
+        "updated_at": "2026-11-28T18:11:37Z",
         "wins": 6
       },
       "source": "Juventus",
@@ -2062,19 +2062,13 @@
       "competition": "Serie A",
       "home_away": "Trasferta",
       "home_team": "Como",
-      "last_modified": "2026-11-27T21:17:20Z",
+      "last_modified": "2026-11-28T18:11:37Z",
       "location": "Italy",
       "neutral": false,
       "round": "Regular Season · Giornata 13",
-      "sequence": 12,
+      "sequence": 13,
       "serie_a_standing": {
         "context": [
-          {
-            "played": 12,
-            "points": 27,
-            "position": 4,
-            "team": "Milan"
-          },
           {
             "played": 12,
             "points": 26,
@@ -2082,22 +2076,28 @@
             "team": "Como"
           },
           {
-            "played": 12,
-            "points": 21,
+            "played": 13,
+            "points": 23,
             "position": 6,
-            "team": "Juventus"
+            "team": "Frosinone"
           },
           {
             "played": 12,
-            "points": 20,
+            "points": 21,
             "position": 7,
-            "team": "Frosinone"
+            "team": "Juventus"
           },
           {
             "played": 13,
             "points": 19,
             "position": 8,
             "team": "Bologna"
+          },
+          {
+            "played": 12,
+            "points": 18,
+            "position": 9,
+            "team": "Napoli"
           }
         ],
         "draws": 3,
@@ -2106,11 +2106,11 @@
         "pending_recoveries": [],
         "played": 12,
         "points": 21,
-        "position": 6,
+        "position": 7,
         "provisional": true,
         "source": "Lega Serie A",
         "source_url": "https://www.legaseriea.it/serie-a/classifica",
-        "updated_at": "2026-11-27T21:17:20Z",
+        "updated_at": "2026-11-28T18:11:37Z",
         "wins": 6
       },
       "source": "Juventus",
@@ -3155,16 +3155,10 @@
       "venue": "Allianz Stadium"
     }
   ],
-  "last_changed": "2026-11-27T21:17:20Z",
+  "last_changed": "2026-11-28T18:11:37Z",
   "schema_version": 1,
   "serie_a_standing": {
     "context": [
-      {
-        "played": 12,
-        "points": 27,
-        "position": 4,
-        "team": "Milan"
-      },
       {
         "played": 12,
         "points": 26,
@@ -3172,22 +3166,28 @@
         "team": "Como"
       },
       {
-        "played": 12,
-        "points": 21,
+        "played": 13,
+        "points": 23,
         "position": 6,
-        "team": "Juventus"
+        "team": "Frosinone"
       },
       {
         "played": 12,
-        "points": 20,
+        "points": 21,
         "position": 7,
-        "team": "Frosinone"
+        "team": "Juventus"
       },
       {
         "played": 13,
         "points": 19,
         "position": 8,
         "team": "Bologna"
+      },
+      {
+        "played": 12,
+        "points": 18,
+        "position": 9,
+        "team": "Napoli"
       }
     ],
     "draws": 3,
@@ -3196,11 +3196,11 @@
     "pending_recoveries": [],
     "played": 12,
     "points": 21,
-    "position": 6,
+    "position": 7,
     "provisional": true,
     "source": "Lega Serie A",
     "source_url": "https://www.legaseriea.it/serie-a/classifica",
-    "updated_at": "2026-11-27T21:17:20Z",
+    "updated_at": "2026-11-28T18:11:37Z",
     "wins": 6
   },
   "source_errors": [
@@ -3212,7 +3212,6 @@
     "RTL+ (None): 404 Client Error: Not Found for url: https://plus.rtl.de/video-tv/sport",
     "FootAz Germania (None): 410 Client Error: Gone for url: https://www.footaz.de/spiel/hapoel-be-er-sheva-vs-juventus/",
     "FootAz Austria (None): 410 Client Error: Gone for url: https://www.footaz.at/spiel/hapoel-be-er-sheva-vs-juventus/",
-    "TV8: 500 Server Error: Internal Server Error for url: https://www.tv8.it/api/programmingCarousel?from=2026-12-09T23%3A00%3A00.000Z&to=2026-12-10T22%3A59%3A59.999Z",
     "bTV (None): 403 Client Error: Forbidden for url: https://www.btv.bg/programata/",
     "DAZN Portugal (None): 403 Client Error: Forbidden for url: https://www.dazn.com/pt-PT/competitor/Competitor%3A9dntj5dioj5ex52yrgwzxrq9l",
     "FootAz (None): 410 Client Error: Gone for url: https://www.footaz.pt/jogo/hapoel-be-er-sheva-vs-juventus/"
